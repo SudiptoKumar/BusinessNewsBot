@@ -2,8 +2,8 @@ name: BusinessNewsroom Scheduler
 
 on:
   schedule:
-    # Bangladesh time 07:00-23:00 hourly = UTC 01:00-17:00
-    - cron: '0 1-17 * * *'
+    - cron: '10 7-23 * * *'
+      timezone: 'Asia/Dhaka'
   workflow_dispatch:
 
 permissions:
