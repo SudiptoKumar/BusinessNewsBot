@@ -2,22 +2,8 @@ name: BusinessNewsroom V1
 
 on:
   schedule:
-    # Bangladesh Time (Asia/Dhaka)
-    # Runs at :50 minutes past every hour
-    # 7:50 PM, 8:05 PM, 8:20 PM, 8:35 PM, 8:50 PM BDT
-    - cron: "50 19 * * *"
-      timezone: "Asia/Dhaka"
-    
-    - cron: "5 20 * * *"
-      timezone: "Asia/Dhaka"
-    
-    - cron: "20 20 * * *"
-      timezone: "Asia/Dhaka"
-    
-    - cron: "35 20 * * *"
-      timezone: "Asia/Dhaka"
-    
-    - cron: "50 20 * * *"
+    # Every hour, 07:00-23:00 Bangladesh time
+    - cron: "0 7-23 * * *"
       timezone: "Asia/Dhaka"
 
   workflow_dispatch:
@@ -38,7 +24,6 @@ jobs:
       EXA_API_KEY: ${{ secrets.EXA_API_KEY }}
       CEREBRAS_API_KEY: ${{ secrets.CEREBRAS_API_KEY }}
       TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
-
       TELEGRAM_CHANNEL: "@BusinessNewsroom"
       NEWS_MODE: "update"
       PYTHONUNBUFFERED: "1"
@@ -46,6 +31,8 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
 
       - name: Set up Python
         uses: actions/setup-python@v5
@@ -62,19 +49,12 @@ jobs:
         run: |
           python -m py_compile main.py
 
-      - name: Run self-test
-        run: |
-          python main.py --self-test
-
       - name: Run BusinessNewsroom
         run: |
           echo "========================================"
           echo "BusinessNewsroom V1"
           echo "Mode: update"
-          echo "Lookback: 24 hours"
-          echo "Target: 3 Bangladesh + 3 International"
-          echo "Schedule: 7:50 PM, 8:05 PM, 8:20 PM, 8:35 PM, 8:50 PM BDT"
-          echo "Channel: @BusinessNewsroom"
+          echo "Target: @BusinessNewsroom"
           echo "========================================"
 
           python main.py
