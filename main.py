@@ -84,6 +84,24 @@ def clean_text(text):
     return text
 
 
+def clean_generated_text(text):
+    """Remove common LLM formatting artifacts without changing the publication structure."""
+    text = str(text or "")
+    text = re.sub(r"^\s*#+\s*", "", text)
+    text = re.sub(r"^\s*>+\s*", "", text)
+    text = re.sub(r"^\s*[-*•]\s*", "", text)
+    text = re.sub(r"^\s*headline\s*:\s*", "", text, flags=re.I)
+    text = re.sub(r"^\s*source\s*:\s*", "", text, flags=re.I)
+    text = re.sub(r"\s+", " ", text).strip()
+    return text
+
+
+def clean_bullet(text):
+    text = clean_generated_text(text)
+    text = re.sub(r"^\s*(?:bullet|point)\s*\d*\s*:\s*", "", text, flags=re.I)
+    return text.strip()
+
+
 def tokenize(text):
     return set(re.findall(r"[a-z0-9]{3,}", (text or "").lower()))
 
@@ -349,7 +367,16 @@ Candidates:
     try:
         result = cerebras_json(prompt)
         ids = result.get("selected_ids", [])
-        selected = [candidates[int(i)] for i in ids if isinstance(i, int) and 0 <= i < len(candidates)]
+        selected = []
+        seen_urls = set()
+        for i in ids:
+            if not isinstance(i, int) or not (0 <= i < len(candidates)):
+                continue
+            candidate = candidates[i]
+            if candidate["url"] in seen_urls:
+                continue
+            selected.append(candidate)
+            seen_urls.add(candidate["url"])
         # Ensure at least six if the model under-selects.
         if len(selected) < MINIMUM_OUTPUT:
             selected_ids = {c["url"] for c in selected}
@@ -368,11 +395,20 @@ Candidates:
 def generate_post(c):
     prompt = f"""
 Create a concise Telegram business-news post from this article.
-Do not invent information. Do not add a generic introduction.
-Return JSON only with keys: headline, bullets, source.
-headline: one strong factual headline.
-bullets: exactly 3 concise factual bullets explaining what happened, key number/fact, and why it matters.
-source: publication domain.
+
+Return JSON only:
+{{"headline":"...","bullets":["...","...","..."],"source":"..."}}
+
+Rules:
+- headline: one strong factual headline, no Markdown, no "#", no ">".
+- bullets: exactly 3 concise factual bullets.
+- Bullet 1: what happened.
+- Bullet 2: the most important number/fact.
+- Bullet 3: why it matters.
+- Use only facts supported by the supplied article.
+- Never invent, speculate, or add generic commentary.
+- Do not write "Source:" inside the headline or bullets.
+- source: publication domain only.
 
 Title: {c['title']}
 Source: {c['domain']}
@@ -382,17 +418,35 @@ Article excerpt:
 """
     try:
         data = cerebras_json(prompt)
-        headline = clean_text(data.get("headline", c["title"]))
+
+        headline = clean_generated_text(data.get("headline", c["title"]))
+        if not headline:
+            headline = clean_generated_text(c["title"])
+
         bullets = data.get("bullets", [])
         if not isinstance(bullets, list):
             bullets = [str(bullets)]
-        bullets = [clean_text(str(x)) for x in bullets if clean_text(str(x))][:3]
-        while len(bullets) < 3:
-            bullets.append(c["excerpt"][:250])
-        return headline, bullets, c["domain"]
-    except Exception:
-        return c["title"], [c["excerpt"][:300], "Source: " + c["domain"], "See the original article for full details."], c["domain"]
 
+        bullets = [clean_bullet(x) for x in bullets if clean_bullet(x)]
+
+        # Keep the existing 3-bullet publication format.
+        fallback = clean_bullet(c["excerpt"][:350])
+        while len(bullets) < 3:
+            bullets.append(fallback or "See the original article for full details.")
+
+        return headline, bullets[:3], c["domain"]
+
+    except Exception as exc:
+        logging.warning("Post generation failed for %s: %s", c["url"], exc)
+        return (
+            clean_generated_text(c["title"]),
+            [
+                clean_bullet(c["excerpt"][:350]),
+                "See the original article for full details.",
+                "Source details are available at the original article.",
+            ],
+            c["domain"],
+        )
 
 def telegram_send(text):
     token = os.environ.get("TELEGRAM_BOT_TOKEN")
@@ -437,7 +491,11 @@ def main():
 
     for idx, c in enumerate(selected, 1):
         headline, bullets, source = generate_post(c)
-        text = f"{headline}\n\n" + "\n".join(f"• {b}" for b in bullets) + f"\n\nSource: {source}\n{c['url']}"
+        headline = clean_generated_text(headline) or clean_generated_text(c["title"])
+        bullets = [clean_bullet(b) for b in bullets if clean_bullet(b)]
+        while len(bullets) < 3:
+            bullets.append("See the original article for full details.")
+        text = f"{headline}\n\n" + "\n".join(f"• {b}" for b in bullets[:3]) + f"\n\nSource: {source}\n{c['url']}"
         telegram_send(text)
         record_post(state, c)
         logging.info("Published %d/%d: %s", idx, len(selected), c["title"])
