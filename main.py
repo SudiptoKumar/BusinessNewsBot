@@ -92,77 +92,57 @@ STOPWORDS = {
     "new", "after", "before", "over", "into", "than", "about", "from",
 }
 
-# Primary source universe. RSS/Google News/Exa may discover candidates,
-# but only these domains are eligible for the primary pool.
-PRIMARY_SOURCES = {
-    "Bangladesh": {
-        "tbsnews.net": "The Business Standard",
-        "thefinancialexpress.com.bd": "The Financial Express",
-        "thedailystar.net": "The Daily Star",
-        "dhakatribune.com": "Dhaka Tribune",
-        "newagebd.net": "New Age",
-    },
-    "International": {
-        "reuters.com": "Reuters",
-        "bloomberg.com": "Bloomberg",
-        "ft.com": "Financial Times",
-        "visualcapitalist.com": "Visual Capitalist",
-        "economist.com": "The Economist",
-    },
-}
-
-# Secondary fallback sources. Open only when a region is short of its 3-story target.
-FALLBACK_SOURCES = {
-    "Bangladesh": {
-        "bdnews24.com": "bdnews24",
-        "businesspostbd.com": "The Business Post",
-        "en.prothomalo.com": "Prothom Alo English",
-        "unb.com.bd": "UNB",
-    },
-    "International": {
-        "finance.yahoo.com": "Yahoo Finance",
-        "yahoo.com": "Yahoo Finance",
-        "forbes.com": "Forbes",
-        "cnbc.com": "CNBC",
-        "marketwatch.com": "MarketWatch",
-        "investing.com": "Investing.com",
-        "fortune.com": "Fortune",
-    },
-}
-
-ALL_APPROVED_SOURCES = {
-    region: {**PRIMARY_SOURCES[region], **FALLBACK_SOURCES[region]}
-    for region in PRIMARY_SOURCES
-}
-PRIMARY_DOMAINS = {region: list(PRIMARY_SOURCES[region]) for region in PRIMARY_SOURCES}
-FALLBACK_DOMAINS = {region: list(FALLBACK_SOURCES[region]) for region in FALLBACK_SOURCES}
-
-# Keep native RSS where available. Other approved sources are discovered through
-# Google News RSS and Exa. Discovery layers never expand the source universe.
+# RSS-first sources. Exa remains a fallback/gap filler.
 RSS_FEEDS = [
-    {"name": "The Business Standard", "region": "Bangladesh", "url": "https://www.tbsnews.net/top-news/rss.xml"},
-    {"name": "The Financial Express", "region": "Bangladesh", "url": "https://thefinancialexpress.com.bd/rss.xml"},
-    {"name": "The Daily Star", "region": "Bangladesh", "url": "https://www.thedailystar.net/frontpage/rss.xml"},
-    {"name": "Dhaka Tribune", "region": "Bangladesh", "url": "https://www.dhakatribune.com/feed"},
-    {"name": "New Age", "region": "Bangladesh", "url": "https://www.newagebd.net/rss"},
-    {"name": "Financial Times", "region": "International", "url": "https://www.ft.com/rss/home"},
-    {"name": "Visual Capitalist", "region": "International", "url": "https://www.visualcapitalist.com/feed/"},
+    # Bangladesh
+    {
+        "name": "The Business Standard",
+        "region": "Bangladesh",
+        "url": "https://www.tbsnews.net/top-news/rss.xml",
+    },
+    {
+        "name": "The Daily Star",
+        "region": "Bangladesh",
+        "url": "https://www.thedailystar.net/frontpage/rss.xml",
+    },
+    {
+        "name": "bdnews24",
+        "region": "Bangladesh",
+        "url": "https://bdnews24.com/?widgetName=rssfeed&widgetId=1150&getXmlFeed=true",
+    },
+    {
+        "name": "Dhaka Tribune",
+        "region": "Bangladesh",
+        "url": "https://www.dhakatribune.com/feed",
+    },
+    {
+        "name": "The Financial Express",
+        "region": "Bangladesh",
+        "url": "https://thefinancialexpress.com.bd/rss.xml",
+    },
+    {
+        "name": "New Age",
+        "region": "Bangladesh",
+        "url": "https://www.newagebd.net/rss",
+    },
+    # International
+    {
+        "name": "CNBC",
+        "region": "International",
+        "url": "https://www.cnbc.com/id/100003114/device/rss/rss.html",
+    },
+    {
+        "name": "MarketWatch",
+        "region": "International",
+        "url": "https://feeds.content.dowjones.io/public/rss/mw_topstories.xml",
+    },
+    {
+        "name": "Financial Times",
+        "region": "International",
+        "url": "https://www.ft.com/rss/home",
+    },
 ]
 
-SOURCE_NAMES = {domain: name for region in ALL_APPROVED_SOURCES.values() for domain, name in region.items()}
-BD_DOMAINS = PRIMARY_DOMAINS["Bangladesh"]
-INTL_DOMAINS = PRIMARY_DOMAINS["International"]
-
-def domain_for_url(url):
-    return urlparse(safe_text(url)).netloc.lower().removeprefix("www.").removeprefix("amp.")
-
-def approved_domain(url, region=None):
-    domain = domain_for_url(url)
-    regions = [region] if region in ALL_APPROVED_SOURCES else ALL_APPROVED_SOURCES.keys()
-    for candidate_region in regions:
-        if domain in ALL_APPROVED_SOURCES[candidate_region]:
-            return candidate_region
-    return None
 
 # ============================================================
 # TAXONOMY: BUSINESS + ECONOMIC NEWS
@@ -758,7 +738,10 @@ def source_name(url):
 
 
 def article_region(url):
-    return approved_domain(url) or "International"
+    if is_domain_allowed(url, PRIMARY_BD_DOMAINS + FALLBACK_BD_DOMAINS):
+        return "Bangladesh"
+    return "International"
+
 
 def now_iso():
     return datetime.now(
@@ -1028,8 +1011,8 @@ def candidate_basic_allowed(item):
     ):
         return False
 
-    # Hard whitelist: only approved primary/fallback publishers can enter the queue.
-    if not approved_domain(url, item.get("region")):
+    region = safe_text(item.get("region"))
+    if region and not allowed_source_for_region(url, region):
         return False
 
     canonical = canonical_url(
@@ -1403,51 +1386,73 @@ def collect_rss():
 # EXA GAP-FILL DISCOVERY
 # ============================================================
 
-BD_DOMAINS = [
+# ============================================================
+# SOURCE UNIVERSE
+# ============================================================
+# Five primary sources per region. All sources have equal editorial
+# status. Fallback sources are used only to fill missing regional slots.
+
+PRIMARY_BD_DOMAINS = [
     "tbsnews.net",
-    "thedailystar.net",
     "thefinancialexpress.com.bd",
+    "thedailystar.net",
     "dhakatribune.com",
-    "businesspostbd.com",
     "newagebd.net",
-    "bdnews24.com",
 ]
 
-SOURCE_TIERS = {
-    "reuters.com": 4,
-    "bangladesh-bank.org": 4,
-    "bb.org.bd": 4,
-    "imf.org": 4,
-    "worldbank.org": 4,
-    "adb.org": 4,
-    "wto.org": 4,
-    "cnbc.com": 3,
-    "ft.com": 3,
-    "thedailystar.net": 3,
-    "tbsnews.net": 3,
-    "thefinancialexpress.com.bd": 3,
-    "bdnews24.com": 3,
-    "dhakatribune.com": 2,
-    "newagebd.net": 2,
-}
-
-def source_tier(url_or_source):
-    raw = safe_text(url_or_source).lower()
-    domain = raw
-    if "://" in raw:
-        domain = urlparse(raw).netloc.lower().removeprefix("www.")
-    return SOURCE_TIERS.get(domain, 1)
-
-
-INTL_DOMAINS = [
+PRIMARY_INTL_DOMAINS = [
     "reuters.com",
-    "cnbc.com",
     "bloomberg.com",
     "ft.com",
-    "marketwatch.com",
-    "forbes.com",
+    "visualcapitalist.com",
+    "economist.com",
 ]
 
+FALLBACK_BD_DOMAINS = [
+    "bdnews24.com",
+    "businesspostbd.com",
+    "unb.com.bd",
+    "en.prothomalo.com",
+]
+
+FALLBACK_INTL_DOMAINS = [
+    "finance.yahoo.com",
+    "yahoo.com",
+    "forbes.com",
+    "cnbc.com",
+    "marketwatch.com",
+    "investing.com",
+    "fortune.com",
+]
+
+ALL_PRIMARY_DOMAINS = PRIMARY_BD_DOMAINS + PRIMARY_INTL_DOMAINS
+ALL_FALLBACK_DOMAINS = FALLBACK_BD_DOMAINS + FALLBACK_INTL_DOMAINS
+ALL_ALLOWED_DOMAINS = ALL_PRIMARY_DOMAINS + ALL_FALLBACK_DOMAINS
+
+def normalized_domain(url_or_source):
+    raw = safe_text(url_or_source).lower()
+    if "://" in raw:
+        raw = urlparse(raw).netloc
+    return raw.split(":")[0].removeprefix("www.").strip().rstrip("/")
+
+def is_domain_allowed(url, domains):
+    domain = normalized_domain(url)
+    return any(domain == d or domain.endswith("." + d) for d in domains)
+
+def primary_domain_allowed(url, region=None):
+    domains = (
+        PRIMARY_BD_DOMAINS if region == "Bangladesh"
+        else PRIMARY_INTL_DOMAINS if region == "International"
+        else ALL_PRIMARY_DOMAINS
+    )
+    return is_domain_allowed(url, domains)
+
+def fallback_domain_allowed(url, region):
+    domains = FALLBACK_BD_DOMAINS if region == "Bangladesh" else FALLBACK_INTL_DOMAINS
+    return is_domain_allowed(url, domains)
+
+def allowed_source_for_region(url, region):
+    return primary_domain_allowed(url, region) or fallback_domain_allowed(url, region)
 
 # ============================================================
 # GOOGLE NEWS RSS: FREE GAP FILL (TRIED BEFORE PAID EXA)
@@ -1463,20 +1468,21 @@ INTL_DOMAINS = [
 
 GOOGLE_NEWS_QUERIES = {
     "Bangladesh": [
-        "site:tbsnews.net business OR economy OR banking OR markets",
-        "site:thefinancialexpress.com.bd business OR economy OR banking OR markets",
-        "site:thedailystar.net business OR economy OR banking OR markets",
-        "site:dhakatribune.com business OR economy OR banking OR markets",
-        "site:newagebd.net business OR economy OR banking OR markets",
+        "site:tbsnews.net business OR economy OR banking",
+        "site:thefinancialexpress.com.bd business OR economy OR banking",
+        "site:thedailystar.net business OR economy OR banking",
+        "site:dhakatribune.com business OR economy OR banking",
+        "site:newagebd.net business OR economy OR banking",
     ],
     "International": [
         "site:reuters.com business OR economy OR markets",
-        "site:bloomberg.com economy OR markets OR companies",
+        "site:bloomberg.com economy OR markets",
         "site:ft.com economy OR markets OR companies",
         "site:visualcapitalist.com economy OR markets OR business",
-        "site:economist.com economy OR business OR markets",
+        "site:economist.com economy OR business OR finance",
     ],
 }
+
 
 GOOGLE_NEWS_LOCALE = {
     "Bangladesh": ("en-BD", "BD", "BD:en"),
@@ -1567,9 +1573,6 @@ def google_news_gap_fill(
                 if not real_url:
                     continue
 
-                if approved_domain(real_url, region) is None:
-                    continue
-
                 published_dt = feed_entry_datetime(
                     entry
                 )
@@ -1607,6 +1610,9 @@ def google_news_gap_fill(
                     "date_estimated": date_estimated,
                 }
 
+                if not primary_domain_allowed(real_url, region):
+                    continue
+
                 if not candidate_basic_allowed(
                     {
                         **item,
@@ -1639,161 +1645,107 @@ def google_news_gap_fill(
     return added
 
 
-def fallback_google_news_gap_fill(region, missing_slots):
-    """Use Google News only for configured secondary publishers when slots are missing."""
-    if missing_slots <= 0:
-        return 0
-    if region == "Bangladesh":
-        queries = [
-            "site:bdnews24.com Bangladesh economy business banking",
-            "site:businesspostbd.com Bangladesh economy business banking",
-            "site:en.prothomalo.com Bangladesh economy business banking",
-            "site:unb.com.bd Bangladesh economy business banking",
-        ]
-    else:
-        queries = [
-            "site:finance.yahoo.com business economy markets",
-            "site:forbes.com business economy markets",
-            "site:cnbc.com business economy markets",
-            "site:marketwatch.com markets economy business",
-            "site:investing.com economy markets business",
-            "site:fortune.com business economy markets",
-        ]
-    hl, gl, ceid = GOOGLE_NEWS_LOCALE.get(region, ("en-US", "US", "US:en"))
-    added = 0
-    limit = max(8, missing_slots * 5)
-    for query in queries:
-        if added >= limit:
-            break
-        try:
-            feed_url = "https://news.google.com/rss/search?q=" + quote(f"{query} when:2d") + f"&hl={hl}&gl={gl}&ceid={ceid}"
-            response = session.get(feed_url, timeout=15, headers=HEADERS)
-            if response.status_code >= 400:
-                continue
-            parsed = feedparser.parse(response.content)
-            for entry in parsed.entries[:8]:
-                title = safe_text(entry.get("title")); link = safe_text(entry.get("link"))
-                if not title or not link:
-                    continue
-                real_url = resolve_google_news_url(link)
-                if not real_url or approved_domain(real_url, region) not in {region}:
-                    continue
-                # Only fallback domains, not primary domains, are eligible here.
-                if domain_for_url(real_url) not in FALLBACK_SOURCES[region]:
-                    continue
-                published_dt = feed_entry_datetime(entry)
-                if not published_dt or not (DISCOVERY_START <= published_dt <= DISCOVERY_END):
-                    continue
-                canonical = canonical_url(real_url)
-                if not canonical or canonical in POSTED_URLS or canonical in STATE["queue"]:
-                    continue
-                item = {
-                    "title": title, "url": real_url, "canonical": canonical,
-                    "published_dt": published_dt.isoformat(), "published_date": published_dt.isoformat(),
-                    "source": source_name(real_url), "region": region,
-                    "excerpt": BeautifulSoup(safe_text(entry.get("summary")), "html.parser").get_text(" ", strip=True)[:2000],
-                    "image": "", "discovery": "google_news_fallback", "date_estimated": False,
-                }
-                if not candidate_basic_allowed(item):
-                    continue
-                queue_candidate(item); added += 1
-                if added >= limit:
-                    break
-        except Exception as exc:
-            logger.warning("Fallback Google News failed %s: %s", region, exc)
-    return added
-
-
-def exa_discover(region, domains, queries, max_candidates, discovery_label):
-    """Discover recent articles from the supplied domain set only."""
-    added = 0
-    for query in queries:
-        if added >= max_candidates:
-            break
-        try:
-            results = exa.search_and_contents(
-                query, type="auto", category="news", num_results=8,
-                include_domains=domains,
-                start_published_date=DISCOVERY_START.isoformat(),
-                end_published_date=DISCOVERY_END.isoformat(),
-                contents={"highlights": {"max_characters": 900}},
-            )
-            for result in results.results:
-                url = safe_text(getattr(result, "url", ""))
-                title = safe_text(getattr(result, "title", ""))
-                published_raw = safe_text(getattr(result, "published_date", ""))
-                if not url or not title:
-                    continue
-                if approved_domain(url, region) != region:
-                    continue
-                published_dt = parse_datetime(published_raw)
-                if not published_dt or not (DISCOVERY_START <= published_dt <= DISCOVERY_END):
-                    continue
-                canonical = canonical_url(url)
-                if not canonical or canonical in POSTED_URLS or canonical in STATE["queue"]:
-                    continue
-                highlights = getattr(result, "highlights", "")
-                if isinstance(highlights, list):
-                    excerpt = " ".join(safe_text(x) for x in highlights)[:2000]
-                else:
-                    excerpt = safe_text(highlights)[:2000]
-                item = {
-                    "title": title, "url": url, "canonical": canonical,
-                    "published_dt": published_dt.isoformat(),
-                    "published_date": published_dt.isoformat(),
-                    "source": source_name(url), "region": region,
-                    "excerpt": excerpt, "image": "",
-                    "discovery": discovery_label, "date_estimated": False,
-                }
-                if not candidate_basic_allowed(item):
-                    continue
-                queue_candidate(item)
-                added += 1
-                if added >= max_candidates:
-                    break
-        except Exception as exc:
-            logger.warning("%s discovery failed %s: %s", discovery_label, region, exc)
-    return added
-
-
-def exa_gap_fill(region, existing_count, needed):
-    """Primary-source Exa gap fill. Never searches fallback sources."""
+def exa_gap_fill(region, existing_count, needed, fallback=False):
+    """Use Exa for primary discovery, or regional fallback discovery."""
     if existing_count >= max(6, needed * 3):
         return 0
+
     if region == "Bangladesh":
+        domains = FALLBACK_BD_DOMAINS if fallback else PRIMARY_BD_DOMAINS
         queries = [
             "latest Bangladesh banking economy monetary policy inflation",
             "latest Bangladesh Bank policy banking reserves forex remittance",
             "latest Bangladesh budget tax exports imports trade deficit",
             "latest Bangladesh stock market business companies investment",
+            "latest Bangladesh industry RMG investment FDI business",
         ]
     else:
+        domains = FALLBACK_INTL_DOMAINS if fallback else PRIMARY_INTL_DOMAINS
         queries = [
             "latest global central bank inflation interest rates business",
             "latest global trade tariffs oil gold markets economy",
-            "latest global companies earnings mergers investment markets",
-            "latest global economic policy trade business developments",
+            "latest global companies earnings mergers investment",
+            "latest global finance banking markets corporate news",
         ]
-    return exa_discover(region, PRIMARY_DOMAINS[region], queries, MAX_EXA_CANDIDATES_PER_REGION, "exa_primary")
 
+    added = 0
 
-def fallback_discover(region, missing_slots):
-    """Search secondary sources only for the currently missing regional slots."""
-    if missing_slots <= 0:
-        return 0
-    if region == "Bangladesh":
-        queries = [
-            "latest Bangladesh economy banking business markets",
-            "latest Bangladesh exports imports investment companies",
-            "latest Bangladesh monetary policy inflation finance",
-        ]
-    else:
-        queries = [
-            "latest global business economy markets companies",
-            "latest global finance central banks trade commodities",
-            "latest major earnings mergers investment markets",
-        ]
-    return exa_discover(region, FALLBACK_DOMAINS[region], queries, max(8, missing_slots * 5), "exa_fallback")
+    for query in queries:
+        try:
+            results = exa.search_and_contents(
+                query,
+                type="auto",
+                category="news",
+                num_results=6,
+                include_domains=domains,
+                start_published_date=DISCOVERY_START.isoformat(),
+                end_published_date=DISCOVERY_END.isoformat(),
+                contents={"highlights": {"max_characters": 900}},
+            )
+
+            for result in results.results:
+                url = safe_text(getattr(result, "url", ""))
+                title = safe_text(getattr(result, "title", ""))
+                published_dt = parse_datetime(
+                    getattr(result, "published_date", "")
+                )
+
+                if not url or not title or not published_dt:
+                    continue
+
+                if fallback:
+                    if not fallback_domain_allowed(url, region):
+                        continue
+                elif not primary_domain_allowed(url, region):
+                    continue
+
+                item = {
+                    "title": title,
+                    "url": url,
+                    "canonical": canonical_url(url),
+                    "published_dt": published_dt.isoformat(),
+                    "published_date": published_dt.isoformat(),
+                    "source": source_name(url),
+                    "region": region,
+                    "excerpt": safe_text(
+                        " ".join(
+                            getattr(result, "highlights", [])
+                            if isinstance(getattr(result, "highlights", []), list)
+                            else str(getattr(result, "highlights", ""))
+                        )
+                    )[:2000],
+                    "image": safe_text(getattr(result, "image", "")),
+                    "discovery": "exa_fallback" if fallback else "exa",
+                    "source_pool": "fallback" if fallback else "primary",
+                }
+
+                if not candidate_basic_allowed({
+                    **item,
+                    "published_dt": published_dt,
+                }):
+                    continue
+
+                if item["canonical"] in POSTED_URLS:
+                    continue
+
+                if item["canonical"] in STATE["queue"]:
+                    continue
+
+                queue_candidate(item)
+                added += 1
+
+                if added >= MAX_EXA_CANDIDATES_PER_REGION:
+                    return added
+
+        except Exception as exc:
+            logger.warning(
+                "Exa %s discovery failed %s: %s",
+                "fallback" if fallback else "primary",
+                region,
+                exc,
+            )
+
+    return added
 
 
 def queue_candidates_for_region(
@@ -3875,35 +3827,52 @@ def is_already_published_candidate(item):
     return False
 
 
-def available_candidates(region, source_scope="all"):
+def available_candidates(region, source_pool=None):
     candidates = []
     seen = set()
+
     for item in STATE.get("queue", {}).values():
         if item.get("region") != region:
             continue
-        domain = domain_for_url(item.get("url", ""))
-        if source_scope == "primary" and domain not in PRIMARY_SOURCES[region]:
-            continue
-        if source_scope == "fallback" and domain not in FALLBACK_SOURCES[region]:
-            continue
         if item.get("status") not in {"pending", "selected"}:
             continue
+
         published = parse_datetime(item.get("published_date"))
         if not published or not (DISCOVERY_START <= published <= DISCOVERY_END):
             continue
+
+        url = safe_text(item.get("url"))
         canonical = safe_text(item.get("canonical"))
+
         if not canonical or canonical in seen:
             continue
+
+        if source_pool == "primary" and not primary_domain_allowed(url, region):
+            continue
+        if source_pool == "fallback" and not fallback_domain_allowed(url, region):
+            continue
+        if source_pool is None and not allowed_source_for_region(url, region):
+            continue
+
         if is_already_published_candidate(item):
             continue
-        if title_duplicate_against_list(item.get("title", ""), candidates, threshold=0.94):
+
+        if title_duplicate_against_list(
+            item.get("title", ""),
+            candidates,
+            threshold=0.94,
+        ):
             continue
+
         candidates.append(dict(item))
         seen.add(canonical)
+
     candidates.sort(
-        key=lambda x: parse_datetime(x.get("published_date")) or datetime.min.replace(tzinfo=timezone.utc),
+        key=lambda x: parse_datetime(x.get("published_date"))
+        or datetime.min.replace(tzinfo=timezone.utc),
         reverse=True,
     )
+
     return candidates[:MAX_RSS_CANDIDATES_PER_REGION]
 
 
@@ -3914,106 +3883,223 @@ def prepare_ranked_region(region, candidates):
     return ranked
 
 
-def process_ranked_region(region, ranked):
+def process_ranked_region(region, ranked, fallback_ranked=None):
     pool = build_candidate_pool(ranked, STORIES_PER_REGION)
+    fallback_pool = build_candidate_pool(
+        fallback_ranked or [],
+        STORIES_PER_REGION,
+    )
+
     valid = []
     attempted = 0
     rejected = 0
 
-    for item in pool:
-        if len(valid) >= STORIES_PER_REGION:
-            break
-        attempted += 1
-        story = process_story_candidate(item)
-        if not story:
-            rejected += 1
-            continue
+    def try_pool(candidate_pool, pool_name):
+        nonlocal attempted, rejected
 
-        # Final duplicate check after generation.
-        if is_already_published_candidate({**item, "title": story.get("headline", item.get("title"))}):
-            logger.info("DROP already published event: %s", story.get("headline", ""))
-            rejected += 1
-            continue
+        for item in candidate_pool:
+            if len(valid) >= STORIES_PER_REGION:
+                break
 
-        story["topic"] = canonical_topic(story.get("topic"), region)
-        story["category_hashtags"] = category_hashtags(story)
-        valid.append(story)
-        logger.info(
-            "ACCEPT %s #%d: rank=%s title=%s",
+            attempted += 1
+            story = process_story_candidate(item)
+
+            if not story:
+                rejected += 1
+                continue
+
+            if is_already_published_candidate({
+                **item,
+                "title": story.get("headline", item.get("title")),
+            }):
+                logger.info(
+                    "DROP already published event: %s",
+                    story.get("headline", ""),
+                )
+                rejected += 1
+                continue
+
+            story["topic"] = canonical_topic(story.get("topic"), region)
+            story["category_hashtags"] = category_hashtags(story)
+            valid.append(story)
+
+            logger.info(
+                "ACCEPT %s #%d: rank=%s pool=%s title=%s",
+                region,
+                len(valid),
+                item.get("editor_rank", "?"),
+                pool_name,
+                story.get("headline", ""),
+            )
+
+    try_pool(pool, "primary")
+
+    if len(valid) < STORIES_PER_REGION:
+        logger.warning(
+            "%s primary pool produced %d/%d valid stories. "
+            "Using fallback for %d missing slot(s).",
             region,
             len(valid),
-            item.get("editor_rank", "?"),
-            story.get("headline", ""),
+            STORIES_PER_REGION,
+            STORIES_PER_REGION - len(valid),
         )
+        try_pool(fallback_pool, "fallback")
 
     logger.info(
-        "%s FINAL VALID: %d/%d | pool=%d attempted=%d rejected=%d",
+        "%s FINAL VALID: %d/%d | primary_pool=%d fallback_pool=%d attempted=%d rejected=%d",
         region,
         len(valid),
         STORIES_PER_REGION,
         len(pool),
+        len(fallback_pool),
         attempted,
         rejected,
     )
+
     return valid
 
+    # ========================================================
+    # PRIMARY DISCOVERY
+    # ========================================================
+    bd_candidates = available_candidates(
+        "Bangladesh",
+        source_pool="primary",
+    )
+    intl_candidates = available_candidates(
+        "International",
+        source_pool="primary",
+    )
 
-def run():
-    logger.info("BUSINESSNEWSROOM V1 UPDATE-ONLY")
-    logger.info("Channel=%s Mode=%s", TELEGRAM_CHANNEL, NEWS_MODE)
-    logger.info("LOOKBACK=%d hours | %s -> %s", DISCOVERY_LOOKBACK_HOURS, DISCOVERY_START.isoformat(), DISCOVERY_END.isoformat())
+    # RSS and Google News remain discovery layers, but the
+    # primary whitelist is enforced before a candidate is queued.
+    google_news_gap_fill(
+        "Bangladesh",
+        len(bd_candidates),
+        STORIES_PER_REGION,
+    )
+    google_news_gap_fill(
+        "International",
+        len(intl_candidates),
+        STORIES_PER_REGION,
+    )
 
-    prune_state()
-    refresh_category_coverage()
+    bd_candidates = available_candidates(
+        "Bangladesh",
+        source_pool="primary",
+    )
+    intl_candidates = available_candidates(
+        "International",
+        source_pool="primary",
+    )
 
-    # PRIMARY DISCOVERY: only the 10 approved primary sources.
-    collect_rss()
-    bd_count = queue_candidates_for_region("Bangladesh")
-    intl_count = queue_candidates_for_region("International")
-    bd_count += google_news_gap_fill("Bangladesh", bd_count, STORIES_PER_REGION)
-    intl_count += google_news_gap_fill("International", intl_count, STORIES_PER_REGION)
-    bd_count += exa_gap_fill("Bangladesh", bd_count, STORIES_PER_REGION)
-    intl_count += exa_gap_fill("International", intl_count, STORIES_PER_REGION)
-    save_state(STATE)
+    # Exa fills thin primary coverage.
+    exa_gap_fill(
+        "Bangladesh",
+        len(bd_candidates),
+        STORIES_PER_REGION,
+        fallback=False,
+    )
+    exa_gap_fill(
+        "International",
+        len(intl_candidates),
+        STORIES_PER_REGION,
+        fallback=False,
+    )
 
-    ranked_bd = prepare_ranked_region("Bangladesh", available_candidates("Bangladesh", "primary"))
-    ranked_intl = prepare_ranked_region("International", available_candidates("International", "primary"))
-    bd_stories = process_ranked_region("Bangladesh", ranked_bd)
-    intl_stories = process_ranked_region("International", ranked_intl)
+    bd_candidates = available_candidates(
+        "Bangladesh",
+        source_pool="primary",
+    )
+    intl_candidates = available_candidates(
+        "International",
+        source_pool="primary",
+    )
 
-    # FALLBACK DISCOVERY: only the missing slots, independently by region.
-    bd_missing = max(0, STORIES_PER_REGION - len(bd_stories))
-    intl_missing = max(0, STORIES_PER_REGION - len(intl_stories))
+    ranked_bd = prepare_ranked_region(
+        "Bangladesh",
+        bd_candidates,
+    )
+    ranked_intl = prepare_ranked_region(
+        "International",
+        intl_candidates,
+    )
 
-    if bd_missing:
-        logger.info("BD primary result %d/%d; opening fallback for %d slot(s).", len(bd_stories), STORIES_PER_REGION, bd_missing)
-        fallback_google_news_gap_fill("Bangladesh", bd_missing)
-        fallback_discover("Bangladesh", bd_missing)
+    # ========================================================
+    # FALLBACK DISCOVERY
+    # Only open fallback sources when the primary ranked pool
+    # cannot supply all three stories for that region.
+    # ========================================================
+    bd_fallback_ranked = []
+    intl_fallback_ranked = []
 
-    if intl_missing:
-        logger.info("International primary result %d/%d; opening fallback for %d slot(s).", len(intl_stories), STORIES_PER_REGION, intl_missing)
-        fallback_google_news_gap_fill("International", intl_missing)
-        fallback_discover("International", intl_missing)
+    if len(ranked_bd) < STORIES_PER_REGION:
+        exa_gap_fill(
+            "Bangladesh",
+            len(ranked_bd),
+            STORIES_PER_REGION - len(ranked_bd),
+            fallback=True,
+        )
+        bd_fallback_candidates = available_candidates(
+            "Bangladesh",
+            source_pool="fallback",
+        )
+        bd_fallback_ranked = prepare_ranked_region(
+            "Bangladesh",
+            bd_fallback_candidates,
+        )
 
-    if bd_missing:
-        fallback_ranked_bd = prepare_ranked_region("Bangladesh", available_candidates("Bangladesh", "fallback"))
-        additional = process_ranked_region("Bangladesh", fallback_ranked_bd)
-        existing = {x.get("canonical") for x in bd_stories}
-        bd_stories.extend([x for x in additional if x.get("canonical") not in existing][:bd_missing])
+    if len(ranked_intl) < STORIES_PER_REGION:
+        exa_gap_fill(
+            "International",
+            len(ranked_intl),
+            STORIES_PER_REGION - len(ranked_intl),
+            fallback=True,
+        )
+        intl_fallback_candidates = available_candidates(
+            "International",
+            source_pool="fallback",
+        )
+        intl_fallback_ranked = prepare_ranked_region(
+            "International",
+            intl_fallback_candidates,
+        )
 
-    if intl_missing:
-        fallback_ranked_intl = prepare_ranked_region("International", available_candidates("International", "fallback"))
-        additional = process_ranked_region("International", fallback_ranked_intl)
-        existing = {x.get("canonical") for x in intl_stories}
-        intl_stories.extend([x for x in additional if x.get("canonical") not in existing][:intl_missing])
+    logger.info(
+        "UNIQUE EVENTS: BD=%d + fallback=%d | INTL=%d + fallback=%d",
+        len(ranked_bd),
+        len(bd_fallback_ranked),
+        len(ranked_intl),
+        len(intl_fallback_ranked),
+    )
 
-    bd_stories = bd_stories[:STORIES_PER_REGION]
-    intl_stories = intl_stories[:STORIES_PER_REGION]
+    bd_stories = process_ranked_region(
+        "Bangladesh",
+        ranked_bd,
+        bd_fallback_ranked,
+    )
+    intl_stories = process_ranked_region(
+        "International",
+        ranked_intl,
+        intl_fallback_ranked,
+    )
+
     stories = bd_stories + intl_stories
 
-    logger.info("FINAL: BD=%d/%d INTL=%d/%d TOTAL=%d/%d", len(bd_stories), STORIES_PER_REGION, len(intl_stories), STORIES_PER_REGION, len(stories), MAX_STORIES_PER_RUN)
-    if len(stories) < MAX_STORIES_PER_RUN:
-        logger.warning("Six-story target not reached after primary + fallback discovery. No story is fabricated.")
+    logger.info(
+        "FINAL: BD=%d/%d INTL=%d/%d TOTAL=%d/%d",
+        len(bd_stories),
+        STORIES_PER_REGION,
+        len(intl_stories),
+        STORIES_PER_REGION,
+        len(stories),
+        MAX_STORIES_PER_RUN,
+    )
+
+    if len(bd_stories) < STORIES_PER_REGION or len(intl_stories) < STORIES_PER_REGION:
+        logger.warning(
+            "Six-story target not reached. All eligible primary and fallback "
+            "candidates were exhausted; no story is fabricated."
+        )
 
     published_count = 0
     for index, story in enumerate(stories, start=1):
@@ -4021,11 +4107,13 @@ def run():
         if rich_visible_length(rich_html) > MAX_RICH_CHARACTERS:
             logger.error("Rich message exceeds Telegram limit: %s", story["headline"])
             continue
+
         image_path = prepare_image(story, index)
         result = send_rich_photo(image_path, rich_html)
         if not result.get("ok"):
             logger.warning("Rich Message publish failed; trying Bot API fallback: %s", result.get("description"))
             result = send_bot_api_fallback(image_path, rich_html)
+
         if result.get("ok"):
             published_count += 1
             message = result.get("result", {})
@@ -4033,10 +4121,12 @@ def run():
             canonical = story["canonical"]
             POSTED_URLS.add(canonical)
             save_posted_url(canonical)
+
             queue_item = STATE["queue"].get(canonical)
             if queue_item:
                 queue_item["status"] = "posted"
                 queue_item["posted_at"] = now_iso()
+
             store_event(story, published=True, message_id=message_id)
             remember_posted_event(story)
             update_category_coverage(story)
@@ -4046,6 +4136,7 @@ def run():
             logger.error("Telegram failed: %s", result.get("description"))
         save_state(STATE)
         time.sleep(POST_DELAY_SECONDS)
+
     save_state(STATE)
     logger.info("Finished. Published=%d/%d", published_count, MAX_STORIES_PER_RUN)
 
