@@ -1,8 +1,1125 @@
 {
-  "feeds": {},
-  "queue": {},
-  "events": {},
-  "event_clusters": {},
-  "posted_event_ids": [],
-  "recent_titles": []
+  "feeds": {
+    "https://www.tbsnews.net/top-news/rss.xml": {
+      "etag": "\"1787895003-1\"",
+      "last_modified": "Fri, 28 Aug 2026 05:30:03 GMT",
+      "last_checked": "2026-08-28T11:36:42.430845+06:00",
+      "fail_count": 0,
+      "alerted": false
+    },
+    "https://thefinancialexpress.com.bd/rss.xml": {
+      "etag": null,
+      "last_modified": null,
+      "last_checked": "2026-08-28T11:36:43.012982+06:00",
+      "fail_count": 0,
+      "alerted": false
+    },
+    "https://www.thedailystar.net/frontpage/rss.xml": {
+      "etag": "W/\"1787895008\"",
+      "last_modified": "Fri, 28 Aug 2026 05:30:08 GMT",
+      "last_checked": "2026-08-28T11:36:43.239660+06:00",
+      "fail_count": 0,
+      "alerted": false
+    },
+    "https://www.dhakatribune.com/feed": {
+      "last_checked": "2026-08-28T11:36:43.458232+06:00",
+      "fail_count": 1
+    },
+    "https://www.newagebd.net/rss": {
+      "last_checked": "2026-08-28T11:36:43.586935+06:00",
+      "fail_count": 1
+    },
+    "https://www.ft.com/rss/home": {
+      "etag": "W/\"1c5a-ZMbzFfyCDvvLrljQvVBZn/tAeHk\"",
+      "last_modified": null,
+      "last_checked": "2026-08-28T11:36:44.282524+06:00",
+      "fail_count": 0,
+      "alerted": false
+    },
+    "https://www.visualcapitalist.com/feed/": {
+      "etag": "\"87f19a960928d6a236e9b6d0330fbc8f\"",
+      "last_modified": "Thu, 27 Aug 2026 22:09:42 GMT",
+      "last_checked": "2026-08-28T11:36:44.427917+06:00",
+      "fail_count": 0,
+      "alerted": false
+    }
+  },
+  "queue": {
+    "tbsnews.net/world/iran-war-diplomacy-turns-toward-reopening-strait-hormuz-1526786": {
+      "title": "Iran war diplomacy turns toward reopening Strait of Hormuz",
+      "url": "https://www.tbsnews.net/world/iran-war-diplomacy-turns-toward-reopening-strait-hormuz-1526786",
+      "canonical": "tbsnews.net/world/iran-war-diplomacy-turns-toward-reopening-strait-hormuz-1526786",
+      "published_dt": "2026-08-28T11:25:00+06:00",
+      "published_date": "2026-08-28T11:25:00+06:00",
+      "source": "The Business Standard",
+      "region": "Bangladesh",
+      "excerpt": "With the US having disengaged from talks in favour of an economic pressure campaign, the prime minister of Qatar met senior Iranian leaders in Tehran yesterday (27 August), stressing the importance of returning to the pre-war status of open shipping through an international waterway.",
+      "image": "https://www.tbsnews.net/sites/default/files/styles/big_1/public/images/2026/08/28/img_9545.jpeg",
+      "discovery": "rss",
+      "date_estimated": false,
+      "status": "pending",
+      "first_seen": "2026-08-28T11:36:42.446981+06:00",
+      "last_seen": "2026-08-28T11:36:42.446989+06:00"
+    },
+    "tbsnews.net/agriculture/jute-sales-may-fetch-tk549cr-rajshahi-season-1526781": {
+      "title": "Jute sales may fetch Tk549cr in Rajshahi this season",
+      "url": "https://www.tbsnews.net/agriculture/jute-sales-may-fetch-tk549cr-rajshahi-season-1526781",
+      "canonical": "tbsnews.net/agriculture/jute-sales-may-fetch-tk549cr-rajshahi-season-1526781",
+      "published_dt": "2026-08-28T11:20:00+06:00",
+      "published_date": "2026-08-28T11:20:00+06:00",
+      "source": "The Business Standard",
+      "region": "Bangladesh",
+      "excerpt": "A total of 18,399 hectares of land has been brought under jute cultivation, against 17,305 hectares last year.",
+      "image": "https://www.tbsnews.net/sites/default/files/styles/big_1/public/images/2024/10/18/jute.png",
+      "discovery": "rss",
+      "date_estimated": false,
+      "status": "pending",
+      "first_seen": "2026-08-28T11:36:42.447135+06:00",
+      "last_seen": "2026-08-28T11:36:42.447139+06:00"
+    },
+    "tbsnews.net/world/south-asia/nepal-floods-underscore-rising-glacier-risks-warming-himalayas-1526771": {
+      "title": "Nepal floods underscore rising glacier risks in warming Himalayas",
+      "url": "https://www.tbsnews.net/world/south-asia/nepal-floods-underscore-rising-glacier-risks-warming-himalayas-1526771",
+      "canonical": "tbsnews.net/world/south-asia/nepal-floods-underscore-rising-glacier-risks-warming-himalayas-1526771",
+      "published_dt": "2026-08-28T11:15:00+06:00",
+      "published_date": "2026-08-28T11:15:00+06:00",
+      "source": "The Business Standard",
+      "region": "Bangladesh",
+      "excerpt": "The US Geological Survey identified the event as a magnitude 5.2 glacier collapse that sent ice, rock and debris downstream with devastating force.",
+      "image": "https://www.tbsnews.net/sites/default/files/styles/big_1/public/images/2026/08/28/img_9544.jpeg",
+      "discovery": "rss",
+      "date_estimated": false,
+      "status": "pending",
+      "first_seen": "2026-08-28T11:36:42.447247+06:00",
+      "last_seen": "2026-08-28T11:36:42.447249+06:00"
+    },
+    "tbsnews.net/world/south-asia/nepal-army-trying-save-100-people-trapped-tunnel-hydropower-project-1526776": {
+      "title": "Nepal army trying to save 100 people trapped in tunnel at hydropower project",
+      "url": "https://www.tbsnews.net/world/south-asia/nepal-army-trying-save-100-people-trapped-tunnel-hydropower-project-1526776",
+      "canonical": "tbsnews.net/world/south-asia/nepal-army-trying-save-100-people-trapped-tunnel-hydropower-project-1526776",
+      "published_dt": "2026-08-28T11:15:00+06:00",
+      "published_date": "2026-08-28T11:15:00+06:00",
+      "source": "The Business Standard",
+      "region": "Bangladesh",
+      "excerpt": "The army is still working to safely evacuate more than 100 people trapped in the same tunnel.",
+      "image": "https://www.tbsnews.net/sites/default/files/styles/big_1/public/images/2026/08/26/nepal_flood_5.jpg",
+      "discovery": "rss",
+      "date_estimated": false,
+      "status": "pending",
+      "first_seen": "2026-08-28T11:36:42.447345+06:00",
+      "last_seen": "2026-08-28T11:36:42.447348+06:00"
+    },
+    "tbsnews.net/sports/barcelona-secure-victory-over-athletic-bilbao-osasuna-stun-celta-1526766": {
+      "title": "Barcelona secure victory over Athletic Bilbao as Osasuna stun Celta",
+      "url": "https://www.tbsnews.net/sports/barcelona-secure-victory-over-athletic-bilbao-osasuna-stun-celta-1526766",
+      "canonical": "tbsnews.net/sports/barcelona-secure-victory-over-athletic-bilbao-osasuna-stun-celta-1526766",
+      "published_dt": "2026-08-28T10:40:00+06:00",
+      "published_date": "2026-08-28T10:40:00+06:00",
+      "source": "The Business Standard",
+      "region": "Bangladesh",
+      "excerpt": "Goals from Raphinha in the 37th minute and Fermin Lopez in the 82nd gave Hansi Flick's side a comfortable victory against a rival that failed to register a shot on target.",
+      "image": "https://www.tbsnews.net/sites/default/files/styles/big_1/public/images/2026/08/28/img_9543.jpeg",
+      "discovery": "rss",
+      "date_estimated": false,
+      "status": "pending",
+      "first_seen": "2026-08-28T11:36:42.447442+06:00",
+      "last_seen": "2026-08-28T11:36:42.447445+06:00"
+    },
+    "tbsnews.net/world/south-asia/nepal-flood-toll-rises-469-rescuers-scour-debris-risk-fresh-flooding-grows-1526761": {
+      "title": "Nepal toll rises to 469, 1,000 missing; rescuers scour debris as risk of fresh flooding grows",
+      "url": "https://www.tbsnews.net/world/south-asia/nepal-flood-toll-rises-469-rescuers-scour-debris-risk-fresh-flooding-grows-1526761",
+      "canonical": "tbsnews.net/world/south-asia/nepal-flood-toll-rises-469-rescuers-scour-debris-risk-fresh-flooding-grows-1526761",
+      "published_dt": "2026-08-28T10:35:00+06:00",
+      "published_date": "2026-08-28T10:35:00+06:00",
+      "source": "The Business Standard",
+      "region": "Bangladesh",
+      "excerpt": "The flood ripped through villages and valleys, destroying power stations, roads, and bridges along a route that links Kathmandu with Lhasa in Tibet and is popular with trekkers and pilgrims. Of those missing, at least 540 are foreigners.",
+      "image": "https://www.tbsnews.net/sites/default/files/styles/big_1/public/images/2026/08/28/rsz_2026-08-28t035110z_509344693_rc2e7naxlvnc_rtrmadp_3_nepal-floods.jpg",
+      "discovery": "rss",
+      "date_estimated": false,
+      "status": "pending",
+      "first_seen": "2026-08-28T11:36:42.447537+06:00",
+      "last_seen": "2026-08-28T11:36:42.447539+06:00"
+    },
+    "tbsnews.net/bangladesh/health/govt-moves-open-24-unused-trauma-centres-across-country-1526751": {
+      "title": "Govt moves to open 24 unused trauma centres across country",
+      "url": "https://www.tbsnews.net/bangladesh/health/govt-moves-open-24-unused-trauma-centres-across-country-1526751",
+      "canonical": "tbsnews.net/bangladesh/health/govt-moves-open-24-unused-trauma-centres-across-country-1526751",
+      "published_dt": "2026-08-28T10:15:00+06:00",
+      "published_date": "2026-08-28T10:15:00+06:00",
+      "source": "The Business Standard",
+      "region": "Bangladesh",
+      "excerpt": "The move follows a directive from Prime Minister Tarique Rahman at a meeting with officials of the Health Ministry on 12 August, according to ministry sources.",
+      "image": "https://www.tbsnews.net/sites/default/files/styles/big_1/public/images/2026/08/28/trauma_center.jpeg",
+      "discovery": "rss",
+      "date_estimated": false,
+      "status": "pending",
+      "first_seen": "2026-08-28T11:36:42.447627+06:00",
+      "last_seen": "2026-08-28T11:36:42.447629+06:00"
+    },
+    "tbsnews.net/bangladesh/new-pay-scale-likely-get-cabinet-nod-monday-1526746": {
+      "title": "New pay scale likely to get cabinet nod Monday",
+      "url": "https://www.tbsnews.net/bangladesh/new-pay-scale-likely-get-cabinet-nod-monday-1526746",
+      "canonical": "tbsnews.net/bangladesh/new-pay-scale-likely-get-cabinet-nod-monday-1526746",
+      "published_dt": "2026-08-28T10:10:00+06:00",
+      "published_date": "2026-08-28T10:10:00+06:00",
+      "source": "The Business Standard",
+      "region": "Bangladesh",
+      "excerpt": "Gazette notification expected by Thursday if approved",
+      "image": "https://www.tbsnews.net/sites/default/files/styles/big_1/public/images/2025/11/12/inkrimentt1_0.jpg",
+      "discovery": "rss",
+      "date_estimated": false,
+      "status": "posted",
+      "first_seen": "2026-08-28T11:36:42.447715+06:00",
+      "last_seen": "2026-08-28T11:36:42.447718+06:00",
+      "posted_at": "2026-08-28T11:40:45.232489+06:00"
+    },
+    "tbsnews.net/bangladesh/energy/govt-eyes-4000mw-rooftop-solar-one-year-1526736": {
+      "title": "Govt eyes 4,000MW from rooftop solar in one year",
+      "url": "https://www.tbsnews.net/bangladesh/energy/govt-eyes-4000mw-rooftop-solar-one-year-1526736",
+      "canonical": "tbsnews.net/bangladesh/energy/govt-eyes-4000mw-rooftop-solar-one-year-1526736",
+      "published_dt": "2026-08-28T10:00:00+06:00",
+      "published_date": "2026-08-28T10:00:00+06:00",
+      "source": "The Business Standard",
+      "region": "Bangladesh",
+      "excerpt": "Private investors getting access to rooftop solar market",
+      "image": "https://www.tbsnews.net/sites/default/files/styles/big_1/public/images/2026/08/04/bdb59d8e-cb3d-4ae1-83d0-b1b1530366a2.jpg",
+      "discovery": "rss",
+      "date_estimated": false,
+      "status": "posted",
+      "first_seen": "2026-08-28T11:36:42.447801+06:00",
+      "last_seen": "2026-08-28T11:36:42.447804+06:00",
+      "posted_at": "2026-08-28T11:40:31.376191+06:00"
+    },
+    "tbsnews.net/explainer/how-glacier-collapse-triggered-deadly-landslide-and-flooding-along-nepal-china-border": {
+      "title": "How a glacier collapse triggered a deadly landslide and flooding along the Nepal-China border",
+      "url": "https://www.tbsnews.net/explainer/how-glacier-collapse-triggered-deadly-landslide-and-flooding-along-nepal-china-border",
+      "canonical": "tbsnews.net/explainer/how-glacier-collapse-triggered-deadly-landslide-and-flooding-along-nepal-china-border",
+      "published_dt": "2026-08-28T08:30:00+06:00",
+      "published_date": "2026-08-28T08:30:00+06:00",
+      "source": "The Business Standard",
+      "region": "Bangladesh",
+      "excerpt": "Rescuers continued searching for survivors in the debris-strewn valleys and hillsides of Nepal on Thursday while more than 1,000 people remained missing there.",
+      "image": "https://www.tbsnews.net/sites/default/files/styles/big_1/public/images/2026/08/28/screenshot_2026-08-28_083519.png",
+      "discovery": "rss",
+      "date_estimated": false,
+      "status": "pending",
+      "first_seen": "2026-08-28T11:36:42.447889+06:00",
+      "last_seen": "2026-08-28T11:36:42.447891+06:00"
+    },
+    "tbsnews.net/worldbiz/usa/trump-renames-lake-ontario-lake-america-amid-canada-trade-war-1526731": {
+      "title": "Trump renames Lake Ontario as 'Lake America' amid Canada trade war",
+      "url": "https://www.tbsnews.net/worldbiz/usa/trump-renames-lake-ontario-lake-america-amid-canada-trade-war-1526731",
+      "canonical": "tbsnews.net/worldbiz/usa/trump-renames-lake-ontario-lake-america-amid-canada-trade-war-1526731",
+      "published_dt": "2026-08-28T07:40:00+06:00",
+      "published_date": "2026-08-28T07:40:00+06:00",
+      "source": "The Business Standard",
+      "region": "Bangladesh",
+      "excerpt": "Trade talks between the US and Canada collapsed last week ​with each side blaming the other for derailing three days of intensive negotiations.",
+      "image": "https://www.tbsnews.net/sites/default/files/styles/big_1/public/images/2026/08/28/screenshot_2026-08-28_073859.png",
+      "discovery": "rss",
+      "date_estimated": false,
+      "status": "pending",
+      "first_seen": "2026-08-28T11:36:42.447990+06:00",
+      "last_seen": "2026-08-28T11:36:42.447993+06:00"
+    },
+    "tbsnews.net/bangladesh/bangladeshi-worker-among-15-killed-russia-gas-plant-fire-1526721": {
+      "title": "Bangladeshi worker among 15 killed in Russia gas plant fire",
+      "url": "https://www.tbsnews.net/bangladesh/bangladeshi-worker-among-15-killed-russia-gas-plant-fire-1526721",
+      "canonical": "tbsnews.net/bangladesh/bangladeshi-worker-among-15-killed-russia-gas-plant-fire-1526721",
+      "published_dt": "2026-08-28T01:10:00+06:00",
+      "published_date": "2026-08-28T01:10:00+06:00",
+      "source": "The Business Standard",
+      "region": "Bangladesh",
+      "excerpt": "Another Bangladeshi remains missing as seven are seriously injured.",
+      "image": "https://www.tbsnews.net/sites/default/files/styles/big_1/public/images/2026/08/28/russia_fire.jpg",
+      "discovery": "rss",
+      "date_estimated": false,
+      "status": "pending",
+      "first_seen": "2026-08-28T11:36:42.448083+06:00",
+      "last_seen": "2026-08-28T11:36:42.448086+06:00"
+    },
+    "tbsnews.net/foreign-policy/bangladesh-seeks-us-cooperation-smrs-nuclear-technology-1526716": {
+      "title": "Bangladesh seeks US cooperation on SMRs, nuclear technology",
+      "url": "https://www.tbsnews.net/foreign-policy/bangladesh-seeks-us-cooperation-smrs-nuclear-technology-1526716",
+      "canonical": "tbsnews.net/foreign-policy/bangladesh-seeks-us-cooperation-smrs-nuclear-technology-1526716",
+      "published_dt": "2026-08-28T01:05:00+06:00",
+      "published_date": "2026-08-28T01:05:00+06:00",
+      "source": "The Business Standard",
+      "region": "Bangladesh",
+      "excerpt": "Dhaka seeks US expertise to strengthen energy security and technology.",
+      "image": "https://www.tbsnews.net/sites/default/files/styles/big_1/public/images/2026/08/28/anam_wrignt.jpg",
+      "discovery": "rss",
+      "date_estimated": false,
+      "status": "posted",
+      "first_seen": "2026-08-28T11:36:42.448171+06:00",
+      "last_seen": "2026-08-28T11:36:42.448174+06:00",
+      "posted_at": "2026-08-28T11:40:37.245004+06:00"
+    },
+    "tbsnews.net/bangladesh/obituary/optimus-prime-eeyore-voice-actor-peter-cullen-dies-85-1526711": {
+      "title": "Optimus Prime, Eeyore voice actor Peter Cullen dies at 85",
+      "url": "https://www.tbsnews.net/bangladesh/obituary/optimus-prime-eeyore-voice-actor-peter-cullen-dies-85-1526711",
+      "canonical": "tbsnews.net/bangladesh/obituary/optimus-prime-eeyore-voice-actor-peter-cullen-dies-85-1526711",
+      "published_dt": "2026-08-28T00:45:00+06:00",
+      "published_date": "2026-08-28T00:45:00+06:00",
+      "source": "The Business Standard",
+      "region": "Bangladesh",
+      "excerpt": "The Canadian actor’s career spanned animation, television and film.",
+      "image": "https://www.tbsnews.net/sites/default/files/styles/big_1/public/images/2026/08/28/peter-cullen.jpg",
+      "discovery": "rss",
+      "date_estimated": false,
+      "status": "pending",
+      "first_seen": "2026-08-28T11:36:42.448258+06:00",
+      "last_seen": "2026-08-28T11:36:42.448261+06:00"
+    },
+    "tbsnews.net/foreign-policy/bangladesh-raises-rohingya-crisis-gambia-seeks-stronger-qatar-ties-1526706": {
+      "title": "Bangladesh raises Rohingya crisis with Gambia, seeks stronger Qatar ties",
+      "url": "https://www.tbsnews.net/foreign-policy/bangladesh-raises-rohingya-crisis-gambia-seeks-stronger-qatar-ties-1526706",
+      "canonical": "tbsnews.net/foreign-policy/bangladesh-raises-rohingya-crisis-gambia-seeks-stronger-qatar-ties-1526706",
+      "published_dt": "2026-08-28T00:05:00+06:00",
+      "published_date": "2026-08-28T00:05:00+06:00",
+      "source": "The Business Standard",
+      "region": "Bangladesh",
+      "excerpt": "Jeddah meetings also focused on LNG supplies and Maldives ties",
+      "image": "https://www.tbsnews.net/sites/default/files/styles/big_1/public/images/2026/08/28/state-minister-for-foreign-affairs-humaiun-kobir-called-on-gambias-attorney-general-and-minister-of-justice-dawda-a.-jallow-on-the-sidelines-of-the-23rd-oic-extraordinary-cfm-in-jeddah-yesterday-27-august_0.jpg",
+      "discovery": "rss",
+      "date_estimated": false,
+      "status": "pending",
+      "first_seen": "2026-08-28T11:36:42.448346+06:00",
+      "last_seen": "2026-08-28T11:36:42.448349+06:00"
+    },
+    "tbsnews.net/bangladesh/opposition-alliance-walks-out-parliament-over-reform-process-bills-1526701": {
+      "title": "Opposition alliance walks out of parliament over reform process, bills",
+      "url": "https://www.tbsnews.net/bangladesh/opposition-alliance-walks-out-parliament-over-reform-process-bills-1526701",
+      "canonical": "tbsnews.net/bangladesh/opposition-alliance-walks-out-parliament-over-reform-process-bills-1526701",
+      "published_dt": "2026-08-28T00:00:00+06:00",
+      "published_date": "2026-08-28T00:00:00+06:00",
+      "source": "The Business Standard",
+      "region": "Bangladesh",
+      "excerpt": "The opposition alliance protested the government’s handling of constitutional reforms, the delayed implementation of the referendum verdict and formation of a special committee.",
+      "image": "https://www.tbsnews.net/sites/default/files/styles/big_1/public/images/2026/08/28/walks_out.jpg",
+      "discovery": "rss",
+      "date_estimated": false,
+      "status": "pending",
+      "first_seen": "2026-08-28T11:36:42.448437+06:00",
+      "last_seen": "2026-08-28T11:36:42.448440+06:00"
+    },
+    "tbsnews.net/foreign-policy/bangladesh-turkiye-discuss-expanding-economic-defence-ties-1526691": {
+      "title": "PM Tarique to visit Turkiye for COP summit in Nov: Humaiun Kobir",
+      "url": "https://www.tbsnews.net/foreign-policy/bangladesh-turkiye-discuss-expanding-economic-defence-ties-1526691",
+      "canonical": "tbsnews.net/foreign-policy/bangladesh-turkiye-discuss-expanding-economic-defence-ties-1526691",
+      "published_dt": "2026-08-27T23:50:00+06:00",
+      "published_date": "2026-08-27T23:50:00+06:00",
+      "source": "The Business Standard",
+      "region": "Bangladesh",
+      "excerpt": "State Minister for Foreign Affairs Humaiun Kobir meets Turkish deputy foreign minister on sidelines of OIC meeting in Jeddah.",
+      "image": "https://www.tbsnews.net/sites/default/files/styles/big_1/public/images/2026/08/27/bd_turkiye_meeting.jpg",
+      "discovery": "rss",
+      "date_estimated": false,
+      "status": "pending",
+      "first_seen": "2026-08-28T11:36:42.448526+06:00",
+      "last_seen": "2026-08-28T11:36:42.448533+06:00"
+    },
+    "tbsnews.net/bangladesh/crime/bmw-seized-ctg-brought-3-4-pieces-used-car-parts-evade-duties-ciid-1526671": {
+      "title": "BMW brought in 3-4 pieces to evade duties seized in Ctg: CIID",
+      "url": "https://www.tbsnews.net/bangladesh/crime/bmw-seized-ctg-brought-3-4-pieces-used-car-parts-evade-duties-ciid-1526671",
+      "canonical": "tbsnews.net/bangladesh/crime/bmw-seized-ctg-brought-3-4-pieces-used-car-parts-evade-duties-ciid-1526671",
+      "published_dt": "2026-08-27T22:25:00+06:00",
+      "published_date": "2026-08-27T22:25:00+06:00",
+      "source": "The Business Standard",
+      "region": "Bangladesh",
+      "excerpt": "CIID seized the vehicle in Chattogram after the owner’s family failed to produce purchase or import documents or hand over its keys.",
+      "image": "https://www.tbsnews.net/sites/default/files/styles/big_1/public/images/2026/08/27/bmw_ctg.jpg",
+      "discovery": "rss",
+      "date_estimated": false,
+      "status": "pending",
+      "first_seen": "2026-08-28T11:36:42.448620+06:00",
+      "last_seen": "2026-08-28T11:36:42.448622+06:00"
+    },
+    "tbsnews.net/worldbiz/asia/nepal-china-warn-fresh-flood-risks-lakes-threatening-burst-1526666": {
+      "title": "Nepal, China warn of fresh flood risks with lakes threatening to burst",
+      "url": "https://www.tbsnews.net/worldbiz/asia/nepal-china-warn-fresh-flood-risks-lakes-threatening-burst-1526666",
+      "canonical": "tbsnews.net/worldbiz/asia/nepal-china-warn-fresh-flood-risks-lakes-threatening-burst-1526666",
+      "published_dt": "2026-08-27T22:15:00+06:00",
+      "published_date": "2026-08-27T22:15:00+06:00",
+      "source": "The Business Standard",
+      "region": "Bangladesh",
+      "excerpt": "Both countries have ​blamed the flood on a glacier collapse that pushed rock, ice, mud and debris into river ​systems in the mountains.",
+      "image": "https://www.tbsnews.net/sites/default/files/styles/big_1/public/images/2026/08/27/untitled_design.png",
+      "discovery": "rss",
+      "date_estimated": false,
+      "status": "pending",
+      "first_seen": "2026-08-28T11:36:42.448712+06:00",
+      "last_seen": "2026-08-28T11:36:42.448714+06:00"
+    },
+    "tbsnews.net/bangladesh/officials-names-removed-public-admin-ministry-website-1526656": {
+      "title": "Officials’ names removed from Public Admin ministry website",
+      "url": "https://www.tbsnews.net/bangladesh/officials-names-removed-public-admin-ministry-website-1526656",
+      "canonical": "tbsnews.net/bangladesh/officials-names-removed-public-admin-ministry-website-1526656",
+      "published_dt": "2026-08-27T22:10:00+06:00",
+      "published_date": "2026-08-27T22:10:00+06:00",
+      "source": "The Business Standard",
+      "region": "Bangladesh",
+      "excerpt": "Previously, the website published posting information for more than 6,000 BCS administration cadre officials.",
+      "image": "https://www.tbsnews.net/sites/default/files/styles/big_1/public/images/2026/03/25/ministry_of_public_administration.jpg",
+      "discovery": "rss",
+      "date_estimated": false,
+      "status": "pending",
+      "first_seen": "2026-08-28T11:36:42.448799+06:00",
+      "last_seen": "2026-08-28T11:36:42.448802+06:00"
+    },
+    "ft.com/content/6f3ada65-c56c-499c-8eb6-008fac58949d": {
+      "title": "US corporate profits surge to record as worker payouts wilt",
+      "url": "https://www.ft.com/content/6f3ada65-c56c-499c-8eb6-008fac58949d?syn-25a6b1a6=1",
+      "canonical": "ft.com/content/6f3ada65-c56c-499c-8eb6-008fac58949d",
+      "published_dt": "2026-08-28T10:00:25+06:00",
+      "published_date": "2026-08-28T10:00:25+06:00",
+      "source": "Financial Times",
+      "region": "International",
+      "excerpt": "Pre-tax earnings hit highest level since after the second world war as employee remuneration slides",
+      "image": "https://images.ft.com/v3/image/raw/https%3A%2F%2Fd1e00ek4ebabms.cloudfront.net%2Fproduction%2F8946030c-ef56-46f2-ac32-05fd2dadcddf.jpg?source=next-home-page&dpr=2&width=580&fit=scale-down",
+      "discovery": "rss",
+      "date_estimated": false,
+      "status": "pending",
+      "first_seen": "2026-08-28T11:36:44.288405+06:00",
+      "last_seen": "2026-08-28T11:36:44.288411+06:00"
+    },
+    "ft.com/content/007e0862-ffe7-4b8f-a540-05a19d1a45dc": {
+      "title": "The cowboy clinics selling unproven longevity treatments",
+      "url": "https://www.ft.com/content/007e0862-ffe7-4b8f-a540-05a19d1a45dc?syn-25a6b1a6=1",
+      "canonical": "ft.com/content/007e0862-ffe7-4b8f-a540-05a19d1a45dc",
+      "published_dt": "2026-08-28T10:00:16+06:00",
+      "published_date": "2026-08-28T10:00:16+06:00",
+      "source": "Financial Times",
+      "region": "International",
+      "excerpt": "An FT investigation has found a thriving market for stem cell therapies in the US promising longer, healthier lives. Experts say such claims are dangerous",
+      "image": "https://images.ft.com/v3/image/raw/https%3A%2F%2Fd1e00ek4ebabms.cloudfront.net%2Fproduction%2F8ec51e37-2c4a-477a-9997-7b151ca6a1a5.jpg?source=next-home-page&dpr=2&width=580&fit=scale-down",
+      "discovery": "rss",
+      "date_estimated": false,
+      "status": "pending",
+      "first_seen": "2026-08-28T11:36:44.288552+06:00",
+      "last_seen": "2026-08-28T11:36:44.288555+06:00"
+    },
+    "ft.com/content/0d794bd6-a7ec-465a-ba97-452c9928df4e": {
+      "title": "The devastating forces behind the deadly Himalayan flood",
+      "url": "https://www.ft.com/content/0d794bd6-a7ec-465a-ba97-452c9928df4e?syn-25a6b1a6=1",
+      "canonical": "ft.com/content/0d794bd6-a7ec-465a-ba97-452c9928df4e",
+      "published_dt": "2026-08-28T00:07:30+06:00",
+      "published_date": "2026-08-28T00:07:30+06:00",
+      "source": "Financial Times",
+      "region": "International",
+      "excerpt": "Torrent that tore through settlements near Nepal’s border with China comes as scientists warn climate change is increasing risks",
+      "image": "https://images.ft.com/v3/image/raw/https%3A%2F%2Fd1e00ek4ebabms.cloudfront.net%2Fproduction%2F65505cf0-c381-4bd6-b98a-dc2a3d1abdb2.jpg?source=next-home-page&dpr=2&width=580&fit=scale-down",
+      "discovery": "rss",
+      "date_estimated": false,
+      "status": "pending",
+      "first_seen": "2026-08-28T11:36:44.288686+06:00",
+      "last_seen": "2026-08-28T11:36:44.288689+06:00"
+    },
+    "ft.com/content/42935d28-2998-4c1b-a2f3-82ec0e462ec4": {
+      "title": "Is China’s ‘wise camel’ the winner from the US-Iran war?",
+      "url": "https://www.ft.com/content/42935d28-2998-4c1b-a2f3-82ec0e462ec4?syn-25a6b1a6=1",
+      "canonical": "ft.com/content/42935d28-2998-4c1b-a2f3-82ec0e462ec4",
+      "published_dt": "2026-08-28T10:00:16+06:00",
+      "published_date": "2026-08-28T10:00:16+06:00",
+      "source": "Financial Times",
+      "region": "International",
+      "excerpt": "Beijing has threatened to retaliate with ‘all necessary measures’ if the US hits it with sanctions",
+      "image": "https://images.ft.com/v3/image/raw/https%3A%2F%2Fd1e00ek4ebabms.cloudfront.net%2Fproduction%2F47e19f4c-02c7-44f5-9d85-39c42568507a.jpg?source=next-home-page&dpr=2&width=580&fit=scale-down",
+      "discovery": "rss",
+      "date_estimated": false,
+      "status": "pending",
+      "first_seen": "2026-08-28T11:36:44.288820+06:00",
+      "last_seen": "2026-08-28T11:36:44.288824+06:00"
+    },
+    "ft.com/content/6f0cdf31-de96-4058-92a9-f6684b5e1ef6": {
+      "title": "Trump orders Lake Ontario to be renamed ‘Lake America’ in new slight to Canada",
+      "url": "https://www.ft.com/content/6f0cdf31-de96-4058-92a9-f6684b5e1ef6?syn-25a6b1a6=1",
+      "canonical": "ft.com/content/6f0cdf31-de96-4058-92a9-f6684b5e1ef6",
+      "published_dt": "2026-08-28T02:34:30+06:00",
+      "published_date": "2026-08-28T02:34:30+06:00",
+      "source": "Financial Times",
+      "region": "International",
+      "excerpt": "US president’s executive order underscores fraying relations between allies after trade talks collapsed",
+      "image": "https://images.ft.com/v3/image/raw/https%3A%2F%2Fd1e00ek4ebabms.cloudfront.net%2Fproduction%2F635159ca-cb10-49c7-b586-b146d9918f3c.jpg?source=next-home-page&dpr=2&width=580&fit=scale-down",
+      "discovery": "rss",
+      "date_estimated": false,
+      "status": "pending",
+      "first_seen": "2026-08-28T11:36:44.288968+06:00",
+      "last_seen": "2026-08-28T11:36:44.288973+06:00"
+    },
+    "ft.com/content/8cc488a5-54c2-41f9-8b87-327ff591be6a": {
+      "title": "Canada poaches 48 top US-based academics",
+      "url": "https://www.ft.com/content/8cc488a5-54c2-41f9-8b87-327ff591be6a?syn-25a6b1a6=1",
+      "canonical": "ft.com/content/8cc488a5-54c2-41f9-8b87-327ff591be6a",
+      "published_dt": "2026-08-27T22:11:25+06:00",
+      "published_date": "2026-08-27T22:11:25+06:00",
+      "source": "Financial Times",
+      "region": "International",
+      "excerpt": "Trump administration’s assault on universities boosts Ottawa’s efforts to attract top research talent",
+      "image": "https://images.ft.com/v3/image/raw/https%3A%2F%2Fd1e00ek4ebabms.cloudfront.net%2Fproduction%2F835c02e6-9f6b-4041-88b7-83b322b318f3.jpg?source=next-home-page&dpr=2&width=580&fit=scale-down",
+      "discovery": "rss",
+      "date_estimated": false,
+      "status": "pending",
+      "first_seen": "2026-08-28T11:36:44.289105+06:00",
+      "last_seen": "2026-08-28T11:36:44.289109+06:00"
+    },
+    "ft.com/content/547e5366-b476-4695-81e6-579fc452bed6": {
+      "title": "China bets on exports of cheap 3D-printed drone killers",
+      "url": "https://www.ft.com/content/547e5366-b476-4695-81e6-579fc452bed6?syn-25a6b1a6=1",
+      "canonical": "ft.com/content/547e5366-b476-4695-81e6-579fc452bed6",
+      "published_dt": "2026-08-28T07:37:21+06:00",
+      "published_date": "2026-08-28T07:37:21+06:00",
+      "source": "Financial Times",
+      "region": "International",
+      "excerpt": "Chinese companies rush into sector as global conflicts raise demand for interceptors",
+      "image": "https://images.ft.com/v3/image/raw/https%3A%2F%2Fd1e00ek4ebabms.cloudfront.net%2Fproduction%2Fd0faccc8-f7e3-41c3-ace3-58b8970b3eb5.jpg?source=next-home-page&dpr=2&width=580&fit=scale-down",
+      "discovery": "rss",
+      "date_estimated": false,
+      "status": "pending",
+      "first_seen": "2026-08-28T11:36:44.289213+06:00",
+      "last_seen": "2026-08-28T11:36:44.289216+06:00"
+    },
+    "ft.com/content/5d7957b7-6ad8-48d3-a84e-87f3c6eac326": {
+      "title": "Saudi Arabia shakes up flagship real estate project",
+      "url": "https://www.ft.com/content/5d7957b7-6ad8-48d3-a84e-87f3c6eac326?syn-25a6b1a6=1",
+      "canonical": "ft.com/content/5d7957b7-6ad8-48d3-a84e-87f3c6eac326",
+      "published_dt": "2026-08-28T10:00:25+06:00",
+      "published_date": "2026-08-28T10:00:25+06:00",
+      "source": "Financial Times",
+      "region": "International",
+      "excerpt": "British CEO replaced in latest change after review of portfolio companies of sovereign wealth fund",
+      "image": "https://images.ft.com/v3/image/raw/https%3A%2F%2Fd1e00ek4ebabms.cloudfront.net%2Fproduction%2F881ed2f5-8605-4ab9-b8a1-52d4ea8f4eb2.jpg?source=next-home-page&dpr=2&width=580&fit=scale-down",
+      "discovery": "rss",
+      "date_estimated": false,
+      "status": "pending",
+      "first_seen": "2026-08-28T11:36:44.289312+06:00",
+      "last_seen": "2026-08-28T11:36:44.289315+06:00"
+    },
+    "ft.com/content/8e93c159-2c02-444a-9f22-dcda14bc451f": {
+      "title": "Zero-interest convertible bonds set for record year",
+      "url": "https://www.ft.com/content/8e93c159-2c02-444a-9f22-dcda14bc451f?syn-25a6b1a6=1",
+      "canonical": "ft.com/content/8e93c159-2c02-444a-9f22-dcda14bc451f",
+      "published_dt": "2026-08-28T10:00:16+06:00",
+      "published_date": "2026-08-28T10:00:16+06:00",
+      "source": "Financial Times",
+      "region": "International",
+      "excerpt": "Issuance on track for highest-ever level amid high AI stock volatility and as companies seek to limit borrowing costs",
+      "image": "https://images.ft.com/v3/image/raw/https%3A%2F%2Fd1e00ek4ebabms.cloudfront.net%2Fproduction%2Fc0abca15-25b5-43f4-a3e3-92b51a256609.jpg?source=next-home-page&dpr=2&width=580&fit=scale-down",
+      "discovery": "rss",
+      "date_estimated": false,
+      "status": "posted",
+      "first_seen": "2026-08-28T11:36:44.289410+06:00",
+      "last_seen": "2026-08-28T11:36:44.289413+06:00",
+      "posted_at": "2026-08-28T11:40:50.561260+06:00"
+    },
+    "visualcapitalist.com/mapped-the-top-import-partner-of-every-u-s-state": {
+      "title": "Mapped: The Top Import Partner of Every U.S. State",
+      "url": "https://www.visualcapitalist.com/mapped-the-top-import-partner-of-every-u-s-state/",
+      "canonical": "visualcapitalist.com/mapped-the-top-import-partner-of-every-u-s-state",
+      "published_dt": "2026-08-28T02:05:22+06:00",
+      "published_date": "2026-08-28T02:05:22+06:00",
+      "source": "Visual Capitalist",
+      "region": "International",
+      "excerpt": "See the top import partner of every U.S. state in 2025, with Canada leading in 23 states, followed by Mexico, Taiwan, and China.",
+      "image": "https://www.visualcapitalist.com/wp-content/uploads/2026/08/Top-Import-Partner-of-Every-State_Shareable.webp",
+      "discovery": "rss",
+      "date_estimated": false,
+      "status": "posted",
+      "first_seen": "2026-08-28T11:36:44.556609+06:00",
+      "last_seen": "2026-08-28T11:36:44.556614+06:00",
+      "posted_at": "2026-08-28T11:40:55.472334+06:00"
+    },
+    "visualcapitalist.com/ranked-the-worlds-largest-companies-by-revenue-2020-2026": {
+      "title": "Ranked: The World’s Largest Companies by Revenue (2020-2026)",
+      "url": "https://www.visualcapitalist.com/ranked-the-worlds-largest-companies-by-revenue-2020-2026/",
+      "canonical": "visualcapitalist.com/ranked-the-worlds-largest-companies-by-revenue-2020-2026",
+      "published_dt": "2026-08-27T20:11:45+06:00",
+      "published_date": "2026-08-27T20:11:45+06:00",
+      "source": "Visual Capitalist",
+      "region": "International",
+      "excerpt": "Walmart was the world's largest company by revenue for over 15 years. In 2026, Amazon finally surpassed it.",
+      "image": "https://www.visualcapitalist.com/wp-content/uploads/2026/08/Largest-Companies-by-Revenue_02-share-1.webp",
+      "discovery": "rss",
+      "date_estimated": false,
+      "status": "posted",
+      "first_seen": "2026-08-28T11:36:44.556726+06:00",
+      "last_seen": "2026-08-28T11:36:44.556729+06:00",
+      "posted_at": "2026-08-28T11:41:00.848374+06:00"
+    },
+    "visualcapitalist.com/the-income-an-individual-needs-to-live-comfortably-in-every-state-in-2026": {
+      "title": "The Income an Individual Needs to Live Comfortably in Every U.S. State",
+      "url": "https://www.visualcapitalist.com/the-income-an-individual-needs-to-live-comfortably-in-every-state-in-2026/",
+      "canonical": "visualcapitalist.com/the-income-an-individual-needs-to-live-comfortably-in-every-state-in-2026",
+      "published_dt": "2026-08-27T18:04:30+06:00",
+      "published_date": "2026-08-27T18:04:30+06:00",
+      "source": "Visual Capitalist",
+      "region": "International",
+      "excerpt": "See the income a person needs to live comfortably in every U.S. state, from $81K in West Virginia to $129K in Hawaii.",
+      "image": "https://www.visualcapitalist.com/wp-content/uploads/2026/08/The-Income-Needed-to-Live-Comfortably-in-Every-U.S.-States_Shareable_08202026.webp",
+      "discovery": "rss",
+      "date_estimated": false,
+      "status": "pending",
+      "first_seen": "2026-08-28T11:36:44.556828+06:00",
+      "last_seen": "2026-08-28T11:36:44.556831+06:00"
+    }
+  },
+  "events": {
+    "rooftop_solar_target": {
+      "event_id": "rooftop_solar_target",
+      "canonical_url": "tbsnews.net/bangladesh/energy/govt-eyes-4000mw-rooftop-solar-one-year-1526736",
+      "original_url": "https://www.tbsnews.net/bangladesh/energy/govt-eyes-4000mw-rooftop-solar-one-year-1526736",
+      "source": "The Business Standard",
+      "region": "Bangladesh",
+      "topic": "Energy",
+      "institution": "Power Division",
+      "event_cluster_id": "evt_734c54cb17",
+      "event_confidence": 0.6,
+      "event_source_count": 1,
+      "headline": "Bangladesh Targets 4,000MW Rooftop Solar in One Year",
+      "summary": "The government will open rooftop solar to private investors, aiming to install 4,000MW within twelve months under an OPEX model with special incentives.",
+      "highlights": [
+        "Special tariffs will reward surplus electricity sold to the grid for the first six months",
+        "Three rooftop models are proposed, including rent‑free and rent‑based options for property owners"
+      ],
+      "concepts": [],
+      "key_numbers": [],
+      "published_at": "2026-08-28T10:00:00+06:00",
+      "selected_at": "2026-08-28T11:40:31.376327+06:00",
+      "status": "published",
+      "message_id": 197
+    },
+    "smr_cooperation_us": {
+      "event_id": "smr_cooperation_us",
+      "canonical_url": "tbsnews.net/foreign-policy/bangladesh-seeks-us-cooperation-smrs-nuclear-technology-1526716",
+      "original_url": "https://www.tbsnews.net/foreign-policy/bangladesh-seeks-us-cooperation-smrs-nuclear-technology-1526716",
+      "source": "The Business Standard",
+      "region": "Bangladesh",
+      "topic": "Energy",
+      "institution": "Ministry of Science and Technology",
+      "event_cluster_id": "evt_bbd54b9ff0",
+      "event_confidence": 0.6,
+      "event_source_count": 1,
+      "headline": "Bangladesh seeks US partnership for SMRs and peaceful nuclear technology",
+      "summary": "Bangladesh's science minister met US Energy Secretary to request cooperation on small modular reactors and safe nuclear technology to boost energy security and meet rising demand.",
+      "highlights": [
+        "Bangladesh asked the US for technology transfer and expertise on SMRs",
+        "US Energy Secretary Chris Wright said nuclear expansion is a US priority"
+      ],
+      "concepts": [],
+      "key_numbers": [],
+      "published_at": "2026-08-28T01:05:00+06:00",
+      "selected_at": "2026-08-28T11:40:37.245038+06:00",
+      "status": "published",
+      "message_id": 198
+    },
+    "new_pay_scale": {
+      "event_id": "new_pay_scale",
+      "canonical_url": "tbsnews.net/bangladesh/new-pay-scale-likely-get-cabinet-nod-monday-1526746",
+      "original_url": "https://www.tbsnews.net/bangladesh/new-pay-scale-likely-get-cabinet-nod-monday-1526746",
+      "source": "The Business Standard",
+      "region": "Bangladesh",
+      "topic": "Government Budget",
+      "institution": "Finance Ministry",
+      "event_cluster_id": "evt_8f180adf60",
+      "event_confidence": 0.6,
+      "event_source_count": 1,
+      "headline": "Bangladesh Cabinet Set to Approve New Government Pay Scale Monday",
+      "summary": "A revised pay scale that could double basic salaries for grades 1‑20 is poised for cabinet approval, with a gazette notification expected by Thursday.",
+      "highlights": [
+        "The 10‑member committee led by Cabinet Secretary Nasimul Gani has already submitted recommendations.",
+        "Proposed increases range from 100% to 140%, raising the minimum basic salary to Tk20,000 and the top salary to Tk1,60,000.",
+        "Implementation will be phased, with basic salaries adjusted first year and allowances following in the second year."
+      ],
+      "concepts": [],
+      "key_numbers": [],
+      "published_at": "2026-08-28T10:10:00+06:00",
+      "selected_at": "2026-08-28T11:40:45.232528+06:00",
+      "status": "published",
+      "message_id": 199
+    },
+    "zero_interest_convertible_bonds_2026": {
+      "event_id": "zero_interest_convertible_bonds_2026",
+      "canonical_url": "ft.com/content/8e93c159-2c02-444a-9f22-dcda14bc451f",
+      "original_url": "https://www.ft.com/content/8e93c159-2c02-444a-9f22-dcda14bc451f?syn-25a6b1a6=1",
+      "source": "Financial Times",
+      "region": "International",
+      "topic": "Global Economy",
+      "institution": "Global Bond Market",
+      "event_cluster_id": "evt_f64366212f",
+      "event_confidence": 0.6,
+      "event_source_count": 1,
+      "headline": "Zero‑Interest Convertible Bonds Poised for Record‑Breaking Year",
+      "summary": "Zero‑interest convertible bonds are set to hit a historic issuance volume this year as issuers seek cost‑free financing amid tight credit markets.",
+      "highlights": [
+        "Issuance of zero‑interest convertibles is projected to surpass previous records",
+        "Companies favor these bonds to avoid cash interest payments while retaining conversion flexibility"
+      ],
+      "concepts": [],
+      "key_numbers": [],
+      "published_at": "2026-08-28T10:00:16+06:00",
+      "selected_at": "2026-08-28T11:40:50.561290+06:00",
+      "status": "published",
+      "message_id": 200
+    },
+    "top_import_partner_by_state_2026": {
+      "event_id": "top_import_partner_by_state_2026",
+      "canonical_url": "visualcapitalist.com/mapped-the-top-import-partner-of-every-u-s-state",
+      "original_url": "https://www.visualcapitalist.com/mapped-the-top-import-partner-of-every-u-s-state/",
+      "source": "Visual Capitalist",
+      "region": "International",
+      "topic": "Trade",
+      "institution": "United States",
+      "event_cluster_id": "evt_375cd413e1",
+      "event_confidence": 0.6,
+      "event_source_count": 1,
+      "headline": "Canada Leads as Top Import Partner for Majority of U.S. States",
+      "summary": "In 2025, Canada supplied the most imported goods to 23 U.S. states, outpacing Mexico, Taiwan and China across diverse regional economies.",
+      "highlights": [
+        "Canada tops imports for 23 states, the highest share among all countries",
+        "Mexico is the leading partner for nine states, while Taiwan and China lead five and four states respectively",
+        "Montana sources 91.4% of its imports from Canada, exposing it to trade‑policy risks"
+      ],
+      "concepts": [],
+      "key_numbers": [],
+      "published_at": "2026-08-28T02:05:22+06:00",
+      "selected_at": "2026-08-28T11:40:55.472367+06:00",
+      "status": "published",
+      "message_id": 201
+    },
+    "world_largest_companies_2026": {
+      "event_id": "world_largest_companies_2026",
+      "canonical_url": "visualcapitalist.com/ranked-the-worlds-largest-companies-by-revenue-2020-2026",
+      "original_url": "https://www.visualcapitalist.com/ranked-the-worlds-largest-companies-by-revenue-2020-2026/",
+      "source": "Visual Capitalist",
+      "region": "International",
+      "topic": "Multinational Companies",
+      "institution": "Global",
+      "event_cluster_id": "evt_e62a39c060",
+      "event_confidence": 0.6,
+      "event_source_count": 1,
+      "headline": "Amazon Overtakes Walmart to Become World’s Largest Revenue Generator in 2026",
+      "summary": "In 2026 Amazon eclipsed Walmart by $4 billion, topping the Fortune Global 500 as the world’s highest‑revenue multinational with $717 billion.",
+      "highlights": [
+        "Amazon rose from ninth place in 2020 to first in 2026, reporting $717 billion in revenue",
+        "Walmart slipped to second with $713 billion after a 15‑year run at the top",
+        "UnitedHealth Group entered the top‑four, reaching $448 billion in annual revenue"
+      ],
+      "concepts": [],
+      "key_numbers": [],
+      "published_at": "2026-08-27T20:11:45+06:00",
+      "selected_at": "2026-08-28T11:41:00.848418+06:00",
+      "status": "published",
+      "message_id": 202
+    }
+  },
+  "event_clusters": {
+    "evt_734c54cb17": {
+      "event_id": "evt_734c54cb17",
+      "topic": "Energy",
+      "region": "Bangladesh",
+      "sources": [
+        "The Business Standard"
+      ],
+      "source_count": 1,
+      "confidence": 0.6,
+      "last_seen": "2026-08-28T11:36:59.354435+06:00",
+      "headline": "Govt eyes 4,000MW from rooftop solar in one year"
+    },
+    "evt_19e2d8adda": {
+      "event_id": "evt_19e2d8adda",
+      "topic": "Industry",
+      "region": "Bangladesh",
+      "sources": [
+        "The Business Standard"
+      ],
+      "source_count": 1,
+      "confidence": 0.6,
+      "last_seen": "2026-08-28T11:36:59.354449+06:00",
+      "headline": "Jute sales may fetch Tk549cr in Rajshahi this season"
+    },
+    "evt_bbd54b9ff0": {
+      "event_id": "evt_bbd54b9ff0",
+      "topic": "Energy",
+      "region": "Bangladesh",
+      "sources": [
+        "The Business Standard"
+      ],
+      "source_count": 1,
+      "confidence": 0.6,
+      "last_seen": "2026-08-28T11:36:59.354452+06:00",
+      "headline": "Bangladesh seeks US cooperation on SMRs, nuclear technology"
+    },
+    "evt_8f180adf60": {
+      "event_id": "evt_8f180adf60",
+      "topic": "Government Budget",
+      "region": "Bangladesh",
+      "sources": [
+        "The Business Standard"
+      ],
+      "source_count": 1,
+      "confidence": 0.6,
+      "last_seen": "2026-08-28T11:36:59.354455+06:00",
+      "headline": "New pay scale likely to get cabinet nod Monday"
+    },
+    "evt_f9196eae7f": {
+      "event_id": "evt_f9196eae7f",
+      "topic": "Trade",
+      "region": "Bangladesh",
+      "sources": [
+        "The Business Standard"
+      ],
+      "source_count": 1,
+      "confidence": 0.6,
+      "last_seen": "2026-08-28T11:36:59.354457+06:00",
+      "headline": "BMW brought in 3-4 pieces to evade duties seized in Ctg: CIID"
+    },
+    "evt_5c72b070bd": {
+      "event_id": "evt_5c72b070bd",
+      "topic": "Bangladesh Economy",
+      "region": "Bangladesh",
+      "sources": [
+        "The Business Standard"
+      ],
+      "source_count": 1,
+      "confidence": 0.6,
+      "last_seen": "2026-08-28T11:36:59.354459+06:00",
+      "headline": "Iran war diplomacy turns toward reopening Strait of Hormuz"
+    },
+    "evt_57b9d3ff77": {
+      "event_id": "evt_57b9d3ff77",
+      "topic": "Bangladesh Economy",
+      "region": "Bangladesh",
+      "sources": [
+        "The Business Standard"
+      ],
+      "source_count": 1,
+      "confidence": 0.6,
+      "last_seen": "2026-08-28T11:36:59.354461+06:00",
+      "headline": "Nepal floods underscore rising glacier risks in warming Himalayas"
+    },
+    "evt_244c92e846": {
+      "event_id": "evt_244c92e846",
+      "topic": "Bangladesh Economy",
+      "region": "Bangladesh",
+      "sources": [
+        "The Business Standard"
+      ],
+      "source_count": 1,
+      "confidence": 0.6,
+      "last_seen": "2026-08-28T11:36:59.354463+06:00",
+      "headline": "Nepal army trying to save 100 people trapped in tunnel at hydropower project"
+    },
+    "evt_5d8dec9953": {
+      "event_id": "evt_5d8dec9953",
+      "topic": "Bangladesh Economy",
+      "region": "Bangladesh",
+      "sources": [
+        "The Business Standard"
+      ],
+      "source_count": 1,
+      "confidence": 0.6,
+      "last_seen": "2026-08-28T11:36:59.354466+06:00",
+      "headline": "Barcelona secure victory over Athletic Bilbao as Osasuna stun Celta"
+    },
+    "evt_7554f99cfc": {
+      "event_id": "evt_7554f99cfc",
+      "topic": "Bangladesh Economy",
+      "region": "Bangladesh",
+      "sources": [
+        "The Business Standard"
+      ],
+      "source_count": 1,
+      "confidence": 0.6,
+      "last_seen": "2026-08-28T11:36:59.354468+06:00",
+      "headline": "Nepal toll rises to 469, 1,000 missing; rescuers scour debris as risk of fresh flooding grows"
+    },
+    "evt_9e48262903": {
+      "event_id": "evt_9e48262903",
+      "topic": "Bangladesh Economy",
+      "region": "Bangladesh",
+      "sources": [
+        "The Business Standard"
+      ],
+      "source_count": 1,
+      "confidence": 0.6,
+      "last_seen": "2026-08-28T11:36:59.354470+06:00",
+      "headline": "Govt moves to open 24 unused trauma centres across country"
+    },
+    "evt_c92ae3c0b7": {
+      "event_id": "evt_c92ae3c0b7",
+      "topic": "Bangladesh Economy",
+      "region": "Bangladesh",
+      "sources": [
+        "The Business Standard"
+      ],
+      "source_count": 1,
+      "confidence": 0.6,
+      "last_seen": "2026-08-28T11:36:59.354472+06:00",
+      "headline": "How a glacier collapse triggered a deadly landslide and flooding along the Nepal-China border"
+    },
+    "evt_c6e4317f5c": {
+      "event_id": "evt_c6e4317f5c",
+      "topic": "Bangladesh Economy",
+      "region": "Bangladesh",
+      "sources": [
+        "The Business Standard"
+      ],
+      "source_count": 1,
+      "confidence": 0.6,
+      "last_seen": "2026-08-28T11:36:59.354474+06:00",
+      "headline": "Trump renames Lake Ontario as 'Lake America' amid Canada trade war"
+    },
+    "evt_990e107371": {
+      "event_id": "evt_990e107371",
+      "topic": "Bangladesh Economy",
+      "region": "Bangladesh",
+      "sources": [
+        "The Business Standard"
+      ],
+      "source_count": 1,
+      "confidence": 0.6,
+      "last_seen": "2026-08-28T11:36:59.354476+06:00",
+      "headline": "Bangladeshi worker among 15 killed in Russia gas plant fire"
+    },
+    "evt_e65f4a5c46": {
+      "event_id": "evt_e65f4a5c46",
+      "topic": "Bangladesh Economy",
+      "region": "Bangladesh",
+      "sources": [
+        "The Business Standard"
+      ],
+      "source_count": 1,
+      "confidence": 0.6,
+      "last_seen": "2026-08-28T11:36:59.354478+06:00",
+      "headline": "Optimus Prime, Eeyore voice actor Peter Cullen dies at 85"
+    },
+    "evt_d1a7b11b05": {
+      "event_id": "evt_d1a7b11b05",
+      "topic": "Bangladesh Economy",
+      "region": "Bangladesh",
+      "sources": [
+        "The Business Standard"
+      ],
+      "source_count": 1,
+      "confidence": 0.6,
+      "last_seen": "2026-08-28T11:36:59.354480+06:00",
+      "headline": "Bangladesh raises Rohingya crisis with Gambia, seeks stronger Qatar ties"
+    },
+    "evt_2a78cfda66": {
+      "event_id": "evt_2a78cfda66",
+      "topic": "Bangladesh Economy",
+      "region": "Bangladesh",
+      "sources": [
+        "The Business Standard"
+      ],
+      "source_count": 1,
+      "confidence": 0.6,
+      "last_seen": "2026-08-28T11:36:59.354483+06:00",
+      "headline": "Opposition alliance walks out of parliament over reform process, bills"
+    },
+    "evt_f663473e04": {
+      "event_id": "evt_f663473e04",
+      "topic": "Bangladesh Economy",
+      "region": "Bangladesh",
+      "sources": [
+        "The Business Standard"
+      ],
+      "source_count": 1,
+      "confidence": 0.6,
+      "last_seen": "2026-08-28T11:36:59.354484+06:00",
+      "headline": "PM Tarique to visit Turkiye for COP summit in Nov: Humaiun Kobir"
+    },
+    "evt_aab83ae2d2": {
+      "event_id": "evt_aab83ae2d2",
+      "topic": "Bangladesh Economy",
+      "region": "Bangladesh",
+      "sources": [
+        "The Business Standard"
+      ],
+      "source_count": 1,
+      "confidence": 0.6,
+      "last_seen": "2026-08-28T11:36:59.354486+06:00",
+      "headline": "Nepal, China warn of fresh flood risks with lakes threatening to burst"
+    },
+    "evt_0fa1913e1e": {
+      "event_id": "evt_0fa1913e1e",
+      "topic": "Bangladesh Economy",
+      "region": "Bangladesh",
+      "sources": [
+        "The Business Standard"
+      ],
+      "source_count": 1,
+      "confidence": 0.6,
+      "last_seen": "2026-08-28T11:36:59.354488+06:00",
+      "headline": "Officials’ names removed from Public Admin ministry website"
+    },
+    "evt_abccb0504f": {
+      "event_id": "evt_abccb0504f",
+      "topic": "Multinational Companies",
+      "region": "International",
+      "sources": [
+        "Financial Times"
+      ],
+      "source_count": 1,
+      "confidence": 0.6,
+      "last_seen": "2026-08-28T11:37:11.255138+06:00",
+      "headline": "US corporate profits surge to record as worker payouts wilt"
+    },
+    "evt_f64366212f": {
+      "event_id": "evt_f64366212f",
+      "topic": "Global Economy",
+      "region": "International",
+      "sources": [
+        "Financial Times"
+      ],
+      "source_count": 1,
+      "confidence": 0.6,
+      "last_seen": "2026-08-28T11:37:11.255151+06:00",
+      "headline": "Zero-interest convertible bonds set for record year"
+    },
+    "evt_1eb2bc4b23": {
+      "event_id": "evt_1eb2bc4b23",
+      "topic": "Global Economy",
+      "region": "International",
+      "sources": [
+        "Financial Times"
+      ],
+      "source_count": 1,
+      "confidence": 0.6,
+      "last_seen": "2026-08-28T11:37:11.255155+06:00",
+      "headline": "Saudi Arabia shakes up flagship real estate project"
+    },
+    "evt_987bf02eff": {
+      "event_id": "evt_987bf02eff",
+      "topic": "Global Economy",
+      "region": "International",
+      "sources": [
+        "Financial Times"
+      ],
+      "source_count": 1,
+      "confidence": 0.6,
+      "last_seen": "2026-08-28T11:37:11.255157+06:00",
+      "headline": "China bets on exports of cheap 3D-printed drone killers"
+    },
+    "evt_375cd413e1": {
+      "event_id": "evt_375cd413e1",
+      "topic": "Trade",
+      "region": "International",
+      "sources": [
+        "Visual Capitalist"
+      ],
+      "source_count": 1,
+      "confidence": 0.6,
+      "last_seen": "2026-08-28T11:37:11.255160+06:00",
+      "headline": "Mapped: The Top Import Partner of Every U.S. State"
+    },
+    "evt_e62a39c060": {
+      "event_id": "evt_e62a39c060",
+      "topic": "Multinational Companies",
+      "region": "International",
+      "sources": [
+        "Visual Capitalist"
+      ],
+      "source_count": 1,
+      "confidence": 0.6,
+      "last_seen": "2026-08-28T11:37:11.255162+06:00",
+      "headline": "Ranked: The World’s Largest Companies by Revenue (2020-2026)"
+    },
+    "evt_1a49fcf978": {
+      "event_id": "evt_1a49fcf978",
+      "topic": "Global Economy",
+      "region": "International",
+      "sources": [
+        "Financial Times"
+      ],
+      "source_count": 1,
+      "confidence": 0.6,
+      "last_seen": "2026-08-28T11:37:11.255165+06:00",
+      "headline": "Is China’s ‘wise camel’ the winner from the US-Iran war?"
+    },
+    "evt_b8e745a0b2": {
+      "event_id": "evt_b8e745a0b2",
+      "topic": "Global Economy",
+      "region": "International",
+      "sources": [
+        "Financial Times"
+      ],
+      "source_count": 1,
+      "confidence": 0.6,
+      "last_seen": "2026-08-28T11:37:11.255167+06:00",
+      "headline": "The cowboy clinics selling unproven longevity treatments"
+    },
+    "evt_0ea516257d": {
+      "event_id": "evt_0ea516257d",
+      "topic": "Global Economy",
+      "region": "International",
+      "sources": [
+        "Financial Times"
+      ],
+      "source_count": 1,
+      "confidence": 0.6,
+      "last_seen": "2026-08-28T11:37:11.255169+06:00",
+      "headline": "Canada poaches 48 top US-based academics"
+    },
+    "evt_956d55c6a8": {
+      "event_id": "evt_956d55c6a8",
+      "topic": "Global Economy",
+      "region": "International",
+      "sources": [
+        "Financial Times"
+      ],
+      "source_count": 1,
+      "confidence": 0.6,
+      "last_seen": "2026-08-28T11:37:11.255172+06:00",
+      "headline": "The devastating forces behind the deadly Himalayan flood"
+    },
+    "evt_70a9bf3b81": {
+      "event_id": "evt_70a9bf3b81",
+      "topic": "Global Economy",
+      "region": "International",
+      "sources": [
+        "Financial Times"
+      ],
+      "source_count": 1,
+      "confidence": 0.6,
+      "last_seen": "2026-08-28T11:37:11.255174+06:00",
+      "headline": "Trump orders Lake Ontario to be renamed ‘Lake America’ in new slight to Canada"
+    },
+    "evt_aa9c2a46ea": {
+      "event_id": "evt_aa9c2a46ea",
+      "topic": "Global Economy",
+      "region": "International",
+      "sources": [
+        "Visual Capitalist"
+      ],
+      "source_count": 1,
+      "confidence": 0.6,
+      "last_seen": "2026-08-28T11:37:11.255176+06:00",
+      "headline": "The Income an Individual Needs to Live Comfortably in Every U.S. State"
+    }
+  },
+  "posted_event_ids": [
+    "evt_734c54cb17",
+    "evt_bbd54b9ff0",
+    "evt_8f180adf60",
+    "evt_f64366212f",
+    "evt_375cd413e1",
+    "evt_e62a39c060"
+  ],
+  "recent_titles": [
+    "bangladesh targets 4 000mw rooftop solar in one year",
+    "bangladesh seeks us partnership for smrs and peaceful nuclear technology",
+    "bangladesh cabinet set to approve new government pay scale monday",
+    "zero interest convertible bonds poised for record breaking year",
+    "canada leads as top import partner for majority of u s states",
+    "amazon overtakes walmart to become world s largest revenue generator in 2026"
+  ],
+  "category_coverage": {
+    "Energy": "2026-08-28T11:40:37.245047+06:00",
+    "Government Budget": "2026-08-28T11:40:45.232537+06:00",
+    "Global Economy": "2026-08-28T11:40:50.561297+06:00",
+    "Trade": "2026-08-28T11:40:55.472376+06:00",
+    "Multinational Companies": "2026-08-28T11:41:00.848431+06:00"
+  }
 }
