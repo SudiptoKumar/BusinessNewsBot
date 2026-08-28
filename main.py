@@ -1389,9 +1389,6 @@ def collect_rss():
 # ============================================================
 # SOURCE UNIVERSE
 # ============================================================
-# Five primary sources per region. All sources have equal editorial
-# status. Fallback sources are used only to fill missing regional slots.
-
 PRIMARY_BD_DOMAINS = [
     "tbsnews.net",
     "thefinancialexpress.com.bd",
@@ -1646,7 +1643,6 @@ def google_news_gap_fill(
 
 
 def exa_gap_fill(region, existing_count, needed, fallback=False):
-    """Use Exa for primary discovery, or regional fallback discovery."""
     if existing_count >= max(6, needed * 3):
         return 0
 
@@ -1669,7 +1665,6 @@ def exa_gap_fill(region, existing_count, needed, fallback=False):
         ]
 
     added = 0
-
     for query in queries:
         try:
             results = exa.search_and_contents(
@@ -1686,9 +1681,7 @@ def exa_gap_fill(region, existing_count, needed, fallback=False):
             for result in results.results:
                 url = safe_text(getattr(result, "url", ""))
                 title = safe_text(getattr(result, "title", ""))
-                published_dt = parse_datetime(
-                    getattr(result, "published_date", "")
-                )
+                published_dt = parse_datetime(getattr(result, "published_date", ""))
 
                 if not url or not title or not published_dt:
                     continue
@@ -1724,10 +1717,8 @@ def exa_gap_fill(region, existing_count, needed, fallback=False):
                     "published_dt": published_dt,
                 }):
                     continue
-
                 if item["canonical"] in POSTED_URLS:
                     continue
-
                 if item["canonical"] in STATE["queue"]:
                     continue
 
@@ -3843,7 +3834,6 @@ def available_candidates(region, source_pool=None):
 
         url = safe_text(item.get("url"))
         canonical = safe_text(item.get("canonical"))
-
         if not canonical or canonical in seen:
             continue
 
@@ -3856,12 +3846,7 @@ def available_candidates(region, source_pool=None):
 
         if is_already_published_candidate(item):
             continue
-
-        if title_duplicate_against_list(
-            item.get("title", ""),
-            candidates,
-            threshold=0.94,
-        ):
+        if title_duplicate_against_list(item.get("title", ""), candidates, threshold=0.94):
             continue
 
         candidates.append(dict(item))
@@ -3872,7 +3857,6 @@ def available_candidates(region, source_pool=None):
         or datetime.min.replace(tzinfo=timezone.utc),
         reverse=True,
     )
-
     return candidates[:MAX_RSS_CANDIDATES_PER_REGION]
 
 
@@ -3883,222 +3867,104 @@ def prepare_ranked_region(region, candidates):
     return ranked
 
 
-def process_ranked_region(region, ranked, fallback_ranked=None):
+def process_ranked_region(region, ranked):
     pool = build_candidate_pool(ranked, STORIES_PER_REGION)
-    fallback_pool = build_candidate_pool(
-        fallback_ranked or [],
-        STORIES_PER_REGION,
-    )
-
     valid = []
     attempted = 0
     rejected = 0
 
-    def try_pool(candidate_pool, pool_name):
-        nonlocal attempted, rejected
+    for item in pool:
+        if len(valid) >= STORIES_PER_REGION:
+            break
+        attempted += 1
+        story = process_story_candidate(item)
+        if not story:
+            rejected += 1
+            continue
 
-        for item in candidate_pool:
-            if len(valid) >= STORIES_PER_REGION:
-                break
+        # Final duplicate check after generation.
+        if is_already_published_candidate({**item, "title": story.get("headline", item.get("title"))}):
+            logger.info("DROP already published event: %s", story.get("headline", ""))
+            rejected += 1
+            continue
 
-            attempted += 1
-            story = process_story_candidate(item)
-
-            if not story:
-                rejected += 1
-                continue
-
-            if is_already_published_candidate({
-                **item,
-                "title": story.get("headline", item.get("title")),
-            }):
-                logger.info(
-                    "DROP already published event: %s",
-                    story.get("headline", ""),
-                )
-                rejected += 1
-                continue
-
-            story["topic"] = canonical_topic(story.get("topic"), region)
-            story["category_hashtags"] = category_hashtags(story)
-            valid.append(story)
-
-            logger.info(
-                "ACCEPT %s #%d: rank=%s pool=%s title=%s",
-                region,
-                len(valid),
-                item.get("editor_rank", "?"),
-                pool_name,
-                story.get("headline", ""),
-            )
-
-    try_pool(pool, "primary")
-
-    if len(valid) < STORIES_PER_REGION:
-        logger.warning(
-            "%s primary pool produced %d/%d valid stories. "
-            "Using fallback for %d missing slot(s).",
+        story["topic"] = canonical_topic(story.get("topic"), region)
+        story["category_hashtags"] = category_hashtags(story)
+        valid.append(story)
+        logger.info(
+            "ACCEPT %s #%d: rank=%s title=%s",
             region,
             len(valid),
-            STORIES_PER_REGION,
-            STORIES_PER_REGION - len(valid),
+            item.get("editor_rank", "?"),
+            story.get("headline", ""),
         )
-        try_pool(fallback_pool, "fallback")
 
     logger.info(
-        "%s FINAL VALID: %d/%d | primary_pool=%d fallback_pool=%d attempted=%d rejected=%d",
+        "%s FINAL VALID: %d/%d | pool=%d attempted=%d rejected=%d",
         region,
         len(valid),
         STORIES_PER_REGION,
         len(pool),
-        len(fallback_pool),
         attempted,
         rejected,
     )
-
     return valid
 
-    # ========================================================
-    # PRIMARY DISCOVERY
-    # ========================================================
-    bd_candidates = available_candidates(
-        "Bangladesh",
-        source_pool="primary",
-    )
-    intl_candidates = available_candidates(
-        "International",
-        source_pool="primary",
-    )
 
-    # RSS and Google News remain discovery layers, but the
-    # primary whitelist is enforced before a candidate is queued.
-    google_news_gap_fill(
-        "Bangladesh",
-        len(bd_candidates),
-        STORIES_PER_REGION,
-    )
-    google_news_gap_fill(
-        "International",
-        len(intl_candidates),
-        STORIES_PER_REGION,
-    )
+def run():
+    logger.info("BUSINESSNEWSROOM V1 UPDATE-ONLY")
+    logger.info("Channel=%s Mode=%s", TELEGRAM_CHANNEL, NEWS_MODE)
+    logger.info("LOOKBACK=%d hours | %s -> %s", DISCOVERY_LOOKBACK_HOURS, DISCOVERY_START.isoformat(), DISCOVERY_END.isoformat())
 
-    bd_candidates = available_candidates(
-        "Bangladesh",
-        source_pool="primary",
-    )
-    intl_candidates = available_candidates(
-        "International",
-        source_pool="primary",
-    )
+    prune_state()
+    refresh_category_coverage()
 
-    # Exa fills thin primary coverage.
-    exa_gap_fill(
-        "Bangladesh",
-        len(bd_candidates),
-        STORIES_PER_REGION,
-        fallback=False,
-    )
-    exa_gap_fill(
-        "International",
-        len(intl_candidates),
-        STORIES_PER_REGION,
-        fallback=False,
-    )
+    collect_rss()
 
-    bd_candidates = available_candidates(
-        "Bangladesh",
-        source_pool="primary",
-    )
-    intl_candidates = available_candidates(
-        "International",
-        source_pool="primary",
-    )
+    bd_count = queue_candidates_for_region("Bangladesh")
+    intl_count = queue_candidates_for_region("International")
 
-    ranked_bd = prepare_ranked_region(
-        "Bangladesh",
-        bd_candidates,
-    )
-    ranked_intl = prepare_ranked_region(
-        "International",
-        intl_candidates,
-    )
+    # Free discovery first, then Exa only when a region is below the desired 24-hour candidate pool.
+    bd_count += google_news_gap_fill("Bangladesh", bd_count, DISCOVERY_TARGET_PER_REGION)
+    intl_count += google_news_gap_fill("International", intl_count, DISCOVERY_TARGET_PER_REGION)
+    exa_gap_fill("Bangladesh", bd_count, DISCOVERY_TARGET_PER_REGION)
+    exa_gap_fill("International", intl_count, DISCOVERY_TARGET_PER_REGION)
 
-    # ========================================================
-    # FALLBACK DISCOVERY
-    # Only open fallback sources when the primary ranked pool
-    # cannot supply all three stories for that region.
-    # ========================================================
-    bd_fallback_ranked = []
-    intl_fallback_ranked = []
+    save_state(STATE)
 
-    if len(ranked_bd) < STORIES_PER_REGION:
-        exa_gap_fill(
-            "Bangladesh",
-            len(ranked_bd),
-            STORIES_PER_REGION - len(ranked_bd),
-            fallback=True,
-        )
-        bd_fallback_candidates = available_candidates(
-            "Bangladesh",
-            source_pool="fallback",
-        )
-        bd_fallback_ranked = prepare_ranked_region(
-            "Bangladesh",
-            bd_fallback_candidates,
+    bd_candidates = available_candidates("Bangladesh", source_pool="primary")
+    intl_candidates = available_candidates("International", source_pool="primary")
+
+    logger.info("DISCOVERY CANDIDATES: BD=%d INTL=%d TOTAL=%d", len(bd_candidates), len(intl_candidates), len(bd_candidates) + len(intl_candidates))
+
+    ranked_bd = prepare_ranked_region("Bangladesh", bd_candidates)
+    ranked_intl = prepare_ranked_region("International", intl_candidates)
+
+    logger.info("UNIQUE EVENTS: BD=%d INTL=%d", len(ranked_bd), len(ranked_intl))
+
+    for item in (ranked_bd[:8] + ranked_intl[:8]):
+        logger.info(
+            "RANK %s #%s | %s | %s",
+            item.get("region", ""),
+            item.get("editor_rank", "?"),
+            item.get("title", ""),
+            item.get("rank_reason", ""),
         )
 
-    if len(ranked_intl) < STORIES_PER_REGION:
-        exa_gap_fill(
-            "International",
-            len(ranked_intl),
-            STORIES_PER_REGION - len(ranked_intl),
-            fallback=True,
-        )
-        intl_fallback_candidates = available_candidates(
-            "International",
-            source_pool="fallback",
-        )
-        intl_fallback_ranked = prepare_ranked_region(
-            "International",
-            intl_fallback_candidates,
-        )
-
-    logger.info(
-        "UNIQUE EVENTS: BD=%d + fallback=%d | INTL=%d + fallback=%d",
-        len(ranked_bd),
-        len(bd_fallback_ranked),
-        len(ranked_intl),
-        len(intl_fallback_ranked),
-    )
-
-    bd_stories = process_ranked_region(
-        "Bangladesh",
-        ranked_bd,
-        bd_fallback_ranked,
-    )
-    intl_stories = process_ranked_region(
-        "International",
-        ranked_intl,
-        intl_fallback_ranked,
-    )
+    bd_stories = process_ranked_region("Bangladesh", ranked_bd)
+    intl_stories = process_ranked_region("International", ranked_intl)
 
     stories = bd_stories + intl_stories
-
     logger.info(
         "FINAL: BD=%d/%d INTL=%d/%d TOTAL=%d/%d",
-        len(bd_stories),
-        STORIES_PER_REGION,
-        len(intl_stories),
-        STORIES_PER_REGION,
-        len(stories),
-        MAX_STORIES_PER_RUN,
+        len(bd_stories), STORIES_PER_REGION,
+        len(intl_stories), STORIES_PER_REGION,
+        len(stories), MAX_STORIES_PER_RUN,
     )
 
     if len(bd_stories) < STORIES_PER_REGION or len(intl_stories) < STORIES_PER_REGION:
         logger.warning(
-            "Six-story target not reached. All eligible primary and fallback "
-            "candidates were exhausted; no story is fabricated."
+            "Six-story target not reached. The bot exhausted the available valid candidates in one or both regions; no story is fabricated."
         )
 
     published_count = 0
