@@ -2,10 +2,9 @@ name: BusinessNewsroom V1
 
 on:
   schedule:
-    # Every hour, 07:00-23:00 Bangladesh time
+    # Every hour, 07:00 through 23:00 Bangladesh time.
     - cron: "0 7-23 * * *"
       timezone: "Asia/Dhaka"
-
   workflow_dispatch:
 
 permissions:
@@ -46,25 +45,16 @@ jobs:
           pip install -r requirements.txt
 
       - name: Verify Python source
-        run: |
-          python -m py_compile main.py
+        run: python -m py_compile main.py
 
-      - name: Run BusinessNewsroom
-        run: |
-          echo "========================================"
-          echo "BusinessNewsroom V1"
-          echo "Mode: update"
-          echo "Target: @BusinessNewsroom"
-          echo "========================================"
+      - name: Run BusinessNewsroom V1
+        run: python main.py
 
-          python main.py
-
-      - name: Save state
+      - name: Save bot state
         if: always()
         run: |
           git config user.name "BusinessNews Bot"
           git config user.email "actions@github.com"
-
           git add news_state.json posted_urls.txt
 
           if git diff --cached --quiet; then
