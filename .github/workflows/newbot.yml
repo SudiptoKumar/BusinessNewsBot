@@ -1,4 +1,4 @@
-name: BusinessNewsroom V1
+name: BusinessNewsroom V1 Multi-API Failover
 
 on:
   schedule:
@@ -20,7 +20,16 @@ jobs:
 
     env:
       EXA_API_KEY: ${{ secrets.EXA_API_KEY }}
-      CEREBRAS_API_KEY: ${{ secrets.CEREBRAS_API_KEY }}
+      CEREBRAS_API_KEY_1: ${{ secrets.CEREBRAS_API_KEY_1 || secrets.CEREBRAS_API_KEY }}
+      CEREBRAS_API_KEY_2: ${{ secrets.CEREBRAS_API_KEY_2 }}
+      CEREBRAS_API_KEY_3: ${{ secrets.CEREBRAS_API_KEY_3 }}
+      CEREBRAS_API_KEY_4: ${{ secrets.CEREBRAS_API_KEY_4 }}
+      CEREBRAS_API_KEY_5: ${{ secrets.CEREBRAS_API_KEY_5 }}
+      CEREBRAS_API_KEY_6: ${{ secrets.CEREBRAS_API_KEY_6 }}
+      CEREBRAS_API_KEY_7: ${{ secrets.CEREBRAS_API_KEY_7 }}
+      CEREBRAS_API_KEY_8: ${{ secrets.CEREBRAS_API_KEY_8 }}
+      CEREBRAS_API_KEY_9: ${{ secrets.CEREBRAS_API_KEY_9 }}
+      CEREBRAS_API_KEY_10: ${{ secrets.CEREBRAS_API_KEY_10 }}
       TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
       TELEGRAM_CHANNEL: "@BusinessNewsroom"
       NEWS_MODE: "update"
