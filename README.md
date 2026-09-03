@@ -2,10 +2,10 @@
 
 > Automated business and economic news intelligence for Telegram, powered by GitHub Actions, Exa, and Cerebras.
 
-BusinessNewsroom V1 discovers, filters, ranks, verifies, and publishes **six high-value business/economic stories per run**:
+BusinessNewsroom V1 discovers, filters, ranks, verifies, and publishes **five high-value business/economic stories per run**:
 
 - **3 Bangladesh**
-- **3 International**
+- **2 International**
 
 The system is designed for frequent automated publishing while keeping editorial selection strict and source control explicit.
 
@@ -133,7 +133,7 @@ The system uses multiple discovery mechanisms because individual publisher feeds
        Bangladesh Pool      International Pool
               │                   │
               ▼                   ▼
-          Best 3               Best 3
+          Best 3               Best 2
               │                   │
               └─────────┬─────────┘
                         │
@@ -156,7 +156,7 @@ The system uses multiple discovery mechanisms because individual publisher feeds
 
 Each run considers recent news within a rolling **24-hour discovery window**.
 
-The system does not simply publish the newest six URLs.
+The system does not simply publish the newest five URLs.
 
 Instead, it compares eligible candidates and determines which developments are most important.
 
@@ -172,13 +172,13 @@ The target is:
 
 ```text
 Bangladesh      → 3 stories
-International   → 3 stories
-Total           → 6 stories
+International   → 2 stories
+Total           → 5 stories
 ```
 
 A strong Bangladesh story therefore competes against other Bangladesh stories, while international stories compete inside the International pool.
 
-This protects the required **3 + 3 editorial structure**.
+This protects the required **3 + 2 editorial structure**.
 
 ---
 
@@ -392,13 +392,24 @@ The workflow:
 
 # Required GitHub Secrets
 
-Configure these repository secrets:
+Configure one or more Cerebras keys. The bot supports up to 10 slots. Empty/unset slots are skipped, so you can use only 2 or 3 keys today and add more later without changing the Python code.
 
 ```text
 EXA_API_KEY
-CEREBRAS_API_KEY
+CEREBRAS_API_KEY_1
+CEREBRAS_API_KEY_2
+CEREBRAS_API_KEY_3
+CEREBRAS_API_KEY_4
+CEREBRAS_API_KEY_5
+CEREBRAS_API_KEY_6
+CEREBRAS_API_KEY_7
+CEREBRAS_API_KEY_8
+CEREBRAS_API_KEY_9
+CEREBRAS_API_KEY_10
 TELEGRAM_BOT_TOKEN
 ```
+
+Only `CEREBRAS_API_KEY_1` is required for a minimum configuration. `CEREBRAS_API_KEY_2` through `_10` are optional.
 
 Optional:
 
@@ -417,12 +428,54 @@ Typical workflow configuration:
 
 ```text
 EXA_API_KEY
-CEREBRAS_API_KEY
+CEREBRAS_API_KEY_1
+CEREBRAS_API_KEY_2
+CEREBRAS_API_KEY_3
+CEREBRAS_API_KEY_4
+CEREBRAS_API_KEY_5
+CEREBRAS_API_KEY_6
+CEREBRAS_API_KEY_7
+CEREBRAS_API_KEY_8
+CEREBRAS_API_KEY_9
+CEREBRAS_API_KEY_10
 TELEGRAM_BOT_TOKEN
 TELEGRAM_CHANNEL=@BusinessNewsroom
 NEWS_MODE=update
 PYTHONUNBUFFERED=1
 ```
+
+---
+
+# Multi-API AI Failover
+
+The AI layer uses a **preferred API + failover** strategy rather than simple round-robin rotation.
+
+```text
+Last successful API
+        │
+        ▼
+   Try preferred
+        │
+   ┌────┴────┐
+ success    temporary failure
+   │            │
+   ▼            ▼
+  done     next eligible API
+                  │
+                  ▼
+          save successful API
+          as new preferred API
+```
+
+The preferred API is persisted in `news_state.json`. Temporary failures such as rate limits, quota exhaustion, timeouts, and server-side 5xx failures place an API in cooldown. When its cooldown expires, that API becomes eligible again.
+
+The bot never prints or stores the actual API key values. It stores only slot numbers and non-secret failure metadata.
+
+A future deployment can add `CEREBRAS_API_KEY_4` through `_10` in GitHub Secrets without modifying the router code. Missing slots are ignored. The router also supports sparse slots, for example only `_2` and `_3` being configured.
+
+### Secret migration
+
+The workflow keeps backward compatibility with the old `CEREBRAS_API_KEY` secret as a temporary source for slot 1. For the new setup, create `CEREBRAS_API_KEY_1`, `_2`, and so on.
 
 ---
 
@@ -432,6 +485,7 @@ PYTHONUNBUFFERED=1
 BusinessNewsroom/
 │
 ├── main.py
+├── ai_router.py
 ├── requirements.txt
 ├── news_state.json
 ├── posted_urls.txt
@@ -457,7 +511,10 @@ Set the required environment variables:
 
 ```bash
 export EXA_API_KEY="..."
-export CEREBRAS_API_KEY="..."
+export CEREBRAS_API_KEY_1="..."
+export CEREBRAS_API_KEY_2="..."
+export CEREBRAS_API_KEY_3="..."
+# Add CEREBRAS_API_KEY_4 through _10 only when needed
 export TELEGRAM_BOT_TOKEN="..."
 export TELEGRAM_CHANNEL="@BusinessNewsroom"
 export NEWS_MODE="update"
@@ -483,16 +540,16 @@ python main.py --self-test
 
 The system should not fill a slot with obviously weak material simply because an article exists.
 
-## 2. Six-story target
+## 2. Five-story target
 
 The normal objective is:
 
 ```text
 3 Bangladesh
 +
-3 International
+2 International
 =
-6 stories
+5 stories
 ```
 
 ## 3. Primary sources first

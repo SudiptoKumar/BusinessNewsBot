@@ -22,7 +22,7 @@ from requests.adapters import HTTPAdapter
 from urllib3.util.retry import Retry
 
 from exa_py import Exa
-from cerebras.cloud.sdk import Cerebras
+from ai_router import CerebrasAPIRouter
 
 
 # ============================================================
@@ -30,8 +30,17 @@ from cerebras.cloud.sdk import Cerebras
 # ============================================================
 
 EXA_API_KEY = os.environ["EXA_API_KEY"]
-CEREBRAS_API_KEY = os.environ["CEREBRAS_API_KEY"]
 TELEGRAM_BOT_TOKEN = os.environ["TELEGRAM_BOT_TOKEN"]
+
+# Configure up to 10 Cerebras API keys. Empty/unset slots are skipped, so the
+# same code works with only 2 or 3 configured keys today and can grow to 10
+# later without changing Python code.
+CEREBRAS_API_KEYS = [
+    (os.environ.get(f"CEREBRAS_API_KEY_{i}") or "").strip()
+    for i in range(1, 11)
+]
+CONFIGURED_CEREBRAS_API_COUNT = sum(bool(key) for key in CEREBRAS_API_KEYS)
+
 
 TELEGRAM_CHANNEL = (os.environ.get("TELEGRAM_CHANNEL") or "@BusinessNewsroom").strip()
 
@@ -57,11 +66,13 @@ STATE_FILE = "news_state.json"
 
 BD_TZ = ZoneInfo("Asia/Dhaka")
 
-# Version 1 editorial target: exactly three Bangladesh + three International
-# valid stories whenever enough eligible news exists. No cross-region quota
-# competition: each region is ranked independently from the same 24-hour window.
-STORIES_PER_REGION = 3
-MAX_STORIES_PER_RUN = STORIES_PER_REGION * 2
+# Editorial target: three Bangladesh + two International valid stories whenever
+# enough eligible news exists. No cross-region quota competition: each region is
+# ranked independently from the same 24-hour window.
+BANGLADESH_STORIES_PER_RUN = 3
+INTERNATIONAL_STORIES_PER_RUN = 2
+MAX_STORIES_PER_RUN = BANGLADESH_STORIES_PER_RUN + INTERNATIONAL_STORIES_PER_RUN
+STORIES_PER_REGION = BANGLADESH_STORIES_PER_RUN
 RANKING_POOL_PER_REGION = 12
 DISCOVERY_LOOKBACK_HOURS = 24
 
@@ -761,6 +772,10 @@ def default_state():
         "event_clusters": {},
         "posted_event_ids": [],
         "recent_titles": [],
+        "ai_router": {
+            "preferred_api_index": 0,
+            "apis": {},
+        },
     }
 
 
@@ -953,8 +968,15 @@ exa = Exa(
     api_key=EXA_API_KEY
 )
 
-cerebras = Cerebras(
-    api_key=CEREBRAS_API_KEY
+
+
+# The router is instantiated after STATE is loaded so its routing metadata is
+# persisted together with the bot's existing news state.
+cerebras = CerebrasAPIRouter(
+    CEREBRAS_API_KEYS,
+    CEREBRAS_MODEL,
+    STATE,
+    persist_callback=save_state,
 )
 
 
@@ -1899,7 +1921,7 @@ Allowed topic taxonomy:
 """
 
     try:
-        response = cerebras.chat.completions.create(
+        response = cerebras.chat_completion(
             model=CEREBRAS_MODEL,
             messages=[
                 {"role": "system", "content": prompt},
@@ -2438,7 +2460,7 @@ market-context or any other top-level section.
 
     for attempt in range(3):
         try:
-            response = cerebras.chat.completions.create(
+            response = cerebras.chat_completion(
                 model=CEREBRAS_MODEL,
                 messages=[
                     {
@@ -3615,7 +3637,7 @@ Return only the JSON schema.
     )
 
     try:
-        response = cerebras.chat.completions.create(
+        response = cerebras.chat_completion(
             model=CEREBRAS_MODEL,
             messages=[
                 {"role": "system", "content": prompt},
@@ -3868,13 +3890,14 @@ def prepare_ranked_region(region, candidates):
 
 
 def process_ranked_region(region, ranked):
-    pool = build_candidate_pool(ranked, STORIES_PER_REGION)
+    target = BANGLADESH_STORIES_PER_RUN if region == "Bangladesh" else INTERNATIONAL_STORIES_PER_RUN
+    pool = build_candidate_pool(ranked, target)
     valid = []
     attempted = 0
     rejected = 0
 
     for item in pool:
-        if len(valid) >= STORIES_PER_REGION:
+        if len(valid) >= target:
             break
         attempted += 1
         story = process_story_candidate(item)
@@ -3903,7 +3926,7 @@ def process_ranked_region(region, ranked):
         "%s FINAL VALID: %d/%d | pool=%d attempted=%d rejected=%d",
         region,
         len(valid),
-        STORIES_PER_REGION,
+        target,
         len(pool),
         attempted,
         rejected,
@@ -3912,8 +3935,9 @@ def process_ranked_region(region, ranked):
 
 
 def run():
-    logger.info("BUSINESSNEWSROOM V1 UPDATE-ONLY")
+    logger.info("BUSINESSNEWSROOM V1 UPDATE-ONLY | MULTI-API FAILOVER")
     logger.info("Channel=%s Mode=%s", TELEGRAM_CHANNEL, NEWS_MODE)
+    logger.info("AI API slots configured: %d/10 | preferred=%d", CONFIGURED_CEREBRAS_API_COUNT, STATE.get("ai_router", {}).get("preferred_api_index", 0) + 1)
     logger.info("LOOKBACK=%d hours | %s -> %s", DISCOVERY_LOOKBACK_HOURS, DISCOVERY_START.isoformat(), DISCOVERY_END.isoformat())
 
     prune_state()
@@ -3957,14 +3981,14 @@ def run():
     stories = bd_stories + intl_stories
     logger.info(
         "FINAL: BD=%d/%d INTL=%d/%d TOTAL=%d/%d",
-        len(bd_stories), STORIES_PER_REGION,
-        len(intl_stories), STORIES_PER_REGION,
+        len(bd_stories), BANGLADESH_STORIES_PER_RUN,
+        len(intl_stories), INTERNATIONAL_STORIES_PER_RUN,
         len(stories), MAX_STORIES_PER_RUN,
     )
 
     if len(bd_stories) < STORIES_PER_REGION or len(intl_stories) < STORIES_PER_REGION:
         logger.warning(
-            "Six-story target not reached. The bot exhausted the available valid candidates in one or both regions; no story is fabricated."
+            "Five-story target not reached. The bot exhausted the available valid candidates in one or both regions; no story is fabricated."
         )
 
     published_count = 0
