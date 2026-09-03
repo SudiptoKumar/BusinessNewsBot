@@ -1,13 +1,12 @@
-# BusinessNewsroom V1
+# BusinessNewsroom V1.1
 
 > Automated business and economic news intelligence for Telegram, powered by GitHub Actions, Exa, and Cerebras.
 
-BusinessNewsroom V1 discovers, filters, ranks, verifies, and publishes **five high-value business/economic stories per run**:
+BusinessNewsroom V1.1 discovers, filters, ranks, verifies, and publishes **only genuinely important new business/economic stories**. Each candidate receives a 0-100 editorial score, and only **80+** stories are publishable.
 
-- **3 Bangladesh**
-- **2 International**
+There is **no fixed hourly post count** and no fixed 3+2 regional quota. When both Bangladesh and International have qualifying stories, the strongest qualifying story from each is guaranteed inclusion, then all remaining qualifying stories compete by score. A run may publish 0, 1, 2, 5, 10, or more stories up to the safety ceiling.
 
-The system is designed for frequent automated publishing while keeping editorial selection strict and source control explicit.
+The system is designed for frequent automated publishing while keeping editorial selection strict, source control explicit, and volume proportional to the importance of the news cycle.
 
 ---
 
@@ -540,17 +539,11 @@ python main.py --self-test
 
 The system should not fill a slot with obviously weak material simply because an article exists.
 
-## 2. Five-story target
+## 2. Rank-driven publication
 
-The normal objective is:
+Every candidate receives an editorial score from 0 to 100. Only `score >= 80` enters the publishable queue. There is no fixed post quota.
 
-```text
-3 Bangladesh
-+
-2 International
-=
-5 stories
-```
+If both regions have qualifying stories, the strongest Bangladesh story and strongest International story are guaranteed inclusion. All other qualifying stories are then ordered by global score. Stories below 80 are never used as filler.
 
 ## 3. Primary sources first
 
@@ -603,17 +596,17 @@ DEDUPLICATION
    ↓
 EVENT CLUSTERING
    ↓
-EDITORIAL RANKING
+EDITORIAL SCORE 0-100
    ↓
-3 BANGLADESH + 3 INTERNATIONAL
+80+ PUBLICATION THRESHOLD
    ↓
-IF REGION IS SHORT
+EVENT / MATERIAL-CHANGE CHECK
    ↓
-OPEN REGIONAL FALLBACK SOURCES
+BANGLADESH + INTERNATIONAL DIVERSITY FLOOR
    ↓
-SAME QUALITY STANDARD
+GLOBAL SCORE ORDER
    ↓
-FILL MISSING SLOTS
+PUBLISH UP TO SAFETY CEILING
    ↓
 ARTICLE EXTRACTION
    ↓
@@ -637,3 +630,13 @@ BusinessNewsroom V1 is built around a simple principle:
 > **Control the source universe, judge the actual news, use fallback only when necessary, and preserve the publication experience.**
 
 The system should behave like an automated newsroom rather than a generic news feed.
+
+## Editorial Selection Model
+
+BusinessNewsroom no longer uses a fixed per-hour publication quota. Every candidate is ranked on a 0-100 editorial importance scale. Only stories scoring **80 or higher** are publishable. The normal workflow therefore may publish 0, 1, 2, 5, 10, or up to the configured safety ceiling depending on the number of genuinely important new events.
+
+There is no fixed 3 Bangladesh + 2 International quota. When both regions contain qualifying 80+ stories, the selector guarantees the strongest qualifying Bangladesh story and the strongest qualifying International story, then fills the remaining queue strictly by global score. If one region has no qualifying story, the bot does not create low-quality filler to satisfy balance.
+
+Region/category information is internal selection metadata only. Public Telegram posts do not display a Bangladesh/International category label.
+
+Configuration: `PUBLISH_SCORE_THRESHOLD=80`, `MAX_POSTS_PER_RUN=20` (safety ceiling, not a target).

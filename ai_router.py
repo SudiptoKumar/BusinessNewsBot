@@ -5,7 +5,7 @@ logger = logging.getLogger(__name__)
 
 
 class CerebrasAPIRouter:
-    """Preferred-key routing with persistent failover and cooldowns.
+    """Preferred-key routing with persistent failover, cooldowns, and recovery.
 
     Up to 10 API-key slots are supported. Empty slots are skipped, so the
     deployment can safely run with 1, 2, 3, or more configured keys.
@@ -201,10 +201,9 @@ class CerebrasAPIRouter:
                 len(self.keys),
             )
             try:
-                response = self._client(index).chat.completions.create(
-                    model=self.model,
-                    **kwargs,
-                )
+                request_kwargs = dict(kwargs)
+                request_kwargs.setdefault("model", self.model)
+                response = self._client(index).chat.completions.create(**request_kwargs)
                 item = self._api_state(index)
                 item["status"] = "active"
                 item["failure_count"] = 0
