@@ -1,12 +1,13 @@
-# BusinessNewsroom V1.1
+# BusinessNewsroom V1
 
 > Automated business and economic news intelligence for Telegram, powered by GitHub Actions, Exa, and Cerebras.
 
-BusinessNewsroom V1.1 discovers, filters, ranks, verifies, and publishes **only genuinely important new business/economic stories**. Each candidate receives a 0-100 editorial score, and only **80+** stories are publishable.
+BusinessNewsroom V1 discovers, filters, ranks, verifies, and publishes **six high-value business/economic stories per run**:
 
-There is **no fixed hourly post count** and no fixed 3+2 regional quota. When both Bangladesh and International have qualifying stories, the strongest qualifying story from each is guaranteed inclusion, then all remaining qualifying stories compete by score. A run may publish 0, 1, 2, 5, 10, or more stories up to the safety ceiling.
+- **3 Bangladesh**
+- **3 International**
 
-The system is designed for frequent automated publishing while keeping editorial selection strict, source control explicit, and volume proportional to the importance of the news cycle.
+The system is designed for frequent automated publishing while keeping editorial selection strict and source control explicit.
 
 ---
 
@@ -132,7 +133,7 @@ The system uses multiple discovery mechanisms because individual publisher feeds
        Bangladesh Pool      International Pool
               │                   │
               ▼                   ▼
-          Best 3               Best 2
+          Best 3               Best 3
               │                   │
               └─────────┬─────────┘
                         │
@@ -155,7 +156,7 @@ The system uses multiple discovery mechanisms because individual publisher feeds
 
 Each run considers recent news within a rolling **24-hour discovery window**.
 
-The system does not simply publish the newest five URLs.
+The system does not simply publish the newest six URLs.
 
 Instead, it compares eligible candidates and determines which developments are most important.
 
@@ -171,13 +172,13 @@ The target is:
 
 ```text
 Bangladesh      → 3 stories
-International   → 2 stories
-Total           → 5 stories
+International   → 3 stories
+Total           → 6 stories
 ```
 
 A strong Bangladesh story therefore competes against other Bangladesh stories, while international stories compete inside the International pool.
 
-This protects the required **3 + 2 editorial structure**.
+This protects the required **3 + 3 editorial structure**.
 
 ---
 
@@ -391,24 +392,13 @@ The workflow:
 
 # Required GitHub Secrets
 
-Configure one or more Cerebras keys. The bot supports up to 10 slots. Empty/unset slots are skipped, so you can use only 2 or 3 keys today and add more later without changing the Python code.
+Configure these repository secrets:
 
 ```text
 EXA_API_KEY
-CEREBRAS_API_KEY_1
-CEREBRAS_API_KEY_2
-CEREBRAS_API_KEY_3
-CEREBRAS_API_KEY_4
-CEREBRAS_API_KEY_5
-CEREBRAS_API_KEY_6
-CEREBRAS_API_KEY_7
-CEREBRAS_API_KEY_8
-CEREBRAS_API_KEY_9
-CEREBRAS_API_KEY_10
+CEREBRAS_API_KEY
 TELEGRAM_BOT_TOKEN
 ```
-
-Only `CEREBRAS_API_KEY_1` is required for a minimum configuration. `CEREBRAS_API_KEY_2` through `_10` are optional.
 
 Optional:
 
@@ -427,54 +417,12 @@ Typical workflow configuration:
 
 ```text
 EXA_API_KEY
-CEREBRAS_API_KEY_1
-CEREBRAS_API_KEY_2
-CEREBRAS_API_KEY_3
-CEREBRAS_API_KEY_4
-CEREBRAS_API_KEY_5
-CEREBRAS_API_KEY_6
-CEREBRAS_API_KEY_7
-CEREBRAS_API_KEY_8
-CEREBRAS_API_KEY_9
-CEREBRAS_API_KEY_10
+CEREBRAS_API_KEY
 TELEGRAM_BOT_TOKEN
 TELEGRAM_CHANNEL=@BusinessNewsroom
 NEWS_MODE=update
 PYTHONUNBUFFERED=1
 ```
-
----
-
-# Multi-API AI Failover
-
-The AI layer uses a **preferred API + failover** strategy rather than simple round-robin rotation.
-
-```text
-Last successful API
-        │
-        ▼
-   Try preferred
-        │
-   ┌────┴────┐
- success    temporary failure
-   │            │
-   ▼            ▼
-  done     next eligible API
-                  │
-                  ▼
-          save successful API
-          as new preferred API
-```
-
-The preferred API is persisted in `news_state.json`. Temporary failures such as rate limits, quota exhaustion, timeouts, and server-side 5xx failures place an API in cooldown. When its cooldown expires, that API becomes eligible again.
-
-The bot never prints or stores the actual API key values. It stores only slot numbers and non-secret failure metadata.
-
-A future deployment can add `CEREBRAS_API_KEY_4` through `_10` in GitHub Secrets without modifying the router code. Missing slots are ignored. The router also supports sparse slots, for example only `_2` and `_3` being configured.
-
-### Secret migration
-
-The workflow keeps backward compatibility with the old `CEREBRAS_API_KEY` secret as a temporary source for slot 1. For the new setup, create `CEREBRAS_API_KEY_1`, `_2`, and so on.
 
 ---
 
@@ -484,7 +432,6 @@ The workflow keeps backward compatibility with the old `CEREBRAS_API_KEY` secret
 BusinessNewsroom/
 │
 ├── main.py
-├── ai_router.py
 ├── requirements.txt
 ├── news_state.json
 ├── posted_urls.txt
@@ -510,10 +457,7 @@ Set the required environment variables:
 
 ```bash
 export EXA_API_KEY="..."
-export CEREBRAS_API_KEY_1="..."
-export CEREBRAS_API_KEY_2="..."
-export CEREBRAS_API_KEY_3="..."
-# Add CEREBRAS_API_KEY_4 through _10 only when needed
+export CEREBRAS_API_KEY="..."
 export TELEGRAM_BOT_TOKEN="..."
 export TELEGRAM_CHANNEL="@BusinessNewsroom"
 export NEWS_MODE="update"
@@ -539,11 +483,17 @@ python main.py --self-test
 
 The system should not fill a slot with obviously weak material simply because an article exists.
 
-## 2. Rank-driven publication
+## 2. Six-story target
 
-Every candidate receives an editorial score from 0 to 100. Only `score >= 80` enters the publishable queue. There is no fixed post quota.
+The normal objective is:
 
-If both regions have qualifying stories, the strongest Bangladesh story and strongest International story are guaranteed inclusion. All other qualifying stories are then ordered by global score. Stories below 80 are never used as filler.
+```text
+3 Bangladesh
++
+3 International
+=
+6 stories
+```
 
 ## 3. Primary sources first
 
@@ -596,17 +546,17 @@ DEDUPLICATION
    ↓
 EVENT CLUSTERING
    ↓
-EDITORIAL SCORE 0-100
+EDITORIAL RANKING
    ↓
-80+ PUBLICATION THRESHOLD
+3 BANGLADESH + 3 INTERNATIONAL
    ↓
-EVENT / MATERIAL-CHANGE CHECK
+IF REGION IS SHORT
    ↓
-BANGLADESH + INTERNATIONAL DIVERSITY FLOOR
+OPEN REGIONAL FALLBACK SOURCES
    ↓
-GLOBAL SCORE ORDER
+SAME QUALITY STANDARD
    ↓
-PUBLISH UP TO SAFETY CEILING
+FILL MISSING SLOTS
    ↓
 ARTICLE EXTRACTION
    ↓
@@ -630,13 +580,3 @@ BusinessNewsroom V1 is built around a simple principle:
 > **Control the source universe, judge the actual news, use fallback only when necessary, and preserve the publication experience.**
 
 The system should behave like an automated newsroom rather than a generic news feed.
-
-## Editorial Selection Model
-
-BusinessNewsroom no longer uses a fixed per-hour publication quota. Every candidate is ranked on a 0-100 editorial importance scale. Only stories scoring **80 or higher** are publishable. The normal workflow therefore may publish 0, 1, 2, 5, 10, or up to the configured safety ceiling depending on the number of genuinely important new events.
-
-There is no fixed 3 Bangladesh + 2 International quota. When both regions contain qualifying 80+ stories, the selector guarantees the strongest qualifying Bangladesh story and the strongest qualifying International story, then fills the remaining queue strictly by global score. If one region has no qualifying story, the bot does not create low-quality filler to satisfy balance.
-
-Region/category information is internal selection metadata only. Public Telegram posts do not display a Bangladesh/International category label.
-
-Configuration: `PUBLISH_SCORE_THRESHOLD=80`, `MAX_POSTS_PER_RUN=20` (safety ceiling, not a target).

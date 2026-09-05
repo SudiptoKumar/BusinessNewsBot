@@ -22,8 +22,7 @@ from requests.adapters import HTTPAdapter
 from urllib3.util.retry import Retry
 
 from exa_py import Exa
-from ai_router import CerebrasAPIRouter
-from selection_engine import select_publishable_stories, PUBLISH_SCORE_THRESHOLD
+from cerebras.cloud.sdk import Cerebras
 
 
 # ============================================================
@@ -31,17 +30,8 @@ from selection_engine import select_publishable_stories, PUBLISH_SCORE_THRESHOLD
 # ============================================================
 
 EXA_API_KEY = os.environ["EXA_API_KEY"]
+CEREBRAS_API_KEY = os.environ["CEREBRAS_API_KEY"]
 TELEGRAM_BOT_TOKEN = os.environ["TELEGRAM_BOT_TOKEN"]
-
-# Configure up to 10 Cerebras API keys. Empty/unset slots are skipped, so the
-# same code works with only 2 or 3 configured keys today and can grow to 10
-# later without changing Python code.
-CEREBRAS_API_KEYS = [
-    (os.environ.get(f"CEREBRAS_API_KEY_{i}") or "").strip()
-    for i in range(1, 11)
-]
-CONFIGURED_CEREBRAS_API_COUNT = sum(bool(key) for key in CEREBRAS_API_KEYS)
-
 
 TELEGRAM_CHANNEL = (os.environ.get("TELEGRAM_CHANNEL") or "@BusinessNewsroom").strip()
 
@@ -67,14 +57,12 @@ STATE_FILE = "news_state.json"
 
 BD_TZ = ZoneInfo("Asia/Dhaka")
 
-# Editorial target: three Bangladesh + two International valid stories whenever
-# enough eligible news exists. No cross-region quota competition: each region is
-# ranked independently from the same 24-hour window.
-# Editorial selection is threshold-driven, not quota-driven.
-PUBLISH_SCORE_THRESHOLD = 80
-MAX_POSTS_PER_RUN = 20  # safety ceiling, not a target
-RANKING_POOL_PER_REGION = 60
-MAX_GENERATION_CANDIDATES_PER_REGION = 30
+# Version 1 editorial target: exactly three Bangladesh + three International
+# valid stories whenever enough eligible news exists. No cross-region quota
+# competition: each region is ranked independently from the same 24-hour window.
+STORIES_PER_REGION = 3
+MAX_STORIES_PER_RUN = STORIES_PER_REGION * 2
+RANKING_POOL_PER_REGION = 12
 DISCOVERY_LOOKBACK_HOURS = 24
 
 # Reliability / quality
@@ -773,10 +761,6 @@ def default_state():
         "event_clusters": {},
         "posted_event_ids": [],
         "recent_titles": [],
-        "ai_router": {
-            "preferred_api_index": 0,
-            "apis": {},
-        },
     }
 
 
@@ -969,15 +953,8 @@ exa = Exa(
     api_key=EXA_API_KEY
 )
 
-
-
-# The router is instantiated after STATE is loaded so its routing metadata is
-# persisted together with the bot's existing news state.
-cerebras = CerebrasAPIRouter(
-    CEREBRAS_API_KEYS,
-    CEREBRAS_MODEL,
-    STATE,
-    persist_callback=save_state,
+cerebras = Cerebras(
+    api_key=CEREBRAS_API_KEY
 )
 
 
@@ -1811,13 +1788,12 @@ RANK_SCHEMA = {
                 "properties": {
                     "id": {"type": "integer"},
                     "rank": {"type": "integer", "minimum": 1},
-                    "score": {"type": "integer", "minimum": 0, "maximum": 100},
                     "topic": {"type": "string"},
                     "institution": {"type": "string"},
                     "event_key": {"type": "string"},
                     "reason": {"type": "string"},
                 },
-                "required": ["id", "rank", "score", "topic", "institution", "event_key", "reason"],
+                "required": ["id", "rank", "topic", "institution", "event_key", "reason"],
                 "additionalProperties": False,
             },
         }
@@ -1855,11 +1831,10 @@ def enrich_thin_excerpts(regional):
 
 
 def rank_candidates(candidates, region):
-    """Rank candidates on a 0-100 editorial importance scale.
+    """Rank all usable candidates without hard score formulas or early rejection.
 
-    The score is the publication gate: only score >= PUBLISH_SCORE_THRESHOLD
-    can enter the final publishing queue. The ranker should score every
-    candidate, but never invent importance or facts.
+    The LLM acts only as an editor/ranker: it does not decide eligibility.
+    Eligibility remains the simple ingestion/state rules used elsewhere.
     """
     if not candidates:
         return []
@@ -1868,7 +1843,7 @@ def rank_candidates(candidates, region):
         candidates,
         key=lambda x: parse_datetime(x.get("published_date")) or datetime.min.replace(tzinfo=timezone.utc),
         reverse=True,
-    )[:RANKING_POOL_PER_REGION]
+    )[:60]
     regional = enrich_thin_excerpts(regional)
 
     lines = []
@@ -1895,46 +1870,36 @@ def rank_candidates(candidates, region):
     prompt = f"""
 You are the editor-in-chief of @BusinessNewsroom.
 
-Rank these {region} business/economic news candidates from MOST IMPORTANT to LEAST IMPORTANT
-and assign every candidate an editorial importance score from 0 to 100.
+Rank these {region} business/economic news candidates from MOST IMPORTANT to LEAST IMPORTANT.
 Use the previous 24 hours as the editorial window.
 
-The score is a publication gate. Stories scoring 80 or higher are publishable;
-stories below 80 are not publishable.
-
-Score guidance:
-95-100 = exceptional national/global economic significance or major policy/market event
-90-94  = very important economic, financial, policy, trade, banking or market development
-85-89  = strong, materially useful business/economic development
-80-84  = clearly publishable and relevant now
-70-79  = useful but not important enough for publication under the current threshold
-0-69   = routine, trivial, weak, promotional, opinion-only, stale, or insufficiently relevant
+Your job is ranking, not aggressive filtering. Keep ordinary candidates in the ranking unless
+an item is clearly not business/economic news or is an obvious duplicate of another candidate.
 
 Prioritize:
-1. Material new developments with meaningful economic or business consequences.
-2. Major monetary policy, banking, financial, trade, tariff, currency, reserve, inflation,
-   GDP, corporate, market, commodity, energy, institutional, or macroeconomic events.
-3. National or global significance and likely reader impact.
-4. Strong factual evidence and credible sourcing.
-5. Freshness when importance is otherwise similar.
+1. A genuinely important new business/economic development.
+2. Material policy, banking, financial, trade, market, currency, commodity, corporate,
+   institutional, or macroeconomic developments.
+3. The newest development when two stories are otherwise similarly important.
+4. Clear factual evidence and a credible source.
+5. Stories that people would reasonably want to read now.
 
-Deprioritize or score below 80:
-- routine price/market moves without a material new development
-- repetitive follow-up coverage that adds no meaningful new information
+Deprioritize:
+- routine or trivial updates when materially stronger news exists
 - promotional fluff
 - lifestyle/entertainment content
-- opinion/editorial content without a new factual development
+- opinion/editorial content when no new factual development exists
 - exact duplicate coverage of the same event
 
-Do not manufacture importance. Do not use source popularity alone as a reason for a high score.
-Return EVERY candidate with its editorial rank, score and metadata.
+Do not manufacture importance. Do not assign numeric scores.
+Return EVERY candidate with its editorial rank and the requested metadata.
 
 Allowed topic taxonomy:
 {topic_list}
 """
 
     try:
-        response = cerebras.chat_completion(
+        response = cerebras.chat.completions.create(
             model=CEREBRAS_MODEL,
             messages=[
                 {"role": "system", "content": prompt},
@@ -1962,7 +1927,6 @@ Allowed topic taxonomy:
             item = dict(by_id[idx])
             item.update({
                 "editor_rank": int(row["rank"]),
-                "editor_score": max(0, min(100, int(row["score"]))),
                 "topic": canonical_topic(safe_text(row.get("topic")), region),
                 "institution": safe_text(row.get("institution")),
                 "event_key": safe_text(row.get("event_key")),
@@ -1978,7 +1942,6 @@ Allowed topic taxonomy:
             fallback = dict(item)
             fallback.update({
                 "editor_rank": next_rank,
-                "editor_score": 0,
                 "topic": canonical_topic(fallback.get("topic", ""), region),
                 "institution": fallback.get("institution", ""),
                 "event_key": fallback.get("event_key", ""),
@@ -2000,7 +1963,6 @@ Allowed topic taxonomy:
             row = dict(item)
             row.update({
                 "editor_rank": idx,
-                "editor_score": 0,
                 "topic": canonical_topic(row.get("topic", ""), region),
                 "institution": row.get("institution", ""),
                 "event_key": row.get("event_key", ""),
@@ -2476,7 +2438,7 @@ market-context or any other top-level section.
 
     for attempt in range(3):
         try:
-            response = cerebras.chat_completion(
+            response = cerebras.chat.completions.create(
                 model=CEREBRAS_MODEL,
                 messages=[
                     {
@@ -3588,8 +3550,6 @@ def store_event(
             else "selected"
         ),
         "message_id": message_id,
-        "editor_score": story.get("editor_score", 0),
-        "editor_rank": story.get("editor_rank", 0),
     }
 
     STATE["events"][
@@ -3655,7 +3615,7 @@ Return only the JSON schema.
     )
 
     try:
-        response = cerebras.chat_completion(
+        response = cerebras.chat.completions.create(
             model=CEREBRAS_MODEL,
             messages=[
                 {"role": "system", "content": prompt},
@@ -3908,56 +3868,52 @@ def prepare_ranked_region(region, candidates):
 
 
 def process_ranked_region(region, ranked):
-    """Generate only score-qualified candidates, keeping a recovery pool."""
-    eligible = [
-        dict(item)
-        for item in ranked
-        if int(item.get("editor_score", 0) or 0) >= PUBLISH_SCORE_THRESHOLD
-    ][:MAX_GENERATION_CANDIDATES_PER_REGION]
-
+    pool = build_candidate_pool(ranked, STORIES_PER_REGION)
     valid = []
     attempted = 0
     rejected = 0
 
-    for item in eligible:
+    for item in pool:
+        if len(valid) >= STORIES_PER_REGION:
+            break
         attempted += 1
         story = process_story_candidate(item)
         if not story:
             rejected += 1
             continue
 
-        if is_already_published_candidate({
-            **item,
-            "title": story.get("headline", item.get("title")),
-        }):
+        # Final duplicate check after generation.
+        if is_already_published_candidate({**item, "title": story.get("headline", item.get("title"))}):
             logger.info("DROP already published event: %s", story.get("headline", ""))
             rejected += 1
             continue
 
-        story["editor_score"] = int(item.get("editor_score", 0) or 0)
-        story["editor_rank"] = int(item.get("editor_rank", 999999) or 999999)
         story["topic"] = canonical_topic(story.get("topic"), region)
         story["category_hashtags"] = category_hashtags(story)
         valid.append(story)
         logger.info(
-            "ACCEPT %s score=%d rank=%d title=%s",
+            "ACCEPT %s #%d: rank=%s title=%s",
             region,
-            story["editor_score"],
-            story["editor_rank"],
+            len(valid),
+            item.get("editor_rank", "?"),
             story.get("headline", ""),
         )
 
     logger.info(
-        "%s QUALIFIED VALID: %d | eligible=%d attempted=%d rejected=%d",
-        region, len(valid), len(eligible), attempted, rejected,
+        "%s FINAL VALID: %d/%d | pool=%d attempted=%d rejected=%d",
+        region,
+        len(valid),
+        STORIES_PER_REGION,
+        len(pool),
+        attempted,
+        rejected,
     )
     return valid
 
 
 def run():
-    logger.info("BUSINESSNEWSROOM V1.1 RANKED | MULTI-API FAILOVER")
+    logger.info("BUSINESSNEWSROOM V1 UPDATE-ONLY")
     logger.info("Channel=%s Mode=%s", TELEGRAM_CHANNEL, NEWS_MODE)
-    logger.info("AI API slots configured: %d/10 | preferred=%d", CONFIGURED_CEREBRAS_API_COUNT, STATE.get("ai_router", {}).get("preferred_api_index", 0) + 1)
     logger.info("LOOKBACK=%d hours | %s -> %s", DISCOVERY_LOOKBACK_HOURS, DISCOVERY_START.isoformat(), DISCOVERY_END.isoformat())
 
     prune_state()
@@ -3988,10 +3944,9 @@ def run():
 
     for item in (ranked_bd[:8] + ranked_intl[:8]):
         logger.info(
-            "RANK %s #%s score=%s | %s | %s",
+            "RANK %s #%s | %s | %s",
             item.get("region", ""),
             item.get("editor_rank", "?"),
-            item.get("editor_score", 0),
             item.get("title", ""),
             item.get("rank_reason", ""),
         )
@@ -3999,24 +3954,17 @@ def run():
     bd_stories = process_ranked_region("Bangladesh", ranked_bd)
     intl_stories = process_ranked_region("International", ranked_intl)
 
-    stories = select_publishable_stories(
-        bd_stories,
-        intl_stories,
-        threshold=PUBLISH_SCORE_THRESHOLD,
-        max_posts=MAX_POSTS_PER_RUN,
+    stories = bd_stories + intl_stories
+    logger.info(
+        "FINAL: BD=%d/%d INTL=%d/%d TOTAL=%d/%d",
+        len(bd_stories), STORIES_PER_REGION,
+        len(intl_stories), STORIES_PER_REGION,
+        len(stories), MAX_STORIES_PER_RUN,
     )
 
-    bd_eligible = sum(1 for s in bd_stories if int(s.get("editor_score", 0) or 0) >= PUBLISH_SCORE_THRESHOLD)
-    intl_eligible = sum(1 for s in intl_stories if int(s.get("editor_score", 0) or 0) >= PUBLISH_SCORE_THRESHOLD)
-    logger.info(
-        "SELECTION: eligible=BD:%d INTL:%d | selected=%d | threshold=%d | safety_max=%d",
-        bd_eligible, intl_eligible, len(stories), PUBLISH_SCORE_THRESHOLD, MAX_POSTS_PER_RUN,
-    )
-    for idx, story in enumerate(stories, start=1):
-        logger.info(
-            "QUEUE #%d score=%d rank=%d region=%s title=%s",
-            idx, story.get("editor_score", 0), story.get("editor_rank", 0),
-            story.get("region", ""), story.get("headline", ""),
+    if len(bd_stories) < STORIES_PER_REGION or len(intl_stories) < STORIES_PER_REGION:
+        logger.warning(
+            "Six-story target not reached. The bot exhausted the available valid candidates in one or both regions; no story is fabricated."
         )
 
     published_count = 0
@@ -4049,14 +3997,14 @@ def run():
             remember_posted_event(story)
             update_category_coverage(story)
             STATE["recent_titles"].append(normalize_title(story["headline"]))
-            logger.info("Published %d/%d safety-max: [%s] score=%d %s", published_count, len(stories), story.get("region", ""), story.get("editor_score", 0), story["headline"])
+            logger.info("Published %d/%d: [%s] %s", published_count, MAX_STORIES_PER_RUN, story.get("region", ""), story["headline"])
         else:
             logger.error("Telegram failed: %s", result.get("description"))
         save_state(STATE)
         time.sleep(POST_DELAY_SECONDS)
 
     save_state(STATE)
-    logger.info("Finished. Published=%d selected=%d (score threshold=%d)", published_count, len(stories), PUBLISH_SCORE_THRESHOLD)
+    logger.info("Finished. Published=%d/%d", published_count, MAX_STORIES_PER_RUN)
 
 
 # ============================================================
