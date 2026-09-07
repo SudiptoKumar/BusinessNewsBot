@@ -11,6 +11,17 @@ The system is designed for frequent automated publishing while keeping editorial
 
 ---
 
+
+## Image Fallback
+
+When an article does not provide a usable image, the bot no longer renders a generic blank `Business News` card. It now creates a clean fallback image using this order:
+
+1. Publisher/source logo discovered from the source website metadata (publisher logo, Open Graph logo, JSON-LD publisher logo, or site icon).
+2. If no usable logo can be obtained, the **source/publication name is shown in bold at the center**.
+3. The existing `@BusinessNewsroom` brand chip remains at the bottom-right.
+
+This fallback is generated locally with Pillow, so Telegram always receives a valid image even when the article has no usable photo.
+
 ## Editorial Mission
 
 BusinessNewsroom is not intended to publish every business story it can find.

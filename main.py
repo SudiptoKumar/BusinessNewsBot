@@ -3068,6 +3068,152 @@ def download_image(
         return None
 
 
+def download_logo(
+    url,
+    referer,
+):
+    """Download a small publisher logo/icon without enforcing article-photo dimensions."""
+    if not url:
+        return None
+
+    try:
+        response = session.get(
+            url,
+            headers={
+                **HEADERS,
+                "Referer": referer,
+            },
+            timeout=15,
+            stream=True,
+        )
+
+        if response.status_code >= 400:
+            return None
+
+        content_type = (
+            response.headers.get("content-type", "")
+            .lower()
+        )
+        if content_type and not content_type.startswith("image/"):
+            return None
+
+        buf = BytesIO()
+        for chunk in response.iter_content(65536):
+            if not chunk:
+                continue
+            buf.write(chunk)
+            if buf.tell() > 4_000_000:
+                return None
+
+        buf.seek(0)
+        image = Image.open(buf)
+        image.load()
+
+        if image.width < 32 or image.height < 32:
+            return None
+
+        return image.convert("RGBA")
+
+    except Exception as exc:
+        logger.debug("Logo download failed: %s", exc)
+        return None
+
+
+SOURCE_LOGO_CACHE = {}
+
+
+def find_source_logo_url(article_url):
+    """Find a publisher logo/icon from the source site when an article photo is unavailable."""
+    try:
+        parsed = urlparse(article_url)
+        if not parsed.scheme or not parsed.netloc:
+            return ""
+
+        homepage = f"{parsed.scheme}://{parsed.netloc}/"
+        response = session.get(
+            homepage,
+            headers={
+                **HEADERS,
+                "Referer": article_url,
+            },
+            timeout=15,
+        )
+        if response.status_code >= 400:
+            return ""
+
+        soup = BeautifulSoup(response.text, "html.parser")
+        base_url = response.url
+
+        # Prefer explicit publisher/logo metadata.
+        for attrs in (
+            {"property": "og:logo"},
+            {"name": "og:logo"},
+            {"itemprop": "logo"},
+        ):
+            tag = soup.find("meta", attrs=attrs)
+            if tag and tag.get("content"):
+                return urljoin(base_url, safe_text(tag["content"]))
+
+        # JSON-LD publisher.logo is common on news sites.
+        for script in soup.find_all("script", type="application/ld+json"):
+            raw = script.string or script.get_text(strip=True)
+            if not raw:
+                continue
+            try:
+                payload = json.loads(raw)
+            except Exception:
+                continue
+
+            records = payload if isinstance(payload, list) else [payload]
+            for record in records:
+                if not isinstance(record, dict):
+                    continue
+                publisher = record.get("publisher")
+                publishers = publisher if isinstance(publisher, list) else [publisher]
+                for pub in publishers:
+                    if not isinstance(pub, dict):
+                        continue
+                    logo = pub.get("logo")
+                    if isinstance(logo, str) and logo.strip():
+                        return urljoin(base_url, logo.strip())
+                    if isinstance(logo, dict):
+                        value = logo.get("url") or logo.get("contentUrl")
+                        if value:
+                            return urljoin(base_url, safe_text(value))
+
+        # Fall back to a large favicon / app icon.
+        for rels in (
+            ["apple-touch-icon", "apple-touch-icon-precomposed"],
+            ["icon", "shortcut icon"],
+        ):
+            for rel in rels:
+                tag = soup.find("link", rel=lambda value: value and rel in value)
+                if tag and tag.get("href"):
+                    return urljoin(base_url, safe_text(tag["href"]))
+
+        return urljoin(base_url, "/favicon.ico")
+
+    except Exception as exc:
+        logger.debug("Source logo discovery failed: %s", exc)
+        return ""
+
+
+def get_source_logo(article_url):
+    """Cached source-logo lookup for the current workflow run."""
+    parsed = urlparse(article_url or "")
+    host = parsed.netloc.lower()
+    if not host:
+        return None
+
+    if host in SOURCE_LOGO_CACHE:
+        return SOURCE_LOGO_CACHE[host]
+
+    logo_url = find_source_logo_url(article_url)
+    logo = download_logo(logo_url, article_url) if logo_url else None
+    SOURCE_LOGO_CACHE[host] = logo
+    return logo
+
+
 def crop_cover(
     image,
     size=(1200, 675),
@@ -3247,6 +3393,84 @@ def branded_card(
     )
 
 
+def _fit_font_to_width(text, font_path, max_size, min_size, max_width):
+    """Return the largest available font size that keeps text inside max_width."""
+    if not font_path:
+        return ImageFont.load_default()
+    probe = ImageDraw.Draw(Image.new("RGB", (1, 1)))
+    for size in range(max_size, min_size - 1, -2):
+        font = ImageFont.truetype(font_path, size)
+        bbox = probe.textbbox((0, 0), text, font=font)
+        if bbox[2] - bbox[0] <= max_width:
+            return font
+    return ImageFont.truetype(font_path, min_size)
+
+
+def build_source_fallback_card(
+    story,
+):
+    """Create a clean branded fallback image from the publisher logo or source name."""
+    base = Image.new(
+        "RGB",
+        (1200, 675),
+        (28, 38, 50),
+    )
+
+    layer = Image.new("RGBA", base.size, (0, 0, 0, 0))
+    draw = ImageDraw.Draw(layer)
+
+    # Large soft plate keeps transparent logos and favicons visually clean.
+    draw.rounded_rectangle(
+        (270, 120, 930, 555),
+        radius=42,
+        fill=(245, 247, 250, 245),
+    )
+
+    source = safe_text(story.get("source", "")) or "News Source"
+    logo = get_source_logo(story.get("url", ""))
+
+    if logo is not None:
+        logo.thumbnail((470, 220), Image.Resampling.LANCZOS)
+        x = (1200 - logo.width) // 2
+        y = 235 - logo.height // 2
+        layer.alpha_composite(logo, (x, y))
+
+        font_path = find_font(bold=False)
+        font = _fit_font_to_width(
+            source,
+            font_path,
+            max_size=30,
+            min_size=18,
+            max_width=560,
+        )
+        bbox = draw.textbbox((0, 0), source, font=font)
+        draw.text(
+            ((1200 - (bbox[2] - bbox[0])) / 2, 420),
+            source,
+            font=font,
+            fill=(60, 67, 75, 255),
+        )
+    else:
+        font_path = find_font(bold=True)
+        font = _fit_font_to_width(
+            source,
+            font_path,
+            max_size=54,
+            min_size=28,
+            max_width=560,
+        )
+        bbox = draw.textbbox((0, 0), source, font=font)
+        text_h = bbox[3] - bbox[1]
+        draw.text(
+            ((1200 - (bbox[2] - bbox[0])) / 2, 337 - text_h / 2),
+            source,
+            font=font,
+            fill=(24, 29, 35, 255),
+        )
+
+    return Image.alpha_composite(base.convert("RGBA"), layer).convert("RGB")
+
+
 def prepare_image(
     story,
     index,
@@ -3260,34 +3484,12 @@ def prepare_image(
     )
 
     if image is None:
-        image = Image.new(
-            "RGB",
-            (1200, 675),
-            (28, 38, 50),
+        logger.info(
+            "IMAGE FALLBACK: no usable article image for %s | source=%s",
+            story.get("headline", ""),
+            story.get("source", ""),
         )
-
-        font_path = find_font(
-            bold=True
-        )
-
-        if font_path:
-            font = ImageFont.truetype(
-                font_path,
-                48,
-            )
-        else:
-            font = ImageFont.load_default()
-
-        draw = ImageDraw.Draw(
-            image
-        )
-
-        draw.text(
-            (50, 50),
-            "Business News",
-            font=font,
-            fill="white",
-        )
+        image = build_source_fallback_card(story)
 
     branded = branded_card(
         image
