@@ -48,7 +48,9 @@ jobs:
         run: python -m py_compile main.py
 
       - name: Run self-test
-        run: python main.py --self-test
+        run: |
+          python main.py --self-test
+          python test_resilience.py
 
       - name: Run BusinessNewsroom
         run: python main.py
