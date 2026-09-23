@@ -21,7 +21,11 @@ from PIL import Image, ImageDraw, ImageFont, ImageFile
 from requests.adapters import HTTPAdapter
 from urllib3.util.retry import Retry
 
-from exa_py import Exa
+try:
+    from exa_py import Exa
+except ImportError:
+    Exa = None
+
 from cerebras.cloud.sdk import Cerebras
 
 
@@ -29,7 +33,7 @@ from cerebras.cloud.sdk import Cerebras
 # CONFIGURATION
 # ============================================================
 
-EXA_API_KEY = os.environ["EXA_API_KEY"]
+EXA_API_KEY = (os.environ.get("EXA_API_KEY") or "").strip()
 CEREBRAS_API_KEY = os.environ["CEREBRAS_API_KEY"]
 TELEGRAM_BOT_TOKEN = os.environ["TELEGRAM_BOT_TOKEN"]
 
@@ -92,7 +96,7 @@ STOPWORDS = {
     "new", "after", "before", "over", "into", "than", "about", "from",
 }
 
-# RSS-first sources. Exa remains a fallback/gap filler.
+# RSS-first sources. Exa is an optional paid discovery fallback only; the bot must work without it.
 RSS_FEEDS = [
     # Bangladesh
     {
@@ -943,15 +947,15 @@ DISCOVERY_END = (
 )
 
 DISCOVERY_TARGET_PER_REGION = 18
+EXA_ENABLED = bool(EXA_API_KEY and Exa is not None)
+EXA_DISABLED_THIS_RUN = False
 
 
 # ============================================================
 # CLIENTS
 # ============================================================
 
-exa = Exa(
-    api_key=EXA_API_KEY
-)
+exa = Exa(api_key=EXA_API_KEY) if (EXA_API_KEY and Exa is not None) else None
 
 cerebras = Cerebras(
     api_key=CEREBRAS_API_KEY
@@ -1643,7 +1647,31 @@ def google_news_gap_fill(
 
 
 def exa_gap_fill(region, existing_count, needed, fallback=False):
-    if existing_count >= max(6, needed * 3):
+    """Paid discovery fallback only. Never required for normal operation.
+
+    RSS/native feeds and Google News RSS are the primary discovery paths.
+    Exa is consulted only when the regional candidate pool is thin. If Exa
+    is missing, exhausted, rate-limited, or otherwise unavailable, discovery
+    simply continues with the candidates already collected.
+    """
+    global EXA_DISABLED_THIS_RUN
+
+    if not EXA_ENABLED or exa is None:
+        logger.info("Exa discovery skipped: EXA_API_KEY not configured.")
+        return 0
+
+    if EXA_DISABLED_THIS_RUN:
+        logger.info("Exa discovery skipped: Exa disabled for this run after a provider failure.")
+        return 0
+
+    # Do not spend paid credits when free discovery already produced a
+    # healthy candidate pool.
+    threshold = max(6, needed * 3)
+    if existing_count >= threshold:
+        logger.info(
+            "Exa discovery not needed for %s: existing=%d threshold=%d",
+            region, existing_count, threshold,
+        )
         return 0
 
     if region == "Bangladesh":
@@ -1712,10 +1740,7 @@ def exa_gap_fill(region, existing_count, needed, fallback=False):
                     "source_pool": "fallback" if fallback else "primary",
                 }
 
-                if not candidate_basic_allowed({
-                    **item,
-                    "published_dt": published_dt,
-                }):
+                if not candidate_basic_allowed({**item, "published_dt": published_dt}):
                     continue
                 if item["canonical"] in POSTED_URLS:
                     continue
@@ -1729,12 +1754,29 @@ def exa_gap_fill(region, existing_count, needed, fallback=False):
                     return added
 
         except Exception as exc:
+            message = safe_text(exc)
             logger.warning(
-                "Exa %s discovery failed %s: %s",
-                "fallback" if fallback else "primary",
+                "Exa discovery failed %s: %s",
                 region,
-                exc,
+                message,
             )
+            # 402/429/credit exhaustion means further Exa calls in this run
+            # cannot help and would only waste time/requests. Main discovery
+            # must continue without Exa.
+            lowered = message.lower()
+            if (
+                "402" in lowered
+                or "no_more_credits" in lowered
+                or "credits limit" in lowered
+                or "quota" in lowered
+                or "rate limit" in lowered
+                or "429" in lowered
+            ):
+                EXA_DISABLED_THIS_RUN = True
+                logger.warning(
+                    "Exa disabled for the remainder of this run; RSS/Google News discovery remains active."
+                )
+                break
 
     return added
 
@@ -2160,100 +2202,94 @@ def find_og_image(
     return ""
 
 
-def extract_article(
-    item,
-):
+def _extract_local_article_text(page_html):
+    """Extract article text without any paid external content API."""
+    text = trafilatura.extract(
+        page_html,
+        include_comments=False,
+        include_tables=False,
+        favor_precision=True,
+    )
+    if text and len(safe_text(text)) >= 500:
+        return safe_text(text)
+
+    # Publisher HTML fallback: JSON-LD articleBody is often available even
+    # when trafilatura cannot identify the page template.
+    try:
+        soup = BeautifulSoup(page_html, "html.parser")
+        bodies = []
+        for script in soup.find_all("script", attrs={"type": "application/ld+json"}):
+            raw = script.string or script.get_text()
+            if not raw:
+                continue
+            try:
+                data = json.loads(raw)
+            except Exception:
+                continue
+            nodes = data if isinstance(data, list) else [data]
+            for node in nodes:
+                if not isinstance(node, dict):
+                    continue
+                if isinstance(node.get("@graph"), list):
+                    nodes.extend(node["@graph"])
+                body = safe_text(node.get("articleBody"))
+                if body:
+                    bodies.append(body)
+        if bodies:
+            best = max(bodies, key=len)
+            if len(best) >= 500:
+                return best
+
+        article = soup.find("article")
+        if article:
+            candidate = article.get_text(" ", strip=True)
+            if len(candidate) >= 500:
+                return candidate
+    except Exception:
+        pass
+
+    return ""
+
+
+def extract_article(item):
+    """Extract from the publisher directly. Exa is NOT an article-content dependency."""
     url = item["url"]
 
     try:
         response = session.get(
             url,
-            headers={
-                **HEADERS,
-                "Referer": url,
-            },
+            headers={**HEADERS, "Referer": url},
             timeout=25,
         )
 
         if response.status_code < 400:
             page_html = response.text
-
-            text = trafilatura.extract(
-                page_html,
-                include_comments=False,
-                include_tables=False,
-                favor_precision=True,
-            )
+            text = _extract_local_article_text(page_html)
 
             image_url = (
                 item.get("image")
-                or find_og_image(
-                    url,
-                    page_html,
-                    response.url,
-                )
-            )
-
-            if text and len(safe_text(text)) >= 500:
-                return (
-                    safe_text(text),
-                    image_url,
-                )
-
-    except Exception as exc:
-        logger.warning(
-            "Local extraction failed %s: %s",
-            url,
-            exc,
-        )
-
-    try:
-        result_set = exa.get_contents(
-            [url],
-            text={
-                "max_characters": 12000,
-            },
-        )
-
-        if result_set.results:
-            result = result_set.results[0]
-
-            text = safe_text(
-                getattr(
-                    result,
-                    "text",
-                    "",
-                )
-            )
-
-            image_url = (
-                item.get("image")
-                or safe_text(
-                    getattr(
-                        result,
-                        "image",
-                        "",
-                    )
-                )
+                or find_og_image(url, page_html, response.url)
             )
 
             if text:
-                return (
-                    text,
-                    image_url,
-                )
+                return text, image_url
 
     except Exception as exc:
-        logger.warning(
-            "Exa article fallback failed %s: %s",
-            url,
-            exc,
-        )
+        logger.warning("Local extraction failed %s: %s", url, exc)
 
-    return (
-        "",
-        item.get("image", ""),
+    # A useful RSS/Google News excerpt is preferable to losing a discovered
+    # story when the publisher blocks full-page extraction. This remains a
+    # free/local recovery path and is never confused with a full article.
+    excerpt = safe_text(item.get("excerpt", ""))
+    if len(excerpt) >= 500:
+        logger.info("Using stored discovery excerpt for article: %s", item.get("title", ""))
+        return excerpt, item.get("image", "")
+
+    logger.warning(
+        "DROP extraction: publisher content unavailable and no usable discovery excerpt: %s",
+        item.get("title", ""),
     )
+    return "", item.get("image", "")
 
 
 # ============================================================
@@ -4114,7 +4150,7 @@ def process_ranked_region(region, ranked):
 
 
 def run():
-    logger.info("BUSINESSNEWSROOM V1 UPDATE-ONLY")
+    logger.info("BUSINESSNEWSROOM RSS-FIRST | EXA OPTIONAL DISCOVERY FALLBACK")
     logger.info("Channel=%s Mode=%s", TELEGRAM_CHANNEL, NEWS_MODE)
     logger.info("LOOKBACK=%d hours | %s -> %s", DISCOVERY_LOOKBACK_HOURS, DISCOVERY_START.isoformat(), DISCOVERY_END.isoformat())
 
@@ -4126,16 +4162,32 @@ def run():
     bd_count = queue_candidates_for_region("Bangladesh")
     intl_count = queue_candidates_for_region("International")
 
-    # Free discovery first, then Exa only when a region is below the desired 24-hour candidate pool.
+    # Free discovery first. Exa is consulted only if the free candidate pool is still thin.
     bd_count += google_news_gap_fill("Bangladesh", bd_count, DISCOVERY_TARGET_PER_REGION)
     intl_count += google_news_gap_fill("International", intl_count, DISCOVERY_TARGET_PER_REGION)
-    exa_gap_fill("Bangladesh", bd_count, DISCOVERY_TARGET_PER_REGION)
-    exa_gap_fill("International", intl_count, DISCOVERY_TARGET_PER_REGION)
+
+    bd_added = exa_gap_fill("Bangladesh", bd_count, DISCOVERY_TARGET_PER_REGION, fallback=False)
+    if bd_count + bd_added < max(6, DISCOVERY_TARGET_PER_REGION * 3):
+        bd_added += exa_gap_fill(
+            "Bangladesh",
+            bd_count + bd_added,
+            DISCOVERY_TARGET_PER_REGION,
+            fallback=True,
+        )
+
+    intl_added = exa_gap_fill("International", intl_count, DISCOVERY_TARGET_PER_REGION, fallback=False)
+    if intl_count + intl_added < max(6, DISCOVERY_TARGET_PER_REGION * 3):
+        intl_added += exa_gap_fill(
+            "International",
+            intl_count + intl_added,
+            DISCOVERY_TARGET_PER_REGION,
+            fallback=True,
+        )
 
     save_state(STATE)
 
-    bd_candidates = available_candidates("Bangladesh", source_pool="primary")
-    intl_candidates = available_candidates("International", source_pool="primary")
+    bd_candidates = available_candidates("Bangladesh")
+    intl_candidates = available_candidates("International")
 
     logger.info("DISCOVERY CANDIDATES: BD=%d INTL=%d TOTAL=%d", len(bd_candidates), len(intl_candidates), len(bd_candidates) + len(intl_candidates))
 

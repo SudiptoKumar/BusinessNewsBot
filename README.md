@@ -1,6 +1,6 @@
 # BusinessNewsroom V1
 
-> Automated business and economic news intelligence for Telegram, powered by GitHub Actions, Exa, and Cerebras.
+> Automated business and economic news intelligence for Telegram, powered by GitHub Actions, RSS/Google News discovery, and Cerebras. Exa is optional and used only as a paid discovery fallback.
 
 BusinessNewsroom V1 discovers, filters, ranks, verifies, and publishes **six high-value business/economic stories per run**:
 
@@ -75,9 +75,7 @@ These sources form the normal discovery universe.
 
 ## Fallback Sources
 
-Fallback sources are **not mixed into the primary pool by default**.
-
-They are opened only when the primary sources cannot provide enough eligible stories for a region.
+Fallback sources are available as a secondary discovery layer and may enter the candidate pool when they are valid. Primary sources remain the preferred source universe, but a fallback source is not discarded merely because it is a fallback.
 
 ### International fallback examples
 
@@ -200,24 +198,23 @@ Fallback is triggered **only when the primary pool is insufficient**.
 For each region:
 
 ```text
-Primary sources
+Free discovery (native RSS + Google News RSS)
       │
       ▼
-Enough eligible stories?
+Enough eligible candidates?
       │
    ┌──┴──┐
   YES    NO
    │      │
    │      ▼
-   │   Open fallback
+   │   Exa discovery fallback
    │      │
    │      ▼
-   │   Search missing slots
+   │   Same filtering
    │      │
-   │      ▼
-   └──► Same filtering
-          │
-          ▼
+   └──────┴──────► Candidate pool
+                         │
+                         ▼
        Same ranking
           │
           ▼
