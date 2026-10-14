@@ -1,40 +1,40 @@
 {
   "feeds": {
     "https://www.tbsnews.net/top-news/rss.xml": {
-      "etag": "\"1791996800-1\"",
-      "last_modified": "Wed, 14 Oct 2026 16:53:20 GMT",
-      "last_checked": "2026-10-14T22:58:07.669027+06:00",
+      "etag": "\"1792009472-1\"",
+      "last_modified": "Wed, 14 Oct 2026 20:24:32 GMT",
+      "last_checked": "2026-10-15T02:35:28.977406+06:00",
       "fail_count": 0,
       "alerted": false
     },
     "https://thefinancialexpress.com.bd/rss.xml": {
       "etag": null,
       "last_modified": null,
-      "last_checked": "2026-10-14T22:58:10.843685+06:00",
+      "last_checked": "2026-10-15T02:35:30.367653+06:00",
       "fail_count": 0,
       "alerted": false
     },
     "https://www.thedailystar.net/frontpage/rss.xml": {
-      "etag": "W/\"1791996358\"",
-      "last_modified": "Wed, 14 Oct 2026 16:45:58 GMT",
-      "last_checked": "2026-10-14T22:58:09.000723+06:00",
+      "etag": "W/\"1792009803\"",
+      "last_modified": "Wed, 14 Oct 2026 20:30:03 GMT",
+      "last_checked": "2026-10-15T02:35:29.233309+06:00",
       "fail_count": 0,
       "alerted": false
     },
     "https://www.dhakatribune.com/feed": {
-      "last_checked": "2026-10-14T22:58:09.816964+06:00",
-      "fail_count": 139,
+      "last_checked": "2026-10-15T02:35:29.735594+06:00",
+      "fail_count": 140,
       "alerted": true
     },
     "https://www.newagebd.net/rss": {
-      "last_checked": "2026-10-14T22:58:11.107452+06:00",
-      "fail_count": 139,
+      "last_checked": "2026-10-15T02:35:30.460410+06:00",
+      "fail_count": 140,
       "alerted": true
     },
     "https://www.ft.com/rss/home": {
-      "etag": "W/\"220d-3l/iqmRTnG5ZbMNrEA6vz68d5sI\"",
+      "etag": "W/\"24ca-fF4KvH0VcOBlCfStC7hEihuBoA8\"",
       "last_modified": null,
-      "last_checked": "2026-10-14T22:58:12.205010+06:00",
+      "last_checked": "2026-10-15T02:35:31.406664+06:00",
       "fail_count": 0,
       "alerted": false
     },
@@ -47,219 +47,25 @@
     },
     "https://bdnews24.com/?widgetName=rssfeed&widgetId=1150&getXmlFeed=true": {
       "etag": null,
-      "last_modified": "Wed, 14 Oct 2026 16:58:09 GMT",
-      "last_checked": "2026-10-14T22:58:09.258945+06:00",
+      "last_modified": "Wed, 14 Oct 2026 20:26:38 GMT",
+      "last_checked": "2026-10-15T02:35:29.407747+06:00",
       "fail_count": 0,
       "alerted": false
     },
     "https://www.cnbc.com/id/100003114/device/rss/rss.html": {
       "etag": null,
       "last_modified": null,
-      "last_checked": "2026-10-14T22:58:11.198540+06:00",
+      "last_checked": "2026-10-15T02:35:30.533565+06:00",
       "fail_count": 0,
       "alerted": false
     },
     "https://feeds.content.dowjones.io/public/rss/mw_topstories.xml": {
-      "last_checked": "2026-10-14T22:58:11.480038+06:00",
-      "fail_count": 138,
+      "last_checked": "2026-10-15T02:35:30.828150+06:00",
+      "fail_count": 139,
       "alerted": true
     }
   },
   "queue": {
-    "cnbc.com/2026/10/09/american-debt-delinquency.html": {
-      "title": "Americans' debt problems are flashing a warning not seen since the Great Recession",
-      "url": "https://www.cnbc.com/2026/10/09/american-debt-delinquency.html",
-      "canonical": "cnbc.com/2026/10/09/american-debt-delinquency.html",
-      "published_dt": "2026-10-09T20:30:06+06:00",
-      "published_date": "2026-10-09T20:30:06+06:00",
-      "source": "CNBC",
-      "region": "International",
-      "excerpt": "Researchers found that while wealth disparities narrowed somewhat, the ability to meet debt payments deteriorated significantly.",
-      "image": "",
-      "discovery": "rss",
-      "date_estimated": false,
-      "status": "pending",
-      "first_seen": "2026-10-09T21:10:49.047661+06:00",
-      "last_seen": "2026-10-11T00:23:44.313139+06:00"
-    },
-    "cnbc.com/2026/10/09/katie-zacharia-white-house-press-secretary.html": {
-      "title": "Trump Media advisor Katie Zacharia offered White House press secretary role",
-      "url": "https://www.cnbc.com/2026/10/09/katie-zacharia-white-house-press-secretary.html",
-      "canonical": "cnbc.com/2026/10/09/katie-zacharia-white-house-press-secretary.html",
-      "published_dt": "2026-10-10T01:25:28+06:00",
-      "published_date": "2026-10-10T01:25:28+06:00",
-      "source": "CNBC",
-      "region": "International",
-      "excerpt": "The White House has tapped Katie Zacharia to be its next press secretary, a White House official confirmed to CNBC.",
-      "image": "",
-      "discovery": "rss",
-      "date_estimated": false,
-      "status": "pending",
-      "first_seen": "2026-10-10T02:46:49.731855+06:00",
-      "last_seen": "2026-10-11T00:23:44.313076+06:00"
-    },
-    "cnbc.com/2026/10/09/trump-lisa-cook-fed-firing-committee-explained.html": {
-      "title": "Trump created a committee to dig into the Fed's Lisa Cook. What is it and what comes next?",
-      "url": "https://www.cnbc.com/2026/10/09/trump-lisa-cook-fed-firing-committee-explained.html",
-      "canonical": "cnbc.com/2026/10/09/trump-lisa-cook-fed-firing-committee-explained.html",
-      "published_dt": "2026-10-10T01:19:00+06:00",
-      "published_date": "2026-10-10T01:19:00+06:00",
-      "source": "CNBC",
-      "region": "International",
-      "excerpt": "Trump’s bid to fire the Fed's Lisa Cook follows a Supreme Court ruling and could affect Jerome Powell, central bank independence and interest rates.",
-      "image": "",
-      "discovery": "rss",
-      "date_estimated": false,
-      "status": "pending",
-      "first_seen": "2026-10-10T02:46:49.732100+06:00",
-      "last_seen": "2026-10-11T00:23:44.312062+06:00"
-    },
-    "cnbc.com/2026/10/09/tesla-full-self-driving-europe-regulator.html": {
-      "title": "Tesla drops 'Full Self-Driving' brand name in Europe after regulator pushback",
-      "url": "https://www.cnbc.com/2026/10/09/tesla-full-self-driving-europe-regulator.html",
-      "canonical": "cnbc.com/2026/10/09/tesla-full-self-driving-europe-regulator.html",
-      "published_dt": "2026-10-10T01:21:14+06:00",
-      "published_date": "2026-10-10T01:21:14+06:00",
-      "source": "CNBC",
-      "region": "International",
-      "excerpt": "German regulators called Tesla's \"Full Self-Driving\" brand name \"somewhat misleading.\"",
-      "image": "",
-      "discovery": "rss",
-      "date_estimated": false,
-      "status": "posted",
-      "first_seen": "2026-10-10T02:46:49.732835+06:00",
-      "last_seen": "2026-10-11T00:23:44.313440+06:00",
-      "posted_at": "2026-10-11T00:33:28.846195+06:00"
-    },
-    "cnbc.com/investingclub/2026/10/09/whats-behind-the-recovery-rally-in-tech-stocks-plus-musks-good-week.html": {
-      "title": "What's behind the recovery rally in tech stocks — plus, Elon Musk's very good week",
-      "url": "https://www.cnbc.com/investingclub/2026/10/09/whats-behind-the-recovery-rally-in-tech-stocks-plus-musks-good-week.html",
-      "canonical": "cnbc.com/investingclub/2026/10/09/whats-behind-the-recovery-rally-in-tech-stocks-plus-musks-good-week.html",
-      "published_dt": "2026-10-10T01:02:29+06:00",
-      "published_date": "2026-10-10T01:02:29+06:00",
-      "source": "CNBC",
-      "region": "International",
-      "excerpt": "Every weekday, the Investing Club releases the Homestretch; an actionable afternoon update just in time for the last hour of trading.",
-      "image": "",
-      "discovery": "rss",
-      "date_estimated": false,
-      "status": "pending",
-      "first_seen": "2026-10-10T02:46:49.733656+06:00",
-      "last_seen": "2026-10-11T00:23:44.313012+06:00"
-    },
-    "cnbc.com/2026/10/10/ai-lawyers-billable-hour-legal-careers.html": {
-      "title": "AI is changing how lawyers work — and putting the billable hour under pressure",
-      "url": "https://www.cnbc.com/2026/10/10/ai-lawyers-billable-hour-legal-careers.html",
-      "canonical": "cnbc.com/2026/10/10/ai-lawyers-billable-hour-legal-careers.html",
-      "published_dt": "2026-10-10T11:00:01+06:00",
-      "published_date": "2026-10-10T11:00:01+06:00",
-      "source": "CNBC",
-      "region": "International",
-      "excerpt": "AI adoption is forcing the legal profession to rethink the billable hour and how lawyers build expertise.",
-      "image": "",
-      "discovery": "rss",
-      "date_estimated": false,
-      "status": "posted",
-      "first_seen": "2026-10-10T12:53:42.663516+06:00",
-      "last_seen": "2026-10-11T00:23:44.312882+06:00",
-      "posted_at": "2026-10-11T00:33:34.103434+06:00"
-    },
-    "ft.com/content/6ff0232c-f38a-4c70-8ca9-b0eed437f09b": {
-      "title": "Napa Valley’s hangover",
-      "url": "https://www.ft.com/content/6ff0232c-f38a-4c70-8ca9-b0eed437f09b",
-      "canonical": "ft.com/content/6ff0232c-f38a-4c70-8ca9-b0eed437f09b",
-      "published_dt": "2026-10-10T10:00:26+06:00",
-      "published_date": "2026-10-10T10:00:26+06:00",
-      "source": "Financial Times",
-      "region": "International",
-      "excerpt": "People are drinking less. Vines are being ripped up. Winemakers are going bust. Can the Disneyland of wine survive the downturn?",
-      "image": "https://images.ft.com/v3/image/raw/https%3A%2F%2Fd1e00ek4ebabms.cloudfront.net%2Fproduction%2F039d7141-76f0-456a-aeeb-df032ede1ce2.jpg?source=next-home-page&dpr=2&width=580&fit=scale-down",
-      "discovery": "rss",
-      "date_estimated": false,
-      "status": "pending",
-      "first_seen": "2026-10-10T12:53:43.541388+06:00",
-      "last_seen": "2026-10-11T00:23:45.360785+06:00"
-    },
-    "ft.com/content/8d948115-5843-4419-967e-f79e65718f55": {
-      "title": "The danger of pessimism fatigue",
-      "url": "https://www.ft.com/content/8d948115-5843-4419-967e-f79e65718f55?syn-25a6b1a6=1",
-      "canonical": "ft.com/content/8d948115-5843-4419-967e-f79e65718f55",
-      "published_dt": "2026-10-10T10:00:37+06:00",
-      "published_date": "2026-10-10T10:00:37+06:00",
-      "source": "Financial Times",
-      "region": "International",
-      "excerpt": "Too many have cried wolf about too many things and the public is now perilously nonchalant",
-      "image": "https://images.ft.com/v3/image/raw/https%3A%2F%2Fd1e00ek4ebabms.cloudfront.net%2Fproduction%2Fb0f87178-1254-43d1-8dac-70e436258f10.jpg?source=next-home-page&dpr=2&width=580&fit=scale-down",
-      "discovery": "rss",
-      "date_estimated": false,
-      "status": "pending",
-      "first_seen": "2026-10-10T12:53:43.541482+06:00",
-      "last_seen": "2026-10-11T00:23:45.360866+06:00"
-    },
-    "ft.com/content/3f54c442-c2b7-4876-a960-5229951c9a46": {
-      "title": "The world of one trade — AI",
-      "url": "https://www.ft.com/content/3f54c442-c2b7-4876-a960-5229951c9a46?syn-25a6b1a6=1",
-      "canonical": "ft.com/content/3f54c442-c2b7-4876-a960-5229951c9a46",
-      "published_dt": "2026-10-10T12:36:04+06:00",
-      "published_date": "2026-10-10T12:36:04+06:00",
-      "source": "Financial Times",
-      "region": "International",
-      "excerpt": "Investor portfolios have become alarmingly reliant on the fortunes of just one bet on the build-out of an uncertain technology",
-      "image": "https://images.ft.com/v3/image/raw/https%3A%2F%2Fd1e00ek4ebabms.cloudfront.net%2Fproduction%2F5b06dabb-30c0-4c54-9ed3-e3242b5fd248.jpg?source=next-home-page&dpr=2&width=580&fit=scale-down",
-      "discovery": "rss",
-      "date_estimated": false,
-      "status": "pending",
-      "first_seen": "2026-10-10T12:53:43.541565+06:00",
-      "last_seen": "2026-10-11T00:23:45.361428+06:00"
-    },
-    "ft.com/content/4e4ea744-6603-499b-baf7-83c74e4dc53e": {
-      "title": "Russia targets Ukraine’s bridges as Vladimir Putin expands air war",
-      "url": "https://www.ft.com/content/4e4ea744-6603-499b-baf7-83c74e4dc53e?syn-25a6b1a6=1",
-      "canonical": "ft.com/content/4e4ea744-6603-499b-baf7-83c74e4dc53e",
-      "published_dt": "2026-10-10T10:00:38+06:00",
-      "published_date": "2026-10-10T10:00:38+06:00",
-      "source": "Financial Times",
-      "region": "International",
-      "excerpt": "Moscow’s drones have hit two bridges in Kyiv and one in Zaporizhzhia over the past week",
-      "image": "https://images.ft.com/v3/image/raw/https%3A%2F%2Fd1e00ek4ebabms.cloudfront.net%2Fproduction%2Fc8af912f-313d-420c-a99f-fcbf3275901e.jpg?source=next-home-page&dpr=2&width=580&fit=scale-down",
-      "discovery": "rss",
-      "date_estimated": false,
-      "status": "pending",
-      "first_seen": "2026-10-10T12:53:43.541643+06:00",
-      "last_seen": "2026-10-11T00:23:45.360694+06:00"
-    },
-    "ft.com/content/e29fd05b-9e71-474c-906e-c3fd45dfaa03": {
-      "title": "Saudi flagship summits under pressure after deadly airport attacks",
-      "url": "https://www.ft.com/content/e29fd05b-9e71-474c-906e-c3fd45dfaa03?syn-25a6b1a6=1",
-      "canonical": "ft.com/content/e29fd05b-9e71-474c-906e-c3fd45dfaa03",
-      "published_dt": "2026-10-10T12:36:00+06:00",
-      "published_date": "2026-10-10T12:36:00+06:00",
-      "source": "Financial Times",
-      "region": "International",
-      "excerpt": "Executives weigh whether to attend the World Petroleum Council Energy Congress and Future Investment Initiative",
-      "image": "https://images.ft.com/v3/image/raw/https%3A%2F%2Fd1e00ek4ebabms.cloudfront.net%2Fproduction%2F8c720714-5d2f-4f63-b24b-6576f3cc173c.jpg?source=next-home-page&dpr=2&width=580&fit=scale-down",
-      "discovery": "rss",
-      "date_estimated": false,
-      "status": "pending",
-      "first_seen": "2026-10-10T12:53:43.541790+06:00",
-      "last_seen": "2026-10-11T00:23:45.361508+06:00"
-    },
-    "ft.com/content/847e6d14-08e4-4477-8722-40bd7162b992": {
-      "title": "Airlines sound the alarm as bleak winter looms",
-      "url": "https://www.ft.com/content/847e6d14-08e4-4477-8722-40bd7162b992?syn-25a6b1a6=1",
-      "canonical": "ft.com/content/847e6d14-08e4-4477-8722-40bd7162b992",
-      "published_dt": "2026-10-10T02:00:01+06:00",
-      "published_date": "2026-10-10T02:00:01+06:00",
-      "source": "Financial Times",
-      "region": "International",
-      "excerpt": "The industry is reeling from the energy shock unleashed by the Iran war",
-      "image": "https://images.ft.com/v3/image/raw/https%3A%2F%2Fd1e00ek4ebabms.cloudfront.net%2Fproduction%2Fb1aa0dcd-105a-49be-81d0-c76d9c14acf8.jpg?source=next-home-page&dpr=2&width=580&fit=scale-down",
-      "discovery": "rss",
-      "date_estimated": false,
-      "status": "pending",
-      "first_seen": "2026-10-10T12:53:43.541862+06:00",
-      "last_seen": "2026-10-11T00:23:45.361583+06:00"
-    },
     "cnbc.com/2026/10/10/nvidia-gpus-are-everywhere-heres-how-companies-access-them.html": {
       "title": "Nvidia GPUs are everywhere. Here are the ways companies are accessing them",
       "url": "https://www.cnbc.com/2026/10/10/nvidia-gpus-are-everywhere-heres-how-companies-access-them.html",
@@ -291,22 +97,6 @@
       "status": "pending",
       "first_seen": "2026-10-10T19:29:55.032543+06:00",
       "last_seen": "2026-10-11T12:58:20.187948+06:00"
-    },
-    "cnbc.com/2026/10/10/ai-movies-tech-ceos-hollywood.html": {
-      "title": "Hollywood takes on Zuckerberg, Musk and Altman amid widespread anxiety over AI",
-      "url": "https://www.cnbc.com/2026/10/10/ai-movies-tech-ceos-hollywood.html",
-      "canonical": "cnbc.com/2026/10/10/ai-movies-tech-ceos-hollywood.html",
-      "published_dt": "2026-10-10T18:00:01+06:00",
-      "published_date": "2026-10-10T18:00:01+06:00",
-      "source": "CNBC",
-      "region": "International",
-      "excerpt": "New films about Zuckerberg, Musk, Altman and AI arrive as public concern about the technology and its leaders rises.",
-      "image": "",
-      "discovery": "rss",
-      "date_estimated": false,
-      "status": "pending",
-      "first_seen": "2026-10-10T19:29:55.032806+06:00",
-      "last_seen": "2026-10-11T00:23:44.312815+06:00"
     },
     "cnbc.com/make-it/2026/10/10/how-to-maintain-close-friendships.html": {
       "title": "I work hard to stay close to my friends. A researcher says it’s good for my well-being—and these 3 habits can help",
@@ -371,363 +161,6 @@
       "status": "pending",
       "first_seen": "2026-10-10T19:29:55.711082+06:00",
       "last_seen": "2026-10-11T12:58:21.220833+06:00"
-    },
-    "ft.com/content/9c13d40e-d2b2-45d5-921c-a68cd4b308f9": {
-      "title": "AI borrowing slows as investors grow wary of debt binge",
-      "url": "https://www.ft.com/content/9c13d40e-d2b2-45d5-921c-a68cd4b308f9?syn-25a6b1a6=1",
-      "canonical": "ft.com/content/9c13d40e-d2b2-45d5-921c-a68cd4b308f9",
-      "published_dt": "2026-10-10T17:00:07+06:00",
-      "published_date": "2026-10-10T17:00:07+06:00",
-      "source": "Financial Times",
-      "region": "International",
-      "excerpt": "Appetite for financing infrastructure boom is tested after months of record-breaking bond issuance",
-      "image": "https://images.ft.com/v3/image/raw/https%3A%2F%2Fd1e00ek4ebabms.cloudfront.net%2Fproduction%2F19db6e79-9b96-45ff-ba05-695fe17fe992.jpg?source=next-home-page&dpr=2&width=580&fit=scale-down",
-      "discovery": "rss",
-      "date_estimated": false,
-      "status": "pending",
-      "first_seen": "2026-10-10T19:29:55.711207+06:00",
-      "last_seen": "2026-10-11T00:23:45.361172+06:00"
-    },
-    "ft.com/content/a96adda5-89fb-4f8b-96c4-96c171489a40": {
-      "title": "EU joint budget proposal slashed in race to find end-year agreement",
-      "url": "https://www.ft.com/content/a96adda5-89fb-4f8b-96c4-96c171489a40?syn-25a6b1a6=1",
-      "canonical": "ft.com/content/a96adda5-89fb-4f8b-96c4-96c171489a40",
-      "published_dt": "2026-10-10T15:28:05+06:00",
-      "published_date": "2026-10-10T15:28:05+06:00",
-      "source": "Financial Times",
-      "region": "International",
-      "excerpt": "Proposal would still be a 30 per cent increase on the bloc’s current spending",
-      "image": "https://images.ft.com/v3/image/raw/https%3A%2F%2Fd1e00ek4ebabms.cloudfront.net%2Fproduction%2F7d94261e-3624-4ec1-b431-47d07c0742de.jpg?source=next-home-page&dpr=2&width=580&fit=scale-down",
-      "discovery": "rss",
-      "date_estimated": false,
-      "status": "pending",
-      "first_seen": "2026-10-10T19:29:55.711572+06:00",
-      "last_seen": "2026-10-11T00:23:45.361670+06:00"
-    },
-    "tbsnews.net/world/south-asia/cjp-announces-fresh-jantar-mantar-protest-tomorrow-1568611": {
-      "title": "CJP announces fresh Jantar Mantar protest for tomorrow",
-      "url": "https://www.tbsnews.net/world/south-asia/cjp-announces-fresh-jantar-mantar-protest-tomorrow-1568611",
-      "canonical": "tbsnews.net/world/south-asia/cjp-announces-fresh-jantar-mantar-protest-tomorrow-1568611",
-      "published_dt": "2026-10-10T23:55:00+06:00",
-      "published_date": "2026-10-10T23:55:00+06:00",
-      "source": "The Business Standard",
-      "region": "Bangladesh",
-      "excerpt": "Party vows to continue demonstrations despite detention of top leaders.",
-      "image": "https://www.tbsnews.net/sites/default/files/styles/big_1/public/images/2026/10/11/2026-10-10t074816z_1242711781_rc260oaqrcjv_rtrmadp_3_india-politics-gen-z.jpg",
-      "discovery": "rss",
-      "date_estimated": false,
-      "status": "pending",
-      "first_seen": "2026-10-11T00:23:42.881259+06:00",
-      "last_seen": "2026-10-11T00:23:42.881264+06:00"
-    },
-    "tbsnews.net/foreign-policy/pms-japan-visit-focus-investment-economic-ties-humaiun-1568606": {
-      "title": "PM's Japan visit to focus on investment, economic ties: Humaiun",
-      "url": "https://www.tbsnews.net/foreign-policy/pms-japan-visit-focus-investment-economic-ties-humaiun-1568606",
-      "canonical": "tbsnews.net/foreign-policy/pms-japan-visit-focus-investment-economic-ties-humaiun-1568606",
-      "published_dt": "2026-10-10T23:45:00+06:00",
-      "published_date": "2026-10-10T23:45:00+06:00",
-      "source": "The Business Standard",
-      "region": "Bangladesh",
-      "excerpt": "Humaiun Kobir said the visit would feature detailed discussions on cooperation and reciprocal investment opportunities in trade, investment and development.",
-      "image": "https://www.tbsnews.net/sites/default/files/styles/big_1/public/images/2026/10/08/aminul_haque_4.png",
-      "discovery": "rss",
-      "date_estimated": false,
-      "status": "posted",
-      "first_seen": "2026-10-11T00:23:42.881379+06:00",
-      "last_seen": "2026-10-11T00:23:42.881381+06:00",
-      "posted_at": "2026-10-11T13:04:14.470248+06:00"
-    },
-    "tbsnews.net/worldbiz/middle-east/saudi-capital-airport-hit-again-sparking-evacuations-say-reports-1568591": {
-      "title": "Saudi capital airport hit again, sparking evacuations, say reports",
-      "url": "https://www.tbsnews.net/worldbiz/middle-east/saudi-capital-airport-hit-again-sparking-evacuations-say-reports-1568591",
-      "canonical": "tbsnews.net/worldbiz/middle-east/saudi-capital-airport-hit-again-sparking-evacuations-say-reports-1568591",
-      "published_dt": "2026-10-10T22:10:00+06:00",
-      "published_date": "2026-10-10T22:10:00+06:00",
-      "source": "The Business Standard",
-      "region": "Bangladesh",
-      "excerpt": "Authorities remain silent as passengers are urged to check with airlines.",
-      "image": "https://www.tbsnews.net/sites/default/files/styles/big_1/public/images/2026/10/10/saudi-airport.jpg",
-      "discovery": "rss",
-      "date_estimated": false,
-      "status": "pending",
-      "first_seen": "2026-10-11T00:23:42.881466+06:00",
-      "last_seen": "2026-10-11T00:23:42.881468+06:00"
-    },
-    "tbsnews.net/bangladesh/governments-ignore-recovery-grabbed-wetlands-rizwana-hasan-1568586": {
-      "title": "Governments ignore recovery of grabbed wetlands: Rizwana Hasan",
-      "url": "https://www.tbsnews.net/bangladesh/governments-ignore-recovery-grabbed-wetlands-rizwana-hasan-1568586",
-      "canonical": "tbsnews.net/bangladesh/governments-ignore-recovery-grabbed-wetlands-rizwana-hasan-1568586",
-      "published_dt": "2026-10-10T22:00:00+06:00",
-      "published_date": "2026-10-10T22:00:00+06:00",
-      "source": "The Business Standard",
-      "region": "Bangladesh",
-      "excerpt": "Those who destroy public property eventually turn it into private property, often backed by political and economic interests, she says.",
-      "image": "https://www.tbsnews.net/sites/default/files/styles/big_1/public/images/2026/10/10/rizwana_wetland.jpg",
-      "discovery": "rss",
-      "date_estimated": false,
-      "status": "pending",
-      "first_seen": "2026-10-11T00:23:42.881542+06:00",
-      "last_seen": "2026-10-11T00:23:42.881544+06:00"
-    },
-    "tbsnews.net/economy/aviation/biman-suspends-dhaka-riyadh-flights-indefinitely-amid-aviation-disruptions-1568571": {
-      "title": "Biman suspends Dhaka-Riyadh flights indefinitely amid aviation disruptions in Saudi Arabia",
-      "url": "https://www.tbsnews.net/economy/aviation/biman-suspends-dhaka-riyadh-flights-indefinitely-amid-aviation-disruptions-1568571",
-      "canonical": "tbsnews.net/economy/aviation/biman-suspends-dhaka-riyadh-flights-indefinitely-amid-aviation-disruptions-1568571",
-      "published_dt": "2026-10-10T21:55:00+06:00",
-      "published_date": "2026-10-10T21:55:00+06:00",
-      "source": "The Business Standard",
-      "region": "Bangladesh",
-      "excerpt": "Passengers told to await updates before travelling to airports.",
-      "image": "https://www.tbsnews.net/sites/default/files/styles/big_1/public/images/2023/12/16/biman_bangladesh_airlines_1.jpg",
-      "discovery": "rss",
-      "date_estimated": false,
-      "status": "posted",
-      "first_seen": "2026-10-11T00:23:42.881632+06:00",
-      "last_seen": "2026-10-11T00:23:42.881635+06:00",
-      "posted_at": "2026-10-11T00:33:13.981556+06:00"
-    },
-    "tbsnews.net/bangladesh/court/80-gold-bars-found-shoes-2-dhaka-airport-staff-give-confessional-statements-sent": {
-      "title": "80 gold bars found in shoes: 2 Dhaka airport staff give confessional statements, sent to jail",
-      "url": "https://www.tbsnews.net/bangladesh/court/80-gold-bars-found-shoes-2-dhaka-airport-staff-give-confessional-statements-sent",
-      "canonical": "tbsnews.net/bangladesh/court/80-gold-bars-found-shoes-2-dhaka-airport-staff-give-confessional-statements-sent",
-      "published_dt": "2026-10-10T21:45:00+06:00",
-      "published_date": "2026-10-10T21:45:00+06:00",
-      "source": "The Business Standard",
-      "region": "Bangladesh",
-      "excerpt": "The 9.34kg gold haul, worth around Tk16.25 crore, was recovered from the two staff members at Hazrat Shahjalal International Airport on 4 October.",
-      "image": "https://www.tbsnews.net/sites/default/files/styles/big_1/public/images/2026/08/31/dhaka_court.jpg",
-      "discovery": "rss",
-      "date_estimated": false,
-      "status": "pending",
-      "first_seen": "2026-10-11T00:23:42.881711+06:00",
-      "last_seen": "2026-10-11T00:23:42.881713+06:00"
-    },
-    "tbsnews.net/economy/solar-power-can-cut-fuel-import-dependence-save-foreign-currency-khosru-1568566": {
-      "title": "Solar power can cut fuel import dependence, save foreign currency: Khosru",
-      "url": "https://www.tbsnews.net/economy/solar-power-can-cut-fuel-import-dependence-save-foreign-currency-khosru-1568566",
-      "canonical": "tbsnews.net/economy/solar-power-can-cut-fuel-import-dependence-save-foreign-currency-khosru-1568566",
-      "published_dt": "2026-10-10T21:45:00+06:00",
-      "published_date": "2026-10-10T21:45:00+06:00",
-      "source": "The Business Standard",
-      "region": "Bangladesh",
-      "excerpt": "Walton unveils solar ecosystem for power generation, household appliances.",
-      "image": "https://www.tbsnews.net/sites/default/files/styles/big_1/public/images/2026/06/04/khasru_sketch.jpg",
-      "discovery": "rss",
-      "date_estimated": false,
-      "status": "posted",
-      "first_seen": "2026-10-11T00:23:42.881781+06:00",
-      "last_seen": "2026-10-11T00:23:42.881783+06:00",
-      "posted_at": "2026-10-11T00:33:18.218315+06:00"
-    },
-    "tbsnews.net/bangladesh/crime/khulna-police-bar-solo-night-travel-after-inspector-attacked-robbed-1568546": {
-      "title": "Khulna police bar solo night travel after inspector 'attacked, robbed'",
-      "url": "https://www.tbsnews.net/bangladesh/crime/khulna-police-bar-solo-night-travel-after-inspector-attacked-robbed-1568546",
-      "canonical": "tbsnews.net/bangladesh/crime/khulna-police-bar-solo-night-travel-after-inspector-attacked-robbed-1568546",
-      "published_dt": "2026-10-10T21:40:00+06:00",
-      "published_date": "2026-10-10T21:40:00+06:00",
-      "source": "The Business Standard",
-      "region": "Bangladesh",
-      "excerpt": "District police tighten safety measures during special operations.",
-      "image": "https://www.tbsnews.net/sites/default/files/styles/big_1/public/images/2026/06/21/mugging.png",
-      "discovery": "rss",
-      "date_estimated": false,
-      "status": "pending",
-      "first_seen": "2026-10-11T00:23:42.881850+06:00",
-      "last_seen": "2026-10-11T00:23:42.881852+06:00"
-    },
-    "tbsnews.net/world/south-asia/over-4000-detained-indias-cjp-protest-mamata-kejriwal-imran-neha-bora-released": {
-      "title": "Over 4,000 detained in India's CJP protest; Mamata, Kejriwal, Imran, Neha Bora released",
-      "url": "https://www.tbsnews.net/world/south-asia/over-4000-detained-indias-cjp-protest-mamata-kejriwal-imran-neha-bora-released",
-      "canonical": "tbsnews.net/world/south-asia/over-4000-detained-indias-cjp-protest-mamata-kejriwal-imran-neha-bora-released",
-      "published_dt": "2026-10-10T21:35:00+06:00",
-      "published_date": "2026-10-10T21:35:00+06:00",
-      "source": "The Business Standard",
-      "region": "Bangladesh",
-      "excerpt": "Security was tightened around the venue, with more than 40,000 police and paramilitary personnel deployed to keep protesters away.",
-      "image": "https://www.tbsnews.net/sites/default/files/styles/big_1/public/images/2026/10/10/mamata_neha_arvind.jpg",
-      "discovery": "rss",
-      "date_estimated": false,
-      "status": "pending",
-      "first_seen": "2026-10-11T00:23:42.881917+06:00",
-      "last_seen": "2026-10-11T00:23:42.881919+06:00"
-    },
-    "tbsnews.net/bangladesh/ramadan-may-begin-8-february-2027-1568541": {
-      "title": "Ramadan may begin on 8 February 2027",
-      "url": "https://www.tbsnews.net/bangladesh/ramadan-may-begin-8-february-2027-1568541",
-      "canonical": "tbsnews.net/bangladesh/ramadan-may-begin-8-february-2027-1568541",
-      "published_dt": "2026-10-10T21:25:00+06:00",
-      "published_date": "2026-10-10T21:25:00+06:00",
-      "source": "The Business Standard",
-      "region": "Bangladesh",
-      "excerpt": "Astronomical forecasts place Eid-ul-Fitr in early March.",
-      "image": "https://www.tbsnews.net/sites/default/files/styles/big_1/public/images/2026/10/10/ramadan_1.jpg",
-      "discovery": "rss",
-      "date_estimated": false,
-      "status": "pending",
-      "first_seen": "2026-10-11T00:23:42.881980+06:00",
-      "last_seen": "2026-10-11T00:23:42.881982+06:00"
-    },
-    "tbsnews.net/bangladesh/dhaka-riyadh-need-build-broader-strategic-partnership-beyond-manpower-export-speakers": {
-      "title": "Dhaka, Riyadh need to build broader strategic partnership beyond manpower export: Speakers",
-      "url": "https://www.tbsnews.net/bangladesh/dhaka-riyadh-need-build-broader-strategic-partnership-beyond-manpower-export-speakers",
-      "canonical": "tbsnews.net/bangladesh/dhaka-riyadh-need-build-broader-strategic-partnership-beyond-manpower-export-speakers",
-      "published_dt": "2026-10-10T21:15:00+06:00",
-      "published_date": "2026-10-10T21:15:00+06:00",
-      "source": "The Business Standard",
-      "region": "Bangladesh",
-      "excerpt": "They stressed the need to align Bangladesh’s workforce development with Saudi Arabia’s changing labour market demands under its Vision 2030 programme.",
-      "image": "https://www.tbsnews.net/sites/default/files/styles/big_1/public/images/2026/10/10/dhaka_riyadh_.jpg",
-      "discovery": "rss",
-      "date_estimated": false,
-      "status": "posted",
-      "first_seen": "2026-10-11T00:23:42.882046+06:00",
-      "last_seen": "2026-10-11T00:23:42.882048+06:00",
-      "posted_at": "2026-10-11T13:04:21.070911+06:00"
-    },
-    "tbsnews.net/bangladesh/education/i-didnt-ask-student-remove-niqab-leave-class-tasneem-siraj-1568526": {
-      "title": "I didn't ask student to remove niqab, leave class: Tasneem Siraj",
-      "url": "https://www.tbsnews.net/bangladesh/education/i-didnt-ask-student-remove-niqab-leave-class-tasneem-siraj-1568526",
-      "canonical": "tbsnews.net/bangladesh/education/i-didnt-ask-student-remove-niqab-leave-class-tasneem-siraj-1568526",
-      "published_dt": "2026-10-10T21:05:00+06:00",
-      "published_date": "2026-10-10T21:05:00+06:00",
-      "source": "The Business Standard",
-      "region": "Bangladesh",
-      "excerpt": "She says the lack of eye contact made it difficult to identify the student and communicate effectively, prompting her to express discomfort.",
-      "image": "https://www.tbsnews.net/sites/default/files/styles/big_1/public/images/2026/10/10/tasneem_siraj_mahbub.jpg",
-      "discovery": "rss",
-      "date_estimated": false,
-      "status": "pending",
-      "first_seen": "2026-10-11T00:23:42.882114+06:00",
-      "last_seen": "2026-10-11T00:23:42.882116+06:00"
-    },
-    "tbsnews.net/bangladesh/obituary/senior-journalist-amir-khasru-dies-64-1568521": {
-      "title": "Senior journalist Amir Khasru dies at 64",
-      "url": "https://www.tbsnews.net/bangladesh/obituary/senior-journalist-amir-khasru-dies-64-1568521",
-      "canonical": "tbsnews.net/bangladesh/obituary/senior-journalist-amir-khasru-dies-64-1568521",
-      "published_dt": "2026-10-10T20:55:00+06:00",
-      "published_date": "2026-10-10T20:55:00+06:00",
-      "source": "The Business Standard",
-      "region": "Bangladesh",
-      "excerpt": "Former editor and diplomatic correspondent dies during treatment.",
-      "image": "https://www.tbsnews.net/sites/default/files/styles/big_1/public/images/2026/10/10/b128264f69ce4740ebc6edcfcd381225.jpg",
-      "discovery": "rss",
-      "date_estimated": false,
-      "status": "pending",
-      "first_seen": "2026-10-11T00:23:42.882177+06:00",
-      "last_seen": "2026-10-11T00:23:42.882178+06:00"
-    },
-    "tbsnews.net/bangladesh/banking-overhaul-needed-revive-textile-industry-rizvi-1568511": {
-      "title": "Banking overhaul needed to revive textile industry: Rizvi",
-      "url": "https://www.tbsnews.net/bangladesh/banking-overhaul-needed-revive-textile-industry-rizvi-1568511",
-      "canonical": "tbsnews.net/bangladesh/banking-overhaul-needed-revive-textile-industry-rizvi-1568511",
-      "published_dt": "2026-10-10T20:45:00+06:00",
-      "published_date": "2026-10-10T20:45:00+06:00",
-      "source": "The Business Standard",
-      "region": "Bangladesh",
-      "excerpt": "BNP leader highlights financing, energy and compliance challenges.",
-      "image": "https://www.tbsnews.net/sites/default/files/styles/big_1/public/images/2023/08/17/ruhul_kabir_rizvi_1.jpg",
-      "discovery": "rss",
-      "date_estimated": false,
-      "status": "posted",
-      "first_seen": "2026-10-11T00:23:42.882238+06:00",
-      "last_seen": "2026-10-11T00:23:42.882240+06:00",
-      "posted_at": "2026-10-11T00:33:08.584045+06:00"
-    },
-    "tbsnews.net/world/south-asia/indias-nia-probe-alleged-mid-air-attack-flydubai-pilot-1568501": {
-      "title": "India's NIA to probe alleged mid-air attack on flydubai pilot",
-      "url": "https://www.tbsnews.net/world/south-asia/indias-nia-probe-alleged-mid-air-attack-flydubai-pilot-1568501",
-      "canonical": "tbsnews.net/world/south-asia/indias-nia-probe-alleged-mid-air-attack-flydubai-pilot-1568501",
-      "published_dt": "2026-10-10T20:40:00+06:00",
-      "published_date": "2026-10-10T20:40:00+06:00",
-      "source": "The Business Standard",
-      "region": "Bangladesh",
-      "excerpt": "Agency investigates suspected hijacking attempt and wider conspiracy.",
-      "image": "https://www.tbsnews.net/sites/default/files/styles/big_1/public/images/2026/04/01/fly_dubai.jpg",
-      "discovery": "rss",
-      "date_estimated": false,
-      "status": "pending",
-      "first_seen": "2026-10-11T00:23:42.882302+06:00",
-      "last_seen": "2026-10-11T00:23:42.882303+06:00"
-    },
-    "tbsnews.net/bangladesh/sheltering-hasina-allowing-her-do-politics-major-obstacle-towards-better-dhaka-delhi-ties": {
-      "title": "Sheltering Hasina, allowing her to do politics a major obstacle towards better Dhaka-Delhi ties: Mushfiqul",
-      "url": "https://www.tbsnews.net/bangladesh/sheltering-hasina-allowing-her-do-politics-major-obstacle-towards-better-dhaka-delhi-ties",
-      "canonical": "tbsnews.net/bangladesh/sheltering-hasina-allowing-her-do-politics-major-obstacle-towards-better-dhaka-delhi-ties",
-      "published_dt": "2026-10-10T20:35:00+06:00",
-      "published_date": "2026-10-10T20:35:00+06:00",
-      "source": "The Business Standard",
-      "region": "Bangladesh",
-      "excerpt": "Mushfiqul said lasting friendship must be built with a country's people rather than being confined to a particular leader or political party.",
-      "image": "https://www.tbsnews.net/sites/default/files/styles/big_1/public/images/2026/10/10/7610391.jpg",
-      "discovery": "rss",
-      "date_estimated": false,
-      "status": "pending",
-      "first_seen": "2026-10-11T00:23:42.882367+06:00",
-      "last_seen": "2026-10-11T00:23:42.882369+06:00"
-    },
-    "tbsnews.net/bangladesh/bangladesh-india-hold-talks-elephant-corridor-sherpur-mintoo-1568486": {
-      "title": "Bangladesh, India to hold talks on elephant corridor in Sherpur: Mintoo",
-      "url": "https://www.tbsnews.net/bangladesh/bangladesh-india-hold-talks-elephant-corridor-sherpur-mintoo-1568486",
-      "canonical": "tbsnews.net/bangladesh/bangladesh-india-hold-talks-elephant-corridor-sherpur-mintoo-1568486",
-      "published_dt": "2026-10-10T20:30:00+06:00",
-      "published_date": "2026-10-10T20:30:00+06:00",
-      "source": "The Business Standard",
-      "region": "Bangladesh",
-      "excerpt": "The government would request the Indian authorities to open gates in the fencing to allow the elephants to return, although previous requests had not received a positive response, the minister says.",
-      "image": "https://www.tbsnews.net/sites/default/files/styles/big_1/public/images/2026/10/10/abdul_awal_mintoo_sherpur.jpg",
-      "discovery": "rss",
-      "date_estimated": false,
-      "status": "pending",
-      "first_seen": "2026-10-11T00:23:42.882435+06:00",
-      "last_seen": "2026-10-11T00:23:42.882436+06:00"
-    },
-    "tbsnews.net/world/south-asia/who-ajinkya-shinde-organiser-stepping-lead-cjp-protest-1568491": {
-      "title": "Who is Ajinkya Shinde? The organiser stepping up to lead CJP protest",
-      "url": "https://www.tbsnews.net/world/south-asia/who-ajinkya-shinde-organiser-stepping-lead-cjp-protest-1568491",
-      "canonical": "tbsnews.net/world/south-asia/who-ajinkya-shinde-organiser-stepping-lead-cjp-protest-1568491",
-      "published_dt": "2026-10-10T20:25:00+06:00",
-      "published_date": "2026-10-10T20:25:00+06:00",
-      "source": "The Business Standard",
-      "region": "Bangladesh",
-      "excerpt": "Shinde, a former Aam Aadmi Party (AAP) worker from Maharashtra, has been entrusted with leading the Cockroach Janta Party’s protest at Jantar Mantar after the detention of its senior leaders on 10 October 2026.",
-      "image": "https://www.tbsnews.net/sites/default/files/styles/big_1/public/images/2026/10/10/ajinkya-shinde.jpg",
-      "discovery": "rss",
-      "date_estimated": false,
-      "status": "pending",
-      "first_seen": "2026-10-11T00:23:42.882501+06:00",
-      "last_seen": "2026-10-11T00:23:42.882503+06:00"
-    },
-    "tbsnews.net/bangladesh/govt-aims-balanced-development-across-all-503-upazilas-lgrd-minister-1568481": {
-      "title": "Govt aims for balanced development across all 503 upazilas: Moyeen Khan",
-      "url": "https://www.tbsnews.net/bangladesh/govt-aims-balanced-development-across-all-503-upazilas-lgrd-minister-1568481",
-      "canonical": "tbsnews.net/bangladesh/govt-aims-balanced-development-across-all-503-upazilas-lgrd-minister-1568481",
-      "published_dt": "2026-10-10T20:20:00+06:00",
-      "published_date": "2026-10-10T20:20:00+06:00",
-      "source": "The Business Standard",
-      "region": "Bangladesh",
-      "excerpt": "Noting that the country currently had around 250,000 registered cooperative societies, he stressed the need to ensure their actual effectiveness.",
-      "image": "https://www.tbsnews.net/sites/default/files/styles/big_1/public/images/2026/10/10/8744025.jpg",
-      "discovery": "rss",
-      "date_estimated": false,
-      "status": "pending",
-      "first_seen": "2026-10-11T00:23:42.882564+06:00",
-      "last_seen": "2026-10-11T00:23:42.882565+06:00"
-    },
-    "tbsnews.net/videos/tbs-news-day/tbs-news-8-pm-10-october-2026-1568496": {
-      "title": "TBS NEWS AT 8 PM, 10 October 2026",
-      "url": "https://www.tbsnews.net/videos/tbs-news-day/tbs-news-8-pm-10-october-2026-1568496",
-      "canonical": "tbsnews.net/videos/tbs-news-day/tbs-news-8-pm-10-october-2026-1568496",
-      "published_dt": "2026-10-10T20:20:00+06:00",
-      "published_date": "2026-10-10T20:20:00+06:00",
-      "source": "The Business Standard",
-      "region": "Bangladesh",
-      "excerpt": "",
-      "image": "https://www.tbsnews.net/sites/default/files/styles/big_1/public/images/2026/10/10/tbs_8ttaar_snbaad_10_akttobr_2026.jpg",
-      "discovery": "rss",
-      "date_estimated": false,
-      "status": "pending",
-      "first_seen": "2026-10-11T00:23:42.882642+06:00",
-      "last_seen": "2026-10-11T00:23:42.882644+06:00"
     },
     "cnbc.com/2026/10/10/vance-microsoft-h1b-layoffs-visa-data.html": {
       "title": "Vance says Microsoft replaced laid-off workers with foreign hires. Here’s what the visa data shows",
@@ -809,22 +242,6 @@
       "status": "pending",
       "first_seen": "2026-10-11T00:23:44.312746+06:00",
       "last_seen": "2026-10-11T19:55:40.620267+06:00"
-    },
-    "ft.com/content/e3945b16-13f0-4640-882d-fafaca9d25e9": {
-      "title": "Nixonmaxxing: the strange revival of America’s disgraced president",
-      "url": "https://www.ft.com/content/e3945b16-13f0-4640-882d-fafaca9d25e9?syn-25a6b1a6=1",
-      "canonical": "ft.com/content/e3945b16-13f0-4640-882d-fafaca9d25e9",
-      "published_dt": "2026-10-10T16:00:07+06:00",
-      "published_date": "2026-10-10T16:00:07+06:00",
-      "source": "Financial Times",
-      "region": "International",
-      "excerpt": "Richard Nixon has become the unlikely darling of Trump’s Washington",
-      "image": "https://images.ft.com/v3/image/raw/https%3A%2F%2Fd1e00ek4ebabms.cloudfront.net%2Fproduction%2F1a84057d-bb89-48e7-9e54-86fcdf76d7ad.jpg?source=next-home-page&dpr=2&width=580&fit=scale-down",
-      "discovery": "rss",
-      "date_estimated": false,
-      "status": "pending",
-      "first_seen": "2026-10-11T00:23:45.360943+06:00",
-      "last_seen": "2026-10-11T00:23:45.360945+06:00"
     },
     "tbsnews.net/world/global-economy/middle-east-war-high-debt-levels-dominate-imf-world-bank-meetings-bangkok": {
       "title": "Middle East war, high debt levels to dominate IMF-World Bank meetings in Bangkok",
@@ -5455,7 +4872,7 @@
       "date_estimated": false,
       "status": "pending",
       "first_seen": "2026-10-14T03:08:03.062983+06:00",
-      "last_seen": "2026-10-14T22:58:11.206401+06:00"
+      "last_seen": "2026-10-15T02:35:30.549981+06:00"
     },
     "cnbc.com/2026/10/13/bank-of-america-treasury-money-laundering.html": {
       "title": "Bank of America fined $1.2 billion over money-laundering violations",
@@ -6299,7 +5716,7 @@
       "date_estimated": false,
       "status": "pending",
       "first_seen": "2026-10-14T11:59:04.252528+06:00",
-      "last_seen": "2026-10-14T22:58:12.208169+06:00"
+      "last_seen": "2026-10-15T02:35:31.412538+06:00"
     },
     "ft.com/content/8267236e-f4bb-4d7b-9ed7-6ec0a9867b94": {
       "title": "How I used AI to become a chess grandmaster at 16",
@@ -6377,9 +5794,10 @@
       "image": "https://www.tbsnews.net/sites/default/files/styles/big_1/public/images/2026/10/14/uk_export.jpg",
       "discovery": "rss",
       "date_estimated": false,
-      "status": "pending",
+      "status": "posted",
       "first_seen": "2026-10-14T17:42:18.252325+06:00",
-      "last_seen": "2026-10-14T17:42:18.252332+06:00"
+      "last_seen": "2026-10-14T17:42:18.252332+06:00",
+      "posted_at": "2026-10-15T02:51:30.387695+06:00"
     },
     "tbsnews.net/economy/energy/pksf-signs-tk500-crore-deal-expand-solar-power-use-1572741": {
       "title": "PKSF signs Tk500 crore deal to expand solar power use",
@@ -6442,9 +5860,10 @@
       "image": "https://www.tbsnews.net/sites/default/files/styles/big_1/public/images/2026/03/12/disel.jpg",
       "discovery": "rss",
       "date_estimated": false,
-      "status": "pending",
+      "status": "posted",
       "first_seen": "2026-10-14T17:42:18.252906+06:00",
-      "last_seen": "2026-10-14T17:42:18.252910+06:00"
+      "last_seen": "2026-10-14T17:42:18.252910+06:00",
+      "posted_at": "2026-10-15T02:51:35.527053+06:00"
     },
     "tbsnews.net/bangladesh/health/health-minister-orders-door-door-drive-ensure-no-child-misses-vaccination-1572716": {
       "title": "Health minister orders door-to-door drive to ensure no child misses vaccination",
@@ -6700,7 +6119,7 @@
       "date_estimated": false,
       "status": "pending",
       "first_seen": "2026-10-14T17:42:19.976188+06:00",
-      "last_seen": "2026-10-14T22:58:11.205914+06:00"
+      "last_seen": "2026-10-15T02:35:30.549055+06:00"
     },
     "cnbc.com/2026/10/14/morgan-stanley-ms-q3-2026-earnings.html": {
       "title": "Morgan Stanley tops estimates as equities trading revenue exceeds expectations by $909 million",
@@ -6716,7 +6135,7 @@
       "date_estimated": false,
       "status": "pending",
       "first_seen": "2026-10-14T17:42:19.976332+06:00",
-      "last_seen": "2026-10-14T22:58:11.206246+06:00"
+      "last_seen": "2026-10-15T02:35:30.549748+06:00"
     },
     "cnbc.com/2026/10/14/delta-one-revamp.html": {
       "title": "Delta's business-class revamp: New seats, menus, plates and more Porsches",
@@ -6732,7 +6151,7 @@
       "date_estimated": false,
       "status": "pending",
       "first_seen": "2026-10-14T17:42:19.976585+06:00",
-      "last_seen": "2026-10-14T22:58:11.206194+06:00"
+      "last_seen": "2026-10-15T02:35:30.549636+06:00"
     },
     "cnbc.com/2026/10/14/russia-ukraine-energy-ceasefire-power-outages.html": {
       "title": "Ukraine warns Starlink limits are disrupting military operations as Russia pounds its energy infrastructure",
@@ -6748,7 +6167,7 @@
       "date_estimated": false,
       "status": "pending",
       "first_seen": "2026-10-14T17:42:19.976861+06:00",
-      "last_seen": "2026-10-14T22:58:11.206452+06:00"
+      "last_seen": "2026-10-15T02:35:30.550094+06:00"
     },
     "cnbc.com/2026/10/14/texas-latino-voters-midterm-election-trump.html": {
       "title": "South Texas Latino voters who flipped for Trump in 2024 are up for grabs in 2026",
@@ -6764,7 +6183,7 @@
       "date_estimated": false,
       "status": "pending",
       "first_seen": "2026-10-14T17:42:19.977213+06:00",
-      "last_seen": "2026-10-14T22:58:11.205853+06:00"
+      "last_seen": "2026-10-15T02:35:30.548828+06:00"
     },
     "cnbc.com/2026/10/14/mike-rogers-trump-tariffs-michigan-senate-election.html": {
       "title": "How Trump’s tariffs and Iran war are becoming liabilities in Michigan’s Senate race",
@@ -6780,7 +6199,7 @@
       "date_estimated": false,
       "status": "pending",
       "first_seen": "2026-10-14T17:42:19.977591+06:00",
-      "last_seen": "2026-10-14T22:58:11.206505+06:00"
+      "last_seen": "2026-10-15T02:35:30.550206+06:00"
     },
     "cnbc.com/2026/10/14/tech-giants-race-to-get-ai-gadgets-on-shelves-for-holiday-rush.html": {
       "title": "Tech giants race to get AI gadgets on shelves for holiday rush",
@@ -6796,7 +6215,7 @@
       "date_estimated": false,
       "status": "pending",
       "first_seen": "2026-10-14T17:42:19.977741+06:00",
-      "last_seen": "2026-10-14T22:58:11.206350+06:00"
+      "last_seen": "2026-10-15T02:35:30.549863+06:00"
     },
     "cnbc.com/2026/10/14/even-more-borrowers-choose-riskier-mortgages-as-higher-interest-rates-crush-affordability.html": {
       "title": "Even more borrowers choose riskier mortgages, as higher interest rates crush affordability",
@@ -6861,7 +6280,7 @@
       "date_estimated": false,
       "status": "pending",
       "first_seen": "2026-10-14T17:42:20.910305+06:00",
-      "last_seen": "2026-10-14T22:58:12.208230+06:00"
+      "last_seen": "2026-10-15T02:35:31.412669+06:00"
     },
     "ft.com/content/dc21da0b-25b7-402e-8dbe-e7d9f7431b93": {
       "title": "How Ukraine’s data centre strikes threw Russia into turmoil",
@@ -6893,7 +6312,7 @@
       "date_estimated": false,
       "status": "pending",
       "first_seen": "2026-10-14T17:42:20.910584+06:00",
-      "last_seen": "2026-10-14T22:58:12.208031+06:00"
+      "last_seen": "2026-10-15T02:35:31.412239+06:00"
     },
     "ft.com/content/4ffa1853-0e2c-424f-b941-88c6bcac5765": {
       "title": "CoreWeave targets ‘unlimited’ insurance money to fund AI build-out",
@@ -6941,7 +6360,7 @@
       "date_estimated": false,
       "status": "pending",
       "first_seen": "2026-10-14T17:42:20.911376+06:00",
-      "last_seen": "2026-10-14T17:42:20.911379+06:00"
+      "last_seen": "2026-10-15T02:35:31.413044+06:00"
     },
     "ft.com/content/2fc239ae-b0d4-41e8-81d0-cc2c0b3aba01": {
       "title": "AI demand to exceed supply for 2 more years, says ASML",
@@ -6989,7 +6408,7 @@
       "date_estimated": false,
       "status": "pending",
       "first_seen": "2026-10-14T22:58:07.683298+06:00",
-      "last_seen": "2026-10-14T22:58:07.683301+06:00"
+      "last_seen": "2026-10-15T02:35:29.037080+06:00"
     },
     "tbsnews.net/economy/banking/bangladesh-bhutan-discuss-bilateral-cooperation-sidelines-imf-wb-meetings-1573301": {
       "title": "Bangladesh, Bhutan discuss bilateral cooperation on sidelines of IMF-WB meetings",
@@ -7022,7 +6441,7 @@
       "date_estimated": false,
       "status": "pending",
       "first_seen": "2026-10-14T22:58:07.683470+06:00",
-      "last_seen": "2026-10-14T22:58:07.683471+06:00"
+      "last_seen": "2026-10-15T02:35:29.037295+06:00"
     },
     "tbsnews.net/economy/development-partners-confident-govts-economic-recovery-strategy-titumir-1573276": {
       "title": "Development partners confident in govt's economic recovery strategy: Titumir",
@@ -7038,7 +6457,7 @@
       "date_estimated": false,
       "status": "pending",
       "first_seen": "2026-10-14T22:58:07.683529+06:00",
-      "last_seen": "2026-10-14T22:58:07.683531+06:00"
+      "last_seen": "2026-10-15T02:35:29.037405+06:00"
     },
     "tbsnews.net/bangladesh/court/bpc-general-manager-sued-over-age-fraud-2009-recruitment-1573266": {
       "title": "BPC general manager sued over 'age fraud' in 2009 recruitment",
@@ -7054,7 +6473,7 @@
       "date_estimated": false,
       "status": "pending",
       "first_seen": "2026-10-14T22:58:07.683589+06:00",
-      "last_seen": "2026-10-14T22:58:07.683590+06:00"
+      "last_seen": "2026-10-15T02:35:29.037581+06:00"
     },
     "tbsnews.net/bangladesh/pm-urges-people-spend-30-60-minutes-twice-week-cleaning-prevent-dengue-1573261": {
       "title": "PM urges people to spend 30-60 minutes twice a week cleaning to prevent dengue",
@@ -7070,7 +6489,7 @@
       "date_estimated": false,
       "status": "pending",
       "first_seen": "2026-10-14T22:58:07.683643+06:00",
-      "last_seen": "2026-10-14T22:58:07.683644+06:00"
+      "last_seen": "2026-10-15T02:35:29.037697+06:00"
     },
     "tbsnews.net/sports/football/uks-hmrc-declines-say-if-it-investigating-man-city-1573251": {
       "title": "UK's HMRC declines to say if it is investigating Man City",
@@ -7086,7 +6505,7 @@
       "date_estimated": false,
       "status": "pending",
       "first_seen": "2026-10-14T22:58:07.683698+06:00",
-      "last_seen": "2026-10-14T22:58:07.683699+06:00"
+      "last_seen": "2026-10-15T02:35:29.037809+06:00"
     },
     "tbsnews.net/economy/energy/govt-approves-9-lng-cargoes-drops-kutubjom-terminal-plan-1573271": {
       "title": "Govt approves 9 LNG cargoes, drops Kutubjom terminal plan",
@@ -7102,7 +6521,7 @@
       "date_estimated": false,
       "status": "pending",
       "first_seen": "2026-10-14T22:58:07.683754+06:00",
-      "last_seen": "2026-10-14T22:58:07.683755+06:00"
+      "last_seen": "2026-10-15T02:35:29.037918+06:00"
     },
     "tbsnews.net/economy/stocks/dse-turnover-plummets-7-month-low-despite-modest-index-uptick-1573241": {
       "title": "DSE turnover plummets to 7-month low despite modest index uptick",
@@ -7312,7 +6731,7 @@
       "date_estimated": false,
       "status": "pending",
       "first_seen": "2026-10-14T22:58:11.205087+06:00",
-      "last_seen": "2026-10-14T22:58:11.205089+06:00"
+      "last_seen": "2026-10-15T02:35:30.548000+06:00"
     },
     "cnbc.com/2026/10/14/container-ship-sinks-strait-hormuz-as-iran-war-attacks.html": {
       "title": "Container ship sinks in Strait of Hormuz as Iran steps up attacks",
@@ -7345,7 +6764,7 @@
       "date_estimated": false,
       "status": "pending",
       "first_seen": "2026-10-14T22:58:11.205237+06:00",
-      "last_seen": "2026-10-14T22:58:11.205238+06:00"
+      "last_seen": "2026-10-15T02:35:30.547039+06:00"
     },
     "cnbc.com/2026/10/14/coreweave-stock-bond-yields-ai-debt.html": {
       "title": "CoreWeave shares tumble as bond yields near 15% on concern about AI borrowing binge",
@@ -7361,7 +6780,7 @@
       "date_estimated": false,
       "status": "pending",
       "first_seen": "2026-10-14T22:58:11.205296+06:00",
-      "last_seen": "2026-10-14T22:58:11.205297+06:00"
+      "last_seen": "2026-10-15T02:35:30.546524+06:00"
     },
     "cnbc.com/2026/10/14/fannie-mae-sharply-raises-mortgage-rate-forecast-for-2027-.html": {
       "title": "Fannie Mae sharply raises mortgage rate forecast for 2027",
@@ -7377,7 +6796,7 @@
       "date_estimated": false,
       "status": "pending",
       "first_seen": "2026-10-14T22:58:11.205353+06:00",
-      "last_seen": "2026-10-14T22:58:11.205355+06:00"
+      "last_seen": "2026-10-15T02:35:30.547158+06:00"
     },
     "cnbc.com/2026/10/14/netflix-layoffs.html": {
       "title": "Netflix to lay off roughly 1,000 employees, or 6% of workforce",
@@ -7393,7 +6812,7 @@
       "date_estimated": false,
       "status": "pending",
       "first_seen": "2026-10-14T22:58:11.205409+06:00",
-      "last_seen": "2026-10-14T22:58:11.205410+06:00"
+      "last_seen": "2026-10-15T02:35:30.548116+06:00"
     },
     "cnbc.com/2026/10/14/social-security-cola-2027.html": {
       "title": "Social Security Administration announces 3.6% cost-of-living adjustment for 2027",
@@ -7409,7 +6828,7 @@
       "date_estimated": false,
       "status": "pending",
       "first_seen": "2026-10-14T22:58:11.205463+06:00",
-      "last_seen": "2026-10-14T22:58:11.205464+06:00"
+      "last_seen": "2026-10-15T02:35:30.548346+06:00"
     },
     "cnbc.com/2026/10/14/blackrocks-fink-warns-data-center-moratorium-could-spark-a-recession.html": {
       "title": "BlackRock's Larry Fink warns a data center moratorium could trigger a recession",
@@ -7442,7 +6861,7 @@
       "date_estimated": false,
       "status": "pending",
       "first_seen": "2026-10-14T22:58:11.205570+06:00",
-      "last_seen": "2026-10-14T22:58:11.205571+06:00"
+      "last_seen": "2026-10-15T02:35:30.547875+06:00"
     },
     "cnbc.com/2026/10/14/berkshire-hathaway-investment-bending-spoons.html": {
       "title": "Bending Spoons skyrockets 35% as Berkshire Hathaway makes $330 million investment",
@@ -7458,7 +6877,7 @@
       "date_estimated": false,
       "status": "pending",
       "first_seen": "2026-10-14T22:58:11.205969+06:00",
-      "last_seen": "2026-10-14T22:58:11.205970+06:00"
+      "last_seen": "2026-10-15T02:35:30.549166+06:00"
     },
     "cnbc.com/2026/10/14/us-iran-war-trump-hormuz-saudi.html": {
       "title": "Iran says it’s ‘counting the moments’ until it can strike U.S. warships; Saudi Aramco facilities attacked",
@@ -7491,7 +6910,7 @@
       "date_estimated": false,
       "status": "pending",
       "first_seen": "2026-10-14T22:58:11.206079+06:00",
-      "last_seen": "2026-10-14T22:58:11.206080+06:00"
+      "last_seen": "2026-10-15T02:35:30.549387+06:00"
     },
     "cnbc.com/2026/10/14/us-treasury-yields-cpi-inflation-report.html": {
       "title": "10-year Treasury yield jumps as September core inflation comes in hotter than expected",
@@ -7507,7 +6926,7 @@
       "date_estimated": false,
       "status": "pending",
       "first_seen": "2026-10-14T22:58:11.206132+06:00",
-      "last_seen": "2026-10-14T22:58:11.206134+06:00"
+      "last_seen": "2026-10-15T02:35:30.549524+06:00"
     },
     "cnbc.com/investingclub/2026/10/14/jim-cramer-says-this-healthcare-stock-is-still-a-buy-plus-what-to-do-with-bny.html": {
       "title": "Jim Cramer says this healthcare stock is still a buy. Plus, what to do with BNY",
@@ -7555,7 +6974,7 @@
       "date_estimated": false,
       "status": "pending",
       "first_seen": "2026-10-14T22:58:12.207883+06:00",
-      "last_seen": "2026-10-14T22:58:12.207885+06:00"
+      "last_seen": "2026-10-15T02:35:31.412102+06:00"
     },
     "ft.com/content/13929c26-1c01-41b2-b81a-d337fa5c9d27": {
       "title": "US grocery prices poised to climb as soaring fuel costs drive inflation",
@@ -7587,7 +7006,7 @@
       "date_estimated": false,
       "status": "pending",
       "first_seen": "2026-10-14T22:58:12.208095+06:00",
-      "last_seen": "2026-10-14T22:58:12.208096+06:00"
+      "last_seen": "2026-10-15T02:35:31.412370+06:00"
     },
     "ft.com/content/c5fb2ea9-9a41-416a-90b8-337936ec4971": {
       "title": "Europe’s defence stocks send a geopolitical distress signal",
@@ -7619,7 +7038,7 @@
       "date_estimated": false,
       "status": "pending",
       "first_seen": "2026-10-14T22:58:12.208352+06:00",
-      "last_seen": "2026-10-14T22:58:12.208353+06:00"
+      "last_seen": "2026-10-15T02:35:31.413625+06:00"
     },
     "ft.com/content/5f1b2f31-2067-4c3a-8093-54210a7c0e72": {
       "title": "Netflix to cut 1,000 jobs as growth concerns mount",
@@ -7651,7 +7070,7 @@
       "date_estimated": false,
       "status": "pending",
       "first_seen": "2026-10-14T22:58:12.208471+06:00",
-      "last_seen": "2026-10-14T22:58:12.208472+06:00"
+      "last_seen": "2026-10-15T02:35:31.413168+06:00"
     },
     "ft.com/content/42209791-2167-4c4e-81a0-f610a981b745": {
       "title": "UK’s Schillings sets up private investigations business with US law firm Clare Locke",
@@ -7667,35 +7086,397 @@
       "date_estimated": false,
       "status": "pending",
       "first_seen": "2026-10-14T22:58:12.208531+06:00",
-      "last_seen": "2026-10-14T22:58:12.208532+06:00"
+      "last_seen": "2026-10-15T02:35:31.413485+06:00"
+    },
+    "tbsnews.net/features/panorama/giving-words-depressed-deaf-1573366": {
+      "title": "Giving words to the depressed Deaf",
+      "url": "https://www.tbsnews.net/features/panorama/giving-words-depressed-deaf-1573366",
+      "canonical": "tbsnews.net/features/panorama/giving-words-depressed-deaf-1573366",
+      "published_dt": "2026-10-15T01:30:00+06:00",
+      "published_date": "2026-10-15T01:30:00+06:00",
+      "source": "The Business Standard",
+      "region": "Bangladesh",
+      "excerpt": "A pioneering Bangla Mental Health Sign Language Bank has supplied words for depression, anxiety and trauma. But vocabulary alone cannot fix a health system in which Deaf patients still depend on relatives, scarce interpreters and institutional luck",
+      "image": "https://www.tbsnews.net/sites/default/files/styles/big_1/public/images/2026/10/15/08_panorama_deaf_copy-2.png",
+      "discovery": "rss",
+      "date_estimated": false,
+      "status": "pending",
+      "first_seen": "2026-10-15T02:35:29.035542+06:00",
+      "last_seen": "2026-10-15T02:35:29.035549+06:00"
+    },
+    "tbsnews.net/features/panorama/whey-beyond-waste-bangladeshs-untapped-dairy-opportunity-1573361": {
+      "title": "Whey beyond waste: Bangladesh’s untapped dairy opportunity",
+      "url": "https://www.tbsnews.net/features/panorama/whey-beyond-waste-bangladeshs-untapped-dairy-opportunity-1573361",
+      "canonical": "tbsnews.net/features/panorama/whey-beyond-waste-bangladeshs-untapped-dairy-opportunity-1573361",
+      "published_dt": "2026-10-15T01:25:00+06:00",
+      "published_date": "2026-10-15T01:25:00+06:00",
+      "source": "The Business Standard",
+      "region": "Bangladesh",
+      "excerpt": "Discarded by sweetmeat makers and cheese producers, whey water could become a source of new dairy products, additional income and reduced water pollution — if Bangladesh can build the infrastructure to collect and process it safely",
+      "image": "https://www.tbsnews.net/sites/default/files/styles/big_1/public/images/2021/08/11/pic_cheese_2.jpg",
+      "discovery": "rss",
+      "date_estimated": false,
+      "status": "pending",
+      "first_seen": "2026-10-15T02:35:29.035718+06:00",
+      "last_seen": "2026-10-15T02:35:29.035723+06:00"
+    },
+    "tbsnews.net/economy/rmg/govt-seek-nominations-garment-wage-board-workers-protest-tk30000-minimum-wage-1573356": {
+      "title": "Govt to seek nominations for garment wage board as workers protest for Tk30,000 minimum wage",
+      "url": "https://www.tbsnews.net/economy/rmg/govt-seek-nominations-garment-wage-board-workers-protest-tk30000-minimum-wage-1573356",
+      "canonical": "tbsnews.net/economy/rmg/govt-seek-nominations-garment-wage-board-workers-protest-tk30000-minimum-wage-1573356",
+      "published_dt": "2026-10-15T01:20:00+06:00",
+      "published_date": "2026-10-15T01:20:00+06:00",
+      "source": "The Business Standard",
+      "region": "Bangladesh",
+      "excerpt": "The Department of Labour will seek nominations from garment factory owners and workers today.",
+      "image": "https://www.tbsnews.net/sites/default/files/styles/big_1/public/images/2023/07/20/rmg_rajib-dhar.png",
+      "discovery": "rss",
+      "date_estimated": false,
+      "status": "pending",
+      "first_seen": "2026-10-15T02:35:29.035850+06:00",
+      "last_seen": "2026-10-15T02:35:29.035855+06:00"
+    },
+    "tbsnews.net/worldbiz/usa/us-inflation-rises-37-gasoline-prices-surge-what-it-means-consumers-1573351": {
+      "title": "US inflation rises to 3.7% as gasoline prices surge: What it means for consumers",
+      "url": "https://www.tbsnews.net/worldbiz/usa/us-inflation-rises-37-gasoline-prices-surge-what-it-means-consumers-1573351",
+      "canonical": "tbsnews.net/worldbiz/usa/us-inflation-rises-37-gasoline-prices-surge-what-it-means-consumers-1573351",
+      "published_dt": "2026-10-15T01:10:00+06:00",
+      "published_date": "2026-10-15T01:10:00+06:00",
+      "source": "The Business Standard",
+      "region": "Bangladesh",
+      "excerpt": "The cost of living has emerged as a major issue in the US midterm elections, putting renewed focus on the pace of price increases and their impact on households.",
+      "image": "https://www.tbsnews.net/sites/default/files/styles/big_1/public/images/2022/08/21/fuel.jpeg",
+      "discovery": "rss",
+      "date_estimated": false,
+      "status": "pending",
+      "first_seen": "2026-10-15T02:35:29.035972+06:00",
+      "last_seen": "2026-10-15T02:35:29.035976+06:00"
+    },
+    "tbsnews.net/world/south-asia/air-france-follow-israels-ban-airline-crew-bangladesh-pakistan-29-other-countries": {
+      "title": "Air France to follow Israel's ban on airline crew from Bangladesh, Pakistan, 29 other countries: Report",
+      "url": "https://www.tbsnews.net/world/south-asia/air-france-follow-israels-ban-airline-crew-bangladesh-pakistan-29-other-countries",
+      "canonical": "tbsnews.net/world/south-asia/air-france-follow-israels-ban-airline-crew-bangladesh-pakistan-29-other-countries",
+      "published_dt": "2026-10-15T00:50:00+06:00",
+      "published_date": "2026-10-15T00:50:00+06:00",
+      "source": "The Business Standard",
+      "region": "Bangladesh",
+      "excerpt": "Israel issued the directive on 1 October, a day after the Flydubai incident.",
+      "image": "https://www.tbsnews.net/sites/default/files/styles/big_1/public/images/2026/10/15/airfrance.png",
+      "discovery": "rss",
+      "date_estimated": false,
+      "status": "pending",
+      "first_seen": "2026-10-15T02:35:29.036097+06:00",
+      "last_seen": "2026-10-15T02:35:29.036101+06:00"
+    },
+    "tbsnews.net/world/ukraine-says-spacex-hampers-drones-attack-and-defence-us-ties-fray-1573336": {
+      "title": "Ukraine says SpaceX hampers drones for attack and defence, as US ties fray",
+      "url": "https://www.tbsnews.net/world/ukraine-says-spacex-hampers-drones-attack-and-defence-us-ties-fray-1573336",
+      "canonical": "tbsnews.net/world/ukraine-says-spacex-hampers-drones-attack-and-defence-us-ties-fray-1573336",
+      "published_dt": "2026-10-15T00:15:00+06:00",
+      "published_date": "2026-10-15T00:15:00+06:00",
+      "source": "The Business Standard",
+      "region": "Bangladesh",
+      "excerpt": "Ukraine, for its part, continued long-range strikes on Russia, hitting Russia's biggest data centre, although it says it is holding back from hitting energy targets for now to show respect ​for Trump.",
+      "image": "https://www.tbsnews.net/sites/default/files/styles/big_1/public/images/2026/10/15/trumnp.png",
+      "discovery": "rss",
+      "date_estimated": false,
+      "status": "pending",
+      "first_seen": "2026-10-15T02:35:29.036222+06:00",
+      "last_seen": "2026-10-15T02:35:29.036226+06:00"
+    },
+    "tbsnews.net/bangladesh/politics/jamaat-factions-clash-over-committee-formation-cumilla-unit-secretarys-jeep": {
+      "title": "Jamaat factions clash over committee formation in Cumilla, unit secretary's jeep vandalised",
+      "url": "https://www.tbsnews.net/bangladesh/politics/jamaat-factions-clash-over-committee-formation-cumilla-unit-secretarys-jeep",
+      "canonical": "tbsnews.net/bangladesh/politics/jamaat-factions-clash-over-committee-formation-cumilla-unit-secretarys-jeep",
+      "published_dt": "2026-10-15T00:10:00+06:00",
+      "published_date": "2026-10-15T00:10:00+06:00",
+      "source": "The Business Standard",
+      "region": "Bangladesh",
+      "excerpt": "The clash broke out during a meeting to form the new city committee, with police citing a dispute over party positions.",
+      "image": "https://www.tbsnews.net/sites/default/files/styles/big_1/public/images/2026/10/15/cumilla_jamaat_accident.png",
+      "discovery": "rss",
+      "date_estimated": false,
+      "status": "pending",
+      "first_seen": "2026-10-15T02:35:29.036339+06:00",
+      "last_seen": "2026-10-15T02:35:29.036343+06:00"
+    },
+    "tbsnews.net/economy/growth-trap-16-year-high-inflation-signal-deepening-crisis-bangladesh-economists-warn": {
+      "title": "Growth trap, 16-year high inflation signal deepening crisis for Bangladesh, economists warn",
+      "url": "https://www.tbsnews.net/economy/growth-trap-16-year-high-inflation-signal-deepening-crisis-bangladesh-economists-warn",
+      "canonical": "tbsnews.net/economy/growth-trap-16-year-high-inflation-signal-deepening-crisis-bangladesh-economists-warn",
+      "published_dt": "2026-10-15T00:10:00+06:00",
+      "published_date": "2026-10-15T00:10:00+06:00",
+      "source": "The Business Standard",
+      "region": "Bangladesh",
+      "excerpt": "According to the International Monetary Fund’s (IMF) latest World Economic Outlook on Tuesday, Bangladesh is projected to become South Asia’s slowest-growing economy through 2031.",
+      "image": "https://www.tbsnews.net/sites/default/files/styles/big_1/public/images/2026/09/22/08_panorama_final_copy.png",
+      "discovery": "rss",
+      "date_estimated": false,
+      "status": "pending",
+      "first_seen": "2026-10-15T02:35:29.036498+06:00",
+      "last_seen": "2026-10-15T02:35:29.036503+06:00"
+    },
+    "tbsnews.net/bangladesh/court/court-clears-legal-hurdle-moghbazar-expressway-railway-work-after-nearly-7yrs": {
+      "title": "Court clears legal hurdle for Moghbazar expressway, railway work after nearly 7yrs",
+      "url": "https://www.tbsnews.net/bangladesh/court/court-clears-legal-hurdle-moghbazar-expressway-railway-work-after-nearly-7yrs",
+      "canonical": "tbsnews.net/bangladesh/court/court-clears-legal-hurdle-moghbazar-expressway-railway-work-after-nearly-7yrs",
+      "published_dt": "2026-10-14T23:50:00+06:00",
+      "published_date": "2026-10-14T23:50:00+06:00",
+      "source": "The Business Standard",
+      "region": "Bangladesh",
+      "excerpt": "The chamber court has lifted a High Court status quo order that had stalled development work on the Dhaka Elevated Expressway and a four-lane railway line beneath it.",
+      "image": "https://www.tbsnews.net/sites/default/files/styles/big_1/public/images/2025/11/19/high_courtt.png",
+      "discovery": "rss",
+      "date_estimated": false,
+      "status": "pending",
+      "first_seen": "2026-10-15T02:35:29.036618+06:00",
+      "last_seen": "2026-10-15T02:35:29.036622+06:00"
+    },
+    "tbsnews.net/bangladesh/govt-reshuffles-over-2000-officials-8-months-sends-32-forced-retirement-1573321": {
+      "title": "Govt reshuffles over 2,000 officials in 8 months, sends 32 into forced retirement",
+      "url": "https://www.tbsnews.net/bangladesh/govt-reshuffles-over-2000-officials-8-months-sends-32-forced-retirement-1573321",
+      "canonical": "tbsnews.net/bangladesh/govt-reshuffles-over-2000-officials-8-months-sends-32-forced-retirement-1573321",
+      "published_dt": "2026-10-14T23:50:00+06:00",
+      "published_date": "2026-10-14T23:50:00+06:00",
+      "source": "The Business Standard",
+      "region": "Bangladesh",
+      "excerpt": "746 officials were promoted from senior assistant secretary to secretary and equivalent positions, according to the report.",
+      "image": "https://www.tbsnews.net/sites/default/files/styles/big_1/public/images/2026/10/14/administrative_gear_repair_illustration.png",
+      "discovery": "rss",
+      "date_estimated": false,
+      "status": "pending",
+      "first_seen": "2026-10-15T02:35:29.036733+06:00",
+      "last_seen": "2026-10-15T02:35:29.036737+06:00"
+    },
+    "tbsnews.net/worldbiz/usa/trump-sparks-outrage-ai-video-himself-wrestling-tiger-killed-man-1573311": {
+      "title": "Trump sparks outrage with AI video of himself wrestling tiger that killed man",
+      "url": "https://www.tbsnews.net/worldbiz/usa/trump-sparks-outrage-ai-video-himself-wrestling-tiger-killed-man-1573311",
+      "canonical": "tbsnews.net/worldbiz/usa/trump-sparks-outrage-ai-video-himself-wrestling-tiger-killed-man-1573311",
+      "published_dt": "2026-10-14T23:45:00+06:00",
+      "published_date": "2026-10-14T23:45:00+06:00",
+      "source": "The Business Standard",
+      "region": "Bangladesh",
+      "excerpt": "Trump shared footage of the fatal attack at a UK wildlife park before posting an AI-generated clip showing himself wrestling the animal.",
+      "image": "https://www.tbsnews.net/sites/default/files/styles/big_1/public/images/2025/06/16/usa_trump_pointing.jpg",
+      "discovery": "rss",
+      "date_estimated": false,
+      "status": "pending",
+      "first_seen": "2026-10-15T02:35:29.036851+06:00",
+      "last_seen": "2026-10-15T02:35:29.036855+06:00"
+    },
+    "tbsnews.net/economy/banking/foreign-banks-net-profit-falls-38-h1-1573306": {
+      "title": "Foreign banks' net profit falls 38% in H1",
+      "url": "https://www.tbsnews.net/economy/banking/foreign-banks-net-profit-falls-38-h1-1573306",
+      "canonical": "tbsnews.net/economy/banking/foreign-banks-net-profit-falls-38-h1-1573306",
+      "published_dt": "2026-10-14T23:35:00+06:00",
+      "published_date": "2026-10-14T23:35:00+06:00",
+      "source": "The Business Standard",
+      "region": "Bangladesh",
+      "excerpt": "Their net profit declined by Tk1,417 crore from Tk3,738 crore in July-December 2025, according to a Bangladesh Bank report.",
+      "image": "https://www.tbsnews.net/sites/default/files/styles/big_1/public/images/2026/08/22/bank-1_2.png",
+      "discovery": "rss",
+      "date_estimated": false,
+      "status": "posted",
+      "first_seen": "2026-10-15T02:35:29.036969+06:00",
+      "last_seen": "2026-10-15T02:35:29.036973+06:00",
+      "posted_at": "2026-10-15T02:51:25.672348+06:00"
+    },
+    "cnbc.com/2026/10/14/high-inflation-fed-expectations.html": {
+      "title": "How high inflation became a 'fact of life' in the U.S.",
+      "url": "https://www.cnbc.com/2026/10/14/high-inflation-fed-expectations.html",
+      "canonical": "cnbc.com/2026/10/14/high-inflation-fed-expectations.html",
+      "published_dt": "2026-10-14T23:20:23+06:00",
+      "published_date": "2026-10-14T23:20:23+06:00",
+      "source": "CNBC",
+      "region": "International",
+      "excerpt": "U.S. inflation has stayed elevated for years, raising concern at the Federal Reserve that consumers may come to expect stubbornly high prices.",
+      "image": "",
+      "discovery": "rss",
+      "date_estimated": false,
+      "status": "pending",
+      "first_seen": "2026-10-15T02:35:30.546665+06:00",
+      "last_seen": "2026-10-15T02:35:30.546670+06:00"
+    },
+    "cnbc.com/2026/10/14/dell-stock-barclays-enterprise-ai.html": {
+      "title": "Dell stock plunges 11%, leading data center sell-off as fears mount about 'enterprise AI timing'",
+      "url": "https://www.cnbc.com/2026/10/14/dell-stock-barclays-enterprise-ai.html",
+      "canonical": "cnbc.com/2026/10/14/dell-stock-barclays-enterprise-ai.html",
+      "published_dt": "2026-10-15T02:19:25+06:00",
+      "published_date": "2026-10-15T02:19:25+06:00",
+      "source": "CNBC",
+      "region": "International",
+      "excerpt": "Barclays downgraded Dell, HPE, and NetApp on concerns that enterprise AI adoption is lagging.",
+      "image": "",
+      "discovery": "rss",
+      "date_estimated": false,
+      "status": "posted",
+      "first_seen": "2026-10-15T02:35:30.546914+06:00",
+      "last_seen": "2026-10-15T02:35:30.546918+06:00",
+      "posted_at": "2026-10-15T02:51:44.872776+06:00"
+    },
+    "cnbc.com/2026/10/14/anduril-tender-offer-valuation.html": {
+      "title": "Anduril employee tender offer would value the defense tech startup at $90 billion",
+      "url": "https://www.cnbc.com/2026/10/14/anduril-tender-offer-valuation.html",
+      "canonical": "cnbc.com/2026/10/14/anduril-tender-offer-valuation.html",
+      "published_dt": "2026-10-15T02:24:13+06:00",
+      "published_date": "2026-10-15T02:24:13+06:00",
+      "source": "CNBC",
+      "region": "International",
+      "excerpt": "Anduril has been a major winner of the growing U.S. defense tech boom and President Donald Trump's plans to reindustrialize the U.S. military",
+      "image": "",
+      "discovery": "rss",
+      "date_estimated": false,
+      "status": "posted",
+      "first_seen": "2026-10-15T02:35:30.547274+06:00",
+      "last_seen": "2026-10-15T02:35:30.547278+06:00",
+      "posted_at": "2026-10-15T02:51:40.224051+06:00"
+    },
+    "cnbc.com/2026/10/14/trump-appeals-white-house-ban-judge.html": {
+      "title": "Trump to appeal order blocking White House from banning MS NOW, CNN and Politico",
+      "url": "https://www.cnbc.com/2026/10/14/trump-appeals-white-house-ban-judge.html",
+      "canonical": "cnbc.com/2026/10/14/trump-appeals-white-house-ban-judge.html",
+      "published_dt": "2026-10-15T01:01:39+06:00",
+      "published_date": "2026-10-15T01:01:39+06:00",
+      "source": "CNBC",
+      "region": "International",
+      "excerpt": "U.S. District Judge Timothy Kelly had ruled that the three outlets targeted by President Donald Trump can keep their access to the White House complex.",
+      "image": "",
+      "discovery": "rss",
+      "date_estimated": false,
+      "status": "pending",
+      "first_seen": "2026-10-15T02:35:30.547392+06:00",
+      "last_seen": "2026-10-15T02:35:30.547396+06:00"
+    },
+    "cnbc.com/2026/10/14/anthropic-mythos-bank-of-america-hiring-cost.html": {
+      "title": "Bank of America hired 1,000 contractors to patch software flaws exposed by Anthropic's Mythos",
+      "url": "https://www.cnbc.com/2026/10/14/anthropic-mythos-bank-of-america-hiring-cost.html",
+      "canonical": "cnbc.com/2026/10/14/anthropic-mythos-bank-of-america-hiring-cost.html",
+      "published_dt": "2026-10-15T02:06:28+06:00",
+      "published_date": "2026-10-15T02:06:28+06:00",
+      "source": "CNBC",
+      "region": "International",
+      "excerpt": "Bank of America hired 1,000 contractors to patch software flaws exposed by Anthropic’s Mythos, offering a rare look at costs involved in defending against AI.",
+      "image": "",
+      "discovery": "rss",
+      "date_estimated": false,
+      "status": "pending",
+      "first_seen": "2026-10-15T02:35:30.547537+06:00",
+      "last_seen": "2026-10-15T02:35:30.547541+06:00"
+    },
+    "cnbc.com/2026/10/14/lisa-cook-trump-committee-hearing.html": {
+      "title": "Lisa Cook lawyer doubts Trump committee's fairness as president calls her 'automatic no vote'",
+      "url": "https://www.cnbc.com/2026/10/14/lisa-cook-trump-committee-hearing.html",
+      "canonical": "cnbc.com/2026/10/14/lisa-cook-trump-committee-hearing.html",
+      "published_dt": "2026-10-15T00:02:17+06:00",
+      "published_date": "2026-10-15T00:02:17+06:00",
+      "source": "CNBC",
+      "region": "International",
+      "excerpt": "White House spokesman Matthew Middleton said in response to Cook's lawyer that Trump \"is performing his constitutional duty.\"",
+      "image": "",
+      "discovery": "rss",
+      "date_estimated": false,
+      "status": "pending",
+      "first_seen": "2026-10-15T02:35:30.548231+06:00",
+      "last_seen": "2026-10-15T02:35:30.548235+06:00"
+    },
+    "cnbc.com/2026/10/14/openais-sachin-katti-to-leave-infrastructure-role-stay-on-as-advisor.html": {
+      "title": "OpenAI’s Sachin Katti to leave infrastructure role, stay on as advisor",
+      "url": "https://www.cnbc.com/2026/10/14/openais-sachin-katti-to-leave-infrastructure-role-stay-on-as-advisor.html",
+      "canonical": "cnbc.com/2026/10/14/openais-sachin-katti-to-leave-infrastructure-role-stay-on-as-advisor.html",
+      "published_dt": "2026-10-14T23:25:34+06:00",
+      "published_date": "2026-10-14T23:25:34+06:00",
+      "source": "CNBC",
+      "region": "International",
+      "excerpt": "Katti said in a post on LinkedIn that he \"decided to move on to build something new.\"",
+      "image": "",
+      "discovery": "rss",
+      "date_estimated": false,
+      "status": "pending",
+      "first_seen": "2026-10-15T02:35:30.548599+06:00",
+      "last_seen": "2026-10-15T02:35:30.548603+06:00"
+    },
+    "cnbc.com/2026/10/14/the-steel-stock-that-has-the-shorts-and-options-traders-on-edge.html": {
+      "title": "The steel stock that has the shorts and options traders on edge",
+      "url": "https://www.cnbc.com/2026/10/14/the-steel-stock-that-has-the-shorts-and-options-traders-on-edge.html",
+      "canonical": "cnbc.com/2026/10/14/the-steel-stock-that-has-the-shorts-and-options-traders-on-edge.html",
+      "published_dt": "2026-10-14T23:22:55+06:00",
+      "published_date": "2026-10-14T23:22:55+06:00",
+      "source": "CNBC",
+      "region": "International",
+      "excerpt": "",
+      "image": "",
+      "discovery": "rss",
+      "date_estimated": false,
+      "status": "pending",
+      "first_seen": "2026-10-15T02:35:30.548712+06:00",
+      "last_seen": "2026-10-15T02:35:30.548716+06:00"
+    },
+    "cnbc.com/investingclub/2026/10/14/ai-infrastructure-stocks-tumble-heres-a-few-reasons-for-the-sell-off-.html": {
+      "title": "AI infrastructure stocks tumble. Here's a few reasons for the sell-off",
+      "url": "https://www.cnbc.com/investingclub/2026/10/14/ai-infrastructure-stocks-tumble-heres-a-few-reasons-for-the-sell-off-.html",
+      "canonical": "cnbc.com/investingclub/2026/10/14/ai-infrastructure-stocks-tumble-heres-a-few-reasons-for-the-sell-off-.html",
+      "published_dt": "2026-10-15T00:41:11+06:00",
+      "published_date": "2026-10-15T00:41:11+06:00",
+      "source": "CNBC",
+      "region": "International",
+      "excerpt": "Every weekday, the Investing Club releases the Homestretch; an actionable afternoon update just in time for the last hour of trading.",
+      "image": "",
+      "discovery": "rss",
+      "date_estimated": false,
+      "status": "pending",
+      "first_seen": "2026-10-15T02:35:30.548942+06:00",
+      "last_seen": "2026-10-15T02:35:30.548946+06:00"
+    },
+    "ft.com/content/fb258413-e88d-47fe-98c8-f645adaea1e1": {
+      "title": "US chip stocks slide as inflation and AI debt fears unsettle investors",
+      "url": "https://www.ft.com/content/fb258413-e88d-47fe-98c8-f645adaea1e1?syn-25a6b1a6=1",
+      "canonical": "ft.com/content/fb258413-e88d-47fe-98c8-f645adaea1e1",
+      "published_dt": "2026-10-15T02:01:43+06:00",
+      "published_date": "2026-10-15T02:01:43+06:00",
+      "source": "Financial Times",
+      "region": "International",
+      "excerpt": "Nvidia, Oracle and CoreWeave fall as fervour around the technology cools",
+      "image": "https://images.ft.com/v3/image/raw/https%3A%2F%2Fd1e00ek4ebabms.cloudfront.net%2Fproduction%2F3fd5c0f5-57ce-4e3a-a1ca-30ddf15f60a8.jpg?source=next-home-page&dpr=2&width=580&fit=scale-down",
+      "discovery": "rss",
+      "date_estimated": false,
+      "status": "pending",
+      "first_seen": "2026-10-15T02:35:31.411958+06:00",
+      "last_seen": "2026-10-15T02:35:31.411963+06:00"
+    },
+    "ft.com/content/16ceb1fb-662c-4379-8187-0a51a7f4106f": {
+      "title": "Burnham wants to ‘repair bridges’ between Trump and Zelenskyy",
+      "url": "https://www.ft.com/content/16ceb1fb-662c-4379-8187-0a51a7f4106f?syn-25a6b1a6=1",
+      "canonical": "ft.com/content/16ceb1fb-662c-4379-8187-0a51a7f4106f",
+      "published_dt": "2026-10-14T23:23:04+06:00",
+      "published_date": "2026-10-14T23:23:04+06:00",
+      "source": "Financial Times",
+      "region": "International",
+      "excerpt": "UK prime minister holds talks with Ukraine’s president in Downing Street following US diesel deal with Russia",
+      "image": "https://images.ft.com/v3/image/raw/https%3A%2F%2Fd1e00ek4ebabms.cloudfront.net%2Fproduction%2Fd9bd1753-ac0d-44ae-8b53-b041f6f7a60d.jpg?source=next-home-page&dpr=2&width=580&fit=scale-down",
+      "discovery": "rss",
+      "date_estimated": false,
+      "status": "pending",
+      "first_seen": "2026-10-15T02:35:31.412794+06:00",
+      "last_seen": "2026-10-15T02:35:31.412798+06:00"
+    },
+    "ft.com/content/dadac221-a4dd-4935-897e-7f7faebe8f17": {
+      "title": "Perella Weinberg and Piper Sandler abandon merger talks",
+      "url": "https://www.ft.com/content/dadac221-a4dd-4935-897e-7f7faebe8f17?syn-25a6b1a6=1",
+      "canonical": "ft.com/content/dadac221-a4dd-4935-897e-7f7faebe8f17",
+      "published_dt": "2026-10-15T02:16:29+06:00",
+      "published_date": "2026-10-15T02:16:29+06:00",
+      "source": "Financial Times",
+      "region": "International",
+      "excerpt": "A deal would have created an independent investment bank with an equity value of more than $6bn",
+      "image": "https://images.ft.com/v3/image/raw/https%3A%2F%2Fd1e00ek4ebabms.cloudfront.net%2Fproduction%2Fa61112e3-9ff5-4bfd-8568-febf9d83c8dc.jpg?source=next-home-page&dpr=2&width=580&fit=scale-down",
+      "discovery": "rss",
+      "date_estimated": false,
+      "status": "pending",
+      "first_seen": "2026-10-15T02:35:31.412919+06:00",
+      "last_seen": "2026-10-15T02:35:31.412923+06:00"
     }
   },
   "events": {
-    "lng_supply_increase": {
-      "event_id": "lng_supply_increase",
-      "canonical_url": "tbsnews.net/economy/energy/gas-supply-improve-today-chevron-agrees-drill-new-wells-bapex-1542821",
-      "original_url": "https://www.tbsnews.net/economy/energy/gas-supply-improve-today-chevron-agrees-drill-new-wells-bapex-1542821",
-      "source": "The Business Standard",
-      "region": "Bangladesh",
-      "topic": "Energy",
-      "institution": "Bapex / Chevron",
-      "event_cluster_id": "evt_e9dd37c5b0",
-      "event_confidence": 0.6,
-      "event_source_count": 1,
-      "headline": "Chevron partners with Bapex to drill new wells as LNG supply rises to 1,000 mmcfd",
-      "summary": "Bangladesh’s LNG deliveries are set to climb to up to 1,000 mmcfd today, while Chevron and state‑run Bapex announce a joint‑venture drilling programme to boost domestic gas output.",
-      "highlights": [
-        "LNG supply could reach 950‑1,000 mmcfd after the FSRU fault is fixed",
-        "Chevron has agreed to drill new wells with Bapex, reversing its earlier stance",
-        "The government plans a third FSRU by December 2027 and aims to add five eventually"
-      ],
-      "concepts": [],
-      "key_numbers": [],
-      "published_at": "2026-09-15T00:10:00+06:00",
-      "selected_at": "2026-09-15T00:37:17.819180+06:00",
-      "status": "published",
-      "message_id": 618
-    },
     "procurement_of_ev_bikes_for_food_delivery_fleet": {
       "event_id": "procurement_of_ev_bikes_for_food_delivery_fleet",
       "canonical_url": "tbsnews.net/bangladesh/oman-firm-procure-ev-bikes-bangladesh-food-delivery-fleet-1542951",
@@ -19795,6 +19576,129 @@
       "selected_at": "2026-10-14T23:04:13.012307+06:00",
       "status": "published",
       "message_id": 1115
+    },
+    "foreign_banks_net_profit_falls_38_in_h1": {
+      "event_id": "foreign_banks_net_profit_falls_38_in_h1",
+      "canonical_url": "tbsnews.net/economy/banking/foreign-banks-net-profit-falls-38-h1-1573306",
+      "original_url": "https://www.tbsnews.net/economy/banking/foreign-banks-net-profit-falls-38-h1-1573306",
+      "source": "The Business Standard",
+      "region": "Bangladesh",
+      "topic": "Banking",
+      "institution": "Foreign Commercial Banks",
+      "event_cluster_id": "evt_302381a83f",
+      "event_confidence": 0.6,
+      "event_source_count": 1,
+      "headline": "Foreign Banks' Net Profit Plummets 38% in Bangladesh H1 2026",
+      "summary": "Foreign commercial banks in Bangladesh saw net profit drop 38% to Tk2,321 crore in H1 2026 amid weaker trade and limited income opportunities.",
+      "highlights": [
+        "Non‑performing loan ratio rose to 6.5% while capital adequacy stayed robust at 41.21%.",
+        "Foreign banks processed $3.95 billion in export receipts, representing 18.6% of total exports."
+      ],
+      "concepts": [],
+      "key_numbers": [],
+      "published_at": "2026-10-14T23:35:00+06:00",
+      "selected_at": "2026-10-15T02:51:25.672541+06:00",
+      "status": "published",
+      "message_id": 1116
+    },
+    "bangladesh_s_exports_to_uk_could_reach_10b_with_1_market_share": {
+      "event_id": "bangladesh_s_exports_to_uk_could_reach_10b_with_1_market_share",
+      "canonical_url": "tbsnews.net/economy/bangladeshs-exports-uk-could-reach-10b-1-market-share-1572751",
+      "original_url": "https://www.tbsnews.net/economy/bangladeshs-exports-uk-could-reach-10b-1-market-share-1572751",
+      "source": "The Business Standard",
+      "region": "Bangladesh",
+      "topic": "Export and Import",
+      "institution": "Bangladesh Trade Ministry",
+      "event_cluster_id": "evt_0edd2e73ad",
+      "event_confidence": 0.6,
+      "event_source_count": 1,
+      "headline": "Bangladesh Aims for $10 billion UK Exports by Doubling Market Share",
+      "summary": "Bangladesh could boost UK shipments to $10 billion by raising its market share to 1 %, focusing on processed food, pharmaceuticals, footwear and furniture.",
+      "highlights": [
+        "Non‑RMG goods currently represent only about 6 % of Bangladesh’s exports to the UK.",
+        "The Export Promotion Bureau, DCCI and the British High Commission organized a workshop to promote diversification and use the"
+      ],
+      "concepts": [],
+      "key_numbers": [],
+      "published_at": "2026-10-14T17:35:00+06:00",
+      "selected_at": "2026-10-15T02:51:30.387729+06:00",
+      "status": "published",
+      "message_id": 1117
+    },
+    "diesel_supplies_to_remain_tight_into_2027_iea": {
+      "event_id": "diesel_supplies_to_remain_tight_into_2027_iea",
+      "canonical_url": "tbsnews.net/world/global-economy/diesel-supplies-remain-tight-2027-iea-1572726",
+      "original_url": "https://www.tbsnews.net/world/global-economy/diesel-supplies-remain-tight-2027-iea-1572726",
+      "source": "The Business Standard",
+      "region": "Bangladesh",
+      "topic": "Commodities",
+      "institution": "International Energy Agency",
+      "event_cluster_id": "evt_21208c12b2",
+      "event_confidence": 0.6,
+      "event_source_count": 1,
+      "headline": "IEA Warns Diesel Supplies Remain Tight Through 2027",
+      "summary": "The International Energy Agency says Gulf disruptions and depleted stocks will keep diesel markets tight until 2027, prompting possible demand cuts.",
+      "highlights": [
+        "Gulf supply disruptions from the US‑Iran conflict limit diesel availability",
+        "Record diesel prices surge in Europe and the United States",
+        "Governments cut fuel taxes, offer subsidies and release strategic reserves"
+      ],
+      "concepts": [],
+      "key_numbers": [],
+      "published_at": "2026-10-14T17:05:00+06:00",
+      "selected_at": "2026-10-15T02:51:35.527089+06:00",
+      "status": "published",
+      "message_id": 1118
+    },
+    "tender_offer_90b": {
+      "event_id": "tender_offer_90b",
+      "canonical_url": "cnbc.com/2026/10/14/anduril-tender-offer-valuation.html",
+      "original_url": "https://www.cnbc.com/2026/10/14/anduril-tender-offer-valuation.html",
+      "source": "CNBC",
+      "region": "International",
+      "topic": "Multinational Companies",
+      "institution": "Anduril",
+      "event_cluster_id": "evt_b471f36a73",
+      "event_confidence": 0.6,
+      "event_source_count": 1,
+      "headline": "Anduril Tender Offer Values Defense Tech Startup at $90 Billion",
+      "summary": "Anduril is offering employees a tender to sell shares at $94.80 each, potentially valuing the defense‑tech firm at about $90 billion.",
+      "highlights": [
+        "The offer caps at $1.3 billion and runs until Nov. 9",
+        "Employees in 16 countries can participate",
+        "Anduril recently secured a U.S. Navy shipyard contract worth up to $2.9 billion"
+      ],
+      "concepts": [],
+      "key_numbers": [],
+      "published_at": "2026-10-15T02:24:13+06:00",
+      "selected_at": "2026-10-15T02:51:40.224084+06:00",
+      "status": "published",
+      "message_id": 1119
+    },
+    "stock_plunge_ai_spending": {
+      "event_id": "stock_plunge_ai_spending",
+      "canonical_url": "cnbc.com/2026/10/14/dell-stock-barclays-enterprise-ai.html",
+      "original_url": "https://www.cnbc.com/2026/10/14/dell-stock-barclays-enterprise-ai.html",
+      "source": "CNBC",
+      "region": "International",
+      "topic": "Global Markets",
+      "institution": "Dell Technologies",
+      "event_cluster_id": "evt_3786b55a8b",
+      "event_confidence": 0.6,
+      "event_source_count": 1,
+      "headline": "Dell Shares Drop 11% Triggering Data Center Sell‑Off Over AI Timing Concerns",
+      "summary": "Dell’s 11% plunge sparked a broader sell‑off in data‑center stocks as investors doubt enterprise AI spending will sustain the current build‑out.",
+      "highlights": [
+        "Dell fell 11% while Hewlett‑Packard Enterprise, Oracle and Super Micro also declined.",
+        "Barclays downgraded Dell, HPE and NetApp, citing lack of meaningful enterprise AI inflection.",
+        "Memory prices and rising interest rates are pressuring AI‑related hardware revenue."
+      ],
+      "concepts": [],
+      "key_numbers": [],
+      "published_at": "2026-10-15T02:19:25+06:00",
+      "selected_at": "2026-10-15T02:51:44.872812+06:00",
+      "status": "published",
+      "message_id": 1120
     }
   },
   "event_clusters": {
@@ -72441,7 +72345,7 @@
       ],
       "source_count": 1,
       "confidence": 0.6,
-      "last_seen": "2026-10-14T22:58:23.989673+06:00",
+      "last_seen": "2026-10-15T02:35:51.785847+06:00",
       "headline": "Cabinet committee declines Tk13,000cr LNG terminal proposal"
     },
     "evt_1f70fa47dc": {
@@ -72458,26 +72362,26 @@
     },
     "evt_435a2b84b3": {
       "event_id": "evt_435a2b84b3",
-      "topic": "Bangladesh Economy",
+      "topic": "Trade",
       "region": "Bangladesh",
       "sources": [
         "The Business Standard"
       ],
       "source_count": 1,
       "confidence": 0.6,
-      "last_seen": "2026-10-14T22:58:23.989724+06:00",
+      "last_seen": "2026-10-15T02:35:51.785851+06:00",
       "headline": "New Yalu River Bridge linking China and North Korea set to open"
     },
     "evt_0ef22a7a20": {
       "event_id": "evt_0ef22a7a20",
-      "topic": "Bangladesh Economy",
+      "topic": "Industry",
       "region": "Bangladesh",
       "sources": [
         "The Business Standard"
       ],
       "source_count": 1,
       "confidence": 0.6,
-      "last_seen": "2026-10-14T22:58:23.989726+06:00",
+      "last_seen": "2026-10-15T02:35:51.785966+06:00",
       "headline": "Fire breaks out at Essential Drug International factory in Tongi"
     },
     "evt_634fc58da0": {
@@ -72489,7 +72393,7 @@
       ],
       "source_count": 1,
       "confidence": 0.6,
-      "last_seen": "2026-10-14T22:58:23.989728+06:00",
+      "last_seen": "2026-10-15T02:35:51.785968+06:00",
       "headline": "Trial opens in Germany over 2022 Nord Stream pipeline sabotage"
     },
     "evt_627027c436": {
@@ -72501,7 +72405,7 @@
       ],
       "source_count": 1,
       "confidence": 0.6,
-      "last_seen": "2026-10-14T22:58:23.989729+06:00",
+      "last_seen": "2026-10-15T02:35:51.785971+06:00",
       "headline": "Daisy Edgar-Jones, Esmé Creed-Miles bring new life to 'Sense and Sensibility'"
     },
     "evt_717d6ad484": {
@@ -72513,7 +72417,7 @@
       ],
       "source_count": 1,
       "confidence": 0.6,
-      "last_seen": "2026-10-14T22:58:23.989731+06:00",
+      "last_seen": "2026-10-15T02:35:51.785974+06:00",
       "headline": "Duane Davis sentenced to 40 years in Tupac Shakur murder trial"
     },
     "evt_5a9926dc69": {
@@ -72525,7 +72429,7 @@
       ],
       "source_count": 1,
       "confidence": 0.6,
-      "last_seen": "2026-10-14T22:58:23.989733+06:00",
+      "last_seen": "2026-10-15T02:35:51.785978+06:00",
       "headline": "Nobel Prize pays tribute to historic 114-year-old Tagore-Russell correspondence"
     },
     "evt_7a13ca1091": {
@@ -72537,7 +72441,7 @@
       ],
       "source_count": 1,
       "confidence": 0.6,
-      "last_seen": "2026-10-14T22:58:23.989735+06:00",
+      "last_seen": "2026-10-15T02:35:51.785981+06:00",
       "headline": "Amit Shah accuses opposition of shielding ‘infiltrators’ in voter rolls"
     },
     "evt_38992e8ce9": {
@@ -72549,7 +72453,7 @@
       ],
       "source_count": 1,
       "confidence": 0.6,
-      "last_seen": "2026-10-14T22:58:23.989737+06:00",
+      "last_seen": "2026-10-15T02:35:51.785983+06:00",
       "headline": "CJP leaders sent to 5-day judicial custody"
     },
     "evt_9897c27e58": {
@@ -72561,7 +72465,7 @@
       ],
       "source_count": 1,
       "confidence": 0.6,
-      "last_seen": "2026-10-14T22:58:23.989739+06:00",
+      "last_seen": "2026-10-15T02:35:51.785986+06:00",
       "headline": "Bangladesh calls for global treaty to protect victims of crimes against humanity"
     },
     "evt_ff8e1b6460": {
@@ -72573,7 +72477,7 @@
       ],
       "source_count": 1,
       "confidence": 0.6,
-      "last_seen": "2026-10-14T22:58:23.989741+06:00",
+      "last_seen": "2026-10-15T02:35:51.785989+06:00",
       "headline": "Sylhet stone trader detained over Facebook post criticising expatriates minister"
     },
     "evt_a609efd3d8": {
@@ -72585,7 +72489,7 @@
       ],
       "source_count": 1,
       "confidence": 0.6,
-      "last_seen": "2026-10-14T22:58:23.989743+06:00",
+      "last_seen": "2026-10-15T02:35:51.785991+06:00",
       "headline": "German police investigate alleged sexual harassment involving humanoid robot"
     },
     "evt_1287d33a57": {
@@ -72674,14 +72578,14 @@
     },
     "evt_146ce4058e": {
       "event_id": "evt_146ce4058e",
-      "topic": "Banking",
+      "topic": "Global Markets",
       "region": "International",
       "sources": [
         "Financial Times"
       ],
       "source_count": 1,
       "confidence": 0.6,
-      "last_seen": "2026-10-14T22:58:29.367748+06:00",
+      "last_seen": "2026-10-15T02:36:53.033670+06:00",
       "headline": "Japanese banks and insurers return to domestic bonds as yields surge"
     },
     "evt_fe8d899d27": {
@@ -72710,14 +72614,14 @@
     },
     "evt_fde903dfa9": {
       "event_id": "evt_fde903dfa9",
-      "topic": "Global Economy",
+      "topic": "Commodities",
       "region": "International",
       "sources": [
         "CNBC"
       ],
       "source_count": 1,
       "confidence": 0.6,
-      "last_seen": "2026-10-14T22:58:29.367709+06:00",
+      "last_seen": "2026-10-15T02:36:53.033636+06:00",
       "headline": "ASML says it's getting order interest through 2030 as profit smashes expectations"
     },
     "evt_7a8d0fb98b": {
@@ -72728,8 +72632,8 @@
         "Financial Times"
       ],
       "source_count": 1,
-      "confidence": 0.6,
-      "last_seen": "2026-10-14T22:58:29.367751+06:00",
+      "confidence": 1.0,
+      "last_seen": "2026-10-15T02:36:53.033673+06:00",
       "headline": "China’s exports surge 36% as AI-related shipments boom"
     },
     "evt_215e821c80": {
@@ -72789,7 +72693,7 @@
       ],
       "source_count": 1,
       "confidence": 0.6,
-      "last_seen": "2026-10-14T22:58:29.367733+06:00",
+      "last_seen": "2026-10-15T02:36:53.033714+06:00",
       "headline": "Judge extends block on Trump White House ban of MS NOW, CNN and Politico"
     },
     "evt_79273765b2": {
@@ -72801,7 +72705,7 @@
       ],
       "source_count": 1,
       "confidence": 0.6,
-      "last_seen": "2026-10-14T22:58:29.367735+06:00",
+      "last_seen": "2026-10-15T02:36:53.033717+06:00",
       "headline": "Crypto bosses, CEOs and F1: Singapore's business events boom gathers pace"
     },
     "evt_f2d368b56b": {
@@ -72813,7 +72717,7 @@
       ],
       "source_count": 1,
       "confidence": 0.6,
-      "last_seen": "2026-10-14T22:58:29.367737+06:00",
+      "last_seen": "2026-10-15T02:36:53.033720+06:00",
       "headline": "France’s Marine Le Pen gears up for fight with EU"
     },
     "evt_a48dccb453": {
@@ -72825,7 +72729,7 @@
       ],
       "source_count": 1,
       "confidence": 0.6,
-      "last_seen": "2026-10-14T22:58:29.367739+06:00",
+      "last_seen": "2026-10-15T02:36:53.033738+06:00",
       "headline": "The global economy and the art of living dangerously"
     },
     "evt_4d8b689640": {
@@ -72837,7 +72741,7 @@
       ],
       "source_count": 1,
       "confidence": 0.6,
-      "last_seen": "2026-10-14T22:58:29.367740+06:00",
+      "last_seen": "2026-10-15T02:36:53.033741+06:00",
       "headline": "Germany puts Ukrainian ex-officer in the dock over Nord Stream sabotage"
     },
     "evt_dc4efdf301": {
@@ -72849,7 +72753,7 @@
       ],
       "source_count": 1,
       "confidence": 0.6,
-      "last_seen": "2026-10-14T22:58:29.367744+06:00",
+      "last_seen": "2026-10-15T02:36:53.033729+06:00",
       "headline": "Military briefing: Houthis expose limits of Saudi Arabia’s vast arsenal"
     },
     "evt_59ee6af4a2": {
@@ -72861,19 +72765,19 @@
       ],
       "source_count": 1,
       "confidence": 0.6,
-      "last_seen": "2026-10-14T22:58:29.367746+06:00",
+      "last_seen": "2026-10-15T02:36:53.033732+06:00",
       "headline": "How I used AI to become a chess grandmaster at 16"
     },
     "evt_e32855a05a": {
       "event_id": "evt_e32855a05a",
-      "topic": "Global Trade",
+      "topic": "Oil",
       "region": "International",
       "sources": [
         "CNBC"
       ],
       "source_count": 1,
-      "confidence": 0.6,
-      "last_seen": "2026-10-14T22:58:29.367753+06:00",
+      "confidence": 1.0,
+      "last_seen": "2026-10-15T02:36:53.033658+06:00",
       "headline": "Taiwan agrees to buy 30% of gas from Alaska LNG project, Trump says"
     },
     "evt_ce20cfd136": {
@@ -72884,8 +72788,8 @@
         "CNBC"
       ],
       "source_count": 1,
-      "confidence": 0.6,
-      "last_seen": "2026-10-14T22:58:29.367757+06:00",
+      "confidence": 1.0,
+      "last_seen": "2026-10-15T02:36:53.033677+06:00",
       "headline": "Anthropic urges court in Washington, D.C. to rehear appeal of Pentagon blacklisting"
     },
     "evt_a7ab4313c1": {
@@ -72909,7 +72813,7 @@
       ],
       "source_count": 1,
       "confidence": 0.6,
-      "last_seen": "2026-10-14T22:58:23.989665+06:00",
+      "last_seen": "2026-10-15T02:35:51.785837+06:00",
       "headline": "Bangladesh's exports to UK could reach $10b with 1% market share"
     },
     "evt_b970a6946c": {
@@ -72921,19 +72825,19 @@
       ],
       "source_count": 1,
       "confidence": 0.6,
-      "last_seen": "2026-10-14T22:58:23.989662+06:00",
+      "last_seen": "2026-10-15T02:35:51.785860+06:00",
       "headline": "Mohanagar Express to run on Dhaka-Cox's Bazar route from 26 October"
     },
     "evt_8f43e3248a": {
       "event_id": "evt_8f43e3248a",
-      "topic": "Bangladesh Economy",
+      "topic": "Industry",
       "region": "Bangladesh",
       "sources": [
         "The Business Standard"
       ],
       "source_count": 1,
       "confidence": 0.6,
-      "last_seen": "2026-10-14T22:58:23.989657+06:00",
+      "last_seen": "2026-10-15T02:35:51.785844+06:00",
       "headline": "BSTI plans 63 new labs under Tk850cr capacity expansion"
     },
     "evt_c716442fcc": {
@@ -72945,7 +72849,7 @@
       ],
       "source_count": 1,
       "confidence": 0.6,
-      "last_seen": "2026-10-14T22:58:23.989660+06:00",
+      "last_seen": "2026-10-15T02:35:51.785958+06:00",
       "headline": "Bangladesh, Italy discuss MoU to strengthen tourism cooperation"
     },
     "evt_028b2ac7d4": {
@@ -72957,19 +72861,19 @@
       ],
       "source_count": 1,
       "confidence": 0.6,
-      "last_seen": "2026-10-14T22:58:23.989671+06:00",
+      "last_seen": "2026-10-15T02:35:51.785858+06:00",
       "headline": "Workers demand climate-loss compensation, seat at Bangladesh's COP31 table"
     },
     "evt_21208c12b2": {
       "event_id": "evt_21208c12b2",
-      "topic": "Fuel and Oil",
+      "topic": "Commodities",
       "region": "Bangladesh",
       "sources": [
         "The Business Standard"
       ],
       "source_count": 1,
       "confidence": 0.6,
-      "last_seen": "2026-10-14T22:58:23.989669+06:00",
+      "last_seen": "2026-10-15T02:35:51.785841+06:00",
       "headline": "Diesel supplies to remain 'tight' into 2027: IEA"
     },
     "evt_c718babf06": {
@@ -72981,7 +72885,7 @@
       ],
       "source_count": 1,
       "confidence": 0.6,
-      "last_seen": "2026-10-14T22:58:23.989699+06:00",
+      "last_seen": "2026-10-15T02:35:51.785923+06:00",
       "headline": "Bangladesh Women suffer 3-0 whitewash in Australia"
     },
     "evt_022e84a701": {
@@ -72993,7 +72897,7 @@
       ],
       "source_count": 1,
       "confidence": 0.6,
-      "last_seen": "2026-10-14T22:58:23.989701+06:00",
+      "last_seen": "2026-10-15T02:35:51.785926+06:00",
       "headline": "Fulham coach Arbeloa fined £25,000 over comments on referee after Man Utd draw"
     },
     "evt_c7df36a588": {
@@ -73005,7 +72909,7 @@
       ],
       "source_count": 1,
       "confidence": 0.6,
-      "last_seen": "2026-10-14T22:58:23.989703+06:00",
+      "last_seen": "2026-10-15T02:35:51.785930+06:00",
       "headline": "Health minister orders door-to-door drive to ensure no child misses vaccination"
     },
     "evt_11878f2d99": {
@@ -73017,7 +72921,7 @@
       ],
       "source_count": 1,
       "confidence": 0.6,
-      "last_seen": "2026-10-14T22:58:23.989705+06:00",
+      "last_seen": "2026-10-15T02:35:51.785933+06:00",
       "headline": "No plan for Operation Clean Heart-style crackdown: Home minister"
     },
     "evt_8a10e02278": {
@@ -73029,7 +72933,7 @@
       ],
       "source_count": 1,
       "confidence": 0.6,
-      "last_seen": "2026-10-14T22:58:23.989707+06:00",
+      "last_seen": "2026-10-15T02:35:51.785936+06:00",
       "headline": "Fourth session of 13th JS to begin on 9 November"
     },
     "evt_5e00ce8fb3": {
@@ -73041,7 +72945,7 @@
       ],
       "source_count": 1,
       "confidence": 0.6,
-      "last_seen": "2026-10-14T22:58:23.989709+06:00",
+      "last_seen": "2026-10-15T02:35:51.785939+06:00",
       "headline": "Dengue claims 5 more lives, 1,920 hospitalised in 24 hours"
     },
     "evt_dc4c03699c": {
@@ -73053,7 +72957,7 @@
       ],
       "source_count": 1,
       "confidence": 0.6,
-      "last_seen": "2026-10-14T22:58:23.989713+06:00",
+      "last_seen": "2026-10-15T02:35:51.785945+06:00",
       "headline": "Measles death toll reaches 1,177 as 7 more children die in 24 hours"
     },
     "evt_f8d72d9282": {
@@ -73065,7 +72969,7 @@
       ],
       "source_count": 1,
       "confidence": 0.6,
-      "last_seen": "2026-10-14T22:58:23.989716+06:00",
+      "last_seen": "2026-10-15T02:35:51.785948+06:00",
       "headline": "Large dogs age more quickly than small dogs at a molecular level"
     },
     "evt_be8e228f58": {
@@ -73077,7 +72981,7 @@
       ],
       "source_count": 1,
       "confidence": 0.6,
-      "last_seen": "2026-10-14T22:58:23.989718+06:00",
+      "last_seen": "2026-10-15T02:35:51.785951+06:00",
       "headline": "Nobel Prize in Chemistry (1901-2026)"
     },
     "evt_a434d147d3": {
@@ -73089,7 +72993,7 @@
       ],
       "source_count": 1,
       "confidence": 0.6,
-      "last_seen": "2026-10-14T22:58:23.989719+06:00",
+      "last_seen": "2026-10-15T02:35:51.785955+06:00",
       "headline": "Fluent but flawed: Can AI replace human translators?"
     },
     "evt_22b127d45b": {
@@ -73101,7 +73005,7 @@
       ],
       "source_count": 1,
       "confidence": 0.6,
-      "last_seen": "2026-10-14T22:58:23.989721+06:00",
+      "last_seen": "2026-10-15T02:35:51.785960+06:00",
       "headline": "No need to deploy army for Thakurgaon-1 by-polls, says EC Sanaullah"
     },
     "evt_15f8ac53f9": {
@@ -73113,7 +73017,7 @@
       ],
       "source_count": 1,
       "confidence": 0.6,
-      "last_seen": "2026-10-14T22:58:23.989722+06:00",
+      "last_seen": "2026-10-15T02:35:51.785963+06:00",
       "headline": "30 Bangladeshis lured to Russia with job offers, 17 killed on first day of deployment in war with Ukraine: SRB"
     },
     "evt_4d68c3bfaa": {
@@ -73125,19 +73029,19 @@
       ],
       "source_count": 1,
       "confidence": 0.6,
-      "last_seen": "2026-10-14T22:58:23.989710+06:00",
+      "last_seen": "2026-10-15T02:35:51.785942+06:00",
       "headline": "Court orders seizure of ex-DMP chief Faruk, wife’s properties, freezes assets"
     },
     "evt_1c24aa5b31": {
       "event_id": "evt_1c24aa5b31",
-      "topic": "Global Economy",
+      "topic": "Multinational Companies",
       "region": "International",
       "sources": [
         "CNBC"
       ],
       "source_count": 1,
       "confidence": 0.6,
-      "last_seen": "2026-10-14T22:58:29.367700+06:00",
+      "last_seen": "2026-10-15T02:36:53.033691+06:00",
       "headline": "Morgan Stanley tops estimates as equities trading revenue exceeds expectations by $909 million"
     },
     "evt_5304302759": {
@@ -73149,7 +73053,7 @@
       ],
       "source_count": 1,
       "confidence": 0.6,
-      "last_seen": "2026-10-14T22:58:29.367675+06:00",
+      "last_seen": "2026-10-15T02:36:53.033694+06:00",
       "headline": "Bank of America posts third-quarter profit drop due to $1.2 billion Treasury fine; shares decline"
     },
     "evt_5d2efe52eb": {
@@ -73166,26 +73070,26 @@
     },
     "evt_1d6f15c0b8": {
       "event_id": "evt_1d6f15c0b8",
-      "topic": "Global Economy",
+      "topic": "Commodities",
       "region": "International",
       "sources": [
         "Financial Times"
       ],
       "source_count": 1,
       "confidence": 0.6,
-      "last_seen": "2026-10-14T22:58:29.367707+06:00",
+      "last_seen": "2026-10-15T02:36:53.033639+06:00",
       "headline": "AI demand to exceed supply for 2 more years, says ASML"
     },
     "evt_4d90af3b66": {
       "event_id": "evt_4d90af3b66",
-      "topic": "Global Economy",
+      "topic": "Economic Reports",
       "region": "International",
       "sources": [
         "CNBC"
       ],
       "source_count": 1,
       "confidence": 0.6,
-      "last_seen": "2026-10-14T22:58:29.367698+06:00",
+      "last_seen": "2026-10-15T02:36:53.033697+06:00",
       "headline": "Even more borrowers choose riskier mortgages, as higher interest rates crush affordability"
     },
     "evt_e9a7925289": {
@@ -73197,7 +73101,7 @@
       ],
       "source_count": 1,
       "confidence": 0.6,
-      "last_seen": "2026-10-14T22:58:29.367785+06:00",
+      "last_seen": "2026-10-15T02:36:53.033726+06:00",
       "headline": "Ukraine blindsided by Starlink restrictions and intelligence gaps"
     },
     "evt_b74c1643ea": {
@@ -73209,23 +73113,35 @@
       ],
       "source_count": 1,
       "confidence": 0.6,
-      "last_seen": "2026-10-14T22:58:29.367787+06:00",
+      "last_seen": "2026-10-15T02:36:53.033723+06:00",
       "headline": "Marine Le Pen: ‘All the warning signs are flashing red’"
     },
     "evt_2559e45ee2": {
       "event_id": "evt_2559e45ee2",
-      "topic": "Global Economy",
+      "topic": "Multinational Companies",
       "region": "International",
       "sources": [
         "CNBC"
       ],
       "source_count": 1,
       "confidence": 0.6,
-      "last_seen": "2026-10-14T22:58:29.367724+06:00",
+      "last_seen": "2026-10-15T02:36:53.033706+06:00",
       "headline": "Delta's business-class revamp: New seats, menus, plates and more Porsches"
     },
     "evt_098e0701d3": {
       "event_id": "evt_098e0701d3",
+      "topic": "Commodities",
+      "region": "International",
+      "sources": [
+        "CNBC"
+      ],
+      "source_count": 1,
+      "confidence": 0.6,
+      "last_seen": "2026-10-15T02:36:53.033703+06:00",
+      "headline": "Tech giants race to get AI gadgets on shelves for holiday rush"
+    },
+    "evt_0dac5f4005": {
+      "event_id": "evt_0dac5f4005",
       "topic": "Global Economy",
       "region": "International",
       "sources": [
@@ -73233,31 +73149,19 @@
       ],
       "source_count": 1,
       "confidence": 0.6,
-      "last_seen": "2026-10-14T22:58:29.367726+06:00",
-      "headline": "Tech giants race to get AI gadgets on shelves for holiday rush"
-    },
-    "evt_0dac5f4005": {
-      "event_id": "evt_0dac5f4005",
-      "topic": "Global Trade",
-      "region": "International",
-      "sources": [
-        "CNBC"
-      ],
-      "source_count": 1,
-      "confidence": 0.6,
-      "last_seen": "2026-10-14T22:58:29.367728+06:00",
+      "last_seen": "2026-10-15T02:36:53.033711+06:00",
       "headline": "How Trump’s tariffs and Iran war are becoming liabilities in Michigan’s Senate race"
     },
     "evt_5679382370": {
       "event_id": "evt_5679382370",
-      "topic": "Global Markets",
+      "topic": "Multinational Companies",
       "region": "International",
       "sources": [
         "Financial Times"
       ],
       "source_count": 1,
       "confidence": 0.6,
-      "last_seen": "2026-10-14T22:58:29.367702+06:00",
+      "last_seen": "2026-10-15T02:36:53.033631+06:00",
       "headline": "General Atlantic plans IPO at up to $10bn valuation"
     },
     "evt_656baff120": {
@@ -73269,31 +73173,31 @@
       ],
       "source_count": 1,
       "confidence": 0.6,
-      "last_seen": "2026-10-14T22:58:29.367730+06:00",
+      "last_seen": "2026-10-15T02:36:53.033709+06:00",
       "headline": "South Texas Latino voters who flipped for Trump in 2024 are up for grabs in 2026"
     },
     "evt_f556a28879": {
       "event_id": "evt_f556a28879",
-      "topic": "Global Economy",
+      "topic": "Multinational Companies",
       "region": "International",
       "sources": [
         "Financial Times"
       ],
       "source_count": 1,
       "confidence": 0.6,
-      "last_seen": "2026-10-14T22:58:29.367711+06:00",
+      "last_seen": "2026-10-15T02:36:53.033650+06:00",
       "headline": "CoreWeave targets ‘unlimited’ insurance money to fund AI build-out"
     },
     "evt_481d44e323": {
       "event_id": "evt_481d44e323",
-      "topic": "Global Economy",
+      "topic": "Multinational Companies",
       "region": "International",
       "sources": [
         "Financial Times"
       ],
       "source_count": 1,
       "confidence": 0.6,
-      "last_seen": "2026-10-14T22:58:29.367704+06:00",
+      "last_seen": "2026-10-15T02:36:53.033634+06:00",
       "headline": "Crypto exchange Kraken owner to buy European bank"
     },
     "evt_5f0297e32e": {
@@ -73305,7 +73209,7 @@
       ],
       "source_count": 1,
       "confidence": 0.6,
-      "last_seen": "2026-10-14T22:58:29.367731+06:00",
+      "last_seen": "2026-10-15T02:36:53.033772+06:00",
       "headline": "Ukraine warns Starlink limits are disrupting military operations as Russia pounds its energy infrastructure"
     },
     "evt_49617db6ef": {
@@ -73317,7 +73221,7 @@
       ],
       "source_count": 1,
       "confidence": 0.6,
-      "last_seen": "2026-10-14T22:58:29.367742+06:00",
+      "last_seen": "2026-10-15T02:36:53.033743+06:00",
       "headline": "How Ukraine’s data centre strikes threw Russia into turmoil"
     },
     "evt_984a44eafd": {
@@ -73328,8 +73232,8 @@
         "Financial Times"
       ],
       "source_count": 1,
-      "confidence": 0.6,
-      "last_seen": "2026-10-14T22:58:29.367755+06:00",
+      "confidence": 1.0,
+      "last_seen": "2026-10-15T02:36:53.033680+06:00",
       "headline": "US arrests Saudi employee of OpenAI for allegedly bugging its offices"
     },
     "evt_66a667a138": {
@@ -73353,7 +73257,7 @@
       ],
       "source_count": 1,
       "confidence": 0.6,
-      "last_seen": "2026-10-14T22:58:23.989630+06:00",
+      "last_seen": "2026-10-15T02:35:51.785818+06:00",
       "headline": "Govt approves 9 LNG cargoes, drops Kutubjom terminal plan"
     },
     "evt_a63aa3b033": {
@@ -73365,7 +73269,7 @@
       ],
       "source_count": 1,
       "confidence": 0.6,
-      "last_seen": "2026-10-14T22:58:23.989645+06:00",
+      "last_seen": "2026-10-15T02:35:51.785824+06:00",
       "headline": "BSEC chair leads new Tk1,700cr market stabilisation fund board after 26-month deadlock"
     },
     "evt_5926810970": {
@@ -73401,7 +73305,7 @@
       ],
       "source_count": 1,
       "confidence": 0.6,
-      "last_seen": "2026-10-14T22:58:23.989653+06:00",
+      "last_seen": "2026-10-15T02:35:51.785854+06:00",
       "headline": "Development partners confident in govt's economic recovery strategy: Titumir"
     },
     "evt_953f53038c": {
@@ -73425,7 +73329,7 @@
       ],
       "source_count": 1,
       "confidence": 0.6,
-      "last_seen": "2026-10-14T22:58:23.989677+06:00",
+      "last_seen": "2026-10-15T02:35:51.785887+06:00",
       "headline": "Humaiun Kobir leads Bangladesh delegation to CICA summit in Baku"
     },
     "evt_07b6f8523f": {
@@ -73437,19 +73341,19 @@
       ],
       "source_count": 1,
       "confidence": 0.6,
-      "last_seen": "2026-10-14T22:58:23.989678+06:00",
+      "last_seen": "2026-10-15T02:35:51.785890+06:00",
       "headline": "Man assaulted in Dhanmondi: ASI withdrawn over alleged negligence, one detained"
     },
     "evt_3cc6890d31": {
       "event_id": "evt_3cc6890d31",
-      "topic": "Bangladesh Economy",
+      "topic": "Energy",
       "region": "Bangladesh",
       "sources": [
         "The Business Standard"
       ],
       "source_count": 1,
       "confidence": 0.6,
-      "last_seen": "2026-10-14T22:58:23.989680+06:00",
+      "last_seen": "2026-10-15T02:35:51.785893+06:00",
       "headline": "BPC general manager sued over 'age fraud' in 2009 recruitment"
     },
     "evt_07df8e51b5": {
@@ -73461,7 +73365,7 @@
       ],
       "source_count": 1,
       "confidence": 0.6,
-      "last_seen": "2026-10-14T22:58:23.989681+06:00",
+      "last_seen": "2026-10-15T02:35:51.785896+06:00",
       "headline": "PM urges people to spend 30-60 minutes twice a week cleaning to prevent dengue"
     },
     "evt_21d6d417a9": {
@@ -73473,7 +73377,7 @@
       ],
       "source_count": 1,
       "confidence": 0.6,
-      "last_seen": "2026-10-14T22:58:23.989683+06:00",
+      "last_seen": "2026-10-15T02:35:51.785899+06:00",
       "headline": "UK's HMRC declines to say if it is investigating Man City"
     },
     "evt_0f3e377b01": {
@@ -73485,7 +73389,7 @@
       ],
       "source_count": 1,
       "confidence": 0.6,
-      "last_seen": "2026-10-14T22:58:23.989685+06:00",
+      "last_seen": "2026-10-15T02:35:51.785902+06:00",
       "headline": "6 in 10 Americans say Trump is profiting unethically or illegally from presidency: AP-NORC Poll"
     },
     "evt_027acee8d1": {
@@ -73497,7 +73401,7 @@
       ],
       "source_count": 1,
       "confidence": 0.6,
-      "last_seen": "2026-10-14T22:58:23.989686+06:00",
+      "last_seen": "2026-10-15T02:35:51.785906+06:00",
       "headline": "Two journalists 'assaulted' while filming clash between Chhatra Dal factions in Kushtia"
     },
     "evt_2341618b3a": {
@@ -73509,7 +73413,7 @@
       ],
       "source_count": 1,
       "confidence": 0.6,
-      "last_seen": "2026-10-14T22:58:23.989688+06:00",
+      "last_seen": "2026-10-15T02:35:51.785908+06:00",
       "headline": "Russia cracks down on AI bears as real attacks spread fear"
     },
     "evt_52ea5a4a50": {
@@ -73521,7 +73425,7 @@
       ],
       "source_count": 1,
       "confidence": 0.6,
-      "last_seen": "2026-10-14T22:58:23.989690+06:00",
+      "last_seen": "2026-10-15T02:35:51.785911+06:00",
       "headline": "Russian attack on Ukraine's western city of Lutsk kills three, governor says"
     },
     "evt_0854b06370": {
@@ -73533,7 +73437,7 @@
       ],
       "source_count": 1,
       "confidence": 0.6,
-      "last_seen": "2026-10-14T22:58:23.989691+06:00",
+      "last_seen": "2026-10-15T02:35:51.785913+06:00",
       "headline": "Accused sent to jail over actor Somu Chowdhury attack case"
     },
     "evt_13a9aa888c": {
@@ -73545,7 +73449,7 @@
       ],
       "source_count": 1,
       "confidence": 0.6,
-      "last_seen": "2026-10-14T22:58:23.989693+06:00",
+      "last_seen": "2026-10-15T02:35:51.785916+06:00",
       "headline": "Police urge caution against rumours during Durga Puja, advise against carrying bags into mandaps"
     },
     "evt_78f5f7b8e3": {
@@ -73557,7 +73461,7 @@
       ],
       "source_count": 1,
       "confidence": 0.6,
-      "last_seen": "2026-10-14T22:58:23.989694+06:00",
+      "last_seen": "2026-10-15T02:35:51.785919+06:00",
       "headline": "'My president, sorry, my husband': Trump's new press secretary flubs first briefing"
     },
     "evt_566f33d90f": {
@@ -73569,7 +73473,7 @@
       ],
       "source_count": 1,
       "confidence": 0.6,
-      "last_seen": "2026-10-14T22:58:23.989696+06:00",
+      "last_seen": "2026-10-15T02:35:51.785921+06:00",
       "headline": "Saudi flight cancellations: Shafiqur urges govt to protect expatriate workers' jobs, visas"
     },
     "evt_65e871f46b": {
@@ -73581,7 +73485,7 @@
       ],
       "source_count": 1,
       "confidence": 0.6,
-      "last_seen": "2026-10-14T22:58:23.989697+06:00",
+      "last_seen": "2026-10-15T02:35:51.785869+06:00",
       "headline": "Experts discuss ways to channel domestic capital into impact-driven businesses"
     },
     "evt_cac9606dd4": {
@@ -73593,19 +73497,19 @@
       ],
       "source_count": 1,
       "confidence": 0.6,
-      "last_seen": "2026-10-14T22:58:29.367656+06:00",
+      "last_seen": "2026-10-15T02:36:53.033608+06:00",
       "headline": "US inflation jumps to 3.7% as Iran war drives up prices"
     },
     "evt_7faffc91e1": {
       "event_id": "evt_7faffc91e1",
-      "topic": "Global Markets",
+      "topic": "Global Interest Rates",
       "region": "International",
       "sources": [
         "CNBC"
       ],
       "source_count": 1,
       "confidence": 0.6,
-      "last_seen": "2026-10-14T22:58:29.367672+06:00",
+      "last_seen": "2026-10-15T02:36:53.033612+06:00",
       "headline": "10-year Treasury yield jumps as September core inflation comes in hotter than expected"
     },
     "evt_54765452f8": {
@@ -73622,26 +73526,26 @@
     },
     "evt_fca6e61974": {
       "event_id": "evt_fca6e61974",
-      "topic": "Global Economy",
+      "topic": "Global Markets",
       "region": "International",
       "sources": [
         "CNBC"
       ],
       "source_count": 1,
       "confidence": 0.6,
-      "last_seen": "2026-10-14T22:58:29.367684+06:00",
+      "last_seen": "2026-10-15T02:36:53.033616+06:00",
       "headline": "CoreWeave shares tumble as bond yields near 15% on concern about AI borrowing binge"
     },
     "evt_333d862498": {
       "event_id": "evt_333d862498",
-      "topic": "Global Economy",
+      "topic": "Economic Reports",
       "region": "International",
       "sources": [
         "CNBC"
       ],
       "source_count": 1,
       "confidence": 0.6,
-      "last_seen": "2026-10-14T22:58:29.367686+06:00",
+      "last_seen": "2026-10-15T02:36:53.033619+06:00",
       "headline": "Fannie Mae sharply raises mortgage rate forecast for 2027"
     },
     "evt_7881aac0da": {
@@ -73670,26 +73574,26 @@
     },
     "evt_dd5a959e33": {
       "event_id": "evt_dd5a959e33",
-      "topic": "Energy",
+      "topic": "Oil",
       "region": "International",
       "sources": [
         "CNBC"
       ],
       "source_count": 1,
       "confidence": 0.6,
-      "last_seen": "2026-10-14T22:58:29.367692+06:00",
+      "last_seen": "2026-10-15T02:36:53.033661+06:00",
       "headline": "Trump's diesel dilemma — by the numbers"
     },
     "evt_e77ae2c6f6": {
       "event_id": "evt_e77ae2c6f6",
-      "topic": "Global Economy",
+      "topic": "Commodities",
       "region": "International",
       "sources": [
         "Financial Times"
       ],
       "source_count": 1,
       "confidence": 0.6,
-      "last_seen": "2026-10-14T22:58:29.367694+06:00",
+      "last_seen": "2026-10-15T02:36:53.033642+06:00",
       "headline": "US grocery prices poised to climb as soaring fuel costs drive inflation"
     },
     "evt_6ad4abe77b": {
@@ -73701,31 +73605,31 @@
       ],
       "source_count": 1,
       "confidence": 0.6,
-      "last_seen": "2026-10-14T22:58:29.367696+06:00",
+      "last_seen": "2026-10-15T02:36:53.033664+06:00",
       "headline": "Here's the inflation breakdown for September 2026 — in one chart"
     },
     "evt_cd9d6c7f57": {
       "event_id": "evt_cd9d6c7f57",
-      "topic": "Global Economy",
+      "topic": "Multinational Companies",
       "region": "International",
       "sources": [
         "Financial Times"
       ],
       "source_count": 1,
       "confidence": 0.6,
-      "last_seen": "2026-10-14T22:58:29.367714+06:00",
+      "last_seen": "2026-10-15T02:36:53.033654+06:00",
       "headline": "Freshfields partners explore carve-out of AI unit worth ‘billions’, leaked emails reveal"
     },
     "evt_15dedc7bef": {
       "event_id": "evt_15dedc7bef",
-      "topic": "Global Economy",
+      "topic": "Multinational Companies",
       "region": "International",
       "sources": [
         "Financial Times"
       ],
       "source_count": 1,
       "confidence": 0.6,
-      "last_seen": "2026-10-14T22:58:29.367715+06:00",
+      "last_seen": "2026-10-15T02:36:53.033628+06:00",
       "headline": "Berkshire Hathaway adds $330mn to stake in tech group Bending Spoons"
     },
     "evt_144f865cfd": {
@@ -73737,19 +73641,19 @@
       ],
       "source_count": 1,
       "confidence": 0.6,
-      "last_seen": "2026-10-14T22:58:29.367717+06:00",
+      "last_seen": "2026-10-15T02:36:53.033770+06:00",
       "headline": "Bending Spoons skyrockets 35% as Berkshire Hathaway makes $330 million investment"
     },
     "evt_44ca2063fa": {
       "event_id": "evt_44ca2063fa",
-      "topic": "Global Economy",
+      "topic": "Multinational Companies",
       "region": "International",
       "sources": [
         "CNBC"
       ],
       "source_count": 1,
       "confidence": 0.6,
-      "last_seen": "2026-10-14T22:58:29.367718+06:00",
+      "last_seen": "2026-10-15T02:36:53.033646+06:00",
       "headline": "Netflix to lay off roughly 1,000 employees, or 6% of workforce"
     },
     "evt_ee3cbde845": {
@@ -73761,7 +73665,7 @@
       ],
       "source_count": 1,
       "confidence": 0.6,
-      "last_seen": "2026-10-14T22:58:29.367720+06:00",
+      "last_seen": "2026-10-15T02:36:53.033767+06:00",
       "headline": "Netflix to cut 1,000 jobs as growth concerns mount"
     },
     "evt_1f4436d4b9": {
@@ -73773,19 +73677,19 @@
       ],
       "source_count": 1,
       "confidence": 0.6,
-      "last_seen": "2026-10-14T22:58:29.367722+06:00",
+      "last_seen": "2026-10-15T02:36:53.033686+06:00",
       "headline": "'Office' is actually having a scarcity problem"
     },
     "evt_69c01bf668": {
       "event_id": "evt_69c01bf668",
-      "topic": "Global Economy",
+      "topic": "Global Markets",
       "region": "International",
       "sources": [
         "Financial Times"
       ],
       "source_count": 1,
       "confidence": 0.6,
-      "last_seen": "2026-10-14T22:58:29.367723+06:00",
+      "last_seen": "2026-10-15T02:36:53.033688+06:00",
       "headline": "Europe’s defence stocks send a geopolitical distress signal"
     },
     "evt_b1a48a6b0f": {
@@ -73797,7 +73701,7 @@
       ],
       "source_count": 1,
       "confidence": 0.6,
-      "last_seen": "2026-10-14T22:58:29.367743+06:00",
+      "last_seen": "2026-10-15T02:36:53.033746+06:00",
       "headline": "UK’s Schillings sets up private investigations business with US law firm Clare Locke"
     },
     "evt_8a2ca38792": {
@@ -73809,19 +73713,19 @@
       ],
       "source_count": 1,
       "confidence": 0.6,
-      "last_seen": "2026-10-14T22:58:29.367777+06:00",
+      "last_seen": "2026-10-15T02:36:53.033762+06:00",
       "headline": "Treasury says largest U.S. banks let politics influence who received banking services"
     },
     "evt_1f7cbf50b6": {
       "event_id": "evt_1f7cbf50b6",
-      "topic": "Global Markets",
+      "topic": "Multinational Companies",
       "region": "International",
       "sources": [
         "CNBC"
       ],
       "source_count": 1,
       "confidence": 0.6,
-      "last_seen": "2026-10-14T22:58:29.367779+06:00",
+      "last_seen": "2026-10-15T02:36:53.033700+06:00",
       "headline": "Jim Cramer says this healthcare stock is still a buy. Plus, what to do with BNY"
     },
     "evt_437cdbdc64": {
@@ -73833,7 +73737,7 @@
       ],
       "source_count": 1,
       "confidence": 0.6,
-      "last_seen": "2026-10-14T22:58:29.367781+06:00",
+      "last_seen": "2026-10-15T02:36:53.033735+06:00",
       "headline": "He linked Saudi Arabia to Silicon Valley. Then OpenAI found a bug wrapped in toilet paper"
     },
     "evt_fd9fc87dbe": {
@@ -73845,11 +73749,251 @@
       ],
       "source_count": 1,
       "confidence": 0.6,
-      "last_seen": "2026-10-14T22:58:29.367782+06:00",
+      "last_seen": "2026-10-15T02:36:53.033765+06:00",
       "headline": "Abilene Christian University is giving Ivy League endowments a run for their money in the market"
     },
     "evt_43a9140ca4": {
       "event_id": "evt_43a9140ca4",
+      "topic": "Economic Reports",
+      "region": "International",
+      "sources": [
+        "CNBC"
+      ],
+      "source_count": 1,
+      "confidence": 0.6,
+      "last_seen": "2026-10-15T02:36:53.033666+06:00",
+      "headline": "Social Security Administration announces 3.6% cost-of-living adjustment for 2027"
+    },
+    "evt_302381a83f": {
+      "event_id": "evt_302381a83f",
+      "topic": "Banking",
+      "region": "Bangladesh",
+      "sources": [
+        "The Business Standard"
+      ],
+      "source_count": 1,
+      "confidence": 0.6,
+      "last_seen": "2026-10-15T02:35:51.785803+06:00",
+      "headline": "Foreign banks' net profit falls 38% in H1"
+    },
+    "evt_22a8843e63": {
+      "event_id": "evt_22a8843e63",
+      "topic": "RMG",
+      "region": "Bangladesh",
+      "sources": [
+        "The Business Standard"
+      ],
+      "source_count": 1,
+      "confidence": 0.6,
+      "last_seen": "2026-10-15T02:35:51.785828+06:00",
+      "headline": "Govt to seek nominations for garment wage board as workers protest for Tk30,000 minimum wage"
+    },
+    "evt_6a4b9f0daf": {
+      "event_id": "evt_6a4b9f0daf",
+      "topic": "Bangladesh Economy",
+      "region": "Bangladesh",
+      "sources": [
+        "The Business Standard"
+      ],
+      "source_count": 1,
+      "confidence": 0.6,
+      "last_seen": "2026-10-15T02:35:51.785831+06:00",
+      "headline": "Growth trap, 16-year high inflation signal deepening crisis for Bangladesh, economists warn"
+    },
+    "evt_d95db39fb2": {
+      "event_id": "evt_d95db39fb2",
+      "topic": "Bangladesh Economy",
+      "region": "Bangladesh",
+      "sources": [
+        "The Business Standard"
+      ],
+      "source_count": 1,
+      "confidence": 0.6,
+      "last_seen": "2026-10-15T02:35:51.785835+06:00",
+      "headline": "Court clears legal hurdle for Moghbazar expressway, railway work after nearly 7yrs"
+    },
+    "evt_abd9a6e69e": {
+      "event_id": "evt_abd9a6e69e",
+      "topic": "Bangladesh Economy",
+      "region": "Bangladesh",
+      "sources": [
+        "The Business Standard"
+      ],
+      "source_count": 1,
+      "confidence": 0.6,
+      "last_seen": "2026-10-15T02:35:51.785863+06:00",
+      "headline": "Air France to follow Israel's ban on airline crew from Bangladesh, Pakistan, 29 other countries: Report"
+    },
+    "evt_de36c11501": {
+      "event_id": "evt_de36c11501",
+      "topic": "Industry",
+      "region": "Bangladesh",
+      "sources": [
+        "The Business Standard"
+      ],
+      "source_count": 1,
+      "confidence": 0.6,
+      "last_seen": "2026-10-15T02:35:51.785866+06:00",
+      "headline": "Whey beyond waste: Bangladesh’s untapped dairy opportunity"
+    },
+    "evt_37a6167777": {
+      "event_id": "evt_37a6167777",
+      "topic": "Bangladesh Economy",
+      "region": "Bangladesh",
+      "sources": [
+        "The Business Standard"
+      ],
+      "source_count": 1,
+      "confidence": 0.6,
+      "last_seen": "2026-10-15T02:35:51.785873+06:00",
+      "headline": "Giving words to the depressed Deaf"
+    },
+    "evt_caef7356b0": {
+      "event_id": "evt_caef7356b0",
+      "topic": "Bangladesh Economy",
+      "region": "Bangladesh",
+      "sources": [
+        "The Business Standard"
+      ],
+      "source_count": 1,
+      "confidence": 0.6,
+      "last_seen": "2026-10-15T02:35:51.785875+06:00",
+      "headline": "Ukraine says SpaceX hampers drones for attack and defence, as US ties fray"
+    },
+    "evt_9818f84f9d": {
+      "event_id": "evt_9818f84f9d",
+      "topic": "Bangladesh Economy",
+      "region": "Bangladesh",
+      "sources": [
+        "The Business Standard"
+      ],
+      "source_count": 1,
+      "confidence": 0.6,
+      "last_seen": "2026-10-15T02:35:51.785878+06:00",
+      "headline": "US inflation rises to 3.7% as gasoline prices surge: What it means for consumers"
+    },
+    "evt_19d3c9d091": {
+      "event_id": "evt_19d3c9d091",
+      "topic": "Bangladesh Economy",
+      "region": "Bangladesh",
+      "sources": [
+        "The Business Standard"
+      ],
+      "source_count": 1,
+      "confidence": 0.6,
+      "last_seen": "2026-10-15T02:35:51.785880+06:00",
+      "headline": "Jamaat factions clash over committee formation in Cumilla, unit secretary's jeep vandalised"
+    },
+    "evt_6b47631d67": {
+      "event_id": "evt_6b47631d67",
+      "topic": "Bangladesh Economy",
+      "region": "Bangladesh",
+      "sources": [
+        "The Business Standard"
+      ],
+      "source_count": 1,
+      "confidence": 0.6,
+      "last_seen": "2026-10-15T02:35:51.785882+06:00",
+      "headline": "Govt reshuffles over 2,000 officials in 8 months, sends 32 into forced retirement"
+    },
+    "evt_95126066f9": {
+      "event_id": "evt_95126066f9",
+      "topic": "Bangladesh Economy",
+      "region": "Bangladesh",
+      "sources": [
+        "The Business Standard"
+      ],
+      "source_count": 1,
+      "confidence": 0.6,
+      "last_seen": "2026-10-15T02:35:51.785885+06:00",
+      "headline": "Trump sparks outrage with AI video of himself wrestling tiger that killed man"
+    },
+    "evt_b471f36a73": {
+      "event_id": "evt_b471f36a73",
+      "topic": "Multinational Companies",
+      "region": "International",
+      "sources": [
+        "CNBC"
+      ],
+      "source_count": 1,
+      "confidence": 0.6,
+      "last_seen": "2026-10-15T02:36:53.033588+06:00",
+      "headline": "Anduril employee tender offer would value the defense tech startup at $90 billion"
+    },
+    "evt_3786b55a8b": {
+      "event_id": "evt_3786b55a8b",
+      "topic": "Global Markets",
+      "region": "International",
+      "sources": [
+        "CNBC"
+      ],
+      "source_count": 1,
+      "confidence": 0.6,
+      "last_seen": "2026-10-15T02:36:53.033601+06:00",
+      "headline": "Dell stock plunges 11%, leading data center sell-off as fears mount about 'enterprise AI timing'"
+    },
+    "evt_b3fc05f1ec": {
+      "event_id": "evt_b3fc05f1ec",
+      "topic": "Global Markets",
+      "region": "International",
+      "sources": [
+        "Financial Times"
+      ],
+      "source_count": 1,
+      "confidence": 0.6,
+      "last_seen": "2026-10-15T02:36:53.033605+06:00",
+      "headline": "US chip stocks slide as inflation and AI debt fears unsettle investors"
+    },
+    "evt_cc3c2ea572": {
+      "event_id": "evt_cc3c2ea572",
+      "topic": "Banking",
+      "region": "International",
+      "sources": [
+        "CNBC"
+      ],
+      "source_count": 1,
+      "confidence": 0.6,
+      "last_seen": "2026-10-15T02:36:53.033622+06:00",
+      "headline": "Bank of America hired 1,000 contractors to patch software flaws exposed by Anthropic's Mythos"
+    },
+    "evt_bcdf032391": {
+      "event_id": "evt_bcdf032391",
+      "topic": "Multinational Companies",
+      "region": "International",
+      "sources": [
+        "Financial Times"
+      ],
+      "source_count": 1,
+      "confidence": 0.6,
+      "last_seen": "2026-10-15T02:36:53.033625+06:00",
+      "headline": "Perella Weinberg and Piper Sandler abandon merger talks"
+    },
+    "evt_41cec40167": {
+      "event_id": "evt_41cec40167",
+      "topic": "Multinational Companies",
+      "region": "International",
+      "sources": [
+        "CNBC"
+      ],
+      "source_count": 1,
+      "confidence": 0.6,
+      "last_seen": "2026-10-15T02:36:53.033652+06:00",
+      "headline": "OpenAI’s Sachin Katti to leave infrastructure role, stay on as advisor"
+    },
+    "evt_4f8bd87e73": {
+      "event_id": "evt_4f8bd87e73",
+      "topic": "Global Markets",
+      "region": "International",
+      "sources": [
+        "CNBC"
+      ],
+      "source_count": 1,
+      "confidence": 0.6,
+      "last_seen": "2026-10-15T02:36:53.033683+06:00",
+      "headline": "AI infrastructure stocks tumble. Here's a few reasons for the sell-off"
+    },
+    "evt_b37126ac9b": {
+      "event_id": "evt_b37126ac9b",
       "topic": "Global Economy",
       "region": "International",
       "sources": [
@@ -73857,16 +74001,59 @@
       ],
       "source_count": 1,
       "confidence": 0.6,
-      "last_seen": "2026-10-14T22:58:29.367784+06:00",
-      "headline": "Social Security Administration announces 3.6% cost-of-living adjustment for 2027"
+      "last_seen": "2026-10-15T02:36:53.033749+06:00",
+      "headline": "Trump to appeal order blocking White House from banning MS NOW, CNN and Politico"
+    },
+    "evt_38cbcf9fcc": {
+      "event_id": "evt_38cbcf9fcc",
+      "topic": "Global Economy",
+      "region": "International",
+      "sources": [
+        "CNBC"
+      ],
+      "source_count": 1,
+      "confidence": 0.6,
+      "last_seen": "2026-10-15T02:36:53.033751+06:00",
+      "headline": "Lisa Cook lawyer doubts Trump committee's fairness as president calls her 'automatic no vote'"
+    },
+    "evt_f0a131c769": {
+      "event_id": "evt_f0a131c769",
+      "topic": "Global Economy",
+      "region": "International",
+      "sources": [
+        "Financial Times"
+      ],
+      "source_count": 1,
+      "confidence": 0.6,
+      "last_seen": "2026-10-15T02:36:53.033754+06:00",
+      "headline": "Burnham wants to ‘repair bridges’ between Trump and Zelenskyy"
+    },
+    "evt_98d8fb5f04": {
+      "event_id": "evt_98d8fb5f04",
+      "topic": "Global Economy",
+      "region": "International",
+      "sources": [
+        "CNBC"
+      ],
+      "source_count": 1,
+      "confidence": 0.6,
+      "last_seen": "2026-10-15T02:36:53.033757+06:00",
+      "headline": "The steel stock that has the shorts and options traders on edge"
+    },
+    "evt_406e17cabf": {
+      "event_id": "evt_406e17cabf",
+      "topic": "Global Economy",
+      "region": "International",
+      "sources": [
+        "CNBC"
+      ],
+      "source_count": 1,
+      "confidence": 0.6,
+      "last_seen": "2026-10-15T02:36:53.033760+06:00",
+      "headline": "How high inflation became a 'fact of life' in the U.S."
     }
   },
   "posted_event_ids": [
-    "evt_4c4c355270",
-    "evt_987b862998",
-    "evt_e9dd37c5b0",
-    "evt_0e4709b8f2",
-    "evt_0bad252795",
     "evt_ba9f6dd5b9",
     "evt_41d7d4c910",
     "evt_7006cc4659",
@@ -74361,15 +74548,14 @@
     "evt_953f53038c",
     "evt_54765452f8",
     "evt_7881aac0da",
-    "evt_92cea15ba9"
+    "evt_92cea15ba9",
+    "evt_302381a83f",
+    "evt_0edd2e73ad",
+    "evt_21208c12b2",
+    "evt_b471f36a73",
+    "evt_3786b55a8b"
   ],
   "recent_titles": [
-    "dsex climbs 60 points as turnover hits tk747 crore",
-    "customs seizes tk7 5 crore gold paste from dhaka airport commode",
-    "us treasury chief bessent and china s he launch ai trade mineral talks",
-    "china s cxmt launches fifth generation dram platform into mass production",
-    "germany s iw institute triples 2026 growth forecast to 1 2",
-    "bangladesh and canada seek expanded trade and climate cooperation ahead of unga",
     "baffa urges nbr to bar fully foreign owned firms from freight forwarding licences",
     "takapay debit cards to empower bangladesh family card beneficiaries",
     "yen faces sharp decline as holiday liquidity drops and boj guidance disappoints",
@@ -74769,20 +74955,25 @@
     "bsec lifts investment ban for intermediary directors requires quarterly disclosures",
     "blackrock ceo warns data center moratorium could spark recession",
     "container ship sinks in strait of hormuz amid iran s escalated attacks",
-    "iran backed houthis attack saudi aramco facility as tehran vows to sink u s warships"
+    "iran backed houthis attack saudi aramco facility as tehran vows to sink u s warships",
+    "foreign banks net profit plummets 38 in bangladesh h1 2026",
+    "bangladesh aims for 10 billion uk exports by doubling market share",
+    "iea warns diesel supplies remain tight through 2027",
+    "anduril tender offer values defense tech startup at 90 billion",
+    "dell shares drop 11 triggering data center sell off over ai timing concerns"
   ],
   "category_coverage": {
     "Energy": "2026-10-14T23:04:13.012320+06:00",
     "Government Budget": "2026-09-20T12:05:12.580677+06:00",
     "Global Economy": "2026-10-14T23:04:02.199333+06:00",
     "Trade": "2026-10-14T23:03:49.989862+06:00",
-    "Multinational Companies": "2026-10-10T19:45:11.473268+06:00",
-    "Banking": "2026-10-14T03:13:59.102518+06:00",
+    "Multinational Companies": "2026-10-15T02:51:40.224103+06:00",
+    "Banking": "2026-10-15T02:51:25.672565+06:00",
     "Share Market": "2026-10-14T23:03:42.678820+06:00",
     "Global Inflation": "2026-10-14T17:49:20.194481+06:00",
     "Top Currency Rates": "2026-09-06T23:44:06.328287+06:00",
     "Tariffs": "2026-10-01T21:25:14.243085+06:00",
-    "Export and Import": "2026-10-14T12:06:00.292298+06:00",
+    "Export and Import": "2026-10-15T02:51:30.387747+06:00",
     "Economic Projects": "2026-10-02T13:04:19.159466+06:00",
     "Gold": "2026-10-13T21:57:32.720058+06:00",
     "Bangladesh Economy": "2026-10-14T23:03:57.154098+06:00",
@@ -74792,10 +74983,10 @@
     "Fed": "2026-10-12T23:44:52.651763+06:00",
     "Industry": "2026-10-12T13:14:23.913786+06:00",
     "RMG": "2026-10-13T13:38:35.054643+06:00",
-    "Global Markets": "2026-10-13T21:57:46.490068+06:00",
+    "Global Markets": "2026-10-15T02:51:44.872833+06:00",
     "Bangladesh Bank": "2026-10-08T21:32:09.012506+06:00",
     "DSE and CSE": "2026-10-12T00:48:39.739879+06:00",
-    "Commodities": "2026-10-14T03:13:53.722765+06:00",
+    "Commodities": "2026-10-15T02:51:35.527108+06:00",
     "Economic Institutions": "2026-10-01T21:24:57.068738+06:00",
     "Oil": "2026-10-14T12:06:22.171415+06:00",
     "Shipping": "2026-10-14T23:04:07.577394+06:00",
