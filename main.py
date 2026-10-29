@@ -2914,28 +2914,29 @@ def bold_terms_html(
 def dynamic_rich_html(story):
     terms = derive_bold_terms(story)
 
+    # POSTCARD FORMAT (network standard, Karn's pick 2026-10-30): photo,
+    # headline, the whole story in one bold line, then every detail inside a
+    # single tap-to-expand FULL STORY block. No visible section template.
     parts = [
         '<img src="tg://photo?id=newsphoto">',
         "<h1><b>" + escape_rich_html(story["headline"]) + "</b></h1>",
-        "<p>" + bold_terms_html(story["summary"], terms) + "</p>",
-        "<h2>Key Highlights</h2>",
-        "<p>" + "<br>".join(
-            "• " + bold_terms_html(point, terms)
-            for point in story["highlights"]
-        ) + "</p>",
+        "<p><b>" + escape_rich_html(story["summary"]) + "</b></p>",
     ]
 
-    know_body = []
+    story_blocks = []
+    if story.get("highlights"):
+        story_blocks.append("<br>".join(
+            "• " + bold_terms_html(point, terms)
+            for point in story["highlights"]
+        ))
+
+    know_lines = []
     for item in story.get("what_to_know", []):
         term = escape_rich_html(item.get("term", ""))
         meaning = bold_terms_html(item.get("meaning", ""), terms)
-        know_body.append(f"<p><b>{term}:</b> {meaning}</p>")
-
-    parts.append(
-        "<details><summary>What to Know</summary>"
-        + "".join(know_body)
-        + "</details>"
-    )
+        know_lines.append(f"<b>{term}:</b> {meaning}")
+    if know_lines:
+        story_blocks.append("<br>".join(know_lines))
 
     vocab_lines = []
     for idx, item in enumerate(story.get("vocabulary", [])[:3], start=1):
@@ -2943,14 +2944,17 @@ def dynamic_rich_html(story):
         synonyms = ", ".join(escape_rich_html(x) for x in item.get("synonyms", [])[:2])
         antonyms = ", ".join(escape_rich_html(x) for x in item.get("antonyms", [])[:2])
         vocab_lines.append(
-            f"<p>{idx}. <b>{word}</b>: {synonyms} | {antonyms}</p>"
+            f"{idx}. <b>{word}</b>: {synonyms} | {antonyms}"
         )
+    if vocab_lines:
+        story_blocks.append("<br>".join(vocab_lines))
 
-    parts.append(
-        "<details><summary>Vocabulary</summary>"
-        + "".join(vocab_lines)
-        + "</details>"
-    )
+    if story_blocks:
+        parts.append(
+            "<blockquote expandable><b>FULL STORY</b><br>"
+            + "<br><br>".join(story_blocks)
+            + "</blockquote>"
+        )
 
     hashtags = " ".join(category_hashtags(story))
     if hashtags:
@@ -4305,8 +4309,11 @@ def self_test():
     assert complete_text("An incomplete sentence—") is False
     assert "Key Context" not in rendered
     assert "Why It Matters" not in rendered
-    assert "<summary>What to Know</summary>" in rendered
-    assert "<summary>Vocabulary</summary>" in rendered
+    assert "<details>" not in rendered
+    assert "What to Know" not in rendered
+    assert "<b>FULL STORY</b>" in rendered
+    assert rendered.count('<blockquote expandable>') == 1
+    assert "<b>Repo Rate:</b>" in rendered
     assert "<b>Merger</b>: combination, consolidation | split, division" in rendered
     assert "#Banking" in rendered
     assert "• " in rendered
