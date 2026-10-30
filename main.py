@@ -28,6 +28,8 @@ except ImportError:
 
 from cerebras.cloud.sdk import Cerebras
 
+import cerebras_keys
+
 
 # ============================================================
 # CONFIGURATION
@@ -960,6 +962,27 @@ exa = Exa(api_key=EXA_API_KEY) if (EXA_API_KEY and Exa is not None) else None
 cerebras = Cerebras(
     api_key=CEREBRAS_API_KEY
 )
+
+
+def _reset_cerebras_client():
+    global cerebras
+    cerebras = Cerebras(api_key=cerebras_keys.active_key() or CEREBRAS_API_KEY)
+
+
+def cerebras_create(**kwargs):
+    """chat.completions.create with multi-key failover: on a quota/auth
+    status (401/402/403/429) the active key is retired for the run (owner
+    alerted via the Newsroom bot), the client is rebuilt on the next key,
+    and the call retries. Any other error propagates untouched."""
+    while True:
+        try:
+            return cerebras.chat.completions.create(**kwargs)
+        except Exception as exc:
+            status = getattr(exc, "status_code", None)
+            if cerebras_keys.is_quota_status(status) and cerebras_keys.failover(status):
+                _reset_cerebras_client()
+                continue
+            raise
 
 
 # ============================================================
@@ -1950,7 +1973,7 @@ Allowed topic taxonomy:
 """
 
     try:
-        response = cerebras.chat.completions.create(
+        response = cerebras_create(
             model=CEREBRAS_MODEL,
             messages=[
                 {"role": "system", "content": prompt},
@@ -2483,7 +2506,7 @@ market-context or any other top-level section.
 
     for attempt in range(3):
         try:
-            response = cerebras.chat.completions.create(
+            response = cerebras_create(
                 model=CEREBRAS_MODEL,
                 messages=[
                     {
@@ -3866,7 +3889,7 @@ Return only the JSON schema.
     )
 
     try:
-        response = cerebras.chat.completions.create(
+        response = cerebras_create(
             model=CEREBRAS_MODEL,
             messages=[
                 {"role": "system", "content": prompt},
