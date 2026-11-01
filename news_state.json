@@ -1,40 +1,40 @@
 {
   "feeds": {
     "https://www.tbsnews.net/top-news/rss.xml": {
-      "etag": "\"1793516811-1\"",
-      "last_modified": "Sun, 01 Nov 2026 07:06:51 GMT",
-      "last_checked": "2026-11-01T13:17:03.371068+06:00",
+      "etag": "\"1793544837-1\"",
+      "last_modified": "Sun, 01 Nov 2026 14:53:57 GMT",
+      "last_checked": "2026-11-01T20:54:07.907853+06:00",
       "fail_count": 0,
       "alerted": false
     },
     "https://thefinancialexpress.com.bd/rss.xml": {
       "etag": null,
       "last_modified": null,
-      "last_checked": "2026-11-01T13:17:04.664723+06:00",
+      "last_checked": "2026-11-01T20:54:11.283408+06:00",
       "fail_count": 0,
       "alerted": false
     },
     "https://www.thedailystar.net/frontpage/rss.xml": {
-      "etag": "W/\"1793517303\"",
-      "last_modified": "Sun, 01 Nov 2026 07:15:03 GMT",
-      "last_checked": "2026-11-01T13:17:03.518432+06:00",
+      "etag": "W/\"1793544723\"",
+      "last_modified": "Sun, 01 Nov 2026 14:52:03 GMT",
+      "last_checked": "2026-11-01T20:54:10.062808+06:00",
       "fail_count": 0,
       "alerted": false
     },
     "https://www.dhakatribune.com/feed": {
-      "last_checked": "2026-11-01T13:17:03.845970+06:00",
-      "fail_count": 204,
+      "last_checked": "2026-11-01T20:54:10.491279+06:00",
+      "fail_count": 205,
       "alerted": true
     },
     "https://www.newagebd.net/rss": {
-      "last_checked": "2026-11-01T13:17:04.766062+06:00",
-      "fail_count": 204,
+      "last_checked": "2026-11-01T20:54:11.438662+06:00",
+      "fail_count": 205,
       "alerted": true
     },
     "https://www.ft.com/rss/home": {
-      "etag": "W/\"1f39-ELT8Ig2TCynplUEY87HJL0Rzi/g\"",
+      "etag": "W/\"1c5a-oEHNbiNj6Hl9nydTBebDNVUuw4M\"",
       "last_modified": null,
-      "last_checked": "2026-11-01T13:17:05.475165+06:00",
+      "last_checked": "2026-11-01T20:54:12.515931+06:00",
       "fail_count": 0,
       "alerted": false
     },
@@ -47,74 +47,25 @@
     },
     "https://bdnews24.com/?widgetName=rssfeed&widgetId=1150&getXmlFeed=true": {
       "etag": null,
-      "last_modified": "Sun, 01 Nov 2026 07:05:23 GMT",
-      "last_checked": "2026-11-01T13:17:03.636052+06:00",
+      "last_modified": "Sun, 01 Nov 2026 14:54:10 GMT",
+      "last_checked": "2026-11-01T20:54:10.274194+06:00",
       "fail_count": 0,
       "alerted": false
     },
     "https://www.cnbc.com/id/100003114/device/rss/rss.html": {
       "etag": null,
       "last_modified": null,
-      "last_checked": "2026-11-01T13:17:04.816169+06:00",
+      "last_checked": "2026-11-01T20:54:11.585869+06:00",
       "fail_count": 0,
       "alerted": false
     },
     "https://feeds.content.dowjones.io/public/rss/mw_topstories.xml": {
-      "last_checked": "2026-11-01T13:17:05.080056+06:00",
-      "fail_count": 203,
+      "last_checked": "2026-11-01T20:54:11.863724+06:00",
+      "fail_count": 204,
       "alerted": true
     }
   },
   "queue": {
-    "cnbc.com/2026/10/27/q3-earnings-resilient-consumer.html": {
-      "title": "Early third-quarter earnings show a 'resilient' U.S. consumer, with signs of strain",
-      "url": "https://www.cnbc.com/2026/10/27/q3-earnings-resilient-consumer.html",
-      "canonical": "cnbc.com/2026/10/27/q3-earnings-resilient-consumer.html",
-      "published_dt": "2026-10-28T00:12:20+06:00",
-      "published_date": "2026-10-28T00:12:20+06:00",
-      "source": "CNBC",
-      "region": "International",
-      "excerpt": "Companies from Royal Caribbean to Coca-Cola and UPS say they are seeing steady consumer spending despite high inflation.",
-      "image": "",
-      "discovery": "rss",
-      "date_estimated": false,
-      "status": "pending",
-      "first_seen": "2026-10-28T01:19:14.698632+06:00",
-      "last_seen": "2026-10-28T19:55:56.007295+06:00"
-    },
-    "cnbc.com/2026/10/27/amazon-ai-coding-tokenmaxxing.html": {
-      "title": "Amazon's anti-tokenmaxxing memo says engineers should be pickier about using AI",
-      "url": "https://www.cnbc.com/2026/10/27/amazon-ai-coding-tokenmaxxing.html",
-      "canonical": "cnbc.com/2026/10/27/amazon-ai-coding-tokenmaxxing.html",
-      "published_dt": "2026-10-28T00:57:45+06:00",
-      "published_date": "2026-10-28T00:57:45+06:00",
-      "source": "CNBC",
-      "region": "International",
-      "excerpt": "Amazon has rapidly integrated AI across the e-commerce giant's sprawling business operations under CEO Andy Jassy.",
-      "image": "",
-      "discovery": "rss",
-      "date_estimated": false,
-      "status": "posted",
-      "first_seen": "2026-10-28T01:19:14.698729+06:00",
-      "last_seen": "2026-10-28T19:55:56.006767+06:00",
-      "posted_at": "2026-10-28T20:16:42.892271+06:00"
-    },
-    "ft.com/content/d703aaae-f607-4b30-9830-ac2a25472d44": {
-      "title": "Washington discusses Russian deals for US oil majors in Ukraine peace talks",
-      "url": "https://www.ft.com/content/d703aaae-f607-4b30-9830-ac2a25472d44?syn-25a6b1a6=1",
-      "canonical": "ft.com/content/d703aaae-f607-4b30-9830-ac2a25472d44",
-      "published_dt": "2026-10-28T01:06:02+06:00",
-      "published_date": "2026-10-28T01:06:02+06:00",
-      "source": "Financial Times",
-      "region": "International",
-      "excerpt": "White House proposes renewed postwar business ties in an effort to bring President Vladimir Putin to the negotiating table",
-      "image": "https://images.ft.com/v3/image/raw/https%3A%2F%2Fd1e00ek4ebabms.cloudfront.net%2Fproduction%2F7cb0dfd1-6edc-4ea3-a57d-6047158a88f7.jpg?source=next-home-page&dpr=2&width=580&fit=scale-down",
-      "discovery": "rss",
-      "date_estimated": false,
-      "status": "pending",
-      "first_seen": "2026-10-28T01:19:15.755629+06:00",
-      "last_seen": "2026-10-28T19:55:56.753654+06:00"
-    },
     "cnbc.com/2026/10/28/us-iran-war-trump-hormuz-costs-centcom.html": {
       "title": "Trump says Iran war will end 'when I want it to' as costs reportedly balloon to $47 billion",
       "url": "https://www.cnbc.com/2026/10/28/us-iran-war-trump-hormuz-costs-centcom.html",
@@ -130,22 +81,6 @@
       "status": "pending",
       "first_seen": "2026-10-28T12:45:30.003591+06:00",
       "last_seen": "2026-10-29T01:26:21.177771+06:00"
-    },
-    "cnbc.com/2026/10/28/ubs-earnings-third-quarter.html": {
-      "title": "UBS pre-tax profits jump 27% to $3.59 billion in the third quarter",
-      "url": "https://www.cnbc.com/2026/10/28/ubs-earnings-third-quarter.html",
-      "canonical": "cnbc.com/2026/10/28/ubs-earnings-third-quarter.html",
-      "published_dt": "2026-10-28T12:43:19+06:00",
-      "published_date": "2026-10-28T12:43:19+06:00",
-      "source": "CNBC",
-      "region": "International",
-      "excerpt": "UBS reported a third quarter pre-tax profit of almost $3.6 billion.",
-      "image": "",
-      "discovery": "rss",
-      "date_estimated": false,
-      "status": "pending",
-      "first_seen": "2026-10-28T12:45:30.003668+06:00",
-      "last_seen": "2026-10-28T19:55:56.006602+06:00"
     },
     "cnbc.com/2026/10/28/israel-election-netanyahu-trump-gaza-.html": {
       "title": "Israel election appears to have no clear winner with Netanyahu, opponent Eisenkot far short of majorities",
@@ -163,150 +98,6 @@
       "first_seen": "2026-10-28T12:45:30.003792+06:00",
       "last_seen": "2026-10-29T01:26:21.178012+06:00"
     },
-    "cnbc.com/2026/10/28/jio-ipo-india-listing-.html": {
-      "title": "Meta- and Google-backed Jio Platforms’ shares soar over 21% on trading debut after record IPO",
-      "url": "https://www.cnbc.com/2026/10/28/jio-ipo-india-listing-.html",
-      "canonical": "cnbc.com/2026/10/28/jio-ipo-india-listing-.html",
-      "published_dt": "2026-10-28T11:16:41+06:00",
-      "published_date": "2026-10-28T11:16:41+06:00",
-      "source": "CNBC",
-      "region": "International",
-      "excerpt": "Jio had offered 270 million shares in the IPO priced at 1,119 rupees apiece, raising 302 billion rupees ($3.2 billion) in the country's largest-ever IPO.",
-      "image": "",
-      "discovery": "rss",
-      "date_estimated": false,
-      "status": "pending",
-      "first_seen": "2026-10-28T12:45:30.003853+06:00",
-      "last_seen": "2026-10-28T19:55:56.006941+06:00"
-    },
-    "cnbc.com/2026/10/28/sk-hynix-third-quarter-profit.html": {
-      "title": "SK Hynix shares soar over 10 % as profit beats, chipmaker to return $25 billion to investors",
-      "url": "https://www.cnbc.com/2026/10/28/sk-hynix-third-quarter-profit.html",
-      "canonical": "cnbc.com/2026/10/28/sk-hynix-third-quarter-profit.html",
-      "published_dt": "2026-10-28T11:54:33+06:00",
-      "published_date": "2026-10-28T11:54:33+06:00",
-      "source": "CNBC",
-      "region": "International",
-      "excerpt": "Shares of South Korean chipmaker SK Hynix soared over 10% on Wednesday as third-quarter profit sharply beats estimates.",
-      "image": "",
-      "discovery": "rss",
-      "date_estimated": false,
-      "status": "pending",
-      "first_seen": "2026-10-28T12:45:30.003967+06:00",
-      "last_seen": "2026-10-28T19:55:56.007378+06:00"
-    },
-    "cnbc.com/2026/10/28/trump-jokes-5000-cash-would-buy-hamburger-and-dessert-at-mar-a-lago.html": {
-      "title": "Trump jokes $5,000 would buy 'a hamburger and maybe a small dessert' at Mar-a-Lago as cost of living looms over midterms",
-      "url": "https://www.cnbc.com/2026/10/28/trump-jokes-5000-cash-would-buy-hamburger-and-dessert-at-mar-a-lago.html",
-      "canonical": "cnbc.com/2026/10/28/trump-jokes-5000-cash-would-buy-hamburger-and-dessert-at-mar-a-lago.html",
-      "published_dt": "2026-10-28T10:29:20+06:00",
-      "published_date": "2026-10-28T10:29:20+06:00",
-      "source": "CNBC",
-      "region": "International",
-      "excerpt": "Trump joked that the $5,000 payments for U.S. adults would buy little more than \"a hamburger and maybe a small dessert\" as cost of living looms over midterms.",
-      "image": "",
-      "discovery": "rss",
-      "date_estimated": false,
-      "status": "pending",
-      "first_seen": "2026-10-28T12:45:30.004024+06:00",
-      "last_seen": "2026-10-28T19:55:56.006685+06:00"
-    },
-    "cnbc.com/2026/10/28/india-us-stocks-retail-access.html": {
-      "title": "Indian investors rush to Nvidia, SpaceX, Apple as local trading apps roll out access to U.S. stocks",
-      "url": "https://www.cnbc.com/2026/10/28/india-us-stocks-retail-access.html",
-      "canonical": "cnbc.com/2026/10/28/india-us-stocks-retail-access.html",
-      "published_dt": "2026-10-28T06:14:24+06:00",
-      "published_date": "2026-10-28T06:14:24+06:00",
-      "source": "CNBC",
-      "region": "International",
-      "excerpt": "Major Indian brokerages are providing retail investors access to U.S. stocks at a time when the local market has been battered.",
-      "image": "",
-      "discovery": "rss",
-      "date_estimated": false,
-      "status": "pending",
-      "first_seen": "2026-10-28T12:45:30.005185+06:00",
-      "last_seen": "2026-10-28T19:55:56.007040+06:00"
-    },
-    "cnbc.com/2026/10/28/labubu-pop-mart-third-quarter-earnings.html": {
-      "title": "Labubu-maker Pop Mart's shares extend declines as third-quarter sales plunge",
-      "url": "https://www.cnbc.com/2026/10/28/labubu-pop-mart-third-quarter-earnings.html",
-      "canonical": "cnbc.com/2026/10/28/labubu-pop-mart-third-quarter-earnings.html",
-      "published_dt": "2026-10-28T08:57:36+06:00",
-      "published_date": "2026-10-28T08:57:36+06:00",
-      "source": "CNBC",
-      "region": "International",
-      "excerpt": "The company reported a 45% to 50% year-on-year drop in third-quarter revenue.",
-      "image": "",
-      "discovery": "rss",
-      "date_estimated": false,
-      "status": "pending",
-      "first_seen": "2026-10-28T12:45:30.005350+06:00",
-      "last_seen": "2026-10-28T19:55:56.007457+06:00"
-    },
-    "cnbc.com/2026/10/27/cassidy-hutchinson-doj-grand-jury-trump.html": {
-      "title": "Grand jury rejects DOJ bid to indict ex-Trump WH aide Cassidy Hutchinson: Reports",
-      "url": "https://www.cnbc.com/2026/10/27/cassidy-hutchinson-doj-grand-jury-trump.html",
-      "canonical": "cnbc.com/2026/10/27/cassidy-hutchinson-doj-grand-jury-trump.html",
-      "published_dt": "2026-10-28T05:50:03+06:00",
-      "published_date": "2026-10-28T05:50:03+06:00",
-      "source": "CNBC",
-      "region": "International",
-      "excerpt": "Prosecutors aimed to charge Cassidy Hutchinson over testimony about President Trump's conduct the day of the Jan. 6, 2021, U.S. Capitol riot by his supporters.",
-      "image": "",
-      "discovery": "rss",
-      "date_estimated": false,
-      "status": "pending",
-      "first_seen": "2026-10-28T12:45:30.005568+06:00",
-      "last_seen": "2026-10-28T19:55:56.006853+06:00"
-    },
-    "cnbc.com/2026/10/27/cftc-probes-polymarket-over-2022-settlement.html": {
-      "title": "Polymarket faces renewed CFTC probe over U.S. access to offshore platform",
-      "url": "https://www.cnbc.com/2026/10/27/cftc-probes-polymarket-over-2022-settlement.html",
-      "canonical": "cnbc.com/2026/10/27/cftc-probes-polymarket-over-2022-settlement.html",
-      "published_dt": "2026-10-28T03:24:06+06:00",
-      "published_date": "2026-10-28T03:24:06+06:00",
-      "source": "CNBC",
-      "region": "International",
-      "excerpt": "The federal agency had previously investigated whether Polymarket allowed U.S. users on to its offshore platform in 2024, but dropped the measures in July 2025.",
-      "image": "",
-      "discovery": "rss",
-      "date_estimated": false,
-      "status": "pending",
-      "first_seen": "2026-10-28T12:45:30.005826+06:00",
-      "last_seen": "2026-10-28T19:55:56.007208+06:00"
-    },
-    "ft.com/content/6dab34da-a039-46e6-9547-0c7213a00001": {
-      "title": "No clear winner in Israeli election, exit polls suggest",
-      "url": "https://www.ft.com/content/6dab34da-a039-46e6-9547-0c7213a00001?syn-25a6b1a6=1",
-      "canonical": "ft.com/content/6dab34da-a039-46e6-9547-0c7213a00001",
-      "published_dt": "2026-10-28T12:10:23+06:00",
-      "published_date": "2026-10-28T12:10:23+06:00",
-      "source": "Financial Times",
-      "region": "International",
-      "excerpt": "Benjamin Netanyahu urges rivals to join Jewish coalition and shun Arab parties as neither bloc set for majority",
-      "image": "https://images.ft.com/v3/image/raw/https%3A%2F%2Fd1e00ek4ebabms.cloudfront.net%2Fproduction%2F08377f15-37a6-47b5-9480-b02690bbebc5.jpg?source=next-home-page&dpr=2&width=580&fit=scale-down",
-      "discovery": "rss",
-      "date_estimated": false,
-      "status": "pending",
-      "first_seen": "2026-10-28T12:45:30.853624+06:00",
-      "last_seen": "2026-10-28T19:55:56.752872+06:00"
-    },
-    "ft.com/content/4f122702-3765-4e9f-a94f-4b786bc2af15": {
-      "title": "Israel’s election: What happens next?",
-      "url": "https://www.ft.com/content/4f122702-3765-4e9f-a94f-4b786bc2af15",
-      "canonical": "ft.com/content/4f122702-3765-4e9f-a94f-4b786bc2af15",
-      "published_dt": "2026-10-28T11:17:20+06:00",
-      "published_date": "2026-10-28T11:17:20+06:00",
-      "source": "Financial Times",
-      "region": "International",
-      "excerpt": "Exit polls suggest neither Prime Minister Benjamin Netanyahu nor his rivals have a simple path to form a government",
-      "image": "https://images.ft.com/v3/image/raw/https%3A%2F%2Fd1e00ek4ebabms.cloudfront.net%2Fproduction%2F24cf9793-d833-402e-8747-328f55330fd2.jpg?source=next-home-page&dpr=2&width=580&fit=scale-down",
-      "discovery": "rss",
-      "date_estimated": false,
-      "status": "pending",
-      "first_seen": "2026-10-28T12:45:30.853704+06:00",
-      "last_seen": "2026-10-28T19:55:56.753031+06:00"
-    },
     "ft.com/content/a89fa128-8fcb-4ff4-bd8b-6bb591ccd9c1": {
       "title": "The globetrotting Trump brothers",
       "url": "https://www.ft.com/content/a89fa128-8fcb-4ff4-bd8b-6bb591ccd9c1?syn-25a6b1a6=1",
@@ -323,22 +114,6 @@
       "first_seen": "2026-10-28T12:45:30.853771+06:00",
       "last_seen": "2026-10-29T01:26:21.959241+06:00"
     },
-    "ft.com/content/24a35e41-2641-4cec-97f5-a974412f9952": {
-      "title": "Anthropic’s seven founders tighten grip ahead of blockbuster IPO",
-      "url": "https://www.ft.com/content/24a35e41-2641-4cec-97f5-a974412f9952?syn-25a6b1a6=1",
-      "canonical": "ft.com/content/24a35e41-2641-4cec-97f5-a974412f9952",
-      "published_dt": "2026-10-28T11:00:06+06:00",
-      "published_date": "2026-10-28T11:00:06+06:00",
-      "source": "Financial Times",
-      "region": "International",
-      "excerpt": "From a rebellion at OpenAI to building the Claude-maker, the new billionaires are betting their future on staying united",
-      "image": "https://images.ft.com/v3/image/raw/https%3A%2F%2Fd1e00ek4ebabms.cloudfront.net%2Fproduction%2F6338561e-2792-4b77-b69f-09b9dab97ba2.jpg?source=next-home-page&dpr=2&width=580&fit=scale-down",
-      "discovery": "rss",
-      "date_estimated": false,
-      "status": "pending",
-      "first_seen": "2026-10-28T12:45:30.853834+06:00",
-      "last_seen": "2026-10-28T19:55:56.753361+06:00"
-    },
     "ft.com/content/ec7a3e3e-21e3-44de-81ee-db2f2073bee3": {
       "title": "Bolsonaro lands in US after fleeing Brazil following election defeat",
       "url": "https://www.ft.com/content/ec7a3e3e-21e3-44de-81ee-db2f2073bee3?syn-25a6b1a6=1",
@@ -354,343 +129,6 @@
       "status": "pending",
       "first_seen": "2026-10-28T12:45:30.853952+06:00",
       "last_seen": "2026-10-29T01:26:21.959628+06:00"
-    },
-    "ft.com/content/06c5ed21-d06d-4582-ac21-160d1047b008": {
-      "title": "Polymarket’s top trader is sports gambler ‘Swiss Tony’",
-      "url": "https://www.ft.com/content/06c5ed21-d06d-4582-ac21-160d1047b008?syn-25a6b1a6=1",
-      "canonical": "ft.com/content/06c5ed21-d06d-4582-ac21-160d1047b008",
-      "published_dt": "2026-10-28T11:00:14+06:00",
-      "published_date": "2026-10-28T11:00:14+06:00",
-      "source": "Financial Times",
-      "region": "International",
-      "excerpt": "FT analysis shows biggest winners on prediction platform are a mixture of long-shot bettors and high-frequency traders",
-      "image": "https://images.ft.com/v3/image/raw/https%3A%2F%2Fd1e00ek4ebabms.cloudfront.net%2Fproduction%2Feb5426c9-71b9-44ae-a08a-93671709a52d.jpg?source=next-home-page&dpr=2&width=580&fit=scale-down",
-      "discovery": "rss",
-      "date_estimated": false,
-      "status": "pending",
-      "first_seen": "2026-10-28T12:45:30.854183+06:00",
-      "last_seen": "2026-10-28T19:55:56.753849+06:00"
-    },
-    "tbsnews.net/markets/no-plan-hike-edible-oil-prices-now-muktadir-1585966": {
-      "title": "No plan to hike edible oil prices for now: Muktadir",
-      "url": "https://www.tbsnews.net/markets/no-plan-hike-edible-oil-prices-now-muktadir-1585966",
-      "canonical": "tbsnews.net/markets/no-plan-hike-edible-oil-prices-now-muktadir-1585966",
-      "published_dt": "2026-10-28T19:45:00+06:00",
-      "published_date": "2026-10-28T19:45:00+06:00",
-      "source": "The Business Standard",
-      "region": "Bangladesh",
-      "excerpt": "The government is working to ensure adequate supplies of import-dependent essential commodities.",
-      "image": "https://www.tbsnews.net/sites/default/files/styles/big_1/public/images/2026/10/28/commerce_minister_1.jpg",
-      "discovery": "rss",
-      "date_estimated": false,
-      "status": "pending",
-      "first_seen": "2026-10-28T19:55:53.146407+06:00",
-      "last_seen": "2026-10-28T19:55:53.146413+06:00"
-    },
-    "tbsnews.net/bangladesh/thakurgaon-1-election-tomorrow-1585946": {
-      "title": "Thakurgaon-1 by-election tomorrow",
-      "url": "https://www.tbsnews.net/bangladesh/thakurgaon-1-election-tomorrow-1585946",
-      "canonical": "tbsnews.net/bangladesh/thakurgaon-1-election-tomorrow-1585946",
-      "published_dt": "2026-10-28T19:35:00+06:00",
-      "published_date": "2026-10-28T19:35:00+06:00",
-      "source": "The Business Standard",
-      "region": "Bangladesh",
-      "excerpt": "Election materials, including ballot boxes, have been delivered to polling centres under tight security.",
-      "image": "https://www.tbsnews.net/sites/default/files/styles/big_1/public/images/2026/02/12/ballot_box_0.jpeg",
-      "discovery": "rss",
-      "date_estimated": false,
-      "status": "pending",
-      "first_seen": "2026-10-28T19:55:53.146564+06:00",
-      "last_seen": "2026-10-28T19:55:53.146568+06:00"
-    },
-    "tbsnews.net/podcast/how-much-are-garment-workers-wages-increasing-1585931": {
-      "title": "How much are garment workers' wages increasing?",
-      "url": "https://www.tbsnews.net/podcast/how-much-are-garment-workers-wages-increasing-1585931",
-      "canonical": "tbsnews.net/podcast/how-much-are-garment-workers-wages-increasing-1585931",
-      "published_dt": "2026-10-28T19:30:00+06:00",
-      "published_date": "2026-10-28T19:30:00+06:00",
-      "source": "The Business Standard",
-      "region": "Bangladesh",
-      "excerpt": "",
-      "image": "https://www.tbsnews.net/sites/default/files/styles/big_1/public/images/2026/10/28/poshaakshrmikder_betn_kt_baarrche.jpg",
-      "discovery": "rss",
-      "date_estimated": false,
-      "status": "pending",
-      "first_seen": "2026-10-28T19:55:53.146674+06:00",
-      "last_seen": "2026-10-28T19:55:53.146677+06:00"
-    },
-    "tbsnews.net/bangladesh/bnps-eliza-zaman-set-be-elected-unopposed-reserved-seat-election-1585926": {
-      "title": "BNP's Eliza Zaman set to be elected unopposed in reserved seat by-election",
-      "url": "https://www.tbsnews.net/bangladesh/bnps-eliza-zaman-set-be-elected-unopposed-reserved-seat-election-1585926",
-      "canonical": "tbsnews.net/bangladesh/bnps-eliza-zaman-set-be-elected-unopposed-reserved-seat-election-1585926",
-      "published_dt": "2026-10-28T19:25:00+06:00",
-      "published_date": "2026-10-28T19:25:00+06:00",
-      "source": "The Business Standard",
-      "region": "Bangladesh",
-      "excerpt": "The Election Commission declared her nomination valid after she emerged as the only candidate for the seat.",
-      "image": "https://www.tbsnews.net/sites/default/files/styles/big_1/public/images/2026/10/28/bnp_candiadte_eliza.jpg",
-      "discovery": "rss",
-      "date_estimated": false,
-      "status": "pending",
-      "first_seen": "2026-10-28T19:55:53.146779+06:00",
-      "last_seen": "2026-10-28T19:55:53.146781+06:00"
-    },
-    "tbsnews.net/bangladesh/health-ministry-forms-3-member-probe-committee-after-iedcr-director-assaulted-1585916": {
-      "title": "Health ministry forms 3-member probe committee after IEDCR director assaulted",
-      "url": "https://www.tbsnews.net/bangladesh/health-ministry-forms-3-member-probe-committee-after-iedcr-director-assaulted-1585916",
-      "canonical": "tbsnews.net/bangladesh/health-ministry-forms-3-member-probe-committee-after-iedcr-director-assaulted-1585916",
-      "published_dt": "2026-10-28T19:20:00+06:00",
-      "published_date": "2026-10-28T19:20:00+06:00",
-      "source": "The Business Standard",
-      "region": "Bangladesh",
-      "excerpt": "The three-member panel has seven working days to identify those responsible, while the Doctors Association of Bangladesh has suspended the primary membership of an accused doctor.",
-      "image": "https://www.tbsnews.net/sites/default/files/styles/big_1/public/images/2026/10/28/screenshot_2026-10-28_160200.png",
-      "discovery": "rss",
-      "date_estimated": false,
-      "status": "pending",
-      "first_seen": "2026-10-28T19:55:53.146881+06:00",
-      "last_seen": "2026-10-28T19:55:53.146883+06:00"
-    },
-    "tbsnews.net/sports/cricket/pakistan-pacer-haris-rauf-fined-breaching-icc-code-conduct-1585896": {
-      "title": "Pakistan pacer Haris Rauf fined for breaching ICC code of conduct",
-      "url": "https://www.tbsnews.net/sports/cricket/pakistan-pacer-haris-rauf-fined-breaching-icc-code-conduct-1585896",
-      "canonical": "tbsnews.net/sports/cricket/pakistan-pacer-haris-rauf-fined-breaching-icc-code-conduct-1585896",
-      "published_dt": "2026-10-28T19:15:00+06:00",
-      "published_date": "2026-10-28T19:15:00+06:00",
-      "source": "The Business Standard",
-      "region": "Bangladesh",
-      "excerpt": "The incident occurred during the 46th over of Pakistan’s run chase when Rauf, standing at the non-striker’s end, appealed for a wide and then exchanged words with England all-rounder Will Jacks.",
-      "image": "https://www.tbsnews.net/sites/default/files/styles/big_1/public/images/2026/10/28/haris_rouf.jpg",
-      "discovery": "rss",
-      "date_estimated": false,
-      "status": "pending",
-      "first_seen": "2026-10-28T19:55:53.147001+06:00",
-      "last_seen": "2026-10-28T19:55:53.147004+06:00"
-    },
-    "tbsnews.net/sports/football/spanish-football-federation-postpones-24-copa-del-rey-matches-after-deadly-train": {
-      "title": "Spanish football federation postpones 24 Copa del Rey matches after deadly train crash",
-      "url": "https://www.tbsnews.net/sports/football/spanish-football-federation-postpones-24-copa-del-rey-matches-after-deadly-train",
-      "canonical": "tbsnews.net/sports/football/spanish-football-federation-postpones-24-copa-del-rey-matches-after-deadly-train",
-      "published_dt": "2026-10-28T19:15:00+06:00",
-      "published_date": "2026-10-28T19:15:00+06:00",
-      "source": "The Business Standard",
-      "region": "Bangladesh",
-      "excerpt": "The federation said it would announce a revised tournament schedule later.",
-      "image": "https://www.tbsnews.net/sites/default/files/styles/big_1/public/images/2026/10/28/train_crash.png",
-      "discovery": "rss",
-      "date_estimated": false,
-      "status": "pending",
-      "first_seen": "2026-10-28T19:55:53.147099+06:00",
-      "last_seen": "2026-10-28T19:55:53.147101+06:00"
-    },
-    "tbsnews.net/bangladesh/health/dhaka-medical-private-ambulance-strike-suspended-7-days-1585881": {
-      "title": "Dhaka Medical private ambulance strike suspended for 7 days",
-      "url": "https://www.tbsnews.net/bangladesh/health/dhaka-medical-private-ambulance-strike-suspended-7-days-1585881",
-      "canonical": "tbsnews.net/bangladesh/health/dhaka-medical-private-ambulance-strike-suspended-7-days-1585881",
-      "published_dt": "2026-10-28T19:10:00+06:00",
-      "published_date": "2026-10-28T19:10:00+06:00",
-      "source": "The Business Standard",
-      "region": "Bangladesh",
-      "excerpt": "Owners have given hospital authorities a deadline to meet their five-point demands, including permanent parking, warning of fresh action if no solution is reached.",
-      "image": "https://www.tbsnews.net/sites/default/files/styles/big_1/public/images/2019/09/17/dmch.jpg",
-      "discovery": "rss",
-      "date_estimated": false,
-      "status": "pending",
-      "first_seen": "2026-10-28T19:55:53.147189+06:00",
-      "last_seen": "2026-10-28T19:55:53.147191+06:00"
-    },
-    "tbsnews.net/worldbiz/middle-east/iranians-cut-essentials-and-put-dreams-hold-war-hit-economy-bites-1585886": {
-      "title": "Iranians cut essentials and put dreams on hold as war-hit economy bites",
-      "url": "https://www.tbsnews.net/worldbiz/middle-east/iranians-cut-essentials-and-put-dreams-hold-war-hit-economy-bites-1585886",
-      "canonical": "tbsnews.net/worldbiz/middle-east/iranians-cut-essentials-and-put-dreams-hold-war-hit-economy-bites-1585886",
-      "published_dt": "2026-10-28T19:10:00+06:00",
-      "published_date": "2026-10-28T19:10:00+06:00",
-      "source": "The Business Standard",
-      "region": "Bangladesh",
-      "excerpt": "As wages ​fail to keep pace with inflation, many families have exhausted savings, cut consumption or borrowed money to cover daily expenses.",
-      "image": "https://www.tbsnews.net/sites/default/files/styles/big_1/public/images/2026/10/28/iran1.png",
-      "discovery": "rss",
-      "date_estimated": false,
-      "status": "pending",
-      "first_seen": "2026-10-28T19:55:53.147283+06:00",
-      "last_seen": "2026-10-28T19:55:53.147286+06:00"
-    },
-    "tbsnews.net/bangladesh/pm-plans-make-dhaka-clean-tokyo-1585891": {
-      "title": "PM plans to make Dhaka as clean as Tokyo",
-      "url": "https://www.tbsnews.net/bangladesh/pm-plans-make-dhaka-clean-tokyo-1585891",
-      "canonical": "tbsnews.net/bangladesh/pm-plans-make-dhaka-clean-tokyo-1585891",
-      "published_dt": "2026-10-28T19:10:00+06:00",
-      "published_date": "2026-10-28T19:10:00+06:00",
-      "source": "The Business Standard",
-      "region": "Bangladesh",
-      "excerpt": "The prime minister wants Dhaka as clean as Tokyo, says cleaner environment is key to public health.",
-      "image": "https://www.tbsnews.net/sites/default/files/styles/big_1/public/images/2026/10/28/pm_tarique_japan.jpg",
-      "discovery": "rss",
-      "date_estimated": false,
-      "status": "pending",
-      "first_seen": "2026-10-28T19:55:53.147369+06:00",
-      "last_seen": "2026-10-28T19:55:53.147372+06:00"
-    },
-    "tbsnews.net/bangladesh/sau-students-vandalise-fair-gate-stalls-over-plan-relocate-secretariat-sher-e-bangla": {
-      "title": "SAU students vandalise fair gate, stalls over plan to relocate Secretariat to Sher-e-Bangla Nagar",
-      "url": "https://www.tbsnews.net/bangladesh/sau-students-vandalise-fair-gate-stalls-over-plan-relocate-secretariat-sher-e-bangla",
-      "canonical": "tbsnews.net/bangladesh/sau-students-vandalise-fair-gate-stalls-over-plan-relocate-secretariat-sher-e-bangla",
-      "published_dt": "2026-10-28T19:00:00+06:00",
-      "published_date": "2026-10-28T19:00:00+06:00",
-      "source": "The Business Standard",
-      "region": "Bangladesh",
-      "excerpt": "The students say they will continue their movement until the old trade fair ground is returned to the university.",
-      "image": "https://www.tbsnews.net/sites/default/files/styles/big_1/public/images/2026/10/28/sher_e_bangla_nagar.jpg",
-      "discovery": "rss",
-      "date_estimated": false,
-      "status": "pending",
-      "first_seen": "2026-10-28T19:55:53.147461+06:00",
-      "last_seen": "2026-10-28T19:55:53.147463+06:00"
-    },
-    "tbsnews.net/world/south-asia/india-welcomes-japans-economic-and-technology-cooperation-northeastern-states": {
-      "title": "India welcomes Japan’s economic and technology cooperation with northeastern states",
-      "url": "https://www.tbsnews.net/world/south-asia/india-welcomes-japans-economic-and-technology-cooperation-northeastern-states",
-      "canonical": "tbsnews.net/world/south-asia/india-welcomes-japans-economic-and-technology-cooperation-northeastern-states",
-      "published_dt": "2026-10-28T18:55:00+06:00",
-      "published_date": "2026-10-28T18:55:00+06:00",
-      "source": "The Business Standard",
-      "region": "Bangladesh",
-      "excerpt": "New Delhi says efforts are under way to deepen regional ties as Japan reportedly explores access to the Bay of Bengal through Bangladesh.",
-      "image": "https://www.tbsnews.net/sites/default/files/styles/big_1/public/images/2026/07/03/randhir_jaiswal.jpg",
-      "discovery": "rss",
-      "date_estimated": false,
-      "status": "pending",
-      "first_seen": "2026-10-28T19:55:53.147555+06:00",
-      "last_seen": "2026-10-28T19:55:53.147557+06:00"
-    },
-    "tbsnews.net/world/south-asia/cyclone-arnab-kills-three-damages-31-houses-india-1585861": {
-      "title": "Cyclone Arnab kills three, damages 31 houses in India",
-      "url": "https://www.tbsnews.net/world/south-asia/cyclone-arnab-kills-three-damages-31-houses-india-1585861",
-      "canonical": "tbsnews.net/world/south-asia/cyclone-arnab-kills-three-damages-31-houses-india-1585861",
-      "published_dt": "2026-10-28T18:45:00+06:00",
-      "published_date": "2026-10-28T18:45:00+06:00",
-      "source": "The Business Standard",
-      "region": "Bangladesh",
-      "excerpt": "Andhra Pradesh and southern Odisha bore the brunt of the storm, with around 57,000 people evacuated to relief camps in Andhra Pradesh as rescue teams prepared for further heavy rain.",
-      "image": "https://www.tbsnews.net/sites/default/files/styles/big_1/public/images/2026/10/28/india_cyclone_arnab.jpg",
-      "discovery": "rss",
-      "date_estimated": false,
-      "status": "pending",
-      "first_seen": "2026-10-28T19:55:53.147642+06:00",
-      "last_seen": "2026-10-28T19:55:53.147644+06:00"
-    },
-    "tbsnews.net/economy/stocks/brac-bank-profit-reaches-tk2000cr-nine-months-1585836": {
-      "title": "BRAC Bank profit reaches Tk2,000cr in nine months",
-      "url": "https://www.tbsnews.net/economy/stocks/brac-bank-profit-reaches-tk2000cr-nine-months-1585836",
-      "canonical": "tbsnews.net/economy/stocks/brac-bank-profit-reaches-tk2000cr-nine-months-1585836",
-      "published_dt": "2026-10-28T18:40:00+06:00",
-      "published_date": "2026-10-28T18:40:00+06:00",
-      "source": "The Business Standard",
-      "region": "Bangladesh",
-      "excerpt": "BRAC Bank’s consolidated net profit rose 38% year-on-year to Tk2,120.95 crore in January–September 2026, driven by higher operating income, while third-quarter profit increased 11% to Tk697.50 crore.",
-      "image": "https://www.tbsnews.net/sites/default/files/styles/big_1/public/images/2026/05/23/brac_bank_logo_16x9.png",
-      "discovery": "rss",
-      "date_estimated": false,
-      "status": "posted",
-      "first_seen": "2026-10-28T19:55:53.147727+06:00",
-      "last_seen": "2026-10-28T19:55:53.147729+06:00",
-      "posted_at": "2026-10-29T13:02:07.303252+06:00"
-    },
-    "tbsnews.net/economy/stocks/idlc-finance-q3-profit-rises-17-yoy-1585841": {
-      "title": "IDLC Finance Q3 profit rises 17% YoY",
-      "url": "https://www.tbsnews.net/economy/stocks/idlc-finance-q3-profit-rises-17-yoy-1585841",
-      "canonical": "tbsnews.net/economy/stocks/idlc-finance-q3-profit-rises-17-yoy-1585841",
-      "published_dt": "2026-10-28T18:40:00+06:00",
-      "published_date": "2026-10-28T18:40:00+06:00",
-      "source": "The Business Standard",
-      "region": "Bangladesh",
-      "excerpt": "Earnings per share increased to Tk4.51, while the non-bank financial institution’s non-performing loan ratio fell to 4.09% from 4.71% a year earlier.",
-      "image": "https://www.tbsnews.net/sites/default/files/styles/big_1/public/images/2025/10/29/logo_idlc_finance_plc_16x9.png",
-      "discovery": "rss",
-      "date_estimated": false,
-      "status": "pending",
-      "first_seen": "2026-10-28T19:55:53.147810+06:00",
-      "last_seen": "2026-10-28T19:55:53.147812+06:00"
-    },
-    "tbsnews.net/bangladesh/crime/journalist-threatened-after-morgue-report-crab-expresses-concern-1585846": {
-      "title": "Journalist threatened after morgue report, CRAB expresses concern",
-      "url": "https://www.tbsnews.net/bangladesh/crime/journalist-threatened-after-morgue-report-crab-expresses-concern-1585846",
-      "canonical": "tbsnews.net/bangladesh/crime/journalist-threatened-after-morgue-report-crab-expresses-concern-1585846",
-      "published_dt": "2026-10-28T18:40:00+06:00",
-      "published_date": "2026-10-28T18:40:00+06:00",
-      "source": "The Business Standard",
-      "region": "Bangladesh",
-      "excerpt": "He filed a general diary (GD) with the Mirpur Model Police Station today.",
-      "image": "https://www.tbsnews.net/sites/default/files/styles/big_1/public/images/2026/10/28/dipu_sikder.jpg",
-      "discovery": "rss",
-      "date_estimated": false,
-      "status": "pending",
-      "first_seen": "2026-10-28T19:55:53.147891+06:00",
-      "last_seen": "2026-10-28T19:55:53.147893+06:00"
-    },
-    "tbsnews.net/bangladesh/court/ex-assistant-tax-commissioner-jailed-5-years-over-illegal-wealth-1585826": {
-      "title": "Ex-assistant tax commissioner jailed for 5 years over illegal wealth",
-      "url": "https://www.tbsnews.net/bangladesh/court/ex-assistant-tax-commissioner-jailed-5-years-over-illegal-wealth-1585826",
-      "canonical": "tbsnews.net/bangladesh/court/ex-assistant-tax-commissioner-jailed-5-years-over-illegal-wealth-1585826",
-      "published_dt": "2026-10-28T18:30:00+06:00",
-      "published_date": "2026-10-28T18:30:00+06:00",
-      "source": "The Business Standard",
-      "region": "Bangladesh",
-      "excerpt": "The Dhaka court also fined Shyamal Krishna Das Tk10 lakh and ordered the confiscation of Tk1.36 crore in assets deemed illegally acquired.",
-      "image": "https://www.tbsnews.net/sites/default/files/styles/big_1/public/images/2026/10/28/867610417_1089635130568100_1719193183728690133_n.jpg",
-      "discovery": "rss",
-      "date_estimated": false,
-      "status": "pending",
-      "first_seen": "2026-10-28T19:55:53.147987+06:00",
-      "last_seen": "2026-10-28T19:55:53.147990+06:00"
-    },
-    "tbsnews.net/bangladesh/court/ex-minister-anisul-ex-igp-mamun-sent-jail-july-uprising-murder-case-1585816": {
-      "title": "Ex-minister Anisul, ex-IGP Mamun sent to jail in July Uprising murder case",
-      "url": "https://www.tbsnews.net/bangladesh/court/ex-minister-anisul-ex-igp-mamun-sent-jail-july-uprising-murder-case-1585816",
-      "canonical": "tbsnews.net/bangladesh/court/ex-minister-anisul-ex-igp-mamun-sent-jail-july-uprising-murder-case-1585816",
-      "published_dt": "2026-10-28T18:20:00+06:00",
-      "published_date": "2026-10-28T18:20:00+06:00",
-      "source": "The Business Standard",
-      "region": "Bangladesh",
-      "excerpt": "The two were questioned over the killing of a man shot near Shonir Akhra footbridge on 19 July 2024.",
-      "image": "https://www.tbsnews.net/sites/default/files/styles/big_1/public/images/2026/10/28/anisul_mamun.jpg",
-      "discovery": "rss",
-      "date_estimated": false,
-      "status": "pending",
-      "first_seen": "2026-10-28T19:55:53.148076+06:00",
-      "last_seen": "2026-10-28T19:55:53.148078+06:00"
-    },
-    "tbsnews.net/foreign-policy/bangladesh-highlight-its-perspectives-multilateralism-geneva-1585821": {
-      "title": "Bangladesh to highlight its perspectives on multilateralism in Geneva",
-      "url": "https://www.tbsnews.net/foreign-policy/bangladesh-highlight-its-perspectives-multilateralism-geneva-1585821",
-      "canonical": "tbsnews.net/foreign-policy/bangladesh-highlight-its-perspectives-multilateralism-geneva-1585821",
-      "published_dt": "2026-10-28T18:20:00+06:00",
-      "published_date": "2026-10-28T18:20:00+06:00",
-      "source": "The Business Standard",
-      "region": "Bangladesh",
-      "excerpt": "Ambassador Riaz presented his credentials to Director-General of the United Nations Office in Geneva Tatiana Valovaya on 27 October.",
-      "image": "https://www.tbsnews.net/sites/default/files/styles/big_1/public/images/2026/10/28/m_riaz_hamidullah.png",
-      "discovery": "rss",
-      "date_estimated": false,
-      "status": "pending",
-      "first_seen": "2026-10-28T19:55:53.148159+06:00",
-      "last_seen": "2026-10-28T19:55:53.148161+06:00"
-    },
-    "tbsnews.net/bangladesh/no-arrests-pretty-group-factory-fire-case-after-month-1585806": {
-      "title": "No arrests in Pretty Group factory fire case after a month",
-      "url": "https://www.tbsnews.net/bangladesh/no-arrests-pretty-group-factory-fire-case-after-month-1585806",
-      "canonical": "tbsnews.net/bangladesh/no-arrests-pretty-group-factory-fire-case-after-month-1585806",
-      "published_dt": "2026-10-28T18:10:00+06:00",
-      "published_date": "2026-10-28T18:10:00+06:00",
-      "source": "The Business Standard",
-      "region": "Bangladesh",
-      "excerpt": "Authorities have yet to take visible punitive action against the company despite an investigation finding negligence and regulatory violations.",
-      "image": "https://www.tbsnews.net/sites/default/files/styles/big_1/public/images/2026/09/20/809133404_4510043175914053_4673392811445225647_n.jpg",
-      "discovery": "rss",
-      "date_estimated": false,
-      "status": "pending",
-      "first_seen": "2026-10-28T19:55:53.148242+06:00",
-      "last_seen": "2026-10-28T19:55:53.148244+06:00"
     },
     "cnbc.com/2026/10/28/nelson-peltz-trian-wendys-1point4-billion.html": {
       "title": "Wendy's shares jump 15% as Nelson Peltz's Trian offers $1.4 billion to buy burger chain",
@@ -884,86 +322,6 @@
       "first_seen": "2026-10-28T19:55:56.006184+06:00",
       "last_seen": "2026-10-29T01:26:21.178463+06:00"
     },
-    "cnbc.com/investingclub/2026/10/28/jim-cramers-top-10-things-to-watch-in-the-stock-market-wednesday.html": {
-      "title": "Jim Cramer's top 10 things to watch in the stock market Wednesday",
-      "url": "https://www.cnbc.com/investingclub/2026/10/28/jim-cramers-top-10-things-to-watch-in-the-stock-market-wednesday.html",
-      "canonical": "cnbc.com/investingclub/2026/10/28/jim-cramers-top-10-things-to-watch-in-the-stock-market-wednesday.html",
-      "published_dt": "2026-10-28T18:56:05+06:00",
-      "published_date": "2026-10-28T18:56:05+06:00",
-      "source": "CNBC",
-      "region": "International",
-      "excerpt": "SK Hynix blew away the numbers, and GE Vernova crushed it too.",
-      "image": "",
-      "discovery": "rss",
-      "date_estimated": false,
-      "status": "pending",
-      "first_seen": "2026-10-28T19:55:56.006267+06:00",
-      "last_seen": "2026-10-28T19:55:56.006269+06:00"
-    },
-    "cnbc.com/2026/10/28/traders-are-betting-big-against-chipotle-into-earnings.html": {
-      "title": "Traders are betting big against this restaurant giant into earnings",
-      "url": "https://www.cnbc.com/2026/10/28/traders-are-betting-big-against-chipotle-into-earnings.html",
-      "canonical": "cnbc.com/2026/10/28/traders-are-betting-big-against-chipotle-into-earnings.html",
-      "published_dt": "2026-10-28T18:04:47+06:00",
-      "published_date": "2026-10-28T18:04:47+06:00",
-      "source": "CNBC",
-      "region": "International",
-      "excerpt": "There’s a lot of big earnings but the giant that traders are most worried about is apparently fast-casual titan Chipotle.",
-      "image": "",
-      "discovery": "rss",
-      "date_estimated": false,
-      "status": "pending",
-      "first_seen": "2026-10-28T19:55:56.006354+06:00",
-      "last_seen": "2026-10-28T19:55:56.006356+06:00"
-    },
-    "cnbc.com/2026/10/28/democrats-prediction-markets-cftc-midterms.html": {
-      "title": "A Democratic win in midterms could put prediction markets and the CFTC in the hot seat",
-      "url": "https://www.cnbc.com/2026/10/28/democrats-prediction-markets-cftc-midterms.html",
-      "canonical": "cnbc.com/2026/10/28/democrats-prediction-markets-cftc-midterms.html",
-      "published_dt": "2026-10-28T17:24:49+06:00",
-      "published_date": "2026-10-28T17:24:49+06:00",
-      "source": "CNBC",
-      "region": "International",
-      "excerpt": "A Democratic House could increase scrutiny of prediction markets, the CFTC and the industry’s ties to the Trump family after the midterms.",
-      "image": "",
-      "discovery": "rss",
-      "date_estimated": false,
-      "status": "pending",
-      "first_seen": "2026-10-28T19:55:56.006438+06:00",
-      "last_seen": "2026-10-28T19:55:56.006440+06:00"
-    },
-    "cnbc.com/2026/10/28/elon-musk-chris-gober-rourk-texas-10th-congress-election.html": {
-      "title": "Musk's PAC lawyer runs in Texas House district that is home to billionaire's business interests",
-      "url": "https://www.cnbc.com/2026/10/28/elon-musk-chris-gober-rourk-texas-10th-congress-election.html",
-      "canonical": "cnbc.com/2026/10/28/elon-musk-chris-gober-rourk-texas-10th-congress-election.html",
-      "published_dt": "2026-10-28T16:00:01+06:00",
-      "published_date": "2026-10-28T16:00:01+06:00",
-      "source": "CNBC",
-      "region": "International",
-      "excerpt": "A chip factory being built by Elon Musk's Tesla and SpaceX is in Texas's 10th District, where his PAC's former lawyer Chris Gober is the GOP U.S. House nominee.",
-      "image": "",
-      "discovery": "rss",
-      "date_estimated": false,
-      "status": "pending",
-      "first_seen": "2026-10-28T19:55:56.006521+06:00",
-      "last_seen": "2026-10-28T19:55:56.006523+06:00"
-    },
-    "cnbc.com/guide/midterm-elections-economy-affordability": {
-      "title": "Midterm elections: How affordability and the economy could affect voters' decisions",
-      "url": "https://www.cnbc.com/guide/midterm-elections-economy-affordability/",
-      "canonical": "cnbc.com/guide/midterm-elections-economy-affordability",
-      "published_dt": "2026-10-28T04:40:12+06:00",
-      "published_date": "2026-10-28T04:40:12+06:00",
-      "source": "CNBC",
-      "region": "International",
-      "excerpt": "Several economic issues could affect voters' decisions in the midterm elections. Here's what to expect on Nov. 3.",
-      "image": "",
-      "discovery": "rss",
-      "date_estimated": false,
-      "status": "pending",
-      "first_seen": "2026-10-28T19:55:56.007124+06:00",
-      "last_seen": "2026-10-28T19:55:56.007126+06:00"
-    },
     "ft.com/content/624f7138-96b0-4752-96f1-b54f2b18742b": {
       "title": "Why even America’s ‘haves’ are feeling the squeeze",
       "url": "https://www.ft.com/content/624f7138-96b0-4752-96f1-b54f2b18742b?syn-25a6b1a6=1",
@@ -979,54 +337,6 @@
       "status": "pending",
       "first_seen": "2026-10-28T19:55:56.753259+06:00",
       "last_seen": "2026-10-29T01:26:21.959376+06:00"
-    },
-    "ft.com/content/8ec7d6f2-403a-4f80-89fc-5ed5e75fed63": {
-      "title": "Zelenskyy opens door to security guarantees for Russia",
-      "url": "https://www.ft.com/content/8ec7d6f2-403a-4f80-89fc-5ed5e75fed63?syn-25a6b1a6=1",
-      "canonical": "ft.com/content/8ec7d6f2-403a-4f80-89fc-5ed5e75fed63",
-      "published_dt": "2026-10-28T15:58:33+06:00",
-      "published_date": "2026-10-28T15:58:33+06:00",
-      "source": "Financial Times",
-      "region": "International",
-      "excerpt": "Ukrainian president acknowledges Moscow could also receive security guarantees as part of peace deal",
-      "image": "https://images.ft.com/v3/image/raw/https%3A%2F%2Fd1e00ek4ebabms.cloudfront.net%2Fproduction%2F1ca2b8f9-b35e-4de1-94af-4f7630e8f058.jpg?source=next-home-page&dpr=2&width=580&fit=scale-down",
-      "discovery": "rss",
-      "date_estimated": false,
-      "status": "pending",
-      "first_seen": "2026-10-28T19:55:56.753554+06:00",
-      "last_seen": "2026-10-28T19:55:56.753556+06:00"
-    },
-    "ft.com/content/3500a00d-d676-4460-83f8-8ea2bfce1049": {
-      "title": "At least 30 killed in collision of high-speed trains in Spain",
-      "url": "https://www.ft.com/content/3500a00d-d676-4460-83f8-8ea2bfce1049?syn-25a6b1a6=1",
-      "canonical": "ft.com/content/3500a00d-d676-4460-83f8-8ea2bfce1049",
-      "published_dt": "2026-10-28T17:45:20+06:00",
-      "published_date": "2026-10-28T17:45:20+06:00",
-      "source": "Financial Times",
-      "region": "International",
-      "excerpt": "Crash near Toledo south of Madrid follows death of 46 in Andalusia rail accident in January",
-      "image": "https://images.ft.com/v3/image/raw/https%3A%2F%2Fd1e00ek4ebabms.cloudfront.net%2Fproduction%2F72301229-d431-4380-8bf9-6e9e0687c1d0.jpg?source=next-home-page&dpr=2&width=580&fit=scale-down",
-      "discovery": "rss",
-      "date_estimated": false,
-      "status": "pending",
-      "first_seen": "2026-10-28T19:55:56.753751+06:00",
-      "last_seen": "2026-10-28T19:55:56.753753+06:00"
-    },
-    "ft.com/content/5d481ab6-af20-4da2-a1c8-e53f69877676": {
-      "title": "Prediction markets are turning Washington into a casino",
-      "url": "https://www.ft.com/content/5d481ab6-af20-4da2-a1c8-e53f69877676?syn-25a6b1a6=1",
-      "canonical": "ft.com/content/5d481ab6-af20-4da2-a1c8-e53f69877676",
-      "published_dt": "2026-10-28T18:22:23+06:00",
-      "published_date": "2026-10-28T18:22:23+06:00",
-      "source": "Financial Times",
-      "region": "International",
-      "excerpt": "In a city where almost everyone is privy to some kind of inside information, betting on politics has jumped ahead of midterm elections",
-      "image": "https://images.ft.com/v3/image/raw/https%3A%2F%2Fd1e00ek4ebabms.cloudfront.net%2Fproduction%2F9396baac-be90-45cf-a70b-af1869342a92.jpg?source=next-home-page&dpr=2&width=580&fit=scale-down",
-      "discovery": "rss",
-      "date_estimated": false,
-      "status": "pending",
-      "first_seen": "2026-10-28T19:55:56.753940+06:00",
-      "last_seen": "2026-10-28T19:55:56.753942+06:00"
     },
     "tbsnews.net/bangladesh/crime/12kg-gold-worth-tk24cr-seized-2-passengers-dhaka-airport-1586281": {
       "title": "12kg gold worth Tk24cr seized from 2 passengers at Dhaka airport",
@@ -7895,7 +7205,7 @@
       "date_estimated": false,
       "status": "pending",
       "first_seen": "2026-11-01T00:24:25.620625+06:00",
-      "last_seen": "2026-11-01T13:17:04.824627+06:00"
+      "last_seen": "2026-11-01T20:54:11.593124+06:00"
     },
     "cnbc.com/2026/10/31/ai-agents-humans-dazzle-duckbill-meta.html": {
       "title": "Humans are still doing the work behind some AI agents",
@@ -7944,7 +7254,7 @@
       "date_estimated": false,
       "status": "pending",
       "first_seen": "2026-11-01T00:24:25.674637+06:00",
-      "last_seen": "2026-11-01T13:17:04.840394+06:00"
+      "last_seen": "2026-11-01T20:54:11.605275+06:00"
     },
     "cnbc.com/investingclub/2026/10/31/stocks-started-the-week-with-promise-but-ended-in-despair.html": {
       "title": "Stocks started the week with promise but ended in despair. Our take on the big reversal",
@@ -7960,7 +7270,7 @@
       "date_estimated": false,
       "status": "pending",
       "first_seen": "2026-11-01T00:24:25.674765+06:00",
-      "last_seen": "2026-11-01T13:17:04.825697+06:00"
+      "last_seen": "2026-11-01T20:54:11.593919+06:00"
     },
     "ft.com/content/56b0d5fa-829c-47b1-b07b-b4be18f60151": {
       "title": "Investors trim growth bets over fears of US economy’s AI exposure",
@@ -8008,7 +7318,7 @@
       "date_estimated": false,
       "status": "pending",
       "first_seen": "2026-11-01T00:24:26.235012+06:00",
-      "last_seen": "2026-11-01T13:17:05.478454+06:00"
+      "last_seen": "2026-11-01T20:54:12.518644+06:00"
     },
     "bloomberg.com/news/articles/2026-10-30/colombia-pauses-interest-rate-rises-as-economy-starts-to-weaken": {
       "title": "Colombia Suspends Interest Rate Increases as Economy Cools - Bloomberg.com",
@@ -8472,7 +7782,7 @@
       "date_estimated": false,
       "status": "pending",
       "first_seen": "2026-11-01T13:17:04.824724+06:00",
-      "last_seen": "2026-11-01T13:17:04.824726+06:00"
+      "last_seen": "2026-11-01T20:54:11.593188+06:00"
     },
     "cnbc.com/2026/11/01/ai-investments-company-earnings.html": {
       "title": "Companies promised AI gains— here's how the payoff showed up in earnings",
@@ -8488,7 +7798,7 @@
       "date_estimated": false,
       "status": "pending",
       "first_seen": "2026-11-01T13:17:04.824897+06:00",
-      "last_seen": "2026-11-01T13:17:04.824899+06:00"
+      "last_seen": "2026-11-01T20:54:11.593662+06:00"
     },
     "cnbc.com/2026/10/31/xai-naacp-clean-air-act-lawsuit-dismissal.html": {
       "title": "SpaceX loses bid to toss NAACP lawsuit over Memphis data center air pollution",
@@ -8504,7 +7814,7 @@
       "date_estimated": false,
       "status": "pending",
       "first_seen": "2026-11-01T13:17:04.825048+06:00",
-      "last_seen": "2026-11-01T13:17:04.825050+06:00"
+      "last_seen": "2026-11-01T20:54:11.593862+06:00"
     },
     "cnbc.com/2026/10/31/openai-fundraising-20-billion-valuation.html": {
       "title": "OpenAI pares fundraising goal, now seeking up to $20 billion in latest round",
@@ -8537,7 +7847,7 @@
       "date_estimated": false,
       "status": "pending",
       "first_seen": "2026-11-01T13:17:05.478354+06:00",
-      "last_seen": "2026-11-01T13:17:05.478357+06:00"
+      "last_seen": "2026-11-01T20:54:12.518565+06:00"
     },
     "ft.com/content/89e3ff89-c097-44cb-a290-0d46726e6075": {
       "title": "Military briefing: what would another US-Iran conflict look like?",
@@ -8553,7 +7863,7 @@
       "date_estimated": false,
       "status": "pending",
       "first_seen": "2026-11-01T13:17:05.478541+06:00",
-      "last_seen": "2026-11-01T13:17:05.478543+06:00"
+      "last_seen": "2026-11-01T20:54:12.518712+06:00"
     },
     "ft.com/content/ce1e852d-c699-4cf6-b8a0-78fd283556f3": {
       "title": "EU leaders risk breaking their promise to help European start-ups",
@@ -8617,7 +7927,7 @@
       "date_estimated": false,
       "status": "pending",
       "first_seen": "2026-11-01T13:17:05.478894+06:00",
-      "last_seen": "2026-11-01T13:17:05.478898+06:00"
+      "last_seen": "2026-11-01T20:54:12.518854+06:00"
     },
     "ft.com/content/d77e4c6f-0ac7-49ce-bca8-b30080bf9797": {
       "title": "Michigan feud threatens Democratic unity in key Senate race",
@@ -8633,7 +7943,7 @@
       "date_estimated": false,
       "status": "pending",
       "first_seen": "2026-11-01T13:17:05.478982+06:00",
-      "last_seen": "2026-11-01T13:17:05.478984+06:00"
+      "last_seen": "2026-11-01T20:54:12.518915+06:00"
     },
     "ft.com/content/8ee19897-1d15-4dd7-8ca8-162c4ea22b3a": {
       "title": "Quant hedge fund to spin out of Tudor in record $9bn launch",
@@ -8665,7 +7975,7 @@
       "date_estimated": false,
       "status": "pending",
       "first_seen": "2026-11-01T13:17:05.479134+06:00",
-      "last_seen": "2026-11-01T13:17:05.479136+06:00"
+      "last_seen": "2026-11-01T20:54:12.519038+06:00"
     },
     "reuters.com/world/asia-pacific/south-korea-exports-nearly-double-october-strongest-growth-since-1974-2026-11-01": {
       "title": "South Korea exports nearly double in October on AI investment boom - Reuters",
@@ -8746,109 +8056,1022 @@
       "status": "pending",
       "first_seen": "2026-11-01T13:17:11.064896+06:00",
       "last_seen": "2026-11-01T13:17:11.064902+06:00"
+    },
+    "tbsnews.net/economy/banking/bangladesh-bank-launches-qr-based-p2p-payment-service-1589731": {
+      "title": "Bangladesh Bank launches QR-based P2P payment service",
+      "url": "https://www.tbsnews.net/economy/banking/bangladesh-bank-launches-qr-based-p2p-payment-service-1589731",
+      "canonical": "tbsnews.net/economy/banking/bangladesh-bank-launches-qr-based-p2p-payment-service-1589731",
+      "published_dt": "2026-11-01T20:20:00+06:00",
+      "published_date": "2026-11-01T20:20:00+06:00",
+      "source": "The Business Standard",
+      "region": "Bangladesh",
+      "excerpt": "The service allows users to transfer money by scanning a recipient’s Bangla QR code, eliminating the need to manually enter mobile or account numbers.",
+      "image": "https://www.tbsnews.net/sites/default/files/styles/big_1/public/images/2026/09/17/bangla_qr.jpg",
+      "discovery": "rss",
+      "date_estimated": false,
+      "status": "posted",
+      "first_seen": "2026-11-01T20:54:07.983139+06:00",
+      "last_seen": "2026-11-01T20:54:07.983144+06:00",
+      "posted_at": "2026-11-01T20:58:19.759125+06:00"
+    },
+    "tbsnews.net/economy/rmg/garment-owners-plan-temporary-factory-closures-if-workers-do-not-return-work-1589726": {
+      "title": "RMG owners to close factories temporarily if workers don't return to work",
+      "url": "https://www.tbsnews.net/economy/rmg/garment-owners-plan-temporary-factory-closures-if-workers-do-not-return-work-1589726",
+      "canonical": "tbsnews.net/economy/rmg/garment-owners-plan-temporary-factory-closures-if-workers-do-not-return-work-1589726",
+      "published_dt": "2026-11-01T20:15:00+06:00",
+      "published_date": "2026-11-01T20:15:00+06:00",
+      "source": "The Business Standard",
+      "region": "Bangladesh",
+      "excerpt": "A total of 529 factories failed to continue production on Sunday amid labour unrest, according to BGMEA.",
+      "image": "https://www.tbsnews.net/sites/default/files/styles/big_1/public/images/2026/11/01/876703823_3497323040658381_3668146098240972597_n.png",
+      "discovery": "rss",
+      "date_estimated": false,
+      "status": "pending",
+      "first_seen": "2026-11-01T20:54:07.983243+06:00",
+      "last_seen": "2026-11-01T20:54:07.983244+06:00"
+    },
+    "tbsnews.net/features/In-the-views/backbone-bleeds-why-bangladeshs-rmg-workers-still-have-fight-1589721": {
+      "title": "The backbone that bleeds: Why Bangladesh's RMG workers still have to fight",
+      "url": "https://www.tbsnews.net/features/In-the-views/backbone-bleeds-why-bangladeshs-rmg-workers-still-have-fight-1589721",
+      "canonical": "tbsnews.net/features/In-the-views/backbone-bleeds-why-bangladeshs-rmg-workers-still-have-fight-1589721",
+      "published_dt": "2026-11-01T20:10:00+06:00",
+      "published_date": "2026-11-01T20:10:00+06:00",
+      "source": "The Business Standard",
+      "region": "Bangladesh",
+      "excerpt": "A wage board is only a table around which people sit; it is not a pay rise.",
+      "image": "https://www.tbsnews.net/sites/default/files/styles/big_1/public/images/2026/11/01/rmg_protesters.jpg",
+      "discovery": "rss",
+      "date_estimated": false,
+      "status": "pending",
+      "first_seen": "2026-11-01T20:54:07.983317+06:00",
+      "last_seen": "2026-11-01T20:54:07.983319+06:00"
+    },
+    "tbsnews.net/bangladesh/politics/jamaat-regrets-public-suffering-during-long-march-1589706": {
+      "title": "Jamaat regrets public suffering during long march",
+      "url": "https://www.tbsnews.net/bangladesh/politics/jamaat-regrets-public-suffering-during-long-march-1589706",
+      "canonical": "tbsnews.net/bangladesh/politics/jamaat-regrets-public-suffering-during-long-march-1589706",
+      "published_dt": "2026-11-01T20:05:00+06:00",
+      "published_date": "2026-11-01T20:05:00+06:00",
+      "source": "The Business Standard",
+      "region": "Bangladesh",
+      "excerpt": "The Jamaat leader also expressed deep grief over the death of a pedestrian in a road accident during the long march.",
+      "image": "https://www.tbsnews.net/sites/default/files/styles/big_1/public/images/2025/12/14/porwar.png",
+      "discovery": "rss",
+      "date_estimated": false,
+      "status": "pending",
+      "first_seen": "2026-11-01T20:54:07.983376+06:00",
+      "last_seen": "2026-11-01T20:54:07.983378+06:00"
+    },
+    "tbsnews.net/bangladesh/obituary/capt-qabm-rahman-maritime-sector-pioneer-and-ekushey-padak-recipient-dies-91": {
+      "title": "Ekushey Padak recipient Capt QABM Rahman dies at 91",
+      "url": "https://www.tbsnews.net/bangladesh/obituary/capt-qabm-rahman-maritime-sector-pioneer-and-ekushey-padak-recipient-dies-91",
+      "canonical": "tbsnews.net/bangladesh/obituary/capt-qabm-rahman-maritime-sector-pioneer-and-ekushey-padak-recipient-dies-91",
+      "published_dt": "2026-11-01T20:00:00+06:00",
+      "published_date": "2026-11-01T20:00:00+06:00",
+      "source": "The Business Standard",
+      "region": "Bangladesh",
+      "excerpt": "He played a key role in establishing Bangladesh’s shipping and inland water transport institutions after independence.",
+      "image": "https://www.tbsnews.net/sites/default/files/styles/big_1/public/images/2026/11/01/capt_qabm_1.jpg",
+      "discovery": "rss",
+      "date_estimated": false,
+      "status": "pending",
+      "first_seen": "2026-11-01T20:54:07.983439+06:00",
+      "last_seen": "2026-11-01T20:54:07.983440+06:00"
+    },
+    "tbsnews.net/bangladesh/318-garment-factories-closed-amid-labour-unrest-over-7-lakh-workers-leave-workplaces": {
+      "title": "529 garment factories closed amid workers unrest, nearly 9.9 lakh workers leave workplaces",
+      "url": "https://www.tbsnews.net/bangladesh/318-garment-factories-closed-amid-labour-unrest-over-7-lakh-workers-leave-workplaces",
+      "canonical": "tbsnews.net/bangladesh/318-garment-factories-closed-amid-labour-unrest-over-7-lakh-workers-leave-workplaces",
+      "published_dt": "2026-11-01T19:15:00+06:00",
+      "published_date": "2026-11-01T19:15:00+06:00",
+      "source": "The Business Standard",
+      "region": "Bangladesh",
+      "excerpt": "Gazipur and Mymensingh accounted for the largest share of closures, with 276 factories affected and 645,360 workers leaving without working, according to an industrial-area summary.",
+      "image": "https://www.tbsnews.net/sites/default/files/styles/big_1/public/images/2026/11/01/gazipur_rmg_unrest_1-112-26_3.jpg",
+      "discovery": "rss",
+      "date_estimated": false,
+      "status": "pending",
+      "first_seen": "2026-11-01T20:54:07.983496+06:00",
+      "last_seen": "2026-11-01T20:54:07.983497+06:00"
+    },
+    "tbsnews.net/bangladesh/politics/july-charter-differences-must-be-resolved-parliament-not-through-long-marches": {
+      "title": "July Charter differences must be resolved in parliament, not through long marches: Rizvi",
+      "url": "https://www.tbsnews.net/bangladesh/politics/july-charter-differences-must-be-resolved-parliament-not-through-long-marches",
+      "canonical": "tbsnews.net/bangladesh/politics/july-charter-differences-must-be-resolved-parliament-not-through-long-marches",
+      "published_dt": "2026-11-01T19:10:00+06:00",
+      "published_date": "2026-11-01T19:10:00+06:00",
+      "source": "The Business Standard",
+      "region": "Bangladesh",
+      "excerpt": "The BNP leader says parties with differing views on the charter should address their disagreements through parliamentary debate and constitutional amendments.",
+      "image": "https://www.tbsnews.net/sites/default/files/styles/big_1/public/images/2026/11/01/ruhul_kabir_rizvi.jpg",
+      "discovery": "rss",
+      "date_estimated": false,
+      "status": "pending",
+      "first_seen": "2026-11-01T20:54:07.983557+06:00",
+      "last_seen": "2026-11-01T20:54:07.983558+06:00"
+    },
+    "tbsnews.net/worldbiz/middle-east/iranian-negotiators-doha-continue-talks-end-us-iran-war-official-says-1589611": {
+      "title": "Iranian negotiators in Doha to continue talks to end the US-Iran war, official says",
+      "url": "https://www.tbsnews.net/worldbiz/middle-east/iranian-negotiators-doha-continue-talks-end-us-iran-war-official-says-1589611",
+      "canonical": "tbsnews.net/worldbiz/middle-east/iranian-negotiators-doha-continue-talks-end-us-iran-war-official-says-1589611",
+      "published_dt": "2026-11-01T19:05:00+06:00",
+      "published_date": "2026-11-01T19:05:00+06:00",
+      "source": "The Business Standard",
+      "region": "Bangladesh",
+      "excerpt": "Iran has repeatedly said it would respond to any new attacks by striking US and Israeli targets in ​neighbouring countries, as the eight-month-old war continues to disrupt global ​oil supplies and spill over across the Middle East.",
+      "image": "https://www.tbsnews.net/sites/default/files/styles/big_1/public/images/2026/11/01/iran2.png",
+      "discovery": "rss",
+      "date_estimated": false,
+      "status": "pending",
+      "first_seen": "2026-11-01T20:54:07.983613+06:00",
+      "last_seen": "2026-11-01T20:54:07.983614+06:00"
+    },
+    "tbsnews.net/bangladesh/court/purbachal-plot-case-btma-president-russell-lands-jail-after-surrendering-1589596": {
+      "title": "Purbachal plot case: BTMA President Russell lands in jail after surrendering",
+      "url": "https://www.tbsnews.net/bangladesh/court/purbachal-plot-case-btma-president-russell-lands-jail-after-surrendering-1589596",
+      "canonical": "tbsnews.net/bangladesh/court/purbachal-plot-case-btma-president-russell-lands-jail-after-surrendering-1589596",
+      "published_dt": "2026-11-01T18:50:00+06:00",
+      "published_date": "2026-11-01T18:50:00+06:00",
+      "source": "The Business Standard",
+      "region": "Bangladesh",
+      "excerpt": "Court rejects bail after he surrenders against 14-year prison sentence.",
+      "image": "https://www.tbsnews.net/sites/default/files/styles/big_1/public/images/2024/08/12/showkat_aziz_russel.jpg",
+      "discovery": "rss",
+      "date_estimated": false,
+      "status": "pending",
+      "first_seen": "2026-11-01T20:54:07.983667+06:00",
+      "last_seen": "2026-11-01T20:54:07.983668+06:00"
+    },
+    "tbsnews.net/sports/cricket/amite-replaces-mominul-final-west-indies-test-1589591": {
+      "title": "Amite replaces Mominul for final West Indies Test",
+      "url": "https://www.tbsnews.net/sports/cricket/amite-replaces-mominul-final-west-indies-test-1589591",
+      "canonical": "tbsnews.net/sports/cricket/amite-replaces-mominul-final-west-indies-test-1589591",
+      "published_dt": "2026-11-01T18:50:00+06:00",
+      "published_date": "2026-11-01T18:50:00+06:00",
+      "source": "The Business Standard",
+      "region": "Bangladesh",
+      "excerpt": "Mominul sustained a head injury on the third day of the first Test while fielding at short leg.",
+      "image": "https://www.tbsnews.net/sites/default/files/styles/big_1/public/images/2026/11/01/amite_hasan.jpg",
+      "discovery": "rss",
+      "date_estimated": false,
+      "status": "pending",
+      "first_seen": "2026-11-01T20:54:07.983721+06:00",
+      "last_seen": "2026-11-01T20:54:07.983722+06:00"
+    },
+    "tbsnews.net/foreign-policy/denmark-keen-expand-investment-cooperation-bangladeshs-infrastructure-energy-sectors": {
+      "title": "Denmark keen to expand investment cooperation in Bangladesh’s infrastructure, energy sectors",
+      "url": "https://www.tbsnews.net/foreign-policy/denmark-keen-expand-investment-cooperation-bangladeshs-infrastructure-energy-sectors",
+      "canonical": "tbsnews.net/foreign-policy/denmark-keen-expand-investment-cooperation-bangladeshs-infrastructure-energy-sectors",
+      "published_dt": "2026-11-01T18:45:00+06:00",
+      "published_date": "2026-11-01T18:45:00+06:00",
+      "source": "The Business Standard",
+      "region": "Bangladesh",
+      "excerpt": "The meeting highlighted the potential of Karnaphuli Fertilizer Company Limited (KAFCO) and explored ways to accelerate the Laldiya Container Terminal project",
+      "image": "https://www.tbsnews.net/sites/default/files/styles/big_1/public/images/2023/06/07/bd_denmark.jpg",
+      "discovery": "rss",
+      "date_estimated": false,
+      "status": "posted",
+      "first_seen": "2026-11-01T20:54:07.983792+06:00",
+      "last_seen": "2026-11-01T20:54:07.983793+06:00",
+      "posted_at": "2026-11-01T20:58:33.022038+06:00"
+    },
+    "tbsnews.net/bangladesh/extended-ldc-graduation-timeline-major-diplomatic-success-humaiun-kobir-1589581": {
+      "title": "Extended LDC graduation timeline a major diplomatic success: Humaiun Kobir",
+      "url": "https://www.tbsnews.net/bangladesh/extended-ldc-graduation-timeline-major-diplomatic-success-humaiun-kobir-1589581",
+      "canonical": "tbsnews.net/bangladesh/extended-ldc-graduation-timeline-major-diplomatic-success-humaiun-kobir-1589581",
+      "published_dt": "2026-11-01T18:45:00+06:00",
+      "published_date": "2026-11-01T18:45:00+06:00",
+      "source": "The Business Standard",
+      "region": "Bangladesh",
+      "excerpt": "He says the extension, approved unanimously by the UN General Assembly, reflects Bangladesh's success in convincing the international community of the need for more time to prepare for graduation.",
+      "image": "https://www.tbsnews.net/sites/default/files/styles/big_1/public/images/2026/05/09/humayun_kabir.jpg",
+      "discovery": "rss",
+      "date_estimated": false,
+      "status": "pending",
+      "first_seen": "2026-11-01T20:54:07.983848+06:00",
+      "last_seen": "2026-11-01T20:54:07.983851+06:00"
+    },
+    "tbsnews.net/world/south-asia/thousands-join-indian-opposition-protest-demanding-poll-chiefs-resignation-1589576": {
+      "title": "Thousands join Indian opposition protest demanding poll chief's resignation",
+      "url": "https://www.tbsnews.net/world/south-asia/thousands-join-indian-opposition-protest-demanding-poll-chiefs-resignation-1589576",
+      "canonical": "tbsnews.net/world/south-asia/thousands-join-indian-opposition-protest-demanding-poll-chiefs-resignation-1589576",
+      "published_dt": "2026-11-01T18:40:00+06:00",
+      "published_date": "2026-11-01T18:40:00+06:00",
+      "source": "The Business Standard",
+      "region": "Bangladesh",
+      "excerpt": "The protests and growing support for the opposition form the worst crisis for Modi since he came to power in 2014, though his government remains stable and the ​next general election is not due until 2029.",
+      "image": "https://www.tbsnews.net/sites/default/files/styles/big_1/public/images/2026/11/01/rahul1.png",
+      "discovery": "rss",
+      "date_estimated": false,
+      "status": "pending",
+      "first_seen": "2026-11-01T20:54:07.983905+06:00",
+      "last_seen": "2026-11-01T20:54:07.983906+06:00"
+    },
+    "tbsnews.net/economy/energy/china-energy-international-group-keen-set-solar-power-plant-payra-port-1589571": {
+      "title": "China Energy International Group keen to set up solar power plant at Payra Port",
+      "url": "https://www.tbsnews.net/economy/energy/china-energy-international-group-keen-set-solar-power-plant-payra-port-1589571",
+      "canonical": "tbsnews.net/economy/energy/china-energy-international-group-keen-set-solar-power-plant-payra-port-1589571",
+      "published_dt": "2026-11-01T18:30:00+06:00",
+      "published_date": "2026-11-01T18:30:00+06:00",
+      "source": "The Business Standard",
+      "region": "Bangladesh",
+      "excerpt": "The delegation says the company has extensive experience in developing large-scale energy infrastructure and building power plants in China.",
+      "image": "https://www.tbsnews.net/sites/default/files/styles/big_1/public/images/2026/11/01/china_energy_international_group.jpg",
+      "discovery": "rss",
+      "date_estimated": false,
+      "status": "pending",
+      "first_seen": "2026-11-01T20:54:07.983958+06:00",
+      "last_seen": "2026-11-01T20:54:07.983959+06:00"
+    },
+    "tbsnews.net/worldbiz/usa/trump-white-house-maps-path-govern-without-congress-if-democrats-win-1589566": {
+      "title": "Trump White House maps path to govern without Congress if Democrats win",
+      "url": "https://www.tbsnews.net/worldbiz/usa/trump-white-house-maps-path-govern-without-congress-if-democrats-win-1589566",
+      "canonical": "tbsnews.net/worldbiz/usa/trump-white-house-maps-path-govern-without-congress-if-democrats-win-1589566",
+      "published_dt": "2026-11-01T18:25:00+06:00",
+      "published_date": "2026-11-01T18:25:00+06:00",
+      "source": "The Business Standard",
+      "region": "Bangladesh",
+      "excerpt": "For the past month, Trump has held rallies across the country trying to preserve Republican control of Congress, even as his aides privately prepare for a very different ​political landscape in 2027.",
+      "image": "https://www.tbsnews.net/sites/default/files/styles/big_1/public/images/2026/11/01/trump2.png",
+      "discovery": "rss",
+      "date_estimated": false,
+      "status": "pending",
+      "first_seen": "2026-11-01T20:54:07.984013+06:00",
+      "last_seen": "2026-11-01T20:54:07.984014+06:00"
+    },
+    "tbsnews.net/economy/govt-plans-five-party-partnership-ldc-graduation-use-extra-time-economic-transformation": {
+      "title": "Govt plans five-party partnership for LDC graduation, to use extra time for economic transformation: Titumir",
+      "url": "https://www.tbsnews.net/economy/govt-plans-five-party-partnership-ldc-graduation-use-extra-time-economic-transformation",
+      "canonical": "tbsnews.net/economy/govt-plans-five-party-partnership-ldc-graduation-use-extra-time-economic-transformation",
+      "published_dt": "2026-11-01T18:20:00+06:00",
+      "published_date": "2026-11-01T18:20:00+06:00",
+      "source": "The Business Standard",
+      "region": "Bangladesh",
+      "excerpt": "The prime minister has clearly set out the goal of turning Bangladesh into a global manufacturing hub and an export gateway, he says.",
+      "image": "https://www.tbsnews.net/sites/default/files/styles/big_1/public/images/2026/06/02/for_web_rashed_al_mahmud_titumir.png",
+      "discovery": "rss",
+      "date_estimated": false,
+      "status": "pending",
+      "first_seen": "2026-11-01T20:54:07.984066+06:00",
+      "last_seen": "2026-11-01T20:54:07.984067+06:00"
+    },
+    "tbsnews.net/worldbiz/usa/judge-ends-trumps-attempts-sue-wall-street-journal-over-epstein-reporting-1589561": {
+      "title": "Judge ends Trump's attempts to sue Wall Street Journal over Epstein reporting",
+      "url": "https://www.tbsnews.net/worldbiz/usa/judge-ends-trumps-attempts-sue-wall-street-journal-over-epstein-reporting-1589561",
+      "canonical": "tbsnews.net/worldbiz/usa/judge-ends-trumps-attempts-sue-wall-street-journal-over-epstein-reporting-1589561",
+      "published_dt": "2026-11-01T18:20:00+06:00",
+      "published_date": "2026-11-01T18:20:00+06:00",
+      "source": "The Business Standard",
+      "region": "Bangladesh",
+      "excerpt": "The US District Court ​for the Southern District of Florida held ⁠that Trump again did not show actual ​malice.",
+      "image": "https://www.tbsnews.net/sites/default/files/styles/big_1/public/images/2026/11/01/trump1.png",
+      "discovery": "rss",
+      "date_estimated": false,
+      "status": "pending",
+      "first_seen": "2026-11-01T20:54:07.984119+06:00",
+      "last_seen": "2026-11-01T20:54:07.984120+06:00"
+    },
+    "tbsnews.net/bangladesh/court/ex-army-officer-hafiz-placed-4-day-remand-sedition-case-1589551": {
+      "title": "Ex-army officer Hafiz placed on 4-day remand in sedition case",
+      "url": "https://www.tbsnews.net/bangladesh/court/ex-army-officer-hafiz-placed-4-day-remand-sedition-case-1589551",
+      "canonical": "tbsnews.net/bangladesh/court/ex-army-officer-hafiz-placed-4-day-remand-sedition-case-1589551",
+      "published_dt": "2026-11-01T18:15:00+06:00",
+      "published_date": "2026-11-01T18:15:00+06:00",
+      "source": "The Business Standard",
+      "region": "Bangladesh",
+      "excerpt": "Police allege online networks were used to raise funds and incite violence.",
+      "image": "https://www.tbsnews.net/sites/default/files/styles/big_1/public/images/2026/11/01/major_abdul_hafiz.jpg",
+      "discovery": "rss",
+      "date_estimated": false,
+      "status": "pending",
+      "first_seen": "2026-11-01T20:54:07.984172+06:00",
+      "last_seen": "2026-11-01T20:54:07.984173+06:00"
+    },
+    "tbsnews.net/world/south-asia/five-killed-fresh-ethnic-violence-indias-manipur-state-1589541": {
+      "title": "Five killed in fresh ethnic violence in India's Manipur state",
+      "url": "https://www.tbsnews.net/world/south-asia/five-killed-fresh-ethnic-violence-indias-manipur-state-1589541",
+      "canonical": "tbsnews.net/world/south-asia/five-killed-fresh-ethnic-violence-indias-manipur-state-1589541",
+      "published_dt": "2026-11-01T17:50:00+06:00",
+      "published_date": "2026-11-01T17:50:00+06:00",
+      "source": "The Business Standard",
+      "region": "Bangladesh",
+      "excerpt": "The latest fighting erupted after a Naga man was allegedly assaulted by men from the Kuki community.",
+      "image": "https://www.tbsnews.net/sites/default/files/styles/big_1/public/images/2026/11/01/xbqkcb3kyfpqfi7ufnn4webgs4.jpg",
+      "discovery": "rss",
+      "date_estimated": false,
+      "status": "pending",
+      "first_seen": "2026-11-01T20:54:07.984224+06:00",
+      "last_seen": "2026-11-01T20:54:07.984225+06:00"
+    },
+    "tbsnews.net/economy/banking/bb-introduce-ai-based-cybersecurity-policy-soon-1589536": {
+      "title": "BB to introduce AI-based cybersecurity policy soon",
+      "url": "https://www.tbsnews.net/economy/banking/bb-introduce-ai-based-cybersecurity-policy-soon-1589536",
+      "canonical": "tbsnews.net/economy/banking/bb-introduce-ai-based-cybersecurity-policy-soon-1589536",
+      "published_dt": "2026-11-01T17:45:00+06:00",
+      "published_date": "2026-11-01T17:45:00+06:00",
+      "source": "The Business Standard",
+      "region": "Bangladesh",
+      "excerpt": "The proposed AI-based policy comes as Bangladesh Bank is pursuing a broader initiative to strengthen cybersecurity across the financial sector.",
+      "image": "https://www.tbsnews.net/sites/default/files/styles/big_1/public/images/2026/10/25/bangladesh_bank_0.jpg",
+      "discovery": "rss",
+      "date_estimated": false,
+      "status": "posted",
+      "first_seen": "2026-11-01T20:54:07.984275+06:00",
+      "last_seen": "2026-11-01T20:54:07.984276+06:00",
+      "posted_at": "2026-11-01T20:58:26.786183+06:00"
+    },
+    "cnbc.com/2026/11/01/ai-meta-ads-google-search.html": {
+      "title": "Why AI is boosting Meta's ad business while hurting Google search",
+      "url": "https://www.cnbc.com/2026/11/01/ai-meta-ads-google-search.html",
+      "canonical": "cnbc.com/2026/11/01/ai-meta-ads-google-search.html",
+      "published_dt": "2026-11-01T20:31:29+06:00",
+      "published_date": "2026-11-01T20:31:29+06:00",
+      "source": "CNBC",
+      "region": "International",
+      "excerpt": "The gap between Meta's ad revenue growth and Google's search expansion was the widest it's been since 2021 in the latest quarter.",
+      "image": "",
+      "discovery": "rss",
+      "date_estimated": false,
+      "status": "pending",
+      "first_seen": "2026-11-01T20:54:11.593043+06:00",
+      "last_seen": "2026-11-01T20:54:11.593047+06:00"
+    },
+    "cnbc.com/2026/11/01/social-security-senate-races.html": {
+      "title": "These Senate races may help determine the fate of Social Security",
+      "url": "https://www.cnbc.com/2026/11/01/social-security-senate-races.html",
+      "canonical": "cnbc.com/2026/11/01/social-security-senate-races.html",
+      "published_dt": "2026-11-01T20:30:01+06:00",
+      "published_date": "2026-11-01T20:30:01+06:00",
+      "source": "CNBC",
+      "region": "International",
+      "excerpt": "Social Security's retirement trust fund may run out in 2032. Senators elected this November will be in office when that deadline comes.",
+      "image": "",
+      "discovery": "rss",
+      "date_estimated": false,
+      "status": "pending",
+      "first_seen": "2026-11-01T20:54:11.593297+06:00",
+      "last_seen": "2026-11-01T20:54:11.593298+06:00"
+    },
+    "cnbc.com/2026/11/01/election-municipal-bonds.html": {
+      "title": "The midterm election could reshape the muni bond market. Here’s what investors need to know",
+      "url": "https://www.cnbc.com/2026/11/01/election-municipal-bonds.html",
+      "canonical": "cnbc.com/2026/11/01/election-municipal-bonds.html",
+      "published_dt": "2026-11-01T18:30:48+06:00",
+      "published_date": "2026-11-01T18:30:48+06:00",
+      "source": "CNBC",
+      "region": "International",
+      "excerpt": "The 2026 election could affect municipal bonds through state tax measures, new bond supply and the makeup of Congress.",
+      "image": "",
+      "discovery": "rss",
+      "date_estimated": false,
+      "status": "posted",
+      "first_seen": "2026-11-01T20:54:11.593355+06:00",
+      "last_seen": "2026-11-01T20:54:11.593356+06:00",
+      "posted_at": "2026-11-01T20:58:43.104786+06:00"
+    },
+    "cnbc.com/2026/11/01/top-analysts-are-bullish-on-these-3-stocks-for-the-long-haul.html": {
+      "title": "Top Wall Street analysts are bullish on these 3 stocks for the long haul",
+      "url": "https://www.cnbc.com/2026/11/01/top-analysts-are-bullish-on-these-3-stocks-for-the-long-haul.html",
+      "canonical": "cnbc.com/2026/11/01/top-analysts-are-bullish-on-these-3-stocks-for-the-long-haul.html",
+      "published_dt": "2026-11-01T18:33:53+06:00",
+      "published_date": "2026-11-01T18:33:53+06:00",
+      "source": "CNBC",
+      "region": "International",
+      "excerpt": "Investors looking beyond short-term noise and focusing on long-term returns can track top analysts to pick the right stocks, backed by strong research.",
+      "image": "",
+      "discovery": "rss",
+      "date_estimated": false,
+      "status": "pending",
+      "first_seen": "2026-11-01T20:54:11.593460+06:00",
+      "last_seen": "2026-11-01T20:54:11.593461+06:00"
+    },
+    "cnbc.com/2026/11/01/social-security-benefit-cuts-2032.html": {
+      "title": "Social Security may have to cut retirement benefits in six years. Here's how much money is at stake for beneficiaries",
+      "url": "https://www.cnbc.com/2026/11/01/social-security-benefit-cuts-2032.html",
+      "canonical": "cnbc.com/2026/11/01/social-security-benefit-cuts-2032.html",
+      "published_dt": "2026-11-01T20:30:01+06:00",
+      "published_date": "2026-11-01T20:30:01+06:00",
+      "source": "CNBC",
+      "region": "International",
+      "excerpt": "The latest projections show Social Security may have to cut retirement benefits in six years. Here's what may happen if Congress doesn't prevent that.",
+      "image": "",
+      "discovery": "rss",
+      "date_estimated": false,
+      "status": "pending",
+      "first_seen": "2026-11-01T20:54:11.593517+06:00",
+      "last_seen": "2026-11-01T20:54:11.593518+06:00"
+    },
+    "ft.com/content/8332fa3f-2a4a-41ca-8836-44d41d32fe8a": {
+      "title": "Weil Gotshal: what happens now at the troubled Wall St law firm?",
+      "url": "https://www.ft.com/content/8332fa3f-2a4a-41ca-8836-44d41d32fe8a?syn-25a6b1a6=1",
+      "canonical": "ft.com/content/8332fa3f-2a4a-41ca-8836-44d41d32fe8a",
+      "published_dt": "2026-11-01T18:00:01+06:00",
+      "published_date": "2026-11-01T18:00:01+06:00",
+      "source": "Financial Times",
+      "region": "International",
+      "excerpt": "The New York legal powerhouse is shutting down after 95 years in business after an exodus of top talent",
+      "image": "https://images.ft.com/v3/image/raw/https%3A%2F%2Fd1e00ek4ebabms.cloudfront.net%2Fproduction%2Fdd99b8c3-67f8-40ec-b7fc-a6f2775e92c3.jpg?source=next-home-page&dpr=2&width=580&fit=scale-down",
+      "discovery": "rss",
+      "date_estimated": false,
+      "status": "pending",
+      "first_seen": "2026-11-01T20:54:12.518786+06:00",
+      "last_seen": "2026-11-01T20:54:12.518787+06:00"
+    },
+    "ft.com/content/4ffb1a86-853b-4151-9902-2ff302e79d24": {
+      "title": "Gen Z protests turn violent in Germany",
+      "url": "https://www.ft.com/content/4ffb1a86-853b-4151-9902-2ff302e79d24?syn-25a6b1a6=1",
+      "canonical": "ft.com/content/4ffb1a86-853b-4151-9902-2ff302e79d24",
+      "published_dt": "2026-11-01T17:36:55+06:00",
+      "published_date": "2026-11-01T17:36:55+06:00",
+      "source": "Financial Times",
+      "region": "International",
+      "excerpt": "Young demonstrators clash with police in Berlin and shops are looted in Frankfurt in echo of last month’s French riots",
+      "image": "https://images.ft.com/v3/image/raw/https%3A%2F%2Fd1e00ek4ebabms.cloudfront.net%2Fproduction%2Fb2cedca2-9a3f-4d86-80c3-a849978ccd4b.jpg?source=next-home-page&dpr=2&width=580&fit=scale-down",
+      "discovery": "rss",
+      "date_estimated": false,
+      "status": "pending",
+      "first_seen": "2026-11-01T20:54:12.518975+06:00",
+      "last_seen": "2026-11-01T20:54:12.518977+06:00"
+    },
+    "ft.com/content/1d4dd7b2-9dee-433b-ac2a-e8022af1dd07": {
+      "title": "Binance restarts customer withdrawals after $6.3bn heist",
+      "url": "https://www.ft.com/content/1d4dd7b2-9dee-433b-ac2a-e8022af1dd07?syn-25a6b1a6=1",
+      "canonical": "ft.com/content/1d4dd7b2-9dee-433b-ac2a-e8022af1dd07",
+      "published_dt": "2026-11-01T18:16:57+06:00",
+      "published_date": "2026-11-01T18:16:57+06:00",
+      "source": "Financial Times",
+      "region": "International",
+      "excerpt": "Crypto exchange to reimburse users whose assets were stolen in hack blamed on North Korea-linked group",
+      "image": "https://images.ft.com/v3/image/raw/https%3A%2F%2Fd1e00ek4ebabms.cloudfront.net%2Fproduction%2F9b3d7395-8daf-436c-aaf2-185ca6323d8b.jpg?source=next-home-page&dpr=2&width=580&fit=scale-down",
+      "discovery": "rss",
+      "date_estimated": false,
+      "status": "pending",
+      "first_seen": "2026-11-01T20:54:12.519098+06:00",
+      "last_seen": "2026-11-01T20:54:12.519099+06:00"
+    },
+    "tbsnews.net/world/hackers-steal-63b-binance-worlds-biggest-crypto-heist-1587741": {
+      "title": "Hackers steal $6.3b from Binance in world's biggest crypto heist - The Business Standard",
+      "url": "https://www.tbsnews.net/world/hackers-steal-63b-binance-worlds-biggest-crypto-heist-1587741",
+      "canonical": "tbsnews.net/world/hackers-steal-63b-binance-worlds-biggest-crypto-heist-1587741",
+      "published_dt": "2026-10-31T23:15:57+06:00",
+      "published_date": "2026-10-31T23:15:57+06:00",
+      "source": "The Business Standard",
+      "region": "Bangladesh",
+      "excerpt": "Hackers steal $6.3b from Binance in world's biggest crypto heist The Business Standard",
+      "image": "",
+      "discovery": "google_news",
+      "date_estimated": false,
+      "status": "pending",
+      "first_seen": "2026-11-01T20:54:13.811155+06:00",
+      "last_seen": "2026-11-01T20:54:13.811161+06:00"
+    },
+    "tbsnews.net/tags/customs-intelligence-and-investigation-directorate-ciid": {
+      "title": "Customs Intelligence and Investigation Directorate (CIID) - The Business Standard",
+      "url": "https://www.tbsnews.net/tags/customs-intelligence-and-investigation-directorate-ciid?page",
+      "canonical": "tbsnews.net/tags/customs-intelligence-and-investigation-directorate-ciid",
+      "published_dt": "2026-10-31T22:12:07+06:00",
+      "published_date": "2026-10-31T22:12:07+06:00",
+      "source": "The Business Standard",
+      "region": "Bangladesh",
+      "excerpt": "Customs Intelligence and Investigation Directorate (CIID) The Business Standard",
+      "image": "",
+      "discovery": "google_news",
+      "date_estimated": false,
+      "status": "pending",
+      "first_seen": "2026-11-01T20:54:14.168347+06:00",
+      "last_seen": "2026-11-01T20:54:14.168352+06:00"
+    },
+    "thefinancialexpress.com.bd/trade/prime-bank-signs-payroll-banking-agreement-with-indetechs-software-ltd": {
+      "title": "Prime Bank signs Payroll Banking Agreement with Indetechs Software Ltd - The Financial Express",
+      "url": "https://thefinancialexpress.com.bd/trade/prime-bank-signs-payroll-banking-agreement-with-indetechs-software-ltd",
+      "canonical": "thefinancialexpress.com.bd/trade/prime-bank-signs-payroll-banking-agreement-with-indetechs-software-ltd",
+      "published_dt": "2026-10-31T21:00:49+06:00",
+      "published_date": "2026-10-31T21:00:49+06:00",
+      "source": "The Financial Express",
+      "region": "Bangladesh",
+      "excerpt": "Prime Bank signs Payroll Banking Agreement with Indetechs Software Ltd The Financial Express",
+      "image": "",
+      "discovery": "google_news",
+      "date_estimated": false,
+      "status": "pending",
+      "first_seen": "2026-11-01T20:54:15.362361+06:00",
+      "last_seen": "2026-11-01T20:54:15.362365+06:00"
+    },
+    "thefinancialexpress.com.bd/bangladesh/brac-bank-launches-countrys-first-omnichannel-banking-service": {
+      "title": "BRAC Bank launches country's first omnichannel banking service - The Financial Express",
+      "url": "https://thefinancialexpress.com.bd/bangladesh/brac-bank-launches-countrys-first-omnichannel-banking-service",
+      "canonical": "thefinancialexpress.com.bd/bangladesh/brac-bank-launches-countrys-first-omnichannel-banking-service",
+      "published_dt": "2026-11-01T12:09:16+06:00",
+      "published_date": "2026-11-01T12:09:16+06:00",
+      "source": "The Financial Express",
+      "region": "Bangladesh",
+      "excerpt": "BRAC Bank launches country's first omnichannel banking service The Financial Express",
+      "image": "",
+      "discovery": "google_news",
+      "date_estimated": false,
+      "status": "pending",
+      "first_seen": "2026-11-01T20:54:15.533954+06:00",
+      "last_seen": "2026-11-01T20:54:15.533958+06:00"
+    },
+    "thedailystar.net/news/world/news/clashes-break-out-hundreds-thousands-protest-france-officer-hit-molotov-cocktail-4312511": {
+      "title": "Clashes break out as hundreds of thousands protest in France; officer hit by Molotov cocktail - The Daily Star",
+      "url": "https://www.thedailystar.net/news/world/news/clashes-break-out-hundreds-thousands-protest-france-officer-hit-molotov-cocktail-4312511",
+      "canonical": "thedailystar.net/news/world/news/clashes-break-out-hundreds-thousands-protest-france-officer-hit-molotov-cocktail-4312511",
+      "published_dt": "2026-11-01T09:01:58+06:00",
+      "published_date": "2026-11-01T09:01:58+06:00",
+      "source": "The Daily Star",
+      "region": "Bangladesh",
+      "excerpt": "Clashes break out as hundreds of thousands protest in France; officer hit by Molotov cocktail The Daily Star",
+      "image": "",
+      "discovery": "google_news",
+      "date_estimated": false,
+      "status": "pending",
+      "first_seen": "2026-11-01T20:54:16.479920+06:00",
+      "last_seen": "2026-11-01T20:54:16.479925+06:00"
+    },
+    "thedailystar.net/news/world/news/pentagon-tells-europeans-cool-their-rhetoric-russia-reuters-4311216": {
+      "title": "Pentagon tells Europeans to cool their rhetoric on Russia: Reuters - The Daily Star",
+      "url": "https://www.thedailystar.net/news/world/news/pentagon-tells-europeans-cool-their-rhetoric-russia-reuters-4311216",
+      "canonical": "thedailystar.net/news/world/news/pentagon-tells-europeans-cool-their-rhetoric-russia-reuters-4311216",
+      "published_dt": "2026-11-01T17:48:01+06:00",
+      "published_date": "2026-11-01T17:48:01+06:00",
+      "source": "The Daily Star",
+      "region": "Bangladesh",
+      "excerpt": "Pentagon tells Europeans to cool their rhetoric on Russia: Reuters The Daily Star",
+      "image": "",
+      "discovery": "google_news",
+      "date_estimated": false,
+      "status": "pending",
+      "first_seen": "2026-11-01T20:54:16.654851+06:00",
+      "last_seen": "2026-11-01T20:54:16.654859+06:00"
+    },
+    "thedailystar.net/news/news/tahsif-souri-death-pbi-takes-one-custody-4311206": {
+      "title": "Tahsif Souri death: PBI takes one into custody - The Daily Star",
+      "url": "https://www.thedailystar.net/news/news/tahsif-souri-death-pbi-takes-one-custody-4311206",
+      "canonical": "thedailystar.net/news/news/tahsif-souri-death-pbi-takes-one-custody-4311206",
+      "published_dt": "2026-10-31T23:24:14+06:00",
+      "published_date": "2026-10-31T23:24:14+06:00",
+      "source": "The Daily Star",
+      "region": "Bangladesh",
+      "excerpt": "Tahsif Souri death: PBI takes one into custody The Daily Star",
+      "image": "",
+      "discovery": "google_news",
+      "date_estimated": false,
+      "status": "pending",
+      "first_seen": "2026-11-01T20:54:17.010074+06:00",
+      "last_seen": "2026-11-01T20:54:17.010080+06:00"
+    },
+    "thedailystar.net/news/politics/political-parties/news/parties-run-power-centric-business-model-tib-4312921": {
+      "title": "Parties run on power-centric business model: TIB - The Daily Star",
+      "url": "https://www.thedailystar.net/news/politics/political-parties/news/parties-run-power-centric-business-model-tib-4312921",
+      "canonical": "thedailystar.net/news/politics/political-parties/news/parties-run-power-centric-business-model-tib-4312921",
+      "published_dt": "2026-11-01T19:57:04+06:00",
+      "published_date": "2026-11-01T19:57:04+06:00",
+      "source": "The Daily Star",
+      "region": "Bangladesh",
+      "excerpt": "Parties run on power-centric business model: TIB The Daily Star",
+      "image": "",
+      "discovery": "google_news",
+      "date_estimated": false,
+      "status": "pending",
+      "first_seen": "2026-11-01T20:54:17.365627+06:00",
+      "last_seen": "2026-11-01T20:54:17.365631+06:00"
+    },
+    "dhakatribune.com/business/423404/bangladesh-world-bank-ink-450m-agreement-for": {
+      "title": "Bangladesh, World Bank ink $450m agreement for financial sector reforms - Dhaka Tribune",
+      "url": "https://www.dhakatribune.com/business/423404/bangladesh-world-bank-ink-450m-agreement-for",
+      "canonical": "dhakatribune.com/business/423404/bangladesh-world-bank-ink-450m-agreement-for",
+      "published_dt": "2026-11-01T00:30:00+06:00",
+      "published_date": "2026-11-01T00:30:00+06:00",
+      "source": "Dhaka Tribune",
+      "region": "Bangladesh",
+      "excerpt": "Bangladesh, World Bank ink $450m agreement for financial sector reforms Dhaka Tribune",
+      "image": "",
+      "discovery": "google_news",
+      "date_estimated": false,
+      "status": "pending",
+      "first_seen": "2026-11-01T20:54:18.336672+06:00",
+      "last_seen": "2026-11-01T20:54:18.336676+06:00"
+    },
+    "dhakatribune.com/amp/business/banks/423429/shahjalal-islami-bank-holds-930th-executive": {
+      "title": "Shahjalal Islami Bank holds 930th executive committee meeting - Dhaka Tribune",
+      "url": "https://www.dhakatribune.com/amp/business/banks/423429/shahjalal-islami-bank-holds-930th-executive",
+      "canonical": "dhakatribune.com/amp/business/banks/423429/shahjalal-islami-bank-holds-930th-executive",
+      "published_dt": "2026-11-01T15:17:40+06:00",
+      "published_date": "2026-11-01T15:17:40+06:00",
+      "source": "Dhaka Tribune",
+      "region": "Bangladesh",
+      "excerpt": "Shahjalal Islami Bank holds 930th executive committee meeting Dhaka Tribune",
+      "image": "",
+      "discovery": "google_news",
+      "date_estimated": false,
+      "status": "pending",
+      "first_seen": "2026-11-01T20:54:18.509663+06:00",
+      "last_seen": "2026-11-01T20:54:18.509667+06:00"
+    },
+    "dhakatribune.com/amp/business/banks/423427/pubali-bank%E2%80%99s-gulshan-circle-1-branch-switches": {
+      "title": "Pubali Bank’s Gulshan Circle-1 branch switches from conventional to Islamic banking - Dhaka Tribune",
+      "url": "https://www.dhakatribune.com/amp/business/banks/423427/pubali-bank%E2%80%99s-gulshan-circle-1-branch-switches",
+      "canonical": "dhakatribune.com/amp/business/banks/423427/pubali-bank%E2%80%99s-gulshan-circle-1-branch-switches",
+      "published_dt": "2026-11-01T15:11:48+06:00",
+      "published_date": "2026-11-01T15:11:48+06:00",
+      "source": "Dhaka Tribune",
+      "region": "Bangladesh",
+      "excerpt": "Pubali Bank’s Gulshan Circle-1 branch switches from conventional to Islamic banking Dhaka Tribune",
+      "image": "",
+      "discovery": "google_news",
+      "date_estimated": false,
+      "status": "pending",
+      "first_seen": "2026-11-01T20:54:18.686856+06:00",
+      "last_seen": "2026-11-01T20:54:18.686862+06:00"
+    },
+    "dhakatribune.com/amp/business/423448/shah-group-chairman-meets-former-japanese-pm-taro": {
+      "title": "Shah Group chairman meets former Japanese PM Taro Aso - Dhaka Tribune",
+      "url": "https://www.dhakatribune.com/amp/business/423448/shah-group-chairman-meets-former-japanese-pm-taro",
+      "canonical": "dhakatribune.com/amp/business/423448/shah-group-chairman-meets-former-japanese-pm-taro",
+      "published_dt": "2026-11-01T18:20:15+06:00",
+      "published_date": "2026-11-01T18:20:15+06:00",
+      "source": "Dhaka Tribune",
+      "region": "Bangladesh",
+      "excerpt": "Shah Group chairman meets former Japanese PM Taro Aso Dhaka Tribune",
+      "image": "",
+      "discovery": "google_news",
+      "date_estimated": false,
+      "status": "pending",
+      "first_seen": "2026-11-01T20:54:18.862065+06:00",
+      "last_seen": "2026-11-01T20:54:18.862069+06:00"
+    },
+    "bloomberg.com/news/articles/2026-11-01/saudi-economy-shrank-at-slower-pace-before-houthi-war-escalation": {
+      "title": "Saudi Economy Shrank at Slower Pace Before Houthi War Escalation - Bloomberg.com",
+      "url": "https://www.bloomberg.com/news/articles/2026-11-01/saudi-economy-shrank-at-slower-pace-before-houthi-war-escalation",
+      "canonical": "bloomberg.com/news/articles/2026-11-01/saudi-economy-shrank-at-slower-pace-before-houthi-war-escalation",
+      "published_dt": "2026-11-01T18:47:06+06:00",
+      "published_date": "2026-11-01T18:47:06+06:00",
+      "source": "Bloomberg",
+      "region": "International",
+      "excerpt": "Saudi Economy Shrank at Slower Pace Before Houthi War Escalation Bloomberg.com",
+      "image": "",
+      "discovery": "google_news",
+      "date_estimated": false,
+      "status": "pending",
+      "first_seen": "2026-11-01T20:54:22.568247+06:00",
+      "last_seen": "2026-11-01T20:54:22.568251+06:00"
+    },
+    "visualcapitalist.com/mapped-time-changes-us-canada-2026": {
+      "title": "Mapped: The New Time Differences Across North America - Visual Capitalist",
+      "url": "https://www.visualcapitalist.com/mapped-time-changes-us-canada-2026/",
+      "canonical": "visualcapitalist.com/mapped-time-changes-us-canada-2026",
+      "published_dt": "2026-11-01T16:47:54+06:00",
+      "published_date": "2026-11-01T16:47:54+06:00",
+      "source": "visualcapitalist.com",
+      "region": "International",
+      "excerpt": "Mapped: The New Time Differences Across North America Visual Capitalist",
+      "image": "",
+      "discovery": "google_news",
+      "date_estimated": false,
+      "status": "pending",
+      "first_seen": "2026-11-01T20:54:26.223290+06:00",
+      "last_seen": "2026-11-01T20:54:26.223294+06:00"
+    },
+    "bloomberg.com/news/videos/2026-11-01/tech-selloff-could-ease-pressure-on-the-fed-video": {
+      "title": "Watch Tech Selloff Could Ease Pressure on the Fed - Bloomberg",
+      "url": "https://www.bloomberg.com/news/videos/2026-11-01/tech-selloff-could-ease-pressure-on-the-fed-video",
+      "canonical": "bloomberg.com/news/videos/2026-11-01/tech-selloff-could-ease-pressure-on-the-fed-video",
+      "published_dt": "2026-11-01T06:00:00+06:00",
+      "published_date": "2026-11-01T06:00:00+06:00",
+      "source": "Bloomberg",
+      "region": "International",
+      "excerpt": "N o n e",
+      "image": "https://assets.bwbx.io/images/users/iqjWHBFdfxIU/iiaXVqa3YZ4E/v3/500x-1.webp",
+      "discovery": "exa",
+      "source_pool": "primary",
+      "status": "pending",
+      "first_seen": "2026-11-01T20:54:29.051694+06:00",
+      "last_seen": "2026-11-01T20:54:29.051698+06:00"
+    },
+    "bloomberg.com/news/audio/2026-11-01/trump-no-hurry-to-end-iran-war-opec-holds-output-steady": {
+      "title": "Trump: 'No Hurry' to End Iran War, OPEC+ Holds Oil Output Steady - Bloomberg",
+      "url": "https://www.bloomberg.com/news/audio/2026-11-01/trump-no-hurry-to-end-iran-war-opec-holds-output-steady",
+      "canonical": "bloomberg.com/news/audio/2026-11-01/trump-no-hurry-to-end-iran-war-opec-holds-output-steady",
+      "published_dt": "2026-11-01T06:00:00+06:00",
+      "published_date": "2026-11-01T06:00:00+06:00",
+      "source": "Bloomberg",
+      "region": "International",
+      "excerpt": "N o n e",
+      "image": "https://assets.bwbx.io/images/users/iqjWHBFdfxIU/ivgYNYkzs5d4/v0/500x500.png",
+      "discovery": "exa",
+      "source_pool": "primary",
+      "status": "pending",
+      "first_seen": "2026-11-01T20:54:29.051732+06:00",
+      "last_seen": "2026-11-01T20:54:29.051733+06:00"
+    },
+    "bloomberg.com/news/videos/2026-11-01/imo-chief-says-strait-of-hormuz-remains-unsafe-video": {
+      "title": "Watch IMO Chief Says Strait of Hormuz Remains Unsafe - Bloomberg",
+      "url": "https://www.bloomberg.com/news/videos/2026-11-01/imo-chief-says-strait-of-hormuz-remains-unsafe-video",
+      "canonical": "bloomberg.com/news/videos/2026-11-01/imo-chief-says-strait-of-hormuz-remains-unsafe-video",
+      "published_dt": "2026-11-01T06:00:00+06:00",
+      "published_date": "2026-11-01T06:00:00+06:00",
+      "source": "Bloomberg",
+      "region": "International",
+      "excerpt": "N o n e",
+      "image": "https://assets.bwbx.io/images/users/iqjWHBFdfxIU/i6SuwGjjdCKI/v3/500x-1.webp",
+      "discovery": "exa",
+      "source_pool": "primary",
+      "status": "pending",
+      "first_seen": "2026-11-01T20:54:29.051771+06:00",
+      "last_seen": "2026-11-01T20:54:29.051772+06:00"
+    },
+    "markets.ft.com/data/announce/detail": {
+      "title": "TotalEnergies Strengthens Cooperation with PETRONAS SONANGOL and OIL INDIA LIMITED to Reduce Methane Emissions – Company Announcement - FT.com",
+      "url": "https://markets.ft.com/data/announce/detail?dockey=600-202611010417BIZWIRE_USPRX____20261101_BW304985-1",
+      "canonical": "markets.ft.com/data/announce/detail",
+      "published_dt": "2026-11-01T06:00:00+06:00",
+      "published_date": "2026-11-01T06:00:00+06:00",
+      "source": "markets.ft.com",
+      "region": "International",
+      "excerpt": "N o n e",
+      "image": "",
+      "discovery": "exa",
+      "source_pool": "primary",
+      "status": "pending",
+      "first_seen": "2026-11-01T20:54:29.051807+06:00",
+      "last_seen": "2026-11-01T20:54:29.051808+06:00"
+    },
+    "bloomberg.com/news/videos/2026-11-01/democrats-eye-house-and-senate-gains-video": {
+      "title": "Watch Democrats Eye House and Senate Gains - Bloomberg",
+      "url": "https://www.bloomberg.com/news/videos/2026-11-01/democrats-eye-house-and-senate-gains-video",
+      "canonical": "bloomberg.com/news/videos/2026-11-01/democrats-eye-house-and-senate-gains-video",
+      "published_dt": "2026-11-01T06:00:00+06:00",
+      "published_date": "2026-11-01T06:00:00+06:00",
+      "source": "Bloomberg",
+      "region": "International",
+      "excerpt": "N o n e",
+      "image": "https://assets.bwbx.io/images/users/iqjWHBFdfxIU/iE7GNM2F_zxo/v3/500x-1.webp",
+      "discovery": "exa",
+      "source_pool": "primary",
+      "status": "pending",
+      "first_seen": "2026-11-01T20:54:29.051831+06:00",
+      "last_seen": "2026-11-01T20:54:29.051833+06:00"
+    },
+    "bloomberg.com/news/videos/2026-11-01/brooks-steps-up-global-push-as-running-boom-builds-video": {
+      "title": "Watch Brooks Steps Up Global Push as Running Boom Builds - Bloomberg",
+      "url": "https://www.bloomberg.com/news/videos/2026-11-01/brooks-steps-up-global-push-as-running-boom-builds-video",
+      "canonical": "bloomberg.com/news/videos/2026-11-01/brooks-steps-up-global-push-as-running-boom-builds-video",
+      "published_dt": "2026-11-01T06:00:00+06:00",
+      "published_date": "2026-11-01T06:00:00+06:00",
+      "source": "Bloomberg",
+      "region": "International",
+      "excerpt": "N o n e",
+      "image": "https://assets.bwbx.io/images/users/iqjWHBFdfxIU/iSXSQDbjqLL8/v3/500x-1.webp",
+      "discovery": "exa",
+      "source_pool": "primary",
+      "status": "pending",
+      "first_seen": "2026-11-01T20:54:30.404538+06:00",
+      "last_seen": "2026-11-01T20:54:30.404542+06:00"
+    },
+    "bloomberg.com/news/videos/2026-11-01/ai-talent-war-spreads-to-wall-street-video": {
+      "title": "Watch AI Talent War Spreads to Wall Street - Bloomberg",
+      "url": "https://www.bloomberg.com/news/videos/2026-11-01/ai-talent-war-spreads-to-wall-street-video",
+      "canonical": "bloomberg.com/news/videos/2026-11-01/ai-talent-war-spreads-to-wall-street-video",
+      "published_dt": "2026-11-01T06:00:00+06:00",
+      "published_date": "2026-11-01T06:00:00+06:00",
+      "source": "Bloomberg",
+      "region": "International",
+      "excerpt": "N o n e",
+      "image": "https://assets.bwbx.io/images/users/iqjWHBFdfxIU/ioRAFmhc6Rs8/v3/500x-1.webp",
+      "discovery": "exa",
+      "source_pool": "primary",
+      "status": "pending",
+      "first_seen": "2026-11-01T20:54:30.404592+06:00",
+      "last_seen": "2026-11-01T20:54:30.404593+06:00"
+    },
+    "hk.investing.com/news/stock-market-news/article-1731419": {
+      "title": "財通證券：美歐日央行10月均暫停加息 但抗通脹仍是政策主線 作者 智通財經",
+      "url": "https://hk.investing.com/news/stock-market-news/article-1731419",
+      "canonical": "hk.investing.com/news/stock-market-news/article-1731419",
+      "published_dt": "2026-11-01T06:00:00+06:00",
+      "published_date": "2026-11-01T06:00:00+06:00",
+      "source": "hk.investing.com",
+      "region": "International",
+      "excerpt": "N o n e",
+      "image": "https://content-media.investing.com/news/LYNXMPEA9Q076_L.jpg",
+      "discovery": "exa_fallback",
+      "source_pool": "fallback",
+      "status": "pending",
+      "first_seen": "2026-11-01T20:54:34.902825+06:00",
+      "last_seen": "2026-11-01T20:54:34.902829+06:00"
+    },
+    "ca.investing.com/news/stock-market-news/tsx-brace-for-dataheavy-week-as-iran-tensions-put-fed-boc-rate-outlook-in-focus-4920219": {
+      "title": "TSX brace for data-heavy week as Iran tensions put Fed, BoC rate outlook in focus By Investing.com",
+      "url": "https://ca.investing.com/news/stock-market-news/tsx-brace-for-dataheavy-week-as-iran-tensions-put-fed-boc-rate-outlook-in-focus-4920219",
+      "canonical": "ca.investing.com/news/stock-market-news/tsx-brace-for-dataheavy-week-as-iran-tensions-put-fed-boc-rate-outlook-in-focus-4920219",
+      "published_dt": "2026-11-01T06:00:00+06:00",
+      "published_date": "2026-11-01T06:00:00+06:00",
+      "source": "ca.investing.com",
+      "region": "International",
+      "excerpt": "N o n e",
+      "image": "https://content-media.investing.com/news/moved_LYNXNPEM9T1B5_L.jpg",
+      "discovery": "exa_fallback",
+      "source_pool": "fallback",
+      "status": "pending",
+      "first_seen": "2026-11-01T20:54:34.902865+06:00",
+      "last_seen": "2026-11-01T20:54:34.902866+06:00"
+    },
+    "finance.yahoo.com/markets/article/the-fed-put-is-very-much-back-wall-street-strategists-weigh-central-banks-next-move-155353732.html": {
+      "title": "'The Fed put is very much back': Wall Street strategists weigh central bank's next move",
+      "url": "https://finance.yahoo.com/markets/article/the-fed-put-is-very-much-back-wall-street-strategists-weigh-central-banks-next-move-155353732.html",
+      "canonical": "finance.yahoo.com/markets/article/the-fed-put-is-very-much-back-wall-street-strategists-weigh-central-banks-next-move-155353732.html",
+      "published_dt": "2026-10-31T21:53:53+06:00",
+      "published_date": "2026-10-31T21:53:53+06:00",
+      "source": "finance.yahoo.com",
+      "region": "International",
+      "excerpt": "N o n e",
+      "image": "",
+      "discovery": "exa_fallback",
+      "source_pool": "fallback",
+      "status": "posted",
+      "first_seen": "2026-11-01T20:54:34.902896+06:00",
+      "last_seen": "2026-11-01T20:54:34.902897+06:00",
+      "posted_at": "2026-11-01T20:58:37.974164+06:00"
+    },
+    "investing.com/news/general-news/whats-next-for-euro-bonds-and-the-euro-after-lagardes-resignation-4989379": {
+      "title": "What’s next for Euro bonds and the euro after Lagarde’s resignation? By Investing.com",
+      "url": "https://www.investing.com/news/general-news/whats-next-for-euro-bonds-and-the-euro-after-lagardes-resignation-4989379",
+      "canonical": "investing.com/news/general-news/whats-next-for-euro-bonds-and-the-euro-after-lagardes-resignation-4989379",
+      "published_dt": "2026-11-01T09:51:12+06:00",
+      "published_date": "2026-11-01T09:51:12+06:00",
+      "source": "investing.com",
+      "region": "International",
+      "excerpt": "N o n e",
+      "image": "https://content-media.investing.com/news/moved_LYNXNPEL2Q148_L.jpg",
+      "discovery": "exa_fallback",
+      "source_pool": "fallback",
+      "status": "pending",
+      "first_seen": "2026-11-01T20:54:34.902928+06:00",
+      "last_seen": "2026-11-01T20:54:34.902929+06:00"
+    },
+    "finance.yahoo.com/markets/stocks/articles/expect-markets-week-aapl-pltr-140616189.html": {
+      "title": "What To Expect In Markets This Week: AAPL, PLTR, AMD, SMCI, SHOP, Earnings, Jobs Report And More",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/expect-markets-week-aapl-pltr-140616189.html",
+      "canonical": "finance.yahoo.com/markets/stocks/articles/expect-markets-week-aapl-pltr-140616189.html",
+      "published_dt": "2026-11-01T06:00:00+06:00",
+      "published_date": "2026-11-01T06:00:00+06:00",
+      "source": "finance.yahoo.com",
+      "region": "International",
+      "excerpt": "N o n e",
+      "image": "",
+      "discovery": "exa_fallback",
+      "source_pool": "fallback",
+      "status": "pending",
+      "first_seen": "2026-11-01T20:54:34.902956+06:00",
+      "last_seen": "2026-11-01T20:54:34.902957+06:00"
+    },
+    "finance.yahoo.com/markets/options/articles/veteran-bond-investor-watching-sharp-101501287.html": {
+      "title": "What a veteran bond investor is watching as sharp interest rate moves roil markets",
+      "url": "https://finance.yahoo.com/markets/options/articles/veteran-bond-investor-watching-sharp-101501287.html",
+      "canonical": "finance.yahoo.com/markets/options/articles/veteran-bond-investor-watching-sharp-101501287.html",
+      "published_dt": "2026-11-01T16:15:01+06:00",
+      "published_date": "2026-11-01T16:15:01+06:00",
+      "source": "finance.yahoo.com",
+      "region": "International",
+      "excerpt": "N o n e",
+      "image": "",
+      "discovery": "exa_fallback",
+      "source_pool": "fallback",
+      "status": "pending",
+      "first_seen": "2026-11-01T20:54:34.902983+06:00",
+      "last_seen": "2026-11-01T20:54:34.902984+06:00"
+    },
+    "investing.com/news/politics-news/democratic-wins-would-shift-congress-trade-debate-but-fall-short-of-us-tariff-rollbacks-4989651": {
+      "title": "Democratic wins would shift Congress’ trade debate but fall short of US tariff rollbacks By Reuters",
+      "url": "https://www.investing.com/news/politics-news/democratic-wins-would-shift-congress-trade-debate-but-fall-short-of-us-tariff-rollbacks-4989651",
+      "canonical": "investing.com/news/politics-news/democratic-wins-would-shift-congress-trade-debate-but-fall-short-of-us-tariff-rollbacks-4989651",
+      "published_dt": "2026-11-01T17:04:54+06:00",
+      "published_date": "2026-11-01T17:04:54+06:00",
+      "source": "investing.com",
+      "region": "International",
+      "excerpt": "N o n e",
+      "image": "https://content-media.investing.com/trkd-images/LYNXNPEMA00YM_L.jpg",
+      "discovery": "exa_fallback",
+      "source_pool": "fallback",
+      "status": "pending",
+      "first_seen": "2026-11-01T20:54:35.896307+06:00",
+      "last_seen": "2026-11-01T20:54:35.896311+06:00"
+    },
+    "investing.com/news/economy-news/iran-offers-48hour-hormuz-reopening-plan-as-trump-signals-progress-in-talks-4989413": {
+      "title": "Iran offers 48-hour Hormuz reopening plan as Trump signals progress in talks By Investing.com",
+      "url": "https://www.investing.com/news/economy-news/iran-offers-48hour-hormuz-reopening-plan-as-trump-signals-progress-in-talks-4989413",
+      "canonical": "investing.com/news/economy-news/iran-offers-48hour-hormuz-reopening-plan-as-trump-signals-progress-in-talks-4989413",
+      "published_dt": "2026-11-01T06:00:00+06:00",
+      "published_date": "2026-11-01T06:00:00+06:00",
+      "source": "investing.com",
+      "region": "International",
+      "excerpt": "N o n e",
+      "image": "https://content-media.investing.com/news/moved_LYNXMPEM7513I_L.jpg",
+      "discovery": "exa_fallback",
+      "source_pool": "fallback",
+      "status": "pending",
+      "first_seen": "2026-11-01T20:54:35.896347+06:00",
+      "last_seen": "2026-11-01T20:54:35.896348+06:00"
+    },
+    "ca.investing.com/news/economy-news/midterm-us-elections-earnings-jobs-data-loom-for-aiwary-stock-market-4920345": {
+      "title": "Midterm US elections, earnings, jobs data loom for AI-wary stock market By Reuters",
+      "url": "https://ca.investing.com/news/economy-news/midterm-us-elections-earnings-jobs-data-loom-for-aiwary-stock-market-4920345",
+      "canonical": "ca.investing.com/news/economy-news/midterm-us-elections-earnings-jobs-data-loom-for-aiwary-stock-market-4920345",
+      "published_dt": "2026-11-01T06:00:00+06:00",
+      "published_date": "2026-11-01T06:00:00+06:00",
+      "source": "ca.investing.com",
+      "region": "International",
+      "excerpt": "N o n e",
+      "image": "https://content-media.investing.com/trkd-images/LYNXNPEM9T0U1_L.jpg",
+      "discovery": "exa_fallback",
+      "source_pool": "fallback",
+      "status": "pending",
+      "first_seen": "2026-11-01T20:54:35.896377+06:00",
+      "last_seen": "2026-11-01T20:54:35.896378+06:00"
+    },
+    "investing.com/news/commodities-news/opec-set-to-keep-oil-output-targets-steady-sources-say-4989496": {
+      "title": "OPEC+ set to keep oil output targets steady, sources say By Reuters",
+      "url": "https://www.investing.com/news/commodities-news/opec-set-to-keep-oil-output-targets-steady-sources-say-4989496",
+      "canonical": "investing.com/news/commodities-news/opec-set-to-keep-oil-output-targets-steady-sources-say-4989496",
+      "published_dt": "2026-11-01T06:00:00+06:00",
+      "published_date": "2026-11-01T06:00:00+06:00",
+      "source": "investing.com",
+      "region": "International",
+      "excerpt": "N o n e",
+      "image": "https://content-media.investing.com/trkd-images/LYNXNPEMA00XI_L.jpg",
+      "discovery": "exa_fallback",
+      "source_pool": "fallback",
+      "status": "pending",
+      "first_seen": "2026-11-01T20:54:35.896405+06:00",
+      "last_seen": "2026-11-01T20:54:35.896406+06:00"
+    },
+    "finance.yahoo.com/markets/article/a-big-sell-off-collides-with-more-big-tech-earnings-and-a-midterm-election-what-to-watch-this-week-110000657.html": {
+      "title": "A big sell-off collides with more Big Tech earnings and a midterm election: What to watch this week",
+      "url": "https://finance.yahoo.com/markets/article/a-big-sell-off-collides-with-more-big-tech-earnings-and-a-midterm-election-what-to-watch-this-week-110000657.html",
+      "canonical": "finance.yahoo.com/markets/article/a-big-sell-off-collides-with-more-big-tech-earnings-and-a-midterm-election-what-to-watch-this-week-110000657.html",
+      "published_dt": "2026-11-01T17:00:00+06:00",
+      "published_date": "2026-11-01T17:00:00+06:00",
+      "source": "finance.yahoo.com",
+      "region": "International",
+      "excerpt": "N o n e",
+      "image": "",
+      "discovery": "exa_fallback",
+      "source_pool": "fallback",
+      "status": "pending",
+      "first_seen": "2026-11-01T20:54:37.167630+06:00",
+      "last_seen": "2026-11-01T20:54:37.167635+06:00"
+    },
+    "investing.com/news/company-news/cboe-q3-2026-slides-sp-deal-secured-earnings-beat-estimates-93CH-4989492": {
+      "title": "Cboe Q3 2026 slides: S&P deal secured, earnings beat estimates By Investing.com",
+      "url": "https://www.investing.com/news/company-news/cboe-q3-2026-slides-sp-deal-secured-earnings-beat-estimates-93CH-4989492",
+      "canonical": "investing.com/news/company-news/cboe-q3-2026-slides-sp-deal-secured-earnings-beat-estimates-93CH-4989492",
+      "published_dt": "2026-11-01T15:41:23+06:00",
+      "published_date": "2026-11-01T15:41:23+06:00",
+      "source": "investing.com",
+      "region": "International",
+      "excerpt": "N o n e",
+      "image": "https://content-media.investing.com/news/CboeGlobalMarkets_800x533_L_1675583597.jpg",
+      "discovery": "exa_fallback",
+      "source_pool": "fallback",
+      "status": "pending",
+      "first_seen": "2026-11-01T20:54:37.167670+06:00",
+      "last_seen": "2026-11-01T20:54:37.167671+06:00"
+    },
+    "investing.com/news/company-news/alpha-bank-q3-2026-slides-strong-profits-fuel-ma-expansion-93CH-4989713": {
+      "title": "Alpha Bank Q3 2026 slides: strong profits fuel M&A expansion By Investing.com",
+      "url": "https://www.investing.com/news/company-news/alpha-bank-q3-2026-slides-strong-profits-fuel-ma-expansion-93CH-4989713",
+      "canonical": "investing.com/news/company-news/alpha-bank-q3-2026-slides-strong-profits-fuel-ma-expansion-93CH-4989713",
+      "published_dt": "2026-11-01T06:00:00+06:00",
+      "published_date": "2026-11-01T06:00:00+06:00",
+      "source": "investing.com",
+      "region": "International",
+      "excerpt": "N o n e",
+      "image": "https://content-media.investing.com/news/LYNXMPEM1H1CM_1200_L.jpg",
+      "discovery": "exa_fallback",
+      "source_pool": "fallback",
+      "status": "pending",
+      "first_seen": "2026-11-01T20:54:37.167700+06:00",
+      "last_seen": "2026-11-01T20:54:37.167702+06:00"
+    },
+    "investing.com/news/company-news/bp-q3-2026-slides-net-debt-falls-below-target-portfolio-reshapes-93CH-4989458": {
+      "title": "BP Q3 2026 slides: net debt falls below target, portfolio reshapes By Investing.com",
+      "url": "https://www.investing.com/news/company-news/bp-q3-2026-slides-net-debt-falls-below-target-portfolio-reshapes-93CH-4989458",
+      "canonical": "investing.com/news/company-news/bp-q3-2026-slides-net-debt-falls-below-target-portfolio-reshapes-93CH-4989458",
+      "published_dt": "2026-11-01T06:00:00+06:00",
+      "published_date": "2026-11-01T06:00:00+06:00",
+      "source": "investing.com",
+      "region": "International",
+      "excerpt": "N o n e",
+      "image": "https://content-media.investing.com/news/OilwellinColorado_800x533_L_1645345712.jpg",
+      "discovery": "exa_fallback",
+      "source_pool": "fallback",
+      "status": "pending",
+      "first_seen": "2026-11-01T20:54:37.167731+06:00",
+      "last_seen": "2026-11-01T20:54:37.167732+06:00"
     }
   },
   "events": {
-    "bangladesh_seeks_south_korean_investment_and_defence_cooperation": {
-      "event_id": "bangladesh_seeks_south_korean_investment_and_defence_cooperation",
-      "canonical_url": "tbsnews.net/foreign-policy/bangladesh-seeks-south-korean-investment-wider-defence-cooperation-1560536",
-      "original_url": "https://www.tbsnews.net/foreign-policy/bangladesh-seeks-south-korean-investment-wider-defence-cooperation-1560536",
-      "source": "The Business Standard",
-      "region": "Bangladesh",
-      "topic": "Bangladesh Economy",
-      "institution": "Ministry of Foreign Affairs",
-      "event_cluster_id": "evt_17974728a4",
-      "event_confidence": 0.6,
-      "event_source_count": 1,
-      "headline": "Bangladesh Seeks South Korean Investment and Expanded Defence Cooperation",
-      "summary": "Bangladesh's foreign affairs minister urged South Korea to invest in a new defence industrial zone and deepen collaboration on training, peacekeeping and trade.",
-      "highlights": [
-        "Agreement in principle reached on a Bangladesh‑South Korea CEPA",
-        "Bangladesh aims to attract South Korean investment in semiconductors, shipbuilding, ICT and high‑end garments",
-        "Both sides pledged to expand military training and UN peacekeeping cooperation"
-      ],
-      "concepts": [],
-      "key_numbers": [],
-      "published_at": "2026-10-02T17:05:00+06:00",
-      "selected_at": "2026-10-02T20:05:05.316610+06:00",
-      "status": "published",
-      "message_id": 911
-    },
-    "cnbc.com/2026/10/02/jobs-report-september-2026.html": {
-      "event_id": "cnbc.com/2026/10/02/jobs-report-september-2026.html",
-      "canonical_url": "cnbc.com/2026/10/02/jobs-report-september-2026.html",
-      "original_url": "https://www.cnbc.com/2026/10/02/jobs-report-september-2026.html",
-      "source": "CNBC",
-      "region": "International",
-      "topic": "Global Economy",
-      "institution": "",
-      "event_cluster_id": "evt_19e46c0055",
-      "event_confidence": 0.6,
-      "event_source_count": 1,
-      "headline": "U.S. September Jobs Growth Slows, Unemployment Rises to 4.2%",
-      "summary": "September added just 29,000 jobs while the unemployment rate ticked up to 4.2%, prompting markets to bet the Fed will hold rates steady.",
-      "highlights": [
-        "Nonfarm payrolls rose only 29,000, far below expectations of 84,000.",
-        "FedWatch odds rose to 82.8% that the Federal Reserve will keep rates unchanged at its October meeting.",
-        "Average hourly earnings grew 0.1% in September, keeping 12‑month wage growth at a 5‑year low."
-      ],
-      "concepts": [],
-      "key_numbers": [],
-      "published_at": "2026-10-02T19:15:51+06:00",
-      "selected_at": "2026-10-02T20:05:23.464166+06:00",
-      "status": "published",
-      "message_id": 914
-    },
-    "cnbc.com/2026/10/02/ford-q3-sales.html": {
-      "event_id": "cnbc.com/2026/10/02/ford-q3-sales.html",
-      "canonical_url": "cnbc.com/2026/10/02/ford-q3-sales.html",
-      "original_url": "https://www.cnbc.com/2026/10/02/ford-q3-sales.html",
-      "source": "CNBC",
-      "region": "International",
-      "topic": "Global Economy",
-      "institution": "",
-      "event_cluster_id": "evt_55f95d1a6a",
-      "event_confidence": 0.6,
-      "event_source_count": 1,
-      "headline": "Ford Holds onto No. 3 U.S. Sales Spot, Narrowly Beats Hyundai in Q3",
-      "summary": "Ford posted a 6.6% YoY drop to 507,395 vehicles, keeping its third‑place U.S. market rank as Hyundai logged a 5.4% rise to 506,200.",
-      "highlights": [
-        "Ford’s light‑duty sales fell 6.6% year‑over‑year to 507,395 units.",
-        "Hyundai’s combined brands grew 5.4% to 506,200 units, nearly matching Ford.",
-        "Supplier fires disrupted Ford’s F‑Series pickup production, affecting overall sales."
-      ],
-      "concepts": [],
-      "key_numbers": [],
-      "published_at": "2026-10-02T19:15:05+06:00",
-      "selected_at": "2026-10-02T20:05:28.548642+06:00",
-      "status": "published",
-      "message_id": 915
-    },
-    "cnbc.com/2026/10/02/jim-cramers-top-10-things-to-watch-in-the-stock-market-friday.html": {
-      "event_id": "cnbc.com/2026/10/02/jim-cramers-top-10-things-to-watch-in-the-stock-market-friday.html",
-      "canonical_url": "cnbc.com/2026/10/02/jim-cramers-top-10-things-to-watch-in-the-stock-market-friday.html",
-      "original_url": "https://www.cnbc.com/2026/10/02/jim-cramers-top-10-things-to-watch-in-the-stock-market-friday.html",
-      "source": "CNBC",
-      "region": "International",
-      "topic": "Global Economy",
-      "institution": "",
-      "event_cluster_id": "evt_4ca809109f",
-      "event_confidence": 0.6,
-      "event_source_count": 1,
-      "headline": "Cramer Highlights AI Chip Investments, Earnings Beats and Labor Wins Ahead of Fed Decision",
-      "summary": "Jim Cramer points to soaring stock futures, Nvidia’s AI resurgence, Boeing’s union deal, and strong earnings from Accenture as the Fed nears its rate decision.",
-      "highlights": [
-        "Brent crude slipped below $100 as diesel and crude stockpiles were released.",
-        "Nike shares fell 8% after missing revenue forecasts and cutting its fiscal 2027 outlook.",
-        "Toshiba plans to invest $380 million to double AI HDD production in the Philippines."
-      ],
-      "concepts": [],
-      "key_numbers": [],
-      "published_at": "2026-10-02T19:13:28+06:00",
-      "selected_at": "2026-10-02T20:05:33.489204+06:00",
-      "status": "published",
-      "message_id": 916
-    },
     "price_spike_oct2026": {
       "event_id": "price_spike_oct2026",
       "canonical_url": "tbsnews.net/economy/bazaar/eggs-vegetables-rise-sugar-oil-supplies-tighten-1560871",
@@ -8897,55 +9120,6 @@
       "selected_at": "2026-10-03T01:12:39.010496+06:00",
       "status": "published",
       "message_id": 920
-    },
-    "rate_hike_odds_drop": {
-      "event_id": "rate_hike_odds_drop",
-      "canonical_url": "cnbc.com/2026/10/02/fed-rate-hike-odds-decline-after-september-jobs-report.html",
-      "original_url": "https://www.cnbc.com/2026/10/02/fed-rate-hike-odds-decline-after-september-jobs-report.html",
-      "source": "CNBC",
-      "region": "International",
-      "topic": "Global Markets",
-      "institution": "Fed",
-      "event_cluster_id": "evt_730f87e96b",
-      "event_confidence": 0.6,
-      "event_source_count": 1,
-      "headline": "Traders See Slim Odds of Fed Rate Hike After Weak Jobs Report",
-      "summary": "A soft September jobs report and cooler PCE inflation have cut the market’s estimate of a Fed rate increase in October to roughly 17%.",
-      "highlights": [
-        "September added only 29,000 jobs, far below the 80,000‑plus forecast.",
-        "FedWatch shows a 17% chance of an October hike, down from 36% a week earlier."
-      ],
-      "concepts": [],
-      "key_numbers": [],
-      "published_at": "2026-10-02T19:29:27+06:00",
-      "selected_at": "2026-10-03T01:12:43.958254+06:00",
-      "status": "published",
-      "message_id": 921
-    },
-    "layoffs_weak_outlook": {
-      "event_id": "layoffs_weak_outlook",
-      "canonical_url": "cnbc.com/2026/10/02/nike-nke-stock-q1-earnings-layoffs.html",
-      "original_url": "https://www.cnbc.com/2026/10/02/nike-nke-stock-q1-earnings-layoffs.html",
-      "source": "CNBC",
-      "region": "International",
-      "topic": "Multinational Companies",
-      "institution": "Nike",
-      "event_cluster_id": "evt_6b5980df58",
-      "event_confidence": 0.6,
-      "event_source_count": 1,
-      "headline": "Nike shares tumble as revenue falls and layoffs loom",
-      "summary": "Nike reported a 4% revenue drop to $11.2 billion, forecast high‑single‑digit declines for 2027, and announced a $2.5 billion cost‑saving layoff plan.",
-      "highlights": [
-        "Revenue fell 4% to $11.2 billion, driven by weaker Greater China sales",
-        "Nike aims to cut $2.5 billion in costs by 2031 under the new \"Pace\" operating model",
-        "Shares have slid about 45% year‑to‑date"
-      ],
-      "concepts": [],
-      "key_numbers": [],
-      "published_at": "2026-10-02T19:43:56+06:00",
-      "selected_at": "2026-10-03T01:12:49.357278+06:00",
-      "status": "published",
-      "message_id": 922
     },
     "pm_calls_for_deeper_regional_cooperation_at_bay_of_bengal_conversation": {
       "event_id": "pm_calls_for_deeper_regional_cooperation_at_bay_of_bengal_conversation",
@@ -9020,31 +9194,6 @@
       "selected_at": "2026-10-03T12:22:31.124364+06:00",
       "status": "published",
       "message_id": 925
-    },
-    "oil_prices_fall_on_report_of_potential_diesel_crude_stock_release_brent_back_below_100": {
-      "event_id": "oil_prices_fall_on_report_of_potential_diesel_crude_stock_release_brent_back_below_100",
-      "canonical_url": "cnbc.com/2026/10/02/oil-wti-brent-diesel-stock-release-europe.html",
-      "original_url": "https://www.cnbc.com/2026/10/02/oil-wti-brent-diesel-stock-release-europe.html",
-      "source": "CNBC",
-      "region": "International",
-      "topic": "Oil",
-      "institution": "Global",
-      "event_cluster_id": "evt_18ae676b39",
-      "event_confidence": 0.6,
-      "event_source_count": 1,
-      "headline": "Oil Prices Slip as G7 Releases Diesel and Crude Stocks",
-      "summary": "Crude prices fell modestly after the G7 announced a 100 million‑barrel stock release, while Middle‑East tensions keep markets uneasy.",
-      "highlights": [
-        "Brent crude closed at $102.25 per barrel",
-        "U.S. West Texas Intermediate settled at $91.11 per barrel",
-        "G7 will deploy 100 million barrels of reserves over the next four months, front‑loading diesel release in the first 20 days"
-      ],
-      "concepts": [],
-      "key_numbers": [],
-      "published_at": "2026-10-02T19:30:39+06:00",
-      "selected_at": "2026-10-03T12:22:36.406700+06:00",
-      "status": "published",
-      "message_id": 926
     },
     "anthropic_to_invest_100_million_to_train_ai_engineer_talent": {
       "event_id": "anthropic_to_invest_100_million_to_train_ai_engineer_talent",
@@ -9191,55 +9340,6 @@
       "selected_at": "2026-10-03T18:32:55.231703+06:00",
       "status": "published",
       "message_id": 932
-    },
-    "etf_strategy_tax_crackdown": {
-      "event_id": "etf_strategy_tax_crackdown",
-      "canonical_url": "cnbc.com/2026/10/02/treasury-irs-capital-gains-income-tax-section-351-warning.html",
-      "original_url": "https://www.cnbc.com/2026/10/02/treasury-irs-capital-gains-income-tax-section-351-warning.html",
-      "source": "CNBC",
-      "region": "International",
-      "topic": "Global Markets",
-      "institution": "U.S. Treasury / IRS",
-      "event_cluster_id": "evt_7fc435c4dd",
-      "event_confidence": 1.0,
-      "event_source_count": 1,
-      "headline": "Treasury and IRS Crack Down on Wealthy ETF Tax‑Deferral Schemes",
-      "summary": "New Treasury guidance and an IRS revenue ruling target Section 351 ETF conversions used by high‑net‑worth investors to defer capital gains, signaling tighter enforcement.",
-      "highlights": [
-        "IRS revenue ruling declares Section 351 ETF conversions that avoid tax “do not work” under current law.",
-        "Treasury warns that $22 billion of ETF structures created since 2024 may be abusive, prompting comment period ending Oct 28.",
-        "Valid Section 351 exchanges remain permissible if the ETF retains the contributed assets and meets portfolio concentration limits."
-      ],
-      "concepts": [],
-      "key_numbers": [],
-      "published_at": "2026-10-02T19:48:40+06:00",
-      "selected_at": "2026-10-03T18:33:00.054717+06:00",
-      "status": "published",
-      "message_id": 933
-    },
-    "china_deal_spree_7_8bn": {
-      "event_id": "china_deal_spree_7_8bn",
-      "canonical_url": "cnbc.com/2026/10/02/novartis-abogen-china-biotech-deal.html",
-      "original_url": "https://www.cnbc.com/2026/10/02/novartis-abogen-china-biotech-deal.html",
-      "source": "CNBC",
-      "region": "International",
-      "topic": "Multinational Companies",
-      "institution": "Western Pharma",
-      "event_cluster_id": "evt_1b2b9b4b19",
-      "event_confidence": 0.6,
-      "event_source_count": 1,
-      "headline": "Big Pharma accelerates China tie‑ups with Novartis $7.8 billion licensing deal",
-      "summary": "Novartis signed a licensing agreement with Abogen Biosciences worth up to $7.8 billion, reflecting Western drugmakers’ push into China amid looming patent cliffs.",
-      "highlights": [
-        "Novartis will pay $575 million upfront and up to $7.2 billion in milestones for global rights to Abogen’s mRNA therapy.",
-        "Licensing deals let Western firms access Chinese biotech innovations while limiting risk, as China’s NMPA reforms speed clinical"
-      ],
-      "concepts": [],
-      "key_numbers": [],
-      "published_at": "2026-10-02T18:31:46+06:00",
-      "selected_at": "2026-10-03T18:33:05.004327+06:00",
-      "status": "published",
-      "message_id": 934
     },
     "worldbank_bd_energy_financing_delegation": {
       "event_id": "worldbank_bd_energy_financing_delegation",
@@ -20900,6 +21000,130 @@
       "selected_at": "2026-11-01T13:22:51.609974+06:00",
       "status": "published",
       "message_id": 1407
+    },
+    "qr_p2p": {
+      "event_id": "qr_p2p",
+      "canonical_url": "tbsnews.net/economy/banking/bangladesh-bank-launches-qr-based-p2p-payment-service-1589731",
+      "original_url": "https://www.tbsnews.net/economy/banking/bangladesh-bank-launches-qr-based-p2p-payment-service-1589731",
+      "source": "The Business Standard",
+      "region": "Bangladesh",
+      "topic": "Banking",
+      "institution": "Bangladesh Bank",
+      "event_cluster_id": "evt_abccdd2df7",
+      "event_confidence": 0.6,
+      "event_source_count": 1,
+      "headline": "Bangladesh Bank launches Bangla QR-based P2P payment service",
+      "summary": "Bangladesh Bank's new QR‑based P2P service lets users transfer funds by scanning a Bangla QR code, removing the need for manual mobile or account entry.",
+      "highlights": [
+        "Users transfer money by scanning the recipient's Bangla QR code",
+        "The service aims to make digital transfers faster, safer and reduce cash reliance",
+        "Assistant spokesperson Shahriar Siddique confirmed the launch"
+      ],
+      "concepts": [],
+      "key_numbers": [],
+      "published_at": "2026-11-01T20:20:00+06:00",
+      "selected_at": "2026-11-01T20:58:19.759245+06:00",
+      "status": "published",
+      "message_id": 1408
+    },
+    "ai_cyber_policy": {
+      "event_id": "ai_cyber_policy",
+      "canonical_url": "tbsnews.net/economy/banking/bb-introduce-ai-based-cybersecurity-policy-soon-1589536",
+      "original_url": "https://www.tbsnews.net/economy/banking/bb-introduce-ai-based-cybersecurity-policy-soon-1589536",
+      "source": "The Business Standard",
+      "region": "Bangladesh",
+      "topic": "Banking",
+      "institution": "Bangladesh Bank",
+      "event_cluster_id": "evt_baed424f9e",
+      "event_confidence": 0.6,
+      "event_source_count": 1,
+      "headline": "Bangladesh Bank to Roll Out AI‑Based Cybersecurity Policy for Financial Sector",
+      "summary": "Bangladesh Bank will soon issue an AI‑driven cybersecurity policy that mandates banks and financial institutions to upgrade IT defenses, improve threat detection, and enforce continuous monitoring.",
+      "highlights": [
+        "The Cybersecurity Framework Version 1.0 sets a Dec 31 2026 deadline for implementation.",
+        "A recent PHP vulnerability prompted Bangladesh Bank to temporarily shut down its website as a precaution."
+      ],
+      "concepts": [],
+      "key_numbers": [],
+      "published_at": "2026-11-01T17:45:00+06:00",
+      "selected_at": "2026-11-01T20:58:26.786219+06:00",
+      "status": "published",
+      "message_id": 1409
+    },
+    "denmark_invest_coop": {
+      "event_id": "denmark_invest_coop",
+      "canonical_url": "tbsnews.net/foreign-policy/denmark-keen-expand-investment-cooperation-bangladeshs-infrastructure-energy-sectors",
+      "original_url": "https://www.tbsnews.net/foreign-policy/denmark-keen-expand-investment-cooperation-bangladeshs-infrastructure-energy-sectors",
+      "source": "The Business Standard",
+      "region": "Bangladesh",
+      "topic": "FDI",
+      "institution": "Denmark",
+      "event_cluster_id": "evt_b9182ce559",
+      "event_confidence": 0.6,
+      "event_source_count": 1,
+      "headline": "Denmark seeks to boost investment in Bangladesh infrastructure and energy",
+      "summary": "Bangladesh and Denmark discussed expanding bilateral FDI, forming a joint team for the Laldiya Container Terminal and exploring Danish expertise in energy and food processing sectors.",
+      "highlights": [
+        "Joint working team proposed to expedite the Laldiya Container Terminal project with APM Terminals",
+        "KAFCO identified as a key investment target for Danish partners",
+        "Food processing opportunities highlighted for northern Bangladesh regions"
+      ],
+      "concepts": [],
+      "key_numbers": [],
+      "published_at": "2026-11-01T18:45:00+06:00",
+      "selected_at": "2026-11-01T20:58:33.022070+06:00",
+      "status": "published",
+      "message_id": 1410
+    },
+    "fed_put_discussion": {
+      "event_id": "fed_put_discussion",
+      "canonical_url": "finance.yahoo.com/markets/article/the-fed-put-is-very-much-back-wall-street-strategists-weigh-central-banks-next-move-155353732.html",
+      "original_url": "https://finance.yahoo.com/markets/article/the-fed-put-is-very-much-back-wall-street-strategists-weigh-central-banks-next-move-155353732.html",
+      "source": "finance.yahoo.com",
+      "region": "International",
+      "topic": "Global Interest Rates",
+      "institution": "Federal Reserve",
+      "event_cluster_id": "evt_f0b19814d4",
+      "event_confidence": 0.6,
+      "event_source_count": 1,
+      "headline": "Fed Put Returns as policymakers eye bond‑market coordination amid steady rates",
+      "summary": "The Federal Reserve kept rates unchanged while inflation stays sticky, prompting strategists to anticipate a renewed Fed put and tighter Treasury‑Fed collaboration.",
+      "highlights": [
+        "Fed left policy rates unchanged despite oil‑driven inflation above $100 per barrel",
+        "Strategists expect coordinated Fed‑Treasury bond purchases to provide market liquidity in 2027",
+        "Tech sector led recent sell‑off while Healthcare, Financial Services and Real Estate posted gains"
+      ],
+      "concepts": [],
+      "key_numbers": [],
+      "published_at": "2026-10-31T21:53:53+06:00",
+      "selected_at": "2026-11-01T20:58:37.974196+06:00",
+      "status": "published",
+      "message_id": 1411
+    },
+    "midterm_muni_impact": {
+      "event_id": "midterm_muni_impact",
+      "canonical_url": "cnbc.com/2026/11/01/election-municipal-bonds.html",
+      "original_url": "https://www.cnbc.com/2026/11/01/election-municipal-bonds.html",
+      "source": "CNBC",
+      "region": "International",
+      "topic": "Global Economy",
+      "institution": "U.S. Municipal Market",
+      "event_cluster_id": "evt_88d4aff8d9",
+      "event_confidence": 0.6,
+      "event_source_count": 1,
+      "headline": "Midterm Election May Reshape Municipal Bond Market Amid Tax and Supply Shifts",
+      "summary": "State-level tax proposals and new debt authorizations in the November vote could alter muni bond yields, pricing and credit risk as investors reassess supply and demand dynamics.",
+      "highlights": [
+        "Blue states propose higher income taxes, while red states aim to cut property taxes, affecting muni tax exemption value.",
+        "Issuance to date tops $473.8 billion, a 7.8% year‑over‑year rise, raising supply concerns.",
+        "Analysts suggest AA‑rated or higher munis remain attractive for investors in the 24%+ tax bracket."
+      ],
+      "concepts": [],
+      "key_numbers": [],
+      "published_at": "2026-11-01T18:30:48+06:00",
+      "selected_at": "2026-11-01T20:58:43.104819+06:00",
+      "status": "published",
+      "message_id": 1412
     }
   },
   "event_clusters": {
@@ -100616,14 +100840,14 @@
     },
     "evt_e8c7bc02be": {
       "event_id": "evt_e8c7bc02be",
-      "topic": "Bangladesh Economy",
+      "topic": "Industry",
       "region": "Bangladesh",
       "sources": [
         "The Business Standard"
       ],
       "source_count": 1,
       "confidence": 0.6,
-      "last_seen": "2026-11-01T13:17:24.582909+06:00",
+      "last_seen": "2026-11-01T20:54:59.994690+06:00",
       "headline": "Most MNCs see profit squeeze amid energy crisis, price hikes in Q3"
     },
     "evt_a31a6d0b77": {
@@ -100647,7 +100871,7 @@
       ],
       "source_count": 1,
       "confidence": 0.6,
-      "last_seen": "2026-11-01T13:17:24.582955+06:00",
+      "last_seen": "2026-11-01T20:54:59.994781+06:00",
       "headline": "Short notice to vacate puts Azimpur sublet residents in trouble"
     },
     "evt_068c98a0b6": {
@@ -100659,7 +100883,7 @@
       ],
       "source_count": 1,
       "confidence": 0.6,
-      "last_seen": "2026-11-01T13:17:24.582958+06:00",
+      "last_seen": "2026-11-01T20:54:59.994783+06:00",
       "headline": "One critically injured after ex-CID chief's car hits rickshaw"
     },
     "evt_b1fe7ac6f4": {
@@ -100671,7 +100895,7 @@
       ],
       "source_count": 1,
       "confidence": 0.6,
-      "last_seen": "2026-11-01T13:17:24.582960+06:00",
+      "last_seen": "2026-11-01T20:54:59.994785+06:00",
       "headline": "BIMSTEC begins first maritime security exercise in Bay of Bengal region"
     },
     "evt_300852b9ce": {
@@ -100683,7 +100907,7 @@
       ],
       "source_count": 1,
       "confidence": 0.6,
-      "last_seen": "2026-11-01T13:17:24.582962+06:00",
+      "last_seen": "2026-11-01T20:54:59.994790+06:00",
       "headline": "Pedestrian killed, 30 hurt as bus carrying Jamaat activists crashes in Satkhira"
     },
     "evt_78db26adea": {
@@ -100695,7 +100919,7 @@
       ],
       "source_count": 1,
       "confidence": 0.6,
-      "last_seen": "2026-11-01T13:17:24.582964+06:00",
+      "last_seen": "2026-11-01T20:54:59.994794+06:00",
       "headline": "Teenager dies after 'scissors attack' over cooking dispute in Mohammadpur, one held"
     },
     "evt_b137635cca": {
@@ -100707,7 +100931,7 @@
       ],
       "source_count": 1,
       "confidence": 0.6,
-      "last_seen": "2026-11-01T13:17:24.582968+06:00",
+      "last_seen": "2026-11-01T20:54:59.994796+06:00",
       "headline": "No place in BNP for those colluding with Awami League, warns Mirza Abbas"
     },
     "evt_bbaa395c50": {
@@ -100719,7 +100943,7 @@
       ],
       "source_count": 1,
       "confidence": 0.6,
-      "last_seen": "2026-11-01T13:17:24.582970+06:00",
+      "last_seen": "2026-11-01T20:54:59.994798+06:00",
       "headline": "Tourists will be able to stay in St Martin's overnight for 4.5-month season starting tomorrow"
     },
     "evt_cdb490302b": {
@@ -100731,7 +100955,7 @@
       ],
       "source_count": 1,
       "confidence": 0.6,
-      "last_seen": "2026-11-01T13:17:24.582973+06:00",
+      "last_seen": "2026-11-01T20:54:59.994799+06:00",
       "headline": "'If I send men, Tk50 lakh will become Tk1cr': Boro Sazzad's aide Sunny threatened traders with armed attacks, say police"
     },
     "evt_de78ee9be6": {
@@ -100827,7 +101051,7 @@
       ],
       "source_count": 1,
       "confidence": 0.6,
-      "last_seen": "2026-11-01T13:17:28.432264+06:00",
+      "last_seen": "2026-11-01T20:55:07.829369+06:00",
       "headline": "Binance says 90% of $6.3 billion hack losses are now covered, plans to resume withdrawals Sunday"
     },
     "evt_df8d5fb559": {
@@ -100875,7 +101099,7 @@
       ],
       "source_count": 1,
       "confidence": 0.6,
-      "last_seen": "2026-11-01T13:17:28.432306+06:00",
+      "last_seen": "2026-11-01T20:55:07.829366+06:00",
       "headline": "The Americans changing politics for the better | October 31st 2026 - The Economist"
     },
     "evt_5867338f2b": {
@@ -100887,7 +101111,7 @@
       ],
       "source_count": 1,
       "confidence": 0.6,
-      "last_seen": "2026-11-01T13:17:28.432310+06:00",
+      "last_seen": "2026-11-01T20:55:07.829372+06:00",
       "headline": "Binance, crypto and hacks: What to know about keeping coin safe as cyber criminals advance"
     },
     "evt_0cddb76502": {
@@ -100899,7 +101123,7 @@
       ],
       "source_count": 1,
       "confidence": 0.6,
-      "last_seen": "2026-11-01T13:17:28.432312+06:00",
+      "last_seen": "2026-11-01T20:55:07.829374+06:00",
       "headline": "Stocks started the week with promise but ended in despair. Our take on the big reversal"
     },
     "evt_4725a7c12e": {
@@ -100911,7 +101135,7 @@
       ],
       "source_count": 1,
       "confidence": 0.6,
-      "last_seen": "2026-11-01T13:17:28.432315+06:00",
+      "last_seen": "2026-11-01T20:55:07.829376+06:00",
       "headline": "Evacuees from Russian-occupied city arrive in Ukraine"
     },
     "evt_31ff0ecf37": {
@@ -101019,7 +101243,7 @@
       ],
       "source_count": 1,
       "confidence": 0.6,
-      "last_seen": "2026-11-01T13:17:24.582880+06:00",
+      "last_seen": "2026-11-01T20:54:59.994687+06:00",
       "headline": "TK71,850cr Dhaka-Ctg highway expansion shelved, focus now on PPP expressway"
     },
     "evt_5e831a4304": {
@@ -101031,31 +101255,31 @@
       ],
       "source_count": 1,
       "confidence": 0.6,
-      "last_seen": "2026-11-01T13:17:24.582897+06:00",
+      "last_seen": "2026-11-01T20:54:59.994763+06:00",
       "headline": "Digital healthcare project cost nearly triples to Tk494cr as DGHS expands pilot to six districts"
     },
     "evt_5603b65759": {
       "event_id": "evt_5603b65759",
-      "topic": "RMG",
+      "topic": "Bangladesh Economy",
       "region": "Bangladesh",
       "sources": [
         "The Business Standard"
       ],
       "source_count": 1,
       "confidence": 0.6,
-      "last_seen": "2026-11-01T13:17:24.582904+06:00",
+      "last_seen": "2026-11-01T20:54:59.994741+06:00",
       "headline": "Wage board formed, minister urges protesting RMG workers to return to work"
     },
     "evt_0d192c8011": {
       "event_id": "evt_0d192c8011",
-      "topic": "RMG",
+      "topic": "Bangladesh Economy",
       "region": "Bangladesh",
       "sources": [
         "The Business Standard"
       ],
       "source_count": 1,
       "confidence": 0.6,
-      "last_seen": "2026-11-01T13:17:24.582907+06:00",
+      "last_seen": "2026-11-01T20:54:59.994777+06:00",
       "headline": "RMG workers, cops clash in Mirpur; BGB deployed in Gazipur as police box torched"
     },
     "evt_5d899bec64": {
@@ -101067,7 +101291,7 @@
       ],
       "source_count": 1,
       "confidence": 0.6,
-      "last_seen": "2026-11-01T13:17:24.582914+06:00",
+      "last_seen": "2026-11-01T20:54:59.994734+06:00",
       "headline": "Hilsa catch falls for third year amid environmental threats, possible migration disruptions"
     },
     "evt_cd190466e0": {
@@ -101079,7 +101303,7 @@
       ],
       "source_count": 1,
       "confidence": 0.6,
-      "last_seen": "2026-11-01T13:17:24.582920+06:00",
+      "last_seen": "2026-11-01T20:54:59.994728+06:00",
       "headline": "HC grants bail to Jamaat leader Akhtaruzzaman in airport disorder case"
     },
     "evt_a4f647ec4a": {
@@ -101091,7 +101315,7 @@
       ],
       "source_count": 1,
       "confidence": 0.6,
-      "last_seen": "2026-11-01T13:17:24.582923+06:00",
+      "last_seen": "2026-11-01T20:54:59.994730+06:00",
       "headline": "Canada, EU launch 'Alliance for the Future' to deepen strategic ties"
     },
     "evt_0e73f16aa2": {
@@ -101103,7 +101327,7 @@
       ],
       "source_count": 1,
       "confidence": 0.6,
-      "last_seen": "2026-11-01T13:17:24.582925+06:00",
+      "last_seen": "2026-11-01T20:54:59.994732+06:00",
       "headline": "Flávio Bolsonaro's self-declared presidency lasts just 58 minutes"
     },
     "evt_1e4dc77565": {
@@ -101115,7 +101339,7 @@
       ],
       "source_count": 1,
       "confidence": 0.6,
-      "last_seen": "2026-11-01T13:17:24.582927+06:00",
+      "last_seen": "2026-11-01T20:54:59.994737+06:00",
       "headline": "Applications for HSC result re-scrutiny begin today"
     },
     "evt_666dba138f": {
@@ -101127,7 +101351,7 @@
       ],
       "source_count": 1,
       "confidence": 0.6,
-      "last_seen": "2026-11-01T13:17:24.582929+06:00",
+      "last_seen": "2026-11-01T20:54:59.994739+06:00",
       "headline": "Students may face arrest for staying outside without reason after evening: Ctg Range DIG"
     },
     "evt_71d68b06ae": {
@@ -101139,7 +101363,7 @@
       ],
       "source_count": 1,
       "confidence": 0.6,
-      "last_seen": "2026-11-01T13:17:24.582932+06:00",
+      "last_seen": "2026-11-01T20:54:59.994743+06:00",
       "headline": "Indian authorities tighten security ahead of big opposition march in Delhi"
     },
     "evt_a636b06f33": {
@@ -101151,7 +101375,7 @@
       ],
       "source_count": 1,
       "confidence": 0.6,
-      "last_seen": "2026-11-01T13:17:24.582934+06:00",
+      "last_seen": "2026-11-01T20:54:59.994745+06:00",
       "headline": "One Tech Tip: How to get started with AI agents and choose the right ones"
     },
     "evt_0c7ffd7f94": {
@@ -101163,7 +101387,7 @@
       ],
       "source_count": 1,
       "confidence": 0.6,
-      "last_seen": "2026-11-01T13:17:24.582936+06:00",
+      "last_seen": "2026-11-01T20:54:59.994757+06:00",
       "headline": "Iran warns of wider war as diplomatic efforts seek to revive ceasefire"
     },
     "evt_90a4998bc8": {
@@ -101175,7 +101399,7 @@
       ],
       "source_count": 1,
       "confidence": 0.6,
-      "last_seen": "2026-11-01T13:17:24.582938+06:00",
+      "last_seen": "2026-11-01T20:54:59.994759+06:00",
       "headline": "Bolivia declares nationwide state of emergency over drought and flood risks"
     },
     "evt_8ecfef326e": {
@@ -101187,7 +101411,7 @@
       ],
       "source_count": 1,
       "confidence": 0.6,
-      "last_seen": "2026-11-01T13:17:24.582941+06:00",
+      "last_seen": "2026-11-01T20:54:59.994761+06:00",
       "headline": "China outlines plan for crewed moon landing"
     },
     "evt_454790f8ee": {
@@ -101199,7 +101423,7 @@
       ],
       "source_count": 1,
       "confidence": 0.6,
-      "last_seen": "2026-11-01T13:17:24.582944+06:00",
+      "last_seen": "2026-11-01T20:54:59.994765+06:00",
       "headline": "'Air-con nation' Singapore eyes alternatives to cool down"
     },
     "evt_783b1188a6": {
@@ -101211,7 +101435,7 @@
       ],
       "source_count": 1,
       "confidence": 0.6,
-      "last_seen": "2026-11-01T13:17:24.582946+06:00",
+      "last_seen": "2026-11-01T20:54:59.994767+06:00",
       "headline": "With all eyes on Michigan, Bangladeshi-Americans rally behind Abdul El-Sayed"
     },
     "evt_71d928f72a": {
@@ -101223,7 +101447,7 @@
       ],
       "source_count": 1,
       "confidence": 0.6,
-      "last_seen": "2026-11-01T13:17:24.582949+06:00",
+      "last_seen": "2026-11-01T20:54:59.994770+06:00",
       "headline": "Shafiqur warns govt of one-point movement if 7-point demand unmet"
     },
     "evt_caf1acd8ce": {
@@ -101235,7 +101459,7 @@
       ],
       "source_count": 1,
       "confidence": 0.6,
-      "last_seen": "2026-11-01T13:17:24.582951+06:00",
+      "last_seen": "2026-11-01T20:54:59.994772+06:00",
       "headline": "Pregnant woman killed in shooting at California Halloween store, six others injured"
     },
     "evt_5d2acf793a": {
@@ -101247,7 +101471,7 @@
       ],
       "source_count": 1,
       "confidence": 0.6,
-      "last_seen": "2026-11-01T13:17:24.582953+06:00",
+      "last_seen": "2026-11-01T20:54:59.994774+06:00",
       "headline": "FBI says North Korea behind $6b Binance crypto theft"
     },
     "evt_406ba5355e": {
@@ -101283,31 +101507,31 @@
       ],
       "source_count": 1,
       "confidence": 0.6,
-      "last_seen": "2026-11-01T13:17:28.432255+06:00",
+      "last_seen": "2026-11-01T20:55:07.829292+06:00",
       "headline": "Oil majors resist pressure to invest in new refineries as fuel prices keep rising"
     },
     "evt_2aff3f1928": {
       "event_id": "evt_2aff3f1928",
-      "topic": "Global Economy",
+      "topic": "Energy",
       "region": "International",
       "sources": [
         "Financial Times"
       ],
       "source_count": 1,
       "confidence": 0.6,
-      "last_seen": "2026-11-01T13:17:28.432258+06:00",
+      "last_seen": "2026-11-01T20:55:07.829311+06:00",
       "headline": "Germany fails to meet Winter gas storage target"
     },
     "evt_f80f1fc7c5": {
       "event_id": "evt_f80f1fc7c5",
-      "topic": "Global Economy",
+      "topic": "Global Markets",
       "region": "International",
       "sources": [
         "Financial Times"
       ],
       "source_count": 1,
       "confidence": 0.6,
-      "last_seen": "2026-11-01T13:17:28.432260+06:00",
+      "last_seen": "2026-11-01T20:55:07.829301+06:00",
       "headline": "Bond investors sit out ‘most consequential’ US midterm elections in years"
     },
     "evt_647e76709c": {
@@ -101319,7 +101543,7 @@
       ],
       "source_count": 1,
       "confidence": 0.6,
-      "last_seen": "2026-11-01T13:17:28.432262+06:00",
+      "last_seen": "2026-11-01T20:55:07.829298+06:00",
       "headline": "Quant hedge fund to spin out of Tudor in record $9bn launch"
     },
     "evt_7279ed4174": {
@@ -101336,14 +101560,14 @@
     },
     "evt_c707a7a03c": {
       "event_id": "evt_c707a7a03c",
-      "topic": "Global Trade",
+      "topic": "Trade",
       "region": "International",
       "sources": [
         "Reuters"
       ],
       "source_count": 1,
       "confidence": 0.6,
-      "last_seen": "2026-11-01T13:17:28.432276+06:00",
+      "last_seen": "2026-11-01T20:55:07.829289+06:00",
       "headline": "South Korea exports nearly double in October on AI investment boom - Reuters"
     },
     "evt_bf8c8e3a6f": {
@@ -101355,7 +101579,7 @@
       ],
       "source_count": 1,
       "confidence": 0.6,
-      "last_seen": "2026-11-01T13:17:28.432281+06:00",
+      "last_seen": "2026-11-01T20:55:07.829308+06:00",
       "headline": "Companies promised AI gains— here's how the payoff showed up in earnings"
     },
     "evt_91869850f7": {
@@ -101367,19 +101591,19 @@
       ],
       "source_count": 1,
       "confidence": 0.6,
-      "last_seen": "2026-11-01T13:17:28.432287+06:00",
+      "last_seen": "2026-11-01T20:55:07.829338+06:00",
       "headline": "EU leaders risk breaking their promise to help European start-ups"
     },
     "evt_0453515fca": {
       "event_id": "evt_0453515fca",
-      "topic": "Commodities",
+      "topic": "Shipping",
       "region": "International",
       "sources": [
         "Financial Times"
       ],
       "source_count": 1,
       "confidence": 0.6,
-      "last_seen": "2026-11-01T13:17:28.432292+06:00",
+      "last_seen": "2026-11-01T20:55:07.829295+06:00",
       "headline": "Russia forced to ship grain via Arctic as Black Sea battles rage"
     },
     "evt_76e4587531": {
@@ -101391,7 +101615,7 @@
       ],
       "source_count": 1,
       "confidence": 0.6,
-      "last_seen": "2026-11-01T13:17:28.432293+06:00",
+      "last_seen": "2026-11-01T20:55:07.829336+06:00",
       "headline": "Military briefing: what would another US-Iran conflict look like?"
     },
     "evt_fcd1c5dba5": {
@@ -101403,7 +101627,7 @@
       ],
       "source_count": 1,
       "confidence": 0.6,
-      "last_seen": "2026-11-01T13:17:28.432296+06:00",
+      "last_seen": "2026-11-01T20:55:07.829339+06:00",
       "headline": "New Zealand’s kingmaker could be a 38-year-old ex-KPMG consultant"
     },
     "evt_d2a7912ff0": {
@@ -101415,7 +101639,7 @@
       ],
       "source_count": 1,
       "confidence": 0.6,
-      "last_seen": "2026-11-01T13:17:28.432297+06:00",
+      "last_seen": "2026-11-01T20:55:07.829358+06:00",
       "headline": "Michigan feud threatens Democratic unity in key Senate race"
     },
     "evt_8574c655a0": {
@@ -101427,7 +101651,7 @@
       ],
       "source_count": 1,
       "confidence": 0.6,
-      "last_seen": "2026-11-01T13:17:28.432299+06:00",
+      "last_seen": "2026-11-01T20:55:07.829360+06:00",
       "headline": "Trump defamation suit against Murdoch, WSJ over Epstein letter dismissed with prejudice"
     },
     "evt_d91cee45de": {
@@ -101439,7 +101663,7 @@
       ],
       "source_count": 1,
       "confidence": 0.6,
-      "last_seen": "2026-11-01T13:17:28.432301+06:00",
+      "last_seen": "2026-11-01T20:55:07.829362+06:00",
       "headline": "Betting Odds Look More Certain Than Polls, But Don’t Let That Confuse You - Bloomberg.com"
     },
     "evt_f46ced58e1": {
@@ -101451,7 +101675,7 @@
       ],
       "source_count": 1,
       "confidence": 0.6,
-      "last_seen": "2026-11-01T13:17:28.432303+06:00",
+      "last_seen": "2026-11-01T20:55:07.829365+06:00",
       "headline": "SpaceX loses bid to toss NAACP lawsuit over Memphis data center air pollution"
     },
     "evt_3b7679e26a": {
@@ -101465,14 +101689,753 @@
       "confidence": 0.6,
       "last_seen": "2026-11-01T13:17:28.432350+06:00",
       "headline": "The last hospital in El Fasher - The Economist"
+    },
+    "evt_eef400ae40": {
+      "event_id": "evt_eef400ae40",
+      "topic": "Banking",
+      "region": "Bangladesh",
+      "sources": [
+        "Dhaka Tribune"
+      ],
+      "source_count": 1,
+      "confidence": 0.6,
+      "last_seen": "2026-11-01T20:54:59.994653+06:00",
+      "headline": "Bangladesh, World Bank ink $450m agreement for financial sector reforms - Dhaka Tribune"
+    },
+    "evt_abccdd2df7": {
+      "event_id": "evt_abccdd2df7",
+      "topic": "Banking",
+      "region": "Bangladesh",
+      "sources": [
+        "The Business Standard"
+      ],
+      "source_count": 1,
+      "confidence": 0.6,
+      "last_seen": "2026-11-01T20:54:59.994669+06:00",
+      "headline": "Bangladesh Bank launches QR-based P2P payment service"
+    },
+    "evt_debfd94a63": {
+      "event_id": "evt_debfd94a63",
+      "topic": "RMG",
+      "region": "Bangladesh",
+      "sources": [
+        "The Business Standard"
+      ],
+      "source_count": 1,
+      "confidence": 0.6,
+      "last_seen": "2026-11-01T20:54:59.994673+06:00",
+      "headline": "529 garment factories closed amid workers unrest, nearly 9.9 lakh workers leave workplaces"
+    },
+    "evt_baed424f9e": {
+      "event_id": "evt_baed424f9e",
+      "topic": "Banking",
+      "region": "Bangladesh",
+      "sources": [
+        "The Business Standard"
+      ],
+      "source_count": 1,
+      "confidence": 0.6,
+      "last_seen": "2026-11-01T20:54:59.994676+06:00",
+      "headline": "BB to introduce AI-based cybersecurity policy soon"
+    },
+    "evt_b9182ce559": {
+      "event_id": "evt_b9182ce559",
+      "topic": "FDI",
+      "region": "Bangladesh",
+      "sources": [
+        "The Business Standard"
+      ],
+      "source_count": 1,
+      "confidence": 0.6,
+      "last_seen": "2026-11-01T20:54:59.994678+06:00",
+      "headline": "Denmark keen to expand investment cooperation in Bangladesh’s infrastructure, energy sectors"
+    },
+    "evt_3eb7d6c75a": {
+      "event_id": "evt_3eb7d6c75a",
+      "topic": "Energy",
+      "region": "Bangladesh",
+      "sources": [
+        "The Business Standard"
+      ],
+      "source_count": 1,
+      "confidence": 0.6,
+      "last_seen": "2026-11-01T20:54:59.994680+06:00",
+      "headline": "China Energy International Group keen to set up solar power plant at Payra Port"
+    },
+    "evt_3b18cb4900": {
+      "event_id": "evt_3b18cb4900",
+      "topic": "Economic Projects",
+      "region": "Bangladesh",
+      "sources": [
+        "The Business Standard"
+      ],
+      "source_count": 1,
+      "confidence": 0.6,
+      "last_seen": "2026-11-01T20:54:59.994682+06:00",
+      "headline": "Govt plans five-party partnership for LDC graduation, to use extra time for economic transformation: Titumir"
+    },
+    "evt_ce5d6ddea3": {
+      "event_id": "evt_ce5d6ddea3",
+      "topic": "Banking",
+      "region": "Bangladesh",
+      "sources": [
+        "The Financial Express"
+      ],
+      "source_count": 1,
+      "confidence": 0.6,
+      "last_seen": "2026-11-01T20:54:59.994684+06:00",
+      "headline": "BRAC Bank launches country's first omnichannel banking service - The Financial Express"
+    },
+    "evt_9218d26bcd": {
+      "event_id": "evt_9218d26bcd",
+      "topic": "Banking",
+      "region": "Bangladesh",
+      "sources": [
+        "Dhaka Tribune"
+      ],
+      "source_count": 1,
+      "confidence": 0.6,
+      "last_seen": "2026-11-01T20:54:59.994686+06:00",
+      "headline": "Pubali Bank’s Gulshan Circle-1 branch switches from conventional to Islamic banking - Dhaka Tribune"
+    },
+    "evt_44c1516b6b": {
+      "event_id": "evt_44c1516b6b",
+      "topic": "RMG",
+      "region": "Bangladesh",
+      "sources": [
+        "The Business Standard"
+      ],
+      "source_count": 1,
+      "confidence": 0.6,
+      "last_seen": "2026-11-01T20:54:59.994694+06:00",
+      "headline": "RMG owners to close factories temporarily if workers don't return to work"
+    },
+    "evt_4890668acd": {
+      "event_id": "evt_4890668acd",
+      "topic": "Bangladesh Economy",
+      "region": "Bangladesh",
+      "sources": [
+        "The Business Standard"
+      ],
+      "source_count": 1,
+      "confidence": 0.6,
+      "last_seen": "2026-11-01T20:54:59.994697+06:00",
+      "headline": "The backbone that bleeds: Why Bangladesh's RMG workers still have to fight"
+    },
+    "evt_7654342d02": {
+      "event_id": "evt_7654342d02",
+      "topic": "Bangladesh Economy",
+      "region": "Bangladesh",
+      "sources": [
+        "The Business Standard"
+      ],
+      "source_count": 1,
+      "confidence": 0.6,
+      "last_seen": "2026-11-01T20:54:59.994699+06:00",
+      "headline": "Jamaat regrets public suffering during long march"
+    },
+    "evt_433a27cc6c": {
+      "event_id": "evt_433a27cc6c",
+      "topic": "Bangladesh Economy",
+      "region": "Bangladesh",
+      "sources": [
+        "The Business Standard"
+      ],
+      "source_count": 1,
+      "confidence": 0.6,
+      "last_seen": "2026-11-01T20:54:59.994701+06:00",
+      "headline": "Ekushey Padak recipient Capt QABM Rahman dies at 91"
+    },
+    "evt_bb5231f8a5": {
+      "event_id": "evt_bb5231f8a5",
+      "topic": "Bangladesh Economy",
+      "region": "Bangladesh",
+      "sources": [
+        "The Daily Star"
+      ],
+      "source_count": 1,
+      "confidence": 0.6,
+      "last_seen": "2026-11-01T20:54:59.994702+06:00",
+      "headline": "Parties run on power-centric business model: TIB - The Daily Star"
+    },
+    "evt_86ba460cd4": {
+      "event_id": "evt_86ba460cd4",
+      "topic": "Bangladesh Economy",
+      "region": "Bangladesh",
+      "sources": [
+        "The Business Standard"
+      ],
+      "source_count": 1,
+      "confidence": 0.6,
+      "last_seen": "2026-11-01T20:54:59.994704+06:00",
+      "headline": "July Charter differences must be resolved in parliament, not through long marches: Rizvi"
+    },
+    "evt_c380faf6e9": {
+      "event_id": "evt_c380faf6e9",
+      "topic": "Bangladesh Economy",
+      "region": "Bangladesh",
+      "sources": [
+        "The Business Standard"
+      ],
+      "source_count": 1,
+      "confidence": 0.6,
+      "last_seen": "2026-11-01T20:54:59.994706+06:00",
+      "headline": "Iranian negotiators in Doha to continue talks to end the US-Iran war, official says"
+    },
+    "evt_ed01173fee": {
+      "event_id": "evt_ed01173fee",
+      "topic": "Bangladesh Economy",
+      "region": "Bangladesh",
+      "sources": [
+        "The Business Standard"
+      ],
+      "source_count": 1,
+      "confidence": 0.6,
+      "last_seen": "2026-11-01T20:54:59.994707+06:00",
+      "headline": "Purbachal plot case: BTMA President Russell lands in jail after surrendering"
+    },
+    "evt_97e4b8ec26": {
+      "event_id": "evt_97e4b8ec26",
+      "topic": "Bangladesh Economy",
+      "region": "Bangladesh",
+      "sources": [
+        "The Business Standard"
+      ],
+      "source_count": 1,
+      "confidence": 0.6,
+      "last_seen": "2026-11-01T20:54:59.994709+06:00",
+      "headline": "Amite replaces Mominul for final West Indies Test"
+    },
+    "evt_43d96d0c85": {
+      "event_id": "evt_43d96d0c85",
+      "topic": "Bangladesh Economy",
+      "region": "Bangladesh",
+      "sources": [
+        "The Business Standard"
+      ],
+      "source_count": 1,
+      "confidence": 0.6,
+      "last_seen": "2026-11-01T20:54:59.994711+06:00",
+      "headline": "Extended LDC graduation timeline a major diplomatic success: Humaiun Kobir"
+    },
+    "evt_9c772fbcea": {
+      "event_id": "evt_9c772fbcea",
+      "topic": "Bangladesh Economy",
+      "region": "Bangladesh",
+      "sources": [
+        "The Business Standard"
+      ],
+      "source_count": 1,
+      "confidence": 0.6,
+      "last_seen": "2026-11-01T20:54:59.994713+06:00",
+      "headline": "Thousands join Indian opposition protest demanding poll chief's resignation"
+    },
+    "evt_c12418ca35": {
+      "event_id": "evt_c12418ca35",
+      "topic": "Bangladesh Economy",
+      "region": "Bangladesh",
+      "sources": [
+        "The Business Standard"
+      ],
+      "source_count": 1,
+      "confidence": 0.6,
+      "last_seen": "2026-11-01T20:54:59.994715+06:00",
+      "headline": "Trump White House maps path to govern without Congress if Democrats win"
+    },
+    "evt_ec3fead864": {
+      "event_id": "evt_ec3fead864",
+      "topic": "Bangladesh Economy",
+      "region": "Bangladesh",
+      "sources": [
+        "Dhaka Tribune"
+      ],
+      "source_count": 1,
+      "confidence": 0.6,
+      "last_seen": "2026-11-01T20:54:59.994717+06:00",
+      "headline": "Shah Group chairman meets former Japanese PM Taro Aso - Dhaka Tribune"
+    },
+    "evt_7303335306": {
+      "event_id": "evt_7303335306",
+      "topic": "Bangladesh Economy",
+      "region": "Bangladesh",
+      "sources": [
+        "The Business Standard"
+      ],
+      "source_count": 1,
+      "confidence": 0.6,
+      "last_seen": "2026-11-01T20:54:59.994719+06:00",
+      "headline": "Judge ends Trump's attempts to sue Wall Street Journal over Epstein reporting"
+    },
+    "evt_a9f83d2390": {
+      "event_id": "evt_a9f83d2390",
+      "topic": "Bangladesh Economy",
+      "region": "Bangladesh",
+      "sources": [
+        "The Business Standard"
+      ],
+      "source_count": 1,
+      "confidence": 0.6,
+      "last_seen": "2026-11-01T20:54:59.994721+06:00",
+      "headline": "Ex-army officer Hafiz placed on 4-day remand in sedition case"
+    },
+    "evt_21068efc7d": {
+      "event_id": "evt_21068efc7d",
+      "topic": "Bangladesh Economy",
+      "region": "Bangladesh",
+      "sources": [
+        "The Business Standard"
+      ],
+      "source_count": 1,
+      "confidence": 0.6,
+      "last_seen": "2026-11-01T20:54:59.994722+06:00",
+      "headline": "Five killed in fresh ethnic violence in India's Manipur state"
+    },
+    "evt_fdfb6a1fd0": {
+      "event_id": "evt_fdfb6a1fd0",
+      "topic": "Bangladesh Economy",
+      "region": "Bangladesh",
+      "sources": [
+        "The Daily Star"
+      ],
+      "source_count": 1,
+      "confidence": 0.6,
+      "last_seen": "2026-11-01T20:54:59.994724+06:00",
+      "headline": "Pentagon tells Europeans to cool their rhetoric on Russia: Reuters - The Daily Star"
+    },
+    "evt_f80eba2525": {
+      "event_id": "evt_f80eba2525",
+      "topic": "Bangladesh Economy",
+      "region": "Bangladesh",
+      "sources": [
+        "Dhaka Tribune"
+      ],
+      "source_count": 1,
+      "confidence": 0.6,
+      "last_seen": "2026-11-01T20:54:59.994726+06:00",
+      "headline": "Shahjalal Islami Bank holds 930th executive committee meeting - Dhaka Tribune"
+    },
+    "evt_2675b3e53c": {
+      "event_id": "evt_2675b3e53c",
+      "topic": "Bangladesh Economy",
+      "region": "Bangladesh",
+      "sources": [
+        "The Daily Star"
+      ],
+      "source_count": 1,
+      "confidence": 0.6,
+      "last_seen": "2026-11-01T20:54:59.994779+06:00",
+      "headline": "Clashes break out as hundreds of thousands protest in France; officer hit by Molotov cocktail - The Daily Star"
+    },
+    "evt_8b2c4e7d3f": {
+      "event_id": "evt_8b2c4e7d3f",
+      "topic": "Bangladesh Economy",
+      "region": "Bangladesh",
+      "sources": [
+        "The Daily Star"
+      ],
+      "source_count": 1,
+      "confidence": 0.6,
+      "last_seen": "2026-11-01T20:54:59.994787+06:00",
+      "headline": "Tahsif Souri death: PBI takes one into custody - The Daily Star"
+    },
+    "evt_644caa52c1": {
+      "event_id": "evt_644caa52c1",
+      "topic": "Bangladesh Economy",
+      "region": "Bangladesh",
+      "sources": [
+        "The Business Standard"
+      ],
+      "source_count": 1,
+      "confidence": 0.6,
+      "last_seen": "2026-11-01T20:54:59.994788+06:00",
+      "headline": "Hackers steal $6.3b from Binance in world's biggest crypto heist - The Business Standard"
+    },
+    "evt_d2585b720a": {
+      "event_id": "evt_d2585b720a",
+      "topic": "Bangladesh Economy",
+      "region": "Bangladesh",
+      "sources": [
+        "The Business Standard"
+      ],
+      "source_count": 1,
+      "confidence": 0.6,
+      "last_seen": "2026-11-01T20:54:59.994793+06:00",
+      "headline": "Customs Intelligence and Investigation Directorate (CIID) - The Business Standard"
+    },
+    "evt_4e3b67e060": {
+      "event_id": "evt_4e3b67e060",
+      "topic": "Global Forex",
+      "region": "International",
+      "sources": [
+        "Financial Times"
+      ],
+      "source_count": 1,
+      "confidence": 0.6,
+      "last_seen": "2026-11-01T20:55:07.829263+06:00",
+      "headline": "Binance restarts customer withdrawals after $6.3bn heist"
+    },
+    "evt_55998714b3": {
+      "event_id": "evt_55998714b3",
+      "topic": "Oil",
+      "region": "International",
+      "sources": [
+        "investing.com"
+      ],
+      "source_count": 1,
+      "confidence": 0.6,
+      "last_seen": "2026-11-01T20:55:07.829281+06:00",
+      "headline": "OPEC+ set to keep oil output targets steady, sources say By Reuters"
+    },
+    "evt_42844a09bf": {
+      "event_id": "evt_42844a09bf",
+      "topic": "Global Economy",
+      "region": "International",
+      "sources": [
+        "Bloomberg"
+      ],
+      "source_count": 1,
+      "confidence": 0.6,
+      "last_seen": "2026-11-01T20:55:07.829285+06:00",
+      "headline": "Saudi Economy Shrank at Slower Pace Before Houthi War Escalation - Bloomberg.com"
+    },
+    "evt_f0b19814d4": {
+      "event_id": "evt_f0b19814d4",
+      "topic": "Global Interest Rates",
+      "region": "International",
+      "sources": [
+        "finance.yahoo.com"
+      ],
+      "source_count": 1,
+      "confidence": 0.6,
+      "last_seen": "2026-11-01T20:55:07.829287+06:00",
+      "headline": "'The Fed put is very much back': Wall Street strategists weigh central bank's next move"
+    },
+    "evt_88d4aff8d9": {
+      "event_id": "evt_88d4aff8d9",
+      "topic": "Global Economy",
+      "region": "International",
+      "sources": [
+        "CNBC"
+      ],
+      "source_count": 1,
+      "confidence": 0.6,
+      "last_seen": "2026-11-01T20:55:07.829303+06:00",
+      "headline": "The midterm election could reshape the muni bond market. Here’s what investors need to know"
+    },
+    "evt_061a863348": {
+      "event_id": "evt_061a863348",
+      "topic": "Trade",
+      "region": "International",
+      "sources": [
+        "investing.com"
+      ],
+      "source_count": 1,
+      "confidence": 0.6,
+      "last_seen": "2026-11-01T20:55:07.829305+06:00",
+      "headline": "Democratic wins would shift Congress’ trade debate but fall short of US tariff rollbacks By Reuters"
+    },
+    "evt_63bbb4c651": {
+      "event_id": "evt_63bbb4c651",
+      "topic": "Global Economy",
+      "region": "International",
+      "sources": [
+        "CNBC"
+      ],
+      "source_count": 1,
+      "confidence": 0.6,
+      "last_seen": "2026-11-01T20:55:07.829310+06:00",
+      "headline": "Why AI is boosting Meta's ad business while hurting Google search"
+    },
+    "evt_d889afd511": {
+      "event_id": "evt_d889afd511",
+      "topic": "Global Economy",
+      "region": "International",
+      "sources": [
+        "investing.com"
+      ],
+      "source_count": 1,
+      "confidence": 0.6,
+      "last_seen": "2026-11-01T20:55:07.829313+06:00",
+      "headline": "What’s next for Euro bonds and the euro after Lagarde’s resignation? By Investing.com"
+    },
+    "evt_ec67ceb429": {
+      "event_id": "evt_ec67ceb429",
+      "topic": "Global Economy",
+      "region": "International",
+      "sources": [
+        "investing.com"
+      ],
+      "source_count": 1,
+      "confidence": 0.6,
+      "last_seen": "2026-11-01T20:55:07.829315+06:00",
+      "headline": "Cboe Q3 2026 slides: S&P deal secured, earnings beat estimates By Investing.com"
+    },
+    "evt_19a0850da3": {
+      "event_id": "evt_19a0850da3",
+      "topic": "Banking",
+      "region": "International",
+      "sources": [
+        "investing.com"
+      ],
+      "source_count": 1,
+      "confidence": 0.6,
+      "last_seen": "2026-11-01T20:55:07.829317+06:00",
+      "headline": "Alpha Bank Q3 2026 slides: strong profits fuel M&A expansion By Investing.com"
+    },
+    "evt_e0f606e86d": {
+      "event_id": "evt_e0f606e86d",
+      "topic": "Oil",
+      "region": "International",
+      "sources": [
+        "investing.com"
+      ],
+      "source_count": 1,
+      "confidence": 0.6,
+      "last_seen": "2026-11-01T20:55:07.829318+06:00",
+      "headline": "BP Q3 2026 slides: net debt falls below target, portfolio reshapes By Investing.com"
+    },
+    "evt_519acb2c9f": {
+      "event_id": "evt_519acb2c9f",
+      "topic": "Global Markets",
+      "region": "International",
+      "sources": [
+        "Bloomberg"
+      ],
+      "source_count": 1,
+      "confidence": 0.6,
+      "last_seen": "2026-11-01T20:55:07.829320+06:00",
+      "headline": "Watch Tech Selloff Could Ease Pressure on the Fed - Bloomberg"
+    },
+    "evt_80bf8b6ed4": {
+      "event_id": "evt_80bf8b6ed4",
+      "topic": "Global Economy",
+      "region": "International",
+      "sources": [
+        "Bloomberg"
+      ],
+      "source_count": 1,
+      "confidence": 0.6,
+      "last_seen": "2026-11-01T20:55:07.829321+06:00",
+      "headline": "Watch AI Talent War Spreads to Wall Street - Bloomberg"
+    },
+    "evt_32930305dd": {
+      "event_id": "evt_32930305dd",
+      "topic": "Global Economy",
+      "region": "International",
+      "sources": [
+        "CNBC"
+      ],
+      "source_count": 1,
+      "confidence": 0.6,
+      "last_seen": "2026-11-01T20:55:07.829324+06:00",
+      "headline": "These Senate races may help determine the fate of Social Security"
+    },
+    "evt_01dbb24fc5": {
+      "event_id": "evt_01dbb24fc5",
+      "topic": "Global Economy",
+      "region": "International",
+      "sources": [
+        "CNBC"
+      ],
+      "source_count": 1,
+      "confidence": 0.6,
+      "last_seen": "2026-11-01T20:55:07.829325+06:00",
+      "headline": "Social Security may have to cut retirement benefits in six years. Here's how much money is at stake for beneficiaries"
+    },
+    "evt_7acf8d8d10": {
+      "event_id": "evt_7acf8d8d10",
+      "topic": "Global Economy",
+      "region": "International",
+      "sources": [
+        "CNBC"
+      ],
+      "source_count": 1,
+      "confidence": 0.6,
+      "last_seen": "2026-11-01T20:55:07.829326+06:00",
+      "headline": "Top Wall Street analysts are bullish on these 3 stocks for the long haul"
+    },
+    "evt_b9d9b3feb3": {
+      "event_id": "evt_b9d9b3feb3",
+      "topic": "Global Economy",
+      "region": "International",
+      "sources": [
+        "Financial Times"
+      ],
+      "source_count": 1,
+      "confidence": 0.6,
+      "last_seen": "2026-11-01T20:55:07.829328+06:00",
+      "headline": "Weil Gotshal: what happens now at the troubled Wall St law firm?"
+    },
+    "evt_b7dec6efe8": {
+      "event_id": "evt_b7dec6efe8",
+      "topic": "Global Economy",
+      "region": "International",
+      "sources": [
+        "Financial Times"
+      ],
+      "source_count": 1,
+      "confidence": 0.6,
+      "last_seen": "2026-11-01T20:55:07.829329+06:00",
+      "headline": "Gen Z protests turn violent in Germany"
+    },
+    "evt_91559d71b3": {
+      "event_id": "evt_91559d71b3",
+      "topic": "Global Economy",
+      "region": "International",
+      "sources": [
+        "finance.yahoo.com"
+      ],
+      "source_count": 1,
+      "confidence": 0.6,
+      "last_seen": "2026-11-01T20:55:07.829330+06:00",
+      "headline": "A big sell-off collides with more Big Tech earnings and a midterm election: What to watch this week"
+    },
+    "evt_e9c05646db": {
+      "event_id": "evt_e9c05646db",
+      "topic": "Global Economy",
+      "region": "International",
+      "sources": [
+        "visualcapitalist.com"
+      ],
+      "source_count": 1,
+      "confidence": 0.6,
+      "last_seen": "2026-11-01T20:55:07.829332+06:00",
+      "headline": "Mapped: The New Time Differences Across North America - Visual Capitalist"
+    },
+    "evt_f50b802c8e": {
+      "event_id": "evt_f50b802c8e",
+      "topic": "Global Economy",
+      "region": "International",
+      "sources": [
+        "finance.yahoo.com"
+      ],
+      "source_count": 1,
+      "confidence": 0.6,
+      "last_seen": "2026-11-01T20:55:07.829335+06:00",
+      "headline": "What a veteran bond investor is watching as sharp interest rate moves roil markets"
+    },
+    "evt_f8b07b9149": {
+      "event_id": "evt_f8b07b9149",
+      "topic": "Global Economy",
+      "region": "International",
+      "sources": [
+        "Bloomberg"
+      ],
+      "source_count": 1,
+      "confidence": 0.6,
+      "last_seen": "2026-11-01T20:55:07.829341+06:00",
+      "headline": "Trump: 'No Hurry' to End Iran War, OPEC+ Holds Oil Output Steady - Bloomberg"
+    },
+    "evt_a68b86911c": {
+      "event_id": "evt_a68b86911c",
+      "topic": "Global Economy",
+      "region": "International",
+      "sources": [
+        "Bloomberg"
+      ],
+      "source_count": 1,
+      "confidence": 0.6,
+      "last_seen": "2026-11-01T20:55:07.829343+06:00",
+      "headline": "Watch IMO Chief Says Strait of Hormuz Remains Unsafe - Bloomberg"
+    },
+    "evt_d64b0b2e9f": {
+      "event_id": "evt_d64b0b2e9f",
+      "topic": "Global Economy",
+      "region": "International",
+      "sources": [
+        "markets.ft.com"
+      ],
+      "source_count": 1,
+      "confidence": 0.6,
+      "last_seen": "2026-11-01T20:55:07.829344+06:00",
+      "headline": "TotalEnergies Strengthens Cooperation with PETRONAS SONANGOL and OIL INDIA LIMITED to Reduce Methane Emissions – Company Announcement - FT.com"
+    },
+    "evt_6cdb567565": {
+      "event_id": "evt_6cdb567565",
+      "topic": "Global Economy",
+      "region": "International",
+      "sources": [
+        "Bloomberg"
+      ],
+      "source_count": 1,
+      "confidence": 0.6,
+      "last_seen": "2026-11-01T20:55:07.829346+06:00",
+      "headline": "Watch Democrats Eye House and Senate Gains - Bloomberg"
+    },
+    "evt_8870bcc5ff": {
+      "event_id": "evt_8870bcc5ff",
+      "topic": "Global Economy",
+      "region": "International",
+      "sources": [
+        "Bloomberg"
+      ],
+      "source_count": 1,
+      "confidence": 0.6,
+      "last_seen": "2026-11-01T20:55:07.829347+06:00",
+      "headline": "Watch Brooks Steps Up Global Push as Running Boom Builds - Bloomberg"
+    },
+    "evt_b1d5781111": {
+      "event_id": "evt_b1d5781111",
+      "topic": "Global Economy",
+      "region": "International",
+      "sources": [
+        "hk.investing.com"
+      ],
+      "source_count": 1,
+      "confidence": 0.6,
+      "last_seen": "2026-11-01T20:55:07.829349+06:00",
+      "headline": "財通證券：美歐日央行10月均暫停加息 但抗通脹仍是政策主線 作者 智通財經"
+    },
+    "evt_93db124599": {
+      "event_id": "evt_93db124599",
+      "topic": "Global Economy",
+      "region": "International",
+      "sources": [
+        "ca.investing.com"
+      ],
+      "source_count": 1,
+      "confidence": 0.6,
+      "last_seen": "2026-11-01T20:55:07.829350+06:00",
+      "headline": "TSX brace for data-heavy week as Iran tensions put Fed, BoC rate outlook in focus By Investing.com"
+    },
+    "evt_51220ec705": {
+      "event_id": "evt_51220ec705",
+      "topic": "Global Economy",
+      "region": "International",
+      "sources": [
+        "finance.yahoo.com"
+      ],
+      "source_count": 1,
+      "confidence": 0.6,
+      "last_seen": "2026-11-01T20:55:07.829352+06:00",
+      "headline": "What To Expect In Markets This Week: AAPL, PLTR, AMD, SMCI, SHOP, Earnings, Jobs Report And More"
+    },
+    "evt_05854e2a7e": {
+      "event_id": "evt_05854e2a7e",
+      "topic": "Global Economy",
+      "region": "International",
+      "sources": [
+        "investing.com"
+      ],
+      "source_count": 1,
+      "confidence": 0.6,
+      "last_seen": "2026-11-01T20:55:07.829354+06:00",
+      "headline": "Iran offers 48-hour Hormuz reopening plan as Trump signals progress in talks By Investing.com"
+    },
+    "evt_e4906543e6": {
+      "event_id": "evt_e4906543e6",
+      "topic": "Global Economy",
+      "region": "International",
+      "sources": [
+        "ca.investing.com"
+      ],
+      "source_count": 1,
+      "confidence": 0.6,
+      "last_seen": "2026-11-01T20:55:07.829356+06:00",
+      "headline": "Midterm US elections, earnings, jobs data loom for AI-wary stock market By Reuters"
     }
   },
   "posted_event_ids": [
-    "evt_84f42a0f8d",
-    "evt_906a9a7f3a",
-    "evt_a9bd39ef93",
-    "evt_17974728a4",
-    "evt_991d625090",
     "evt_7854f2a178",
     "evt_19e46c0055",
     "evt_55f95d1a6a",
@@ -101967,14 +102930,14 @@
     "evt_a31a6d0b77",
     "evt_3ca0264fa3",
     "evt_36b9d3c23a",
-    "evt_d61eff36f4"
+    "evt_d61eff36f4",
+    "evt_abccdd2df7",
+    "evt_baed424f9e",
+    "evt_b9182ce559",
+    "evt_f0b19814d4",
+    "evt_88d4aff8d9"
   ],
   "recent_titles": [
-    "ronaldo pays tribute to messi as argentine legend announces international retirement",
-    "five agrani bank officials arrested over crore taka embezzlement in munshiganj",
-    "eva marie saint oscar winning actress dies at 102",
-    "americans financial outlook dims as inflation expectations rise new york fed says",
-    "bangladesh economic activity contracts in september as pmi falls to 48 6",
     "bangladesh bank expands nrcta access for authorised dealer banks",
     "dp world chairman meets pm tarique rahman to expand trade and modernise chattogram nct",
     "oil prices surge 5 amid iran tanker attacks and gulf hurricane",
@@ -102374,15 +103337,20 @@
     "bangladesh firms skip fy26 dividends amid heavy losses and downgrades",
     "bangladesh japan summit raises questions over loan terms and manpower claims",
     "openai trims fundraising target to 20 billion eyes 1 25 trillion valuation",
-    "automatic 401 k portability cuts cash outs but few transfers reach new plans"
+    "automatic 401 k portability cuts cash outs but few transfers reach new plans",
+    "bangladesh bank launches bangla qr based p2p payment service",
+    "bangladesh bank to roll out ai based cybersecurity policy for financial sector",
+    "denmark seeks to boost investment in bangladesh infrastructure and energy",
+    "fed put returns as policymakers eye bond market coordination amid steady rates",
+    "midterm election may reshape municipal bond market amid tax and supply shifts"
   ],
   "category_coverage": {
     "Energy": "2026-11-01T13:22:28.667920+06:00",
     "Government Budget": "2026-10-16T02:21:06.575109+06:00",
-    "Global Economy": "2026-11-01T13:22:51.609989+06:00",
+    "Global Economy": "2026-11-01T20:58:43.104833+06:00",
     "Trade": "2026-11-01T00:29:20.426455+06:00",
     "Multinational Companies": "2026-11-01T00:29:25.513552+06:00",
-    "Banking": "2026-11-01T00:28:58.386559+06:00",
+    "Banking": "2026-11-01T20:58:26.786232+06:00",
     "Share Market": "2026-10-21T02:30:22.701121+06:00",
     "Global Inflation": "2026-10-23T11:58:38.027091+06:00",
     "Top Currency Rates": "2026-09-06T23:44:06.328287+06:00",
@@ -102391,8 +103359,8 @@
     "Economic Projects": "2026-10-25T11:54:46.109812+06:00",
     "Gold": "2026-10-31T13:02:24.426273+06:00",
     "Bangladesh Economy": "2026-11-01T13:22:41.491599+06:00",
-    "Global Interest Rates": "2026-10-31T19:35:20.624971+06:00",
-    "FDI": "2026-10-29T13:02:21.814203+06:00",
+    "Global Interest Rates": "2026-11-01T20:58:37.974208+06:00",
+    "FDI": "2026-11-01T20:58:33.022082+06:00",
     "BSEC": "2026-10-19T12:01:27.145640+06:00",
     "Fed": "2026-10-12T23:44:52.651763+06:00",
     "Industry": "2026-10-23T22:58:02.065263+06:00",
